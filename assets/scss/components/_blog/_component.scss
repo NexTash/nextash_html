@@ -1,0 +1,23 @@
+/* Component code */
+.blog-card {
+    .card-header {
+        .card-img-top {
+            height: 250px;
+
+            // min-height: 250px;
+            // max-height: 300px;
+            &::before {
+                width: 98%;
+                height: 98%;
+                background-color: $primary;
+                position: absolute;
+                transform: rotate(20deg);
+            }
+        }
+
+    }
+
+    .card-body {}
+
+    .card-footer {}
+}
