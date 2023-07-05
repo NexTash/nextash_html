@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogs</title>
+  <title>Blog - | Nextash</title>
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/stylesheet.css">
@@ -14,13 +14,24 @@
   <meta name="keywords" content="">
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="" />
-  <meta property="og:title" content=" | Nextash" />
+  <meta property="og:title" content="Blog details | Nextash" />
   <meta property="og:description" content="" />
   <meta property="og:image" content="" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Nextash" />
   <meta property="og:url" content="" />
 </head>
+<style>
+  .bg-dotted {
+    background-image: radial-gradient(rgba(255, 255, 255) 1px, transparent 1px);
+    background-position: 50% 50%;
+    background-size: 0.5rem 0.5rem;
+  }
+
+  .bg-dotted-primary {
+    background-image: radial-gradient(rgba(255, 0, 0) 1px, transparent 1px);
+  }
+</style>
 
 <body class="bg-black font-bevietnam">
 
@@ -50,15 +61,16 @@
   <!--------- Bg ---------->
 
   <!------- Content ------->
-  <main class="bg-1 bg-cover" class="pt-5">
-
+  <main class="bg-1 bg-cover bg-fixed">
     <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+      <div class="text-white py-5">
+        <h1 class="font-40 m-0 section-heading mb-2">Blog</h1>
+      </div>
       <div class="row align-items-center">
-        <div class="col-sm-7">
+        <div class="col-sm-4">
           <div class="card border-0 bg-transparent">
             <div class="card-header bg-transparent border-0 p-0">
-              <a href=""
-                class="btn btn-primary  text-white font-14 py-1 fw-bold px-3 rounded-pill text-decoration-none">
+              <a href="" class="btn btn-primary  text-white font-14 py-1 px-3 rounded-pill text-decoration-none">
                 Ui / Ux
               </a>
               <h1 class="font-40 m-0 fw-bold text-white my-3">Title will goes here.</h1>
@@ -88,10 +100,16 @@
           </div>
         </div>
         <div class="col-sm-1"></div>
-        <div class="col-sm-4">
-          <a href="./images/blogs/3.jpg" class="d-inline-block w-100 rounded-5 lightbox" data-gallery="g"
-            href="./images/blogs/3.jpg">
-            <img src="./images/blogs/3.jpg" alt="{{ blog.alt }}" class="card-img-top rounded-5">
+        <div class="col-sm-7">
+          <a href="./images/blogs/1.jpg"
+            class="d-inline-block w-100 position-relative p-2 border border-primary border-3"
+            href="./images/blogs/1.jpg">
+            <img src="./images/blogs/1.jpg" alt="{{ blog.alt }}"
+              class="card-img-top img-fluid shadow z-index-3 position-relative">
+            <div class="bg-dotted position-absolute border-0 start-0 size-100 z-index-1"
+              style="top:-30px;margin-left: -30px;"></div>
+            <div class="position-absolute border-top border-end border-light end-0 size-100 z-index-1"
+              style="top:-30px;margin-left: -20px;"></div>
           </a>
         </div>
       </div>
