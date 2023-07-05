@@ -1,0 +1,34 @@
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-contain {
+    background-size: contain;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.bg-1 {
+    background-image: url(#{$images_path}/patterns/1-min.webp);
+}
+
+.bg-2 {
+    background-image: url(#{$images_path}/patterns/2-min.webp);
+
+}
+
+.bg-3 {
+    background-image: url(#{$images_path}/patterns/3-min.webp);
+
+}
+
+.bg-6 {
+    background-image: url(#{$images_path}/patterns/6-min.webp);
+
+}

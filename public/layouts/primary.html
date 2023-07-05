@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} Nextash</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='/images/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/libs/boxicons/css/boxicons.min.css')}}">
+    {% block seo %}
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="" />
+    <meta property="og:title" content="About us | Nextash" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Nextash" />
+    <meta property="og:url" content="" />
+    {% endblock %}
+</head>
+
+{% block style %} {% endblock %}
+
+<body class="bg-black font-bevietnam">
+
+    <!-------- Navbar ------->
+    {% include "components/navbar.html" %}
+    <!-------- Navbar ------->
+
+    <!--------- Bg ---------->
+    <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <!-- <div class="galaxy"></div> -->
+    <!--------- Bg ---------->
+
+    <!------- Content ------->
+    {% block content %} {% endblock %}
+    <!------- Content ------->
+
+    <!-------- Footer ------->
+    {% include "components/footer.html" %}
+    <!-------- Footer ------->
+
+    <!------- Scripts ------->
+    <script src="{{ url_for('static', filename='/js/bootstrap/bootstrap.min.js')}}"></script>
+    {% block scripts %} {% endblock %}
+    <!------- Scripts ------->
+
+</body>
+
+</html>
