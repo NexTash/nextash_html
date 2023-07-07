@@ -25,7 +25,7 @@ def faqs():
 
 @app.route("/team")
 def team():
-    return render_template("pages/team.html")
+    return render_template("pages/expert-team.html")
 
 
 @app.route("/privacy-policy")
