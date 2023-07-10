@@ -22,10 +22,37 @@
   <!--------- Row --------->
   <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
     <div class="text-white py-5 pb-3">
-      <h1 class="font-40 m-0 mb-2">Blogs</h1>
-      <p class="text-primary font-18 m-0">Read our latest blogs and articles </p>
+      <h1 class="font-40 m-0 mb-2">News</h1>
+      <p class="text-primary font-18 m-0">Read our latest News and articles </p>
     </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-3 g-4">
+    <div class="row mb-5">
+      <div class="col-12 col-sm-12 col-md-4 col-lg-6 mb-2">
+        <form class="input-group border border-2 border-dark rounded-2 bg-dark" id="searchForm">
+          <input type="search" name="search" id="search" placeholder="Search..."
+            class="bg-transparent border-0 shadow-none form-control font-16 text-dark">
+          <button class="btn border-0 shadow-none bx bx-search font-18 me-2 text-dark"></button>
+        </form>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2">
+        <div class="input-group border border-2 border-dark rounded-2 bg-dark">
+          <label for="category_id" class="input-group-text bg-transparent border-0 fw-bold text-white">Category</label>
+          <select name="category_id" id="category_id"
+            class="bg-transparent border-0 shadow-none  font-16 text-muted form-control form-select"></select>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2">
+        <div class="input-group border border-2 border-dark rounded-2 bg-dark">
+          <label for="ordering" class="input-group-text bg-transparent border-0 fw-bold text-white">Sort</label>
+          <select name="ordering" id="ordering"
+            class="bg-transparent border-0 shadow-none  font-16 text-muted form-control form-select">
+            <option value="-id">Recent</option>
+            <option value="id">Oldest</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-3 row-cols-xl-4 row-cols-xll-4 g-4">
       <article class="col">
         <div class="card bg-dark shadow text-white blog-card h-100">
           <div class="card-header border-0 p-0 position-relative">

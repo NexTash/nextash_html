@@ -53,6 +53,26 @@ def blog_details():
     return render_template("pages/blog-details.html")
 
 
+@app.route("/news")
+def news():
+    return render_template("pages/news.html")
+
+
+@app.route("/news-details")
+def news_details():
+    return render_template("pages/news-details.html")
+
+
+@app.route("/jobs")
+def jobs():
+    return render_template("pages/jobs.html")
+
+
+@app.route("/job-details")
+def job_details():
+    return render_template("pages/job-details.html")
+
+
 @app.route("/projects")
 def projects():
     return render_template("pages/projects.html")
