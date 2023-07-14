@@ -2,8 +2,8 @@ window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").classList.add("bg-black");
+        document.getElementById("navbar").classList.add("bg-dark");
     } else {
-        document.getElementById("navbar").classList.remove("bg-black");
+        document.getElementById("navbar").classList.remove("bg-dark");
     }
 }

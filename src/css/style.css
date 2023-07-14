@@ -13175,6 +13175,12 @@ html {
   color: transparent;
   -webkit-text-stroke: 1px #fff;
 }
+@media screen and (max-width: 548px) {
+  .home-header .title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
 .home-header .title div {
   transition: 1.5s opacity ease 0.5s, 1.5s transform ease 0.5s, 0.5s color ease, 0.5s -webkit-text-stroke ease, 1.5s -webkit-transform ease 0.5s;
 }
