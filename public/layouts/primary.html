@@ -26,24 +26,21 @@
 {% block style %} {% endblock %}
 
 <body class="bg-dark font-bevietnam">
-
     <!-------- Navbar ------->
     {% include "components/navbar.html" %}
     <!-------- Navbar ------->
-
     <!-------- Sidebar ------->
     {% include "components/sidebar.html" %}
     <!-------- Sidebar ------->
-
     <!--------- Bg ---------->
-    <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
+    <!-- <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
     </div>
-    <!-- <div class="galaxy"></div> -->
+    <div class="galaxy"></div> -->
+    
     <!--------- Bg ---------->
-
     <!------- Content ------->
     {% block content %} {% endblock %}
     <!------- Content ------->
@@ -54,6 +51,7 @@
 
     <!------- Scripts ------->
     <script src="{{ url_for('static', filename='/js/bootstrap/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='/js/utils.js')}}"></script>
     {% block scripts %} {% endblock %}
     <!------- Scripts ------->
 
