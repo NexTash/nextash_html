@@ -4,7 +4,7 @@ Services
 + Web Development
 + Mobile App Development
 + Digital Marketing
-+ Syber Security
++ Cyber Security
 + DevOps
 + Networking
 + ERP Development
@@ -18,4 +18,14 @@ Services
 Industries
 + Education
 + Mediction
-+ 
+ 
+
+Todo
++ About us
+- Header
+- Our Story
+- Featured services
+- Process
+- Work done
+- Team
+- Companies

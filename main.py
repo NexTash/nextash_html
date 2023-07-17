@@ -38,7 +38,7 @@ def terms_and_conditions():
     return render_template("pages/terms-and-conditions.html")
 
 
-@app.route("/terms-and-conditions")
+@app.route("/cookies-policy")
 def cookies_policy():
     return render_template("pages/cookies-policy.html")
 

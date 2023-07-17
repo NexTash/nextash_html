@@ -28,18 +28,24 @@
 {% endblock %}
 
 {% block content %}
-<main class="bg-1 bg-cover bg-fixed">
+<main class="bg-1 bg-no-repeat">
+    <!-- Header -->
     <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
-        <div class="text-white py-5">
-            <h1 class="font-40 m-0 section-heading mb-2">Terms and conditions</h1>
-            <p class="text-primary font-18 m-0">Welcome to NexTash!</p>
+        <div class="row py-5">
+            <div class="col-sm-12 text-white py-2">
+                <p class="text-primary font-20 m-0 fw-bold mb-2">Our Terms</p>
+                <h3 class="display-1 fw-bold m-0 mb-2">Terms and <br> conditions </h3>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 text-muted py-2 font-20">
+                These terms and conditions outline the rules and regulations for the use of NexTash Website, located at
+                <a href="https://financialtimes.digital/" class="text-primary">https://financialtimes.digital/</a>.
+            </div>
         </div>
+    </section>
+    <!-- Header -->
+    <section class="container container-sm container-md container-lg container-xl container-xxl">
         <div class="text-muted my-5">
-            <p class="font-18 mb-3">
-                These terms and conditions outline the rules and regulations for the use of NexTash Website,
-                located at <a href="https://financialtimes.digital/"
-                    class="text-primary">https://financialtimes.digital/</a>.
-            </p>
             <p class="font-18 mb-3">
                 By accessing this website we assume you accept these terms and conditions. Do not continue to
                 use
@@ -78,7 +84,7 @@
             </h2>
             <p class="font-18 mb-3">
                 We employ the use of cookies. By accessing NexTash, you agreed to use cookies in
-                agreement with the NexTash's <a href="{% url 'w_privacy_policy'%}" class="text-primary">Privacy
+                agreement with the NexTash's <a href="" class="text-primary">Privacy
                     Policy</a>.
             </p>
             <p class="font-18 mb-3">
@@ -260,7 +266,7 @@
                 <div class="bg-dotted size-50 position-absolute z-index--1"></div>Your Privacy
             </h2>
             <p class="font-18 mb-3">
-                Please read <a href="{% url 'w_privacy_policy'%}" class="text-primary">Privacy Policy</a>
+                Please read <a href="" class="text-primary">Privacy Policy</a>
             </p>
             <h2 class="font-30 fw-bold mb-2 text-white position-relative">
                 <div class="bg-dotted size-50 position-absolute z-index--1"></div>Reservation of Rights
@@ -325,7 +331,6 @@
                 free
                 of charge, we will not be liable for any loss or damage of any nature.</p>
         </div>
+    </section>
 </main>
 {% endblock %}
-
-{% block scripts %} {% endblock %}

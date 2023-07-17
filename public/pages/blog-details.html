@@ -30,12 +30,9 @@
 {% endblock %}
 
 {% block content %}
-<main class="bg-1 bg-cover bg-fixed">
+<main class="bg-1 bg-no-repeat">
   <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-    <div class="text-white py-5">
-      <h1 class="font-40 m-0 section-heading mb-2">Blog</h1>
-    </div>
-    <div class="row align-items-center">
+    <div class="row align-items-center py-5">
       <div class="col-sm-4">
         <div class="card border-0 bg-transparent">
           <div class="card-header bg-transparent border-0 p-0">
@@ -69,9 +66,9 @@
       </div>
       <div class="col-sm-1"></div>
       <div class="col-sm-7">
-        <a href="./images/blogs/1.jpg" class="d-inline-block w-100 position-relative p-2 border border-primary border-3"
-          href="./images/blogs/1.jpg">
-          <img src="./images/blogs/1.jpg" alt="{{ blog.alt }}"
+        <a href="{{ url_for('static', filename='/images/blogs/1.jpg')}}" class="d-inline-block w-100 position-relative p-2 border border-primary border-3"
+          href="{{ url_for('static', filename='/images/blogs/1.jpg')}}">
+          <img src="{{ url_for('static', filename='/images/blogs/1.jpg')}}" alt=""
             class="card-img-top img-fluid shadow z-index-3 position-relative">
           <div class="bg-dotted position-absolute border-0 start-0 size-100 z-index-1"
             style="top:-30px;margin-left: -30px;"></div>
