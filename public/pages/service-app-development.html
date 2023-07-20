@@ -28,7 +28,7 @@
             </div>
             <div class="col-sm-2"></div>
             <div class="col-sm-8 my-3">
-                <div class="row text-muted font-20">
+                <div class="row text-white font-18">
                     <div class="col-sm-6 mb-3">
                         <p class="m-0">
                             Every decision we make needs to answer the million-dollar question: how will
@@ -77,7 +77,7 @@
                             style="top:-30px;margin-left: -30px;"></div>
                         <div class="position-absolute border-top border-end border-light end-0 size-100 z-index-1"
                             style="top:-30px;margin-left: -20px;"></div>
-                        <img src="./images/services/3.jpg" class="img-fluid shadow z-index-3 position-relative" alt="">
+                        <img src="{{ url_for('static', filename='/images/services/3.jpg')}}" class="img-fluid shadow z-index-3 position-relative" alt="">
                     </div>
                 </div>
                 <div class="col-sm-5 py-2">
@@ -386,6 +386,97 @@
             </div>
         </div>
     </section>
+      <!------ Process ------>
+  <section class="bg-gray-800 py-5">
+    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+      <div class="row py-3">
+        <div class="col-sm-6 py-2">
+          <h3 class="text-white display-5 fw-bold m-0 mb-3">Watch the creative <br>
+            process behind our company</h3>
+          <div class="accordion" id="points">
+            <div class="accordion-item bg-gray-900 border-0 shadow-none">
+              <button class="accordion-button py-2 bg-transparent text-white border-0 shadow-none collapsed font-18"
+                type="button" data-bs-toggle="collapse" data-bs-target="#point1" aria-expanded="true"
+                aria-controls="point1">
+                Unique and Influential Design
+              </button>
+              <div id="point1" class="accordion-collapse collapse" data-bs-parent="#points">
+                <div class="accordion-body">
+                  <ol class="font-18 text-muted mb-3">
+                    <li>
+                      Taken possession of my entire soul, like these sweet mornings of spring which i enjoy with my
+                      whole.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-gray-900 border-0 shadow-none">
+              <button class="accordion-button py-2 bg-transparent text-white border-0 shadow-none collapsed font-18"
+                type="button" data-bs-toggle="collapse" data-bs-target="#point2" aria-expanded="true"
+                aria-controls="point2">
+                The Power of Influencer Marketing
+              </button>
+              <div id="point2" class="accordion-collapse collapse" data-bs-parent="#points">
+                <div class="accordion-body">
+                  <ol class="font-18 text-muted mb-3 ">
+                    <li>
+                      aken possession of my entire soul, like these sweet mornings of spring which i enjoy with my
+                      whole.
+                    </li>
+
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 my-2">
+          <div class="position-relative overflow-hidden">
+            <div class="bg-dotted position-absolute border-0 start-0 top-0 size-100 z-index-1"
+              style="margin-top:-30px;margin-left: -30px;"></div>
+            <div class="bg-dotted bg-dotted-primary position-absolute border-0 end-0 border-bottom-0 size-100 z-index-1"
+              style="bottom:-30px;margin-right: -30px;"></div>
+            <img src="{{ url_for('static', filename='/images/about/2.jpg')}}"
+              class="img-fluid rounded-2 shadow z-index-3 position-relative border border-primary border-5 p-2" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------ Process ------>
+    <!------ Clients ------->
+    <section class="bg-gray-700 py-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+          <div class="text-white text-center py-5">
+            <h3 class="text-white text-uppercase font-14 fw-bold m-0 mb-2">
+              <span class="border border-1 py-1 border-light px-3 rounded-pill">Clients</span>
+            </h3>
+            <h4 class="text-white display-4 fw-bold m-0 mb-3">We create experiences and <br>turn ideas into reality.</h4>
+          </div>
+          <div class="row text-center justify-content-center py-5">
+            <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-5">
+              <img src="{{ url_for('static', filename='/images/brand/1.png')}}" class="img-fluid" alt="">
+            </div>
+            <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-5">
+              <img src="{{ url_for('static', filename='/images/brand/2.png')}}" class="img-fluid" alt="">
+            </div>
+            <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-5">
+              <img src="{{ url_for('static', filename='/images/brand/3.png')}}" class="img-fluid" alt="">
+            </div>
+            <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-5">
+              <img src="{{ url_for('static', filename='/images/brand/4.png')}}" class="img-fluid" alt="">
+            </div>
+            <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-5">
+              <img src="{{ url_for('static', filename='/images/brand/5.png')}}" class="img-fluid" alt="">
+            </div>
+            <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-5">
+              <img src="{{ url_for('static', filename='/images/brand/6.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------ Clients ------->
 </main>
 
 {% endblock %}
