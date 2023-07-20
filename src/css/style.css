@@ -12853,6 +12853,14 @@ img {
   background-image: url(../images/patterns/6-min.webp);
 }
 
+.bg-dots {
+  background-image: radial-gradient(#740A0A 1px, transparent 1px);
+  background-position: 50% 50%;
+  background-size: 0.5rem 0.5rem;
+  margin-left: -15px;
+  margin-top: -5px;
+}
+
 html {
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
