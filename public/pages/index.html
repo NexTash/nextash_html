@@ -1,13 +1,21 @@
 {% extends "layouts/primary.html" %}
-
 {% block title %} Home | {% endblock %}
+{%block seo %}{% endblock %}
+{% block style %}
+<style>
+  .bg-dotted {
+    background-image: radial-gradient(rgba(255, 255, 255) 1px, transparent 1px);
+    background-position: 50% 50%;
+    background-size: 0.5rem 0.5rem;
+  }
 
-{% block seo %}{% endblock %}
-
-{% block style %}{% endblock %}
-
-{% block content %}
+  .bg-dotted-primary {
+    background-image: radial-gradient(rgba(255, 0, 0) 1px, transparent 1px);
+  }
+</style>
+{% endblock %} {% block content %}
 <main>
+
   <!------ Header ------>
   <section class="home-header w-100 text-center d-table bg-1 bg-no-repeat bg-cover bg-fixed">
     <div class="home-header-container position-absolute top-0 w-100 h-100 start-50">
@@ -65,7 +73,9 @@
     <div class="container align-middle d-table-cell">
       <div class="m-auto col-sm-7 text-white p-0 overflow-hidden">
         <div class="position-relative">
-          <h1 class="m-0 font-16">Welcome to <b class="text-primary">NexTash</b></h1>
+          <h1 class="m-0 font-16">
+            Welcome to <b class="text-primary">NexTash</b>
+          </h1>
           <h2 class="title text-uppercase overflow-hidden position-relative fw-normal">
             <div class="position-relative d-inline-block">Fortune</div>
             <div class="position-relative d-inline-block">Favors</div>
@@ -77,7 +87,7 @@
           <div class="cb-cursor-video">
             <div class="bg-primary p-3">
               <video id="reel-clips" class="cursor-clips" preload="" loop="" muted="" playsinline="" autoplay="">
-                <source src="https://cdn.poolhouse.co/wp-content/uploads/2021/06/02213043/clips.mp4" type="video/mp4">
+                <source src="https://cdn.poolhouse.co/wp-content/uploads/2021/06/02213043/clips.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
@@ -88,27 +98,29 @@
   <!------ Header ------>
 
   <!------ Vision ------>
-  <div class="bg-no-repeat bg-fixed bg-cover bg-4">
-    <div class="card-dotted py-5">
+  <section class="bg-dark bg-no-repeat bg-cover bg-fixed bg-rects shadow py-2 py-sm-2 py-md-5 py-lg-5">
+    <div class="card bg-transparent border-0 py-5 shadow rounded-0">
       <div class="container container-sm container-md container-lg container-xl container-xxl">
-        <div class="card-dotted-content text-center p-3 backdrop-6 py-5 shadow border border-primary border-2">
-          <h3 class="text-primary text-uppercase font-14 fw-bold m-0 mb-2">About</h3>
-          <h2 class="text-white font-40 fw-bold m-0 mb-2">Our Vision</h2>
+        <div class="card-dotted-content text-center p-3 backdrop-8 py-5 shadow border border-primary border-5">
+          <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-14">About</b>
+          <h2 class="text-white font-40 fw-bold m-0 my-2">Our Vision</h2>
           <p class="text-white font-18 m-0 mb-4">
-            At NexTash, our vision is to be a trailblazer in the IT industry, empowering businesses and
-            individuals to thrive in the digital era. We envision a future where technology is harnessed to drive
-            innovation, efficiency, and positive change across all sectors. Through our expertise and passion, we aim
-            to be at the forefront of shaping this future and making a lasting impact on the world.
+            At NexTash, our vision is to be a trailblazer in the IT industry,
+            empowering businesses and individuals to thrive in the digital era.
+            We envision a future where technology is harnessed to drive
+            innovation, efficiency, and positive change across all sectors.
+            Through our expertise and passion, we aim to be at the forefront of
+            shaping this future and making a lasting impact on the world.
           </p>
           <a href="/about-us" class="btn btn-light fw-bold font-14 px-3 rounded-pill">Learn More</a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!------ Vision ------>
 
-  <!------ Services ------>
-  <!-- <section class="bg-black bg-1 bg-no-repeat">
+  <!------- Services ------->
+  <section class="bg-no-repeat bg-1 bg-cover py-5 bg-gray-800">
     <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
       <div class="row align-items-center">
         <div class="col-sm-6">
@@ -169,164 +181,198 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <h3 class="text-primary text-uppercase font-14 fw-bold m-0 mb-2">Our services</h3>
+          <div class="mb-2">
+            <b class="border border-2 border-light py-1 px-3 text-uppercase rounded-pill text-light font-14">Featured
+              services</b>
+          </div>
           <h2 class="text-white font-40 fw-bold m-0 mb-2">What we do</h2>
           <p class="text-white font-18 m-0 mb-2">
-            We provide research, planning, design,
-            engineering and marketing services for
-            startups to bigger corporations. Click
-            below to learn more:</p>
+            We provide research, planning, design, engineering and marketing
+            services for startups to bigger corporations. Click below to learn
+            more:
+          </p>
           <ul class="list-group my-3" type="none">
             <li class="py-1">
               <a href="" class="fw-bold d-flex align-items-center text-muted font-16 text-decoration-none">
-                <span class="bx bx-right-arrow-alt text-primary font-20 me-2"></span> Branding
+                <span class="bx bx-right-arrow-alt text-primary font-20 me-2"></span>
+                Branding
               </a>
             </li>
             <li class="py-1">
               <a href="" class="fw-bold d-flex align-items-center text-muted font-16 text-decoration-none">
-                <span class="bx bx-right-arrow-alt text-primary font-20 me-2"></span> Graphics Design
+                <span class="bx bx-right-arrow-alt text-primary font-20 me-2"></span>
+                Graphics Design
               </a>
             </li>
             <li class="py-1">
               <a href="" class="fw-bold d-flex align-items-center text-muted font-16 text-decoration-none">
-                <span class="bx bx-right-arrow-alt text-primary font-20 me-2"></span> Web Development
+                <span class="bx bx-right-arrow-alt text-primary font-20 me-2"></span>
+                Web Development
               </a>
             </li>
             <li class="py-1">
               <a href="" class="fw-bold d-flex align-items-center text-muted font-16 text-decoration-none">
-                <span class="bx bx-right-arrow-alt text-primary font-20 me-2"></span> Mobile App Development
+                <span class="bx bx-right-arrow-alt text-primary font-20 me-2"></span>
+                Mobile App Development
               </a>
             </li>
             <li class="py-1">
               <a href="" class="fw-bold d-flex align-items-center text-muted font-16 text-decoration-none">
-                <span class="bx bx-right-arrow-alt text-primary font-20 me-2"></span> ERP Development
+                <span class="bx bx-right-arrow-alt text-primary font-20 me-2"></span>
+                ERP Development
               </a>
             </li>
             <li class="py-1">
               <a href="" class="fw-bold d-flex align-items-center text-muted font-16 text-decoration-none">
-                <span class="bx bx-right-arrow-alt text-primary font-20 me-2"></span> Digital Marketing
+                <span class="bx bx-right-arrow-alt text-primary font-20 me-2"></span>
+                Digital Marketing
+              </a>
+            </li>
+            <li class="py-1 mt-3">
+              <a href="/services" class="btn btn-dark fw-bold px-4 py-2 rounded-pill border-primary border-2 border">
+                Get all
               </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-  </section> -->
-  <!------ Services ------>
+  </section>
+  <!------- Services ------->
 
-  <!------ Team ------>
-  <!-- <section class="bg-dark bg-cover bg-no-repeat py-5">
+  <!------ Story ------>
+  <section class="bg-dark bg-cover bg-fixed bg-rects shadow py-2 py-sm-2 py-md-5 py-lg-5">
     <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-      <div class="text-white text-center py-5">
-        <div class="text-primary text-uppercase font-14 fw-bold m-0 mb-2">Our experts</div>
-        <h3 class="text-white font-40 fw-bold m-0 mb-2">Meet our team</h3>
-        <p class="text-muted font-18 m-0">The services we are provinding</p>
-      </div>
-      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-4 row-cols-xl-4 row-cols-xll-1">
-        <div class="col">
-          <article class="card border-0 bg-black shadow mb-4"
-            style=" background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');">
-            <div class="card-header bg-transparent py-5 d-flex justify-content-center">
-              <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
-                href="">
-                <img src="{{ url_for('static', filename='/images/team/1.jpg')}}"
-                  class="card-img-top object-cover rounded-circle h-100 w-100">
-              </a>
-            </div>
-            <div class="card-body text-center border-0 py-0">
-              <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
-              <p class="text-muted font-16">Web developer</p>
-            </div>
-            <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent">
-              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
-              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
-              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
-            </div>
-          </article>
+      <div class="row align-items-center py-5">
+        <div class="col-sm-6 my-2">
+          <div class="mb-2">
+            <b class="border border-2 border-light py-1 px-3 text-uppercase rounded-pill text-light font-14">About
+            </b>
+          </div>
+          <h3 class="text-white display-4 fw-bold m-0 mb-3">Our Story</h3>
+          <p class="text-muted font-18 m-0">
+            At NexTash, our mission is to deliver cutting-edge IT solutions that drive success and transform
+            the way businesses operate. We strive to be a trusted partner for our clients, helping them achieve their
+            goals through innovative technology, expert guidance, and unparalleled support.
+          </p>
         </div>
-        <div class="col">
-          <article class="card border-0 bg-black shadow mb-4"
-            style=" background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');">
-            <div class="card-header bg-transparent py-5 d-flex justify-content-center">
-              <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
-                href="">
-                <img src="{{ url_for('static', filename='/images/team/2.jpg')}}"
-                  class="card-img-top object-cover rounded-circle h-100 w-100">
-              </a>
-            </div>
-            <div class="card-body text-center border-0 py-0">
-              <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
-              <p class="text-muted font-16">Web developer</p>
-            </div>
-            <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent">
-              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
-              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
-              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
-            </div>
-          </article>
-        </div>
-        <div class="col">
-          <article class="card border-0 bg-black shadow mb-4"
-            style=" background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');">
-            <div class="card-header bg-transparent py-5 d-flex justify-content-center">
-              <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
-                href="">
-                <img src="{{ url_for('static', filename='/images/team/3.jpg')}}"
-                  class="card-img-top object-cover rounded-circle h-100 w-100">
-              </a>
-            </div>
-            <div class="card-body text-center border-0 py-0">
-              <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
-              <p class="text-muted font-16">Web developer</p>
-            </div>
-            <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent">
-              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
-              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
-              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
-            </div>
-          </article>
-        </div>
-        <div class="col">
-          <article class="card border-0 bg-black shadow mb-4"
-            style=" background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');">
-            <div class="card-header bg-transparent py-5 d-flex justify-content-center">
-              <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
-                href="">
-                <img src="{{ url_for('static', filename='/images/team/4.jpg')}}"
-                  class="card-img-top object-cover rounded-circle h-100 w-100">
-              </a>
-            </div>
-            <div class="card-body text-center border-0 py-0">
-              <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
-              <p class="text-muted font-16">Web developer</p>
-            </div>
-            <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent">
-              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
-              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
-              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
-            </div>
-          </article>
+        <div class="col-sm-6 my-2">
+          <div class="position-relative ">
+            <div class="bg-dotted position-absolute border-0 start-0 top-0 size-100 z-index-1"
+              style="margin-top:-30px;margin-left: -30px;"></div>
+            <div class="bg-dotted bg-dotted-primary position-absolute border-0 end-0 border-bottom-0 size-100 z-index-1"
+              style="bottom:-30px;margin-right: -30px;"></div>
+            <img src="{{ url_for('static', filename='/images/about/1.jpg')}}"
+              class="img-fluid  shadow z-index-3 position-relative border border-5 border-primary p-3 backdrop-6" alt="">
+          </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
+  <!------ Story ------>
+
+  <!------ Team ------>
+  <section class="bg-no-repeat bg-1 bg-cover py-5 bg-gray-800">
+    <div
+      class="container container-sm container-md container-lg container-xl container-xxl py-2 py-sm-2 py-md-5 py-lg-5">
+      <div class="my-2 text-center">
+        <b class="border border-2 border-light py-1 px-3 text-uppercase rounded-pill text-light font-14">Specialists
+          behind great work</b>
+          <h2 class="text-white display-4 fw-bold m-0 mb-3">Meet Our Team</h2>
+      <p class="text-muted font-16">
+        We are here to help you achieve your business goals and the team create
+        an amazing outstanding product for your business.
+      </p>
+      </div>
+      
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-4 row-cols-xl-4 justify-content-center py-5">
+        <div class="col">
+          <article class="card card-hover border-dark bg-gray-800 bg-triangles bg-cover shadow mb-4">
+            <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
+              <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
+                href="">
+                <img src="{{ url_for('static', filename='/images/team/2.jpg')}}"
+                  class="card-img-top object-cover rounded-circle h-100 w-100" />
+              </a>
+            </div>
+            <div class="card-body text-center border-0 py-0">
+              <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
+              <p class="text-muted font-16">Web developer</p>
+            </div>
+            <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
+              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
+              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
+              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="card card-hover border-primary bg-gray-800 bg-triangles bg-cover shadow mb-4">
+            <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
+              <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
+                href="">
+                <img src="{{ url_for('static', filename='/images/team/3.jpg')}}"
+                  class="card-img-top object-cover rounded-circle h-100 w-100" />
+              </a>
+            </div>
+            <div class="card-body text-center border-0 py-0">
+              <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
+              <p class="text-muted font-16">Web developer</p>
+            </div>
+            <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
+              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
+              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
+              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="card card-hover border-dark bg-gray-800 bg-triangles bg-cover shadow mb-4">
+            <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
+              <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
+                href="">
+                <img src="{{ url_for('static', filename='/images/team/4.jpg')}}"
+                  class="card-img-top object-cover rounded-circle h-100 w-100" />
+              </a>
+            </div>
+            <div class="card-body text-center border-0 py-0">
+              <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
+              <p class="text-muted font-16">Web developer</p>
+            </div>
+            <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
+              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
+              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
+              <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="text-center text-muted">
+        <a href="/team" class="btn btn-dark fw-bold px-4 py-2 rounded-pill border-primary border-2 border">
+          Meet all
+        </a>
+      </div>
+    </div>
+  </section>
   <!------ Team ------>
 
   <!------ Blogs ------>
-  <!-- <section class="bg-1 py-5">
+  <section class="bg-cover bg-fixed bg-rects shadow py-2 py-sm-2 py-md-5 py-lg-5">
     <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
       <div class="text-white py-5">
-        <div class="text-primary text-uppercase font-14 fw-bold m-0 mb-2">Stories</div>
-        <h3 class="text-white font-40 fw-bold m-0 mb-2">Latest blogs</h3>
-        <p class="text-muted font-18 m-0">Get started by reading our latest blogs and articles</p>
+        <b class="border border-2 border-light py-1 px-3 text-uppercase rounded-pill text-light font-14">Blogs</b>
+        <h3 class="text-white font-40 fw-bold m-0 my-2">Latest blogs</h3>
+        <p class="text-muted font-18 m-0">
+          Get started by reading our latest blogs and articles
+        </p>
       </div>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-3 g-4">
         <article class="col">
-          <div class="card bg-dark shadow text-white blog-card h-100">
+          <div class="card bg-gray-700 shadow text-white blog-card h-100">
             <div class="card-header border-0 p-0 position-relative">
               <div class="position-absolute top-0 start-0 w-100 h-100 backdrop-hover-8"></div>
               <img src="{{ url_for('static', filename='/images/blogs/1.jpg')}}" alt=""
-                class="card-img-top object-cover">
+                class="card-img-top object-cover" />
             </div>
             <div class="card-body">
               <div class="my-2">
@@ -340,102 +386,117 @@
               </p>
             </div>
             <div class="card-footer pb-4 border-0 bg-transparent d-flex justify-content-between">
-              <p class="font-12 m-0">By <a href="" class="link-light">John doe</a> - 3 mins read</p>
+              <p class="font-12 m-0">
+                By <a href="" class="link-light">John doe</a> - 3 mins read
+              </p>
               <p class="font-12 m-0"><time>24-july-2023</time></p>
             </div>
           </div>
         </article>
         <article class="col">
-          <div class="card bg-dark shadow text-white blog-card h-100">
+          <div class="card bg-gray-700 shadow text-white blog-card h-100">
             <div class="card-header border-0 p-0 position-relative">
               <div class="position-absolute top-0 start-0 w-100 h-100 backdrop-hover-8"></div>
               <img src="{{ url_for('static', filename='/images/blogs/2.jpg')}}" alt=""
-                class="card-img-top object-cover">
+                class="card-img-top object-cover" />
             </div>
             <div class="card-body">
               <div class="my-2">
                 <span class="badge bg-danger rounded-0 font-12 px-2">News</span>
               </div>
-              <h3 class="fw-bold font-20 mb-3 m-0">Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit.
+              <h3 class="fw-bold font-20 mb-3 m-0">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </h3>
               <p class="fw-normal text-muted font-14 mb-1 m-0">
                 Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit
               </p>
             </div>
             <div class="card-footer pb-4 border-0 bg-transparent d-flex justify-content-between">
-              <p class="font-12 m-0">By <a href="" class="link-light">John doe</a> - 3 mins read</p>
+              <p class="font-12 m-0">
+                By <a href="" class="link-light">John doe</a> - 3 mins read
+              </p>
               <p class="font-12 m-0">24-july-2023</p>
             </div>
           </div>
         </article>
       </div>
+      <div class="text-center text-muted my-2 mt-5">
+        <a href="/blogs" class="btn btn-dark fw-bold px-4 py-2 rounded-pill border-primary border-2 border">
+          Read all
+        </a>
+      </div>
     </div>
-  </section> -->
+  </section>
   <!------ Blogs ------>
 
   <!------ Clients ------->
-  <!-- <section class="bg-dark bg-1 py-5">
+  <section class="bg-gray-800 bg-1 bg-cover">
     <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
       <div class="text-white text-center py-5">
-        <div class="text-primary text-uppercase font-14 fw-bold m-0 mb-2">Our experts</div>
-        <h3 class="text-white font-40 fw-bold m-0 mb-2">Meet our team</h3>
-        <p class="text-muted font-18 m-0">The services we are provinding</p>
-      </div>
-      <div class="text-white text-start py-5">
-        <h4 class="text-primary font-18 m-0">START-UPS TO FORTUNE 500 COMPANIES</h4>
-        <h3 class="font-40 m-0 section-heading text-start"> Our clients</h3>
-        <p class="text-muted font-20 m-0 mt-3">The services we are provinding</p>
+        <div class="mb-2">
+          <b
+            class="border border-2 border-light py-1 px-3 text-uppercase rounded-pill text-light font-14">Clients</b>
+        </div>
+        <h4 class="text-white display-4 fw-bold m-0 mb-3">
+          We create experiences and <br />turn ideas into reality.
+        </h4>
       </div>
       <div class="row text-center justify-content-center py-5">
         <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-5">
-          <img src="{{ url_for('static', filename='/images/brand/1.png')}}" class="img-fluid" alt="">
+          <img src="/src//images/brand/1.png" class="img-fluid" alt="" />
         </div>
         <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-5">
-          <img src="{{ url_for('static', filename='/images/brand/2.png')}}" class="img-fluid" alt="">
+          <img src="/src//images/brand/2.png" class="img-fluid" alt="" />
         </div>
         <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-5">
-          <img src="{{ url_for('static', filename='/images/brand/3.png')}}" class="img-fluid" alt="">
+          <img src="/src//images/brand/3.png" class="img-fluid" alt="" />
         </div>
         <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-5">
-          <img src="{{ url_for('static', filename='/images/brand/4.png')}}" class="img-fluid" alt="">
+          <img src="/src//images/brand/4.png" class="img-fluid" alt="" />
         </div>
         <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-5">
-          <img src="{{ url_for('static', filename='/images/brand/5.png')}}" class="img-fluid" alt="">
+          <img src="/src//images/brand/5.png" class="img-fluid" alt="" />
         </div>
         <div class="col-4 col-sm-4 col-md-3 col-lg-2 mb-5">
-          <img src="{{ url_for('static', filename='/images/brand/6.png')}}" class="img-fluid" alt="">
+          <img src="/src//images/brand/6.png" class="img-fluid" alt="" />
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!------ Clients ------->
 
   <!------ Projects ------>
-  <!-- <section class="bg-black  py-5">
+  <section class="bg-triangles bg-cover bg-no-repeat py-5">
     <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-      <div class="text-white text-center py-5">
-        <h3 class="font-40 m-0 mb-3 section-heading">CASE STUDIES</h3>
-        <p class="text-primary font-16 m-0">Check out our most recent work</p>
+      <div class="text-white py-5">
+        <b class="border border-2 border-light py-1 px-3 text-uppercase rounded-pill text-light font-14">Our
+          work</b>
+        <h3 class="text-white font-40 fw-bold m-0 my-2">Case studies</h3>
+        <p class="text-muted font-18 m-0">Check out our most recent work </p>
       </div>
       <div class="row">
         <div class="col-md-10 offset-md-1">
-          <article class="card mb-4 bg-dark border-0 shadow"
-            style=" background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');">
+          <article class="card mb-4 bg-dark border-0 shadow" style="
+              background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+            ">
             <div class="row g-0 align-items-center">
               <div class="col-md-5">
                 <img src="{{ url_for('static', filename='/images/services/1.')}}jpg"
-                  class="img-fluid h-100 rounded-start" alt="...">
+                  class="img-fluid h-100 rounded-start" alt="..." />
               </div>
               <div class="col-md-7">
                 <div class="card-body p-4">
                   <div class="my-2">
                     <span class="badge bg-danger rounded-0 font-12 px-2">Ui / UX</span>
                   </div>
-                  <h5 class="card-title text-white font-30 fw-bold mb-3">Card title</h5>
-                  <p class="card-text text-muted font-16">This is a wider card with supporting text below as a natural
-                    lead-in to additional
-                    content. This content is a little bit longer.</p>
+                  <h5 class="card-title text-white font-30 fw-bold mb-3">
+                    Card title
+                  </h5>
+                  <p class="card-text text-muted font-16">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
                   <a href="" class="btn btn-outline-light px-3 fw-bold py-1 rounded-pill">Read more</a>
                 </div>
               </div>
@@ -444,34 +505,35 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!------ Projects ------>
 </main>
 <!------ Content ------>
-{% endblock %}
-
-{% block scripts %}
+{% endblock %} {% block scripts %}
 <script src="{{ url_for('static', filename='/js/bootstrap/bootstrap.min.js')}}"></script>
 <script src="{{ url_for('static', filename='/libs/anime/anime.min.js')}}"></script>
 <script src="{{ url_for('static', filename='/js/utils.js')}}"></script>
 <script>
   const cursor = document.querySelector(".cb-cursor");
-  window.onpointermove = event => {
+  window.onpointermove = (event) => {
     const { clientX, clientY } = event;
-    cursor.animate({
-      left: `${clientX}px`,
-      top: `${clientY}px`
-    }, { duration: 3000, fill: "forwards" })
-  }
-  const elements = [...document.querySelectorAll("h2 div")]
-  elements.map(element => {
+    cursor.animate(
+      {
+        left: `${clientX}px`,
+        top: `${clientY}px`,
+      },
+      { duration: 3000, fill: "forwards" }
+    );
+  };
+  const elements = [...document.querySelectorAll("h2 div")];
+  elements.map((element) => {
     element.onmouseover = () => {
-      cursor.classList.add("-video")
-    }
+      cursor.classList.add("-video");
+    };
     element.onmouseout = () => {
-      cursor.classList.remove("-video")
-    }
-  })
+      cursor.classList.remove("-video");
+    };
+  });
 </script>
 <script>
   function fitElementToParent(el, padding) {
@@ -491,7 +553,6 @@
   }
 
   var sphereAnimation = (function () {
-
     var sphereEl = document.querySelector(".sphere-animation");
     var spherePathEls = sphereEl.querySelectorAll(".sphere path");
     var pathLength = spherePathEls.length;
@@ -503,52 +564,64 @@
     var breathAnimation = anime({
       begin: function () {
         for (var i = 0; i < pathLength; i++) {
-          aimations.push(anime({
-            targets: spherePathEls[i],
-            stroke: { value: ["rgba(255,75,75,1)", "rgba(80,80,80,.35)"], duration: 100 },
-            translateX: [2, -4],
-            translateY: [2, -4],
-            easing: "easeOutQuad",
-            autoplay: false
-          }));
+          aimations.push(
+            anime({
+              targets: spherePathEls[i],
+              stroke: {
+                value: ["rgba(255,75,75,1)", "rgba(80,80,80,.35)"],
+                duration: 100,
+              },
+              translateX: [2, -4],
+              translateY: [2, -4],
+              easing: "easeOutQuad",
+              autoplay: false,
+            })
+          );
         }
       },
       update: function (ins) {
         aimations.forEach(function (animation, i) {
-          var percent = (1 - Math.sin((i * .35) + (.0022 * ins.currentTime))) / 2;
+          var percent = (1 - Math.sin(i * 0.35 + 0.0022 * ins.currentTime)) / 2;
           animation.seek(animation.duration * percent);
         });
       },
       duration: Infinity,
-      autoplay: false
+      autoplay: false,
     });
 
-    var introAnimation = anime.timeline({
-      autoplay: false
-    })
-      .add({
-        targets: spherePathEls,
-        strokeDashoffset: {
-          value: [anime.setDashoffset, 0],
+    var introAnimation = anime
+      .timeline({
+        autoplay: false,
+      })
+      .add(
+        {
+          targets: spherePathEls,
+          strokeDashoffset: {
+            value: [anime.setDashoffset, 0],
+            duration: 100,
+            easing: "easeInOutCirc",
+            delay: anime.stagger(100, { direction: "reverse" }),
+          },
           duration: 100,
-          easing: "easeInOutCirc",
-          delay: anime.stagger(100, { direction: "reverse" })
+          delay: anime.stagger(10, { direction: "reverse" }),
+          easing: "linear",
         },
-        duration: 100,
-        delay: anime.stagger(10, { direction: "reverse" }),
-        easing: "linear"
-      }, 0);
+        0
+      );
 
-    let shadowAnimation = anime({
-      targets: "#sphereGradient",
-      x1: "25%",
-      x2: "25%",
-      y1: "0%",
-      y2: "75%",
-      duration: 3000,
-      easing: "easeOutQuint",
-      autoplay: false
-    }, 0);
+    let shadowAnimation = anime(
+      {
+        targets: "#sphereGradient",
+        x1: "25%",
+        x2: "25%",
+        y1: "0%",
+        y2: "75%",
+        duration: 3000,
+        easing: "easeOutQuint",
+        autoplay: false,
+      },
+      0
+    );
     function init() {
       introAnimation.play();
       breathAnimation.play();
