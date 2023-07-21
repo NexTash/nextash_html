@@ -784,7 +784,7 @@ svg #airplain {
     opacity: 0;
   }
   &:before {
-    left: -1px;
+    left: -2px;
     top: 10%;
   }
 
@@ -794,7 +794,7 @@ svg #airplain {
   }
 
   &:after {
-    right: -1px;
+    right: -2px;
     bottom: 10%;
   }
 
@@ -808,11 +808,23 @@ svg #airplain {
   transition-duration: 600ms;
   transition-timing-function: ease;
   &:hover {
-    border: 1px solid var(--bs-primary) !important;
+    border: 2px solid var(--bs-primary) !important;
   }
 }
 
 .section-heading {
   color: transparent;
   -webkit-text-stroke: 1px #fff;
+}
+
+.image-zoom {
+  overflow: hidden;
+  img {
+    transition: transform;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
 }
