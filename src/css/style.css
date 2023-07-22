@@ -12833,24 +12833,13 @@ img {
   background-image: url(../images/patterns/1-min.webp);
 }
 
-.bg-2 {
-  background-image: url(../images/patterns/2-min.webp);
+.bg-triangles {
+  background-image: url(../images/patterns/bg-triangles.png);
+  background-position: top left;
 }
 
-.bg-3 {
-  background-image: url(../images/patterns/3-min.webp);
-}
-
-.bg-4 {
-  background-image: url(../images/patterns/4-min.jpg);
-}
-
-.bg-5 {
-  background-image: url(../images/patterns/5.png);
-}
-
-.bg-6 {
-  background-image: url(../images/patterns/6-min.webp);
+.bg-rects {
+  background-image: url(../images/patterns/bg-rect.png);
 }
 
 .bg-dots {
@@ -12859,6 +12848,16 @@ img {
   background-size: 0.5rem 0.5rem;
   margin-left: -15px;
   margin-top: -5px;
+}
+
+.bg-dotted {
+  background-image: radial-gradient(rgb(255, 255, 255) 1px, transparent 1px);
+  background-position: 50% 50%;
+  background-size: 0.5rem 0.5rem;
+}
+
+.bg-dotted-primary {
+  background-image: radial-gradient(rgb(255, 0, 0) 1px, transparent 1px);
 }
 
 html {
@@ -12870,68 +12869,6 @@ html {
 
 /*************/
 /* Line drop */
-.lines {
-  height: 100vh;
-  margin: auto;
-  width: 90vw;
-}
-.lines .line {
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-}
-.lines .line::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 15vh;
-  width: 100%;
-  top: -50%;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, #ffffff), to(#ffffff));
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-  -webkit-animation: line_drop 7s 0s infinite;
-  animation: line_drop 7s 0s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-}
-.lines .line:nth-child(1) {
-  margin-left: -25%;
-}
-.lines .line:nth-child(1)::after {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
-.lines .line:nth-child(3) {
-  margin-left: 25%;
-}
-.lines .line:nth-child(3)::after {
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
-}
-
-@-webkit-keyframes line_drop {
-  0% {
-    top: -50%;
-  }
-  100% {
-    top: 110%;
-  }
-}
-@keyframes line_drop {
-  0% {
-    top: -50%;
-  }
-  100% {
-    top: 110%;
-  }
-}
 /* Line drop */
 /*************/
 /****************/
@@ -13538,21 +13475,16 @@ svg #airplain {
             transform: rotate(360deg);
   }
 }
-.card-dotted {
+.card {
   position: relative;
-  border-radius: 1.5rem;
-  padding: 1rem;
 }
-
-.card-dotted:after {
+.card:after, .card:before {
   content: "";
-  height: 70px;
-  width: 4px;
+  width: 3px;
+  height: 60%;
   position: absolute;
-  left: -1px;
-  top: 65%;
-  -webkit-transition: top, opacity;
-  transition: top, opacity;
+  -webkit-transition: top bottom, opacity;
+  transition: top bottom, opacity;
   -webkit-transition-duration: 600ms;
           transition-duration: 600ms;
   -webkit-transition-timing-function: ease;
@@ -13561,20 +13493,56 @@ svg #airplain {
   background: linear-gradient(transparent, var(--bs-primary), transparent);
   opacity: 0;
 }
-
-.card-dotted:after {
-  top: 65%;
-  opacity: 0;
+.card:before {
+  left: -2px;
+  top: 10%;
+}
+.card:hover:before {
+  top: 70%;
+  opacity: 1;
+}
+.card:after {
+  right: -2px;
+  bottom: 10%;
+}
+.card:hover:after {
+  bottom: 70%;
+  opacity: 1;
 }
 
-.card-dotted:hover:after {
-  top: 25%;
-  opacity: 1;
+.card-hover {
+  -webkit-transition: border;
+  transition: border;
+  -webkit-transition-duration: 600ms;
+          transition-duration: 600ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+.card-hover:hover {
+  border: 2px solid var(--bs-primary) !important;
 }
 
 .section-heading {
   color: transparent;
   -webkit-text-stroke: 1px #fff;
+}
+
+.image-zoom {
+  overflow: hidden;
+}
+.image-zoom img {
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-duration: 600ms;
+          transition-duration: 600ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+.image-zoom img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 /*  6. Pages*/

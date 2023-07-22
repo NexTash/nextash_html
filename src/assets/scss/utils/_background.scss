@@ -18,29 +18,41 @@
     background-image: url(#{$images_path}/patterns/1-min.webp);
 }
 
-.bg-2 {
-    background-image: url(#{$images_path}/patterns/2-min.webp);
+// .bg-2 {
+//     background-image: url(#{$images_path}/patterns/2-min.webp);
+
+// }
+
+// .bg-3 {
+//     background-image: url(#{$images_path}/patterns/3-min.webp);
+
+// }
+
+// .bg-4 {
+//     background-image: url(#{$images_path}/patterns/4-min.jpg);
+
+// }
+
+// .bg-5 {
+//     background-image: url(#{$images_path}/patterns/5.png);
+
+// }
+
+// .bg-6 {
+//     background-image: url(#{$images_path}/patterns/6-min.webp);
+
+// }
+
+
+.bg-triangles {
+    background-image: url(#{$images_path}/patterns/bg-triangles.png);
+    background-position: top left;
+    
 
 }
 
-.bg-3 {
-    background-image: url(#{$images_path}/patterns/3-min.webp);
-
-}
-
-.bg-4 {
-    background-image: url(#{$images_path}/patterns/4-min.jpg);
-
-}
-
-.bg-5 {
-    background-image: url(#{$images_path}/patterns/5.png);
-
-}
-
-.bg-6 {
-    background-image: url(#{$images_path}/patterns/6-min.webp);
-
+.bg-rects {
+    background-image: url(#{$images_path}/patterns/bg-rect.png);
 }
 
 .bg-dots{
@@ -50,3 +62,13 @@
     margin-left: -15px;
     margin-top: -5px;
 }
+
+.bg-dotted {
+    background-image: radial-gradient(rgba(255, 255, 255) 1px, transparent 1px);
+    background-position: 50% 50%;
+    background-size: 0.5rem 0.5rem;
+  }
+
+  .bg-dotted-primary {
+    background-image: radial-gradient(rgba(255, 0, 0) 1px, transparent 1px);
+  }
