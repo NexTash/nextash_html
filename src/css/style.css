@@ -12860,6 +12860,11 @@ img {
   background-image: radial-gradient(rgb(255, 0, 0) 1px, transparent 1px);
 }
 
+.text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
 html {
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
@@ -13582,11 +13587,6 @@ svg #airplain {
 }
 .card-hover:hover {
   border: 2px solid var(--bs-primary) !important;
-}
-
-.section-heading {
-  color: transparent;
-  -webkit-text-stroke: 1px #fff;
 }
 
 .image-zoom {

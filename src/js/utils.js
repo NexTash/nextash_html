@@ -1,9 +1,10 @@
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () { scroller() };
 
-function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").classList.add("bg-dark");
+function scroller() {
+    let pos = 20
+    if (document.body.scrollTop > pos || document.documentElement.scrollTop > pos) {
+        document.getElementById("navbar").classList.add("backdrop-8");
     } else {
-        document.getElementById("navbar").classList.remove("bg-dark");
+        document.getElementById("navbar").classList.remove("backdrop-8");
     }
 }
