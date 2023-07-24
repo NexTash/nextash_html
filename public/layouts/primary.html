@@ -27,7 +27,7 @@
 
 <body class="bg-dark font-bevietnam h-100">
     <!-- Bg -->
-    <!-- <div class="galaxy"></div> -->
+    <div class="galaxy"></div>
     <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
         <div class="line"></div>
         <div class="line"></div>
@@ -41,7 +41,9 @@
     {% include "components/sidebar.html" %}
     <!-------- Sidebar ------->
     <!------- Content ------->
-    {% block content %} {% endblock %}
+    <main class="bg-rects bg-no-repeat bg-cover bg-fixed">
+        {% block content %} {% endblock %}
+    </main>
     <!------- Content ------->
     <!-------- Footer ------->
     {% include "components/footer.html" %}

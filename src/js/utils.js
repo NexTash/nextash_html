@@ -1,7 +1,8 @@
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () { scroller() };
 
-function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+function scroller() {
+    let pos = 20
+    if (document.body.scrollTop > pos || document.documentElement.scrollTop > pos) {
         document.getElementById("navbar").classList.add("bg-dark");
     } else {
         document.getElementById("navbar").classList.remove("bg-dark");

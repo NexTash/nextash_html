@@ -18,29 +18,32 @@
 {% block style %}{% endblock %}
 
 {% block content %}
-<main class="bg-1 bg-no-repeat">
+<div class="bg-1 bg-cover bg-fixed bg-no-repeat">
     <!-- Header -->
-    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
-        <div class="row py-5">
-            <div class="col-sm-12 text-white py-2">
-                <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">OUR STAFF</b>
-                <h3 class="display-1 fw-bold m-0 mb-2">Meet Our <br> Talented Team </h3>
-            </div>
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6 text-muted py-2 font-20">
-                - We’re a diverse team that works as fancies attention to details, enjoys beers on Friday nights and
-                aspires to design the dent in the universe.
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+            <div class="row">
+                <div class="col-sm-12 text-white py-2">
+                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">OUR STAFF</b>
+                    <h3 class="display-1 fw-bold m-0 mb-2">Meet Our <br> Talented Team </h3>
+                </div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6 text-muted py-2 font-20">
+                    - We’re a diverse team that works as fancies attention to details, enjoys beers on Friday nights and
+                    aspires to design the dent in the universe.
+                </div>
             </div>
         </div>
     </section>
     <!-- Header -->
 
     <!------- Team ------->
-    <section>
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
         <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-4 row-cols-xl-4 row-cols-xll-1">
                 <div class="col">
-                    <article class="card card-hover bg-gray-700 bg-triangles bg-cover shadow mb-4">
+                    <article
+                        class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4">
                         <div class="card-header border-0 bg-transparent py-3 d-flex justify-content-center">
                             <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
                                 href="">
@@ -60,7 +63,8 @@
                     </article>
                 </div>
                 <div class="col">
-                    <article class="card card-hover bg-gray-700 bg-triangles bg-cover shadow mb-4">
+                    <article
+                        class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4">
                         <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
                             <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
                                 href="">
@@ -80,7 +84,8 @@
                     </article>
                 </div>
                 <div class="col">
-                    <article class="card card-hover bg-gray-700 bg-triangles bg-cover shadow mb-4">
+                    <article
+                        class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4">
                         <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
                             <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
                                 href="">
@@ -100,7 +105,8 @@
                     </article>
                 </div>
                 <div class="col">
-                    <article class="card card-hover bg-gray-700 bg-triangles bg-cover shadow mb-4">
+                    <article
+                        class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4">
                         <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
                             <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
                                 href="">
@@ -120,7 +126,8 @@
                     </article>
                 </div>
                 <div class="col">
-                    <article class="card card-hover bg-gray-700 bg-triangles bg-cover shadow mb-4">
+                    <article
+                        class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4">
                         <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
                             <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
                                 href="">
@@ -140,11 +147,18 @@
                     </article>
                 </div>
             </div>
-           
+
         </div>
     </section>
     <!--------- Team -------->
-</main>
+
+    <!------ Process ------>
+    {% include "components/process.html" %}
+    <!------ Process ------>
+    <!------ Clients ------->
+    {% include "components/clients.html" %}
+    <!------ Clients ------->
+</div>
 {% endblock %}
 
 {% block scripts %} {% endblock %}
