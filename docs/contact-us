@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact us |  Nextash</title>
+    <link rel="shortcut icon" href="/src/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/libs/boxicons/css/boxicons.min.css">
+    
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="" />
+<meta property="og:title" content="Contact us | Nextash" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Nextash" />
+<meta property="og:url" content="" />
+
+</head>
+
+
+
+<body class="bg-dark font-bevietnam h-100">
+    <!-- Bg -->
+    <div class="galaxy"></div>
+    <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <!-- Bg -->
+    <!-------- Navbar ------->
+    <header class="navbar navbar-expand fixed-top top-0 p-0" id="navbar">
+    <nav class="container container-sm container-md container-lg container-xl container-xxl w-100">
+        <ul class="navbar-nav d-flex align-items-center justify-content-between w-100">
+            <li class="nav-item">
+                <a href="/">
+                    <img src="/src/images/logos/logo.png" class="d-inline-block" width="60">
+                </a>
+            </li>
+            <li class="nav-item">
+                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" class="nav-link btn p-0 text-white font-30 bx bx-menu-alt-right"></button>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <!-------- Navbar ------->
+    <!-------- Sidebar ------->
+    <div class="offcanvas bg-dark offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="accordion border-0" id="menu">
+            <div class="accordion-item border-dark border border-1 shadow">
+                <h2 class="accordion-header border-0 bg-black" id="heading1">
+                    <button class="accordion-button shadow-none border-0 bg-black text-white collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                        <b class="text-primary me-2">1.</b> What services does NexTash offer?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#menu">
+                    <div class="accordion-body bg-black text-muted pb-4">
+                        NexTash offers a wide range of IT services including software
+                        development, web development,
+                        mobile app development, cloud computing, IT consulting, network solutions, cybersecurity, and
+                        managed IT services.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-------- Sidebar ------->
+    <!------- Content ------->
+    <main class="bg-rects bg-no-repeat bg-cover bg-fixed">
+        
+<div class="bg-1 bg-cover bg-fixed bg-no-repeat">
+  <!-- Header -->
+  <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+      <div class="row">
+        <div class="col-sm-12 text-white py-2">
+          <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">CONTACT US</b>
+          <h3 class="display-1 fw-bold m-0 mb-2 col-sm-8">Let's make your brand brilliant! </h3>
+        </div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 text-muted py-2 font-20">
+          - If you would like to work with us or just want to get in touch, we’d love to hear from you!
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Header -->
+
+  <section class="py-2 py-sm-2 py-md-5 py-lg-5">
+    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-sm-4 py-2">
+          <ul class="list-group">
+            <li class="list-group-item border-0 d-flex align-items-start pb-4 bg-transparent">
+              <div class="p-2 border border-2 border-primary bg-dark text-primary me-2 font-26 bx bx-phone"></div>
+              <div class="ms-3">
+                <h3 class="font-24 fw-bold m-0 text-white">Contact numbers</h3>
+                <p class="m-0 mt-2">
+                  <a href="#" class="link-secondary font-14 text-decoration-none d-block">+9 000 234 567</a>
+                  <a href="#" class="link-secondary font-14 text-decoration-none d-block">+9 000 234 567</a>
+                </p>
+              </div>
+            </li>
+            <li class="list-group-item border-0 d-flex align-items-start pb-4 bg-transparent">
+              <div class="p-2 border border-2 border-primary bg-dark text-primary me-2 font-26 bx bx-map"></div>
+              <div class="ms-3">
+                <h3 class="font-24 fw-bold m-0 text-white">Offices</h3>
+                <p class="m-0 mt-2">
+                  <a href="#" class="link-secondary font-14 text-decoration-none d-block">
+                    3909 Witmer Road, Niagara
+                  </a>
+                  <a href="#" class="link-secondary font-14 text-decoration-none d-block ">
+                    New York City
+                  </a>
+                </p>
+              </div>
+            </li>
+            <li class="list-group-item border-0 d-flex align-items-start pb-4 bg-transparent">
+              <div class="p-2 border border-2 border-primary bg-dark text-primary me-2 font-26 bx bx-envelope"></div>
+              <div class="ms-3">
+                <h3 class="font-24 fw-bold m-0 text-white">Email</h3>
+                <p class="m-0 mt-2">
+                  <a href="#" class="link-secondary font-14 text-decoration-none d-block">
+                    info@example.com
+                  </a>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 py-2">
+          <form id="contactform" autocomplete="on"
+            class="card bg-gray-700 bg-triangles shadow border-dark border-0 rounded-5">
+            <div class="card-header border-0 bg-transparent p-4 pt-5">
+              <h2 class="m-0 fw-bold font-40 text-white mb-2">Get in touch</h2>
+              <p class="m-0 text-muted font-16">
+                If you have any query please fill out the form below. We do our best to respond within 1
+                business day.
+              </p>
+            </div>
+            <div class="card-body pb-2">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12 mb-3">
+                    <div class="form-group mb-3 bg-black">
+                      <input type="text"
+                        class="form-control bg-transparent placeholder-text shadow-none p-3 border-0 font-18 text-muted"
+                        id="fullname" placeholder="Fullname...">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 mb-3">
+                    <div class="form-group mb-3 bg-black">
+                      <input type="text"
+                        class="form-control bg-transparent placeholder-text shadow-none p-3 border-0 font-18 text-muted"
+                        id="email" placeholder="Email address...">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 mb-3">
+                    <div class="form-group mb-3 bg-black">
+                      <input type="text"
+                        class="form-control bg-transparent placeholder-text shadow-none p-3 border-0 font-18 text-muted"
+                        id="phone" placeholder="Phone number...">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group mb-3 bg-black">
+                      <textarea
+                        class="form-control bg-transparent placeholder-text shadow-none p-3 border-0 font-18 text-muted"
+                        id="message" rows="4" placeholder="Message..."></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-0 bg-transparent text-center py-4 pb-5">
+              <button type="submit" class="btn btn-primary text-white py-3 font-18 px-5 rounded-1 fw-bold" id="btn">
+                Send message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shadow">
+    <div class="container container-sm container-md container-lg container-xl container-xxl py-2 py-sm-2 py-md-5 py-lg-5">
+      <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-white font-12">
+        Our office
+      </b>
+      <h4 class="text-white display-4 fw-bold m-0 mb-3">Locate at map</h4>
+    </div>
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.561176316256!2d74.26910127491064!3d31.453745693527463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919014b3b4fb059%3A0x380d5fccd434fd5c!2sProgrammers%20Force!5e0!3m2!1sen!2s!4v1689754149000!5m2!1sen!2s"
+    class="w-100" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+</div>
+
+    </main>
+    <!------- Content ------->
+    <!-------- Footer ------->
+    <footer class="fw-bold position-relative z-index-999">
+  <section class="py-5 bg-1 bg-dots border-top border-5 border-primary " style="margin-bottom: -100px;">
+    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+      <div class="d-flex align-items-center flex-column justify-content-center col-sm-8 offset-sm-2">
+        <div class="mb-2">
+          <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-white font-14 fw-bold">
+            Work with us
+          </b>
+        </div>
+        <h3 class="text-white display-4 mb-3 text-center p-2 px-3 fw-bold">
+          We would love to hear more about your project
+        </h3>
+        <a href="/contact-us"
+          class="btn btn-dark text-white fw-bold position-relative d-inline-flex rounded-circle shadow d-inline-block size-150 bg-triangles bg-cover">
+          <div class="m-auto font-14">
+            Let's discuss <i class="bx bx-right-top-arrow-circle font-20 ms-2 text-primary"></i>
+          </div>
+        </a>
+      </div>
+  </section>
+  <section class="shadow ">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="waves-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" class="shadow" fill="#111" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="#444" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="#FF0000" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#000" />
+      </g>
+    </svg>
+  </section>
+  <section
+    class="bg-triangles bg-fixed fw-bold shadow border-5 border-primary border-top border-bottom position-relative z-index-9">
+    <div class="container container-sm container-md container-lg container-xl container-xxl">
+      <div class="row py-5 justify-content-between">
+        <article class="col-xl-4 col-md-4 my-3">
+          <div class="d-flex align-items-center">
+            <i class="bx bx-map text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
+            <div class="ms-3">
+              <h4 class="text-white font-18 m-0 mb-1 fw-bold">Find us</h4>
+              <p class="text-muted font-16 m-0">1010 Avenue, sw 54321, chandigarh</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-xl-4 col-md-4 my-3">
+          <div class="d-flex align-items-center">
+            <i class="bx bx-phone text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
+            <div class="ms-3">
+              <h4 class="text-white font-18 m-0 mb-1 fw-bold">Call us</h4>
+              <p class="text-muted font-16 m-0">+98765432100</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-xl-4 col-md-4 my-3">
+          <div class="d-flex align-items-center">
+            <i class="bx bx-envelope-open text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
+            <div class="ms-3">
+              <h4 class="text-white font-18 m-0 mb-1 fw-bold">Mail us</h4>
+              <p class="text-muted font-16 m-0">mail@info.com</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="bg-1 bg-cover ">
+    <div class="container container-sm container-md container-lg container-xl container-xxl">
+      <div class="row font-14">
+        <div class="col-sm-4 py-5 ">
+          <a href="/" class="mb-4 d-inline-block" role="img" aria-label="Nextash logo">
+            <img src="/src/images/logos/logo.png" width="50" height="70"
+              class="img-fluid size-70" alt="Nextash logo">
+          </a>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+            incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit amet.
+          </p>
+          <h3 class="text-white font-20 mb-3">Follow us</h3>
+          <div class="d-flex align-items-center mt-3">
+            <a href="#" class="bx bxl-facebook-square font-24 btn text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-twitter font-24 btn text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-google font-24 btn text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-instagram font-24 btn text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-github font-24 btn text-muted p-1 rounded-circle me-1"></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 py-5 ">
+          <h3 class="text-white font-20 mb-3" role="heading" aria-level="3">Information</h3>
+          <ul type="none" class="p-0 m-0">
+            <li class="float-start w-50 mb-2">
+              <a href="/about-us" class="text-decoration-none text-muted font-14">About us</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/contact-us" class="text-decoration-none text-muted font-14">Contact us</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/services" class="text-decoration-none text-muted font-14">Services</a>
+            </li>
+
+            <li class="float-start w-50 mb-2">
+              <a href="/team" class="text-decoration-none text-muted font-14">Expert team</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/blogs" class="text-decoration-none text-muted font-14">Blogs</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/projects" class="text-decoration-none text-muted font-14">Projects</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/jobs" class="text-decoration-none text-muted font-14">Jobs</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/blogs" class="text-decoration-none text-muted font-14">Latest News</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/faqs" class="text-decoration-none text-muted font-14">Faqs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4 py-5">
+          <h3 class="text-white font-20 mb-3" role="heading" aria-level="3">Subscribe</h3>
+          <p class="text-muted mb-4">
+            Don’t miss to subscribe to our new feeds, kindly fill the form below.
+          </p>
+          <form action="/subscribed-successfully" class="input-group bg-gray-700 my-3 font-14 rounded-pill">
+            <input type="text" placeholder="Email Address..."
+              class="form-control shadow-none py-3 fw-bold bg-transparent text-white border-0 font-14 px-3">
+            <button class="bx bx-send btn font-20 fw-normal text-white p-2 px-4"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-gray-800 py-3 border-top border-dark border-2 font-14">
+    <div class="container">
+      <div class="d-flex flex-column flex-lg-row justify-content-between text-muted ">
+        <p class="m-0 my-1">Copyright &copy; 2023, All Right Reserved
+          <a href="/" class="text-decoration-none text-white">Nextash</a>
+        </p>
+        <ul class="d-flex align-items-center m-0 p-0 my-1" type="none">
+          <li>
+            <a href="/terms-and-conditions" class="text-decoration-none text-muted px-2">Terms</a>
+          </li>
+          <li>
+            <a href="/privacy-policy" class="text-decoration-none text-muted px-2">Privacy</a>
+          </li>
+          <li>
+            <a href="/cookies-policy" class="text-decoration-none text-muted px-2">Cookies</a>
+          </li>
+          <li>
+            <a href="/contact-us" class="text-decoration-none text-muted px-2">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</footer>
+    <!-------- Footer ------->
+
+    <!------- Scripts ------->
+    <script src="/src/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/src/js/utils.js"></script>
+     
+    <!------- Scripts ------->
+
+</body>
+
+</html>

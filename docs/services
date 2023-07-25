@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Services |  Nextash</title>
+    <link rel="shortcut icon" href="/src/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/libs/boxicons/css/boxicons.min.css">
+    
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="" />
+<meta property="og:title" content=" | Nextash" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Nextash" />
+<meta property="og:url" content="" />
+
+</head>
+
+
+
+<body class="bg-dark font-bevietnam h-100">
+    <!-- Bg -->
+    <div class="galaxy"></div>
+    <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <!-- Bg -->
+    <!-------- Navbar ------->
+    <header class="navbar navbar-expand fixed-top top-0 p-0" id="navbar">
+    <nav class="container container-sm container-md container-lg container-xl container-xxl w-100">
+        <ul class="navbar-nav d-flex align-items-center justify-content-between w-100">
+            <li class="nav-item">
+                <a href="/">
+                    <img src="/src/images/logos/logo.png" class="d-inline-block" width="60">
+                </a>
+            </li>
+            <li class="nav-item">
+                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" class="nav-link btn p-0 text-white font-30 bx bx-menu-alt-right"></button>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <!-------- Navbar ------->
+    <!-------- Sidebar ------->
+    <div class="offcanvas bg-dark offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="accordion border-0" id="menu">
+            <div class="accordion-item border-dark border border-1 shadow">
+                <h2 class="accordion-header border-0 bg-black" id="heading1">
+                    <button class="accordion-button shadow-none border-0 bg-black text-white collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                        <b class="text-primary me-2">1.</b> What services does NexTash offer?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#menu">
+                    <div class="accordion-body bg-black text-muted pb-4">
+                        NexTash offers a wide range of IT services including software
+                        development, web development,
+                        mobile app development, cloud computing, IT consulting, network solutions, cybersecurity, and
+                        managed IT services.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-------- Sidebar ------->
+    <!------- Content ------->
+    <main class="bg-rects bg-no-repeat bg-cover bg-fixed">
+        
+<div class="bg-1 bg-cover bg-fixed bg-no-repeat">
+    <!-- Header -->
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+            <div class="row">
+                <div class="col-sm-12 text-white py-2">
+                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">WHAT CAN WE DO
+                        ?</b>
+                    <h3 class="display-1 fw-bold m-0 mb-2">We combine our passion <br> for design and code.</h3>
+                </div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6 text-muted py-2 font-20">
+                    - We help our clients succeed by creating brand identities, digital experiences, and print materials
+                    that communicate clearly, achieve marketing goals, and look fantastic.
+                </div>
+            </div>
+    </section>
+    <!-- Header -->
+    <div class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <section class="container container-sm container-md container-lg container-xl container-xxl">
+            <!------- Row ------->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4">
+                <!------- Col ------->
+                <div class="col mb-4">
+                    <article class="card bg-rects bg-cover bg-no-repeat rounded-4 backdrop-10 bg-gray-800 shadow h-100">
+                        <div class="card-body">
+                            <div class="font-40 mb-4 bx bx-globe text-danger bg-gray-700 rounded-2 p-3"></div>
+                            <h3 class="fw-bold font-24 mb-3 m-0 text-white">Web development</h3>
+                            <p class="text-muted font-16">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rerum tempore
+                                accusamus sed
+                                voluptas vel a natus provident commodi, doloremque nihil, maiores odio voluptates
+                                rem
+                                quasi nam autem.
+                                Accusamus, doloribus?
+                            </p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pt-0">
+                            <a href=""
+                                class="btn btn-dark border border-primary border-2 fw-bold rounded-pill px-3 font-14">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <!------- Col ------->
+                <!------- Col ------->
+                <div class="col mb-4">
+                    <article class="card bg-rects bg-cover bg-no-repeat rounded-4 backdrop-10 bg-gray-800 shadow h-100">
+                        <div class="card-body">
+                            <div class="font-40 mb-4 bx bx-globe text-danger bg-gray-700 rounded-2 p-3"></div>
+                            <h3 class="fw-bold font-24 mb-3 m-0 text-white">Web development</h3>
+                            <p class="text-muted font-16">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rerum tempore
+                                accusamus sed
+                                voluptas vel a natus provident commodi, doloremque nihil, maiores odio voluptates
+                                rem
+                                quasi nam autem.
+                                Accusamus, doloribus?
+                            </p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pt-0">
+                            <a href=""
+                                class="btn btn-dark border border-primary border-2 fw-bold rounded-pill px-3 font-14">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <!------- Col ------->
+                <!------- Col ------->
+                <div class="col mb-4">
+                    <article class="card bg-rects bg-cover bg-no-repeat rounded-4 backdrop-10 bg-gray-800 shadow h-100">
+                        <div class="card-body">
+                            <div class="font-40 mb-4 bx bx-globe text-danger bg-gray-700 rounded-2 p-3"></div>
+                            <h3 class="fw-bold font-24 mb-3 m-0 text-white">Web development</h3>
+                            <p class="text-muted font-16">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rerum tempore
+                                accusamus sed
+                                voluptas vel a natus provident commodi, doloremque nihil, maiores odio voluptates
+                                rem
+                                quasi nam autem.
+                                Accusamus, doloribus?
+                            </p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pt-0">
+                            <a href=""
+                                class="btn btn-dark border border-primary border-2 fw-bold rounded-pill px-3 font-14">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <!------- Col ------->
+                <!------- Col ------->
+                <div class="col mb-4">
+                    <article class="card bg-rects bg-cover bg-no-repeat rounded-4 backdrop-10 bg-gray-800 shadow h-100">
+                        <div class="card-body">
+                            <div class="font-40 mb-4 bx bx-globe text-danger bg-gray-700 rounded-2 p-3"></div>
+                            <h3 class="fw-bold font-24 mb-3 m-0 text-white">Web development</h3>
+                            <p class="text-muted font-16">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rerum tempore
+                                accusamus sed
+                                voluptas vel a natus provident commodi, doloremque nihil, maiores odio voluptates
+                                rem
+                                quasi nam autem.
+                                Accusamus, doloribus?
+                            </p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pt-0">
+                            <a href=""
+                                class="btn btn-dark border border-primary border-2 fw-bold rounded-pill px-3 font-14">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <!------- Col ------->
+                <!------- Col ------->
+                <div class="col mb-4">
+                    <article class="card bg-rects bg-cover bg-no-repeat rounded-4 backdrop-10 bg-gray-800 shadow h-100">
+                        <div class="card-body">
+                            <div class="font-40 mb-4 bx bx-globe text-danger bg-gray-700 rounded-2 p-3"></div>
+                            <h3 class="fw-bold font-24 mb-3 m-0 text-white">Web development</h3>
+                            <p class="text-muted font-16">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rerum tempore
+                                accusamus sed
+                                voluptas vel a natus provident commodi, doloremque nihil, maiores odio voluptates
+                                rem
+                                quasi nam autem.
+                                Accusamus, doloribus?
+                            </p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pt-0">
+                            <a href=""
+                                class="btn btn-dark border border-primary border-2 fw-bold rounded-pill px-3 font-14">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <!------- Col ------->
+                <!------- Col ------->
+                <div class="col mb-4">
+                    <article class="card bg-rects bg-cover bg-no-repeat rounded-4 backdrop-10 bg-gray-800 shadow h-100">
+                        <div class="card-body">
+                            <div class="font-40 mb-4 bx bx-globe text-danger bg-gray-700 rounded-2 p-3"></div>
+                            <h3 class="fw-bold font-24 mb-3 m-0 text-white">Web development</h3>
+                            <p class="text-muted font-16">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rerum tempore
+                                accusamus sed
+                                voluptas vel a natus provident commodi, doloremque nihil, maiores odio voluptates
+                                rem
+                                quasi nam autem.
+                                Accusamus, doloribus?
+                            </p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pt-0">
+                            <a href=""
+                                class="btn btn-dark border border-primary border-2 fw-bold rounded-pill px-3 font-14">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <!------- Col ------->
+                <!------- Col ------->
+                <div class="col mb-4">
+                    <article class="card bg-rects bg-cover bg-no-repeat rounded-4 backdrop-10 bg-gray-800 shadow h-100">
+                        <div class="card-body">
+                            <div class="font-40 mb-4 bx bx-globe text-danger bg-gray-700 rounded-2 p-3"></div>
+                            <h3 class="fw-bold font-24 mb-3 m-0 text-white">Web development</h3>
+                            <p class="text-muted font-16">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rerum tempore
+                                accusamus sed
+                                voluptas vel a natus provident commodi, doloremque nihil, maiores odio voluptates
+                                rem
+                                quasi nam autem.
+                                Accusamus, doloribus?
+                            </p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pt-0">
+                            <a href=""
+                                class="btn btn-dark border border-primary border-2 fw-bold rounded-pill px-3 font-14">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <!------- Col ------->
+                <!------- Col ------->
+                <div class="col mb-4">
+                    <article class="card bg-rects bg-cover bg-no-repeat rounded-4 backdrop-10 bg-gray-800 shadow h-100">
+                        <div class="card-body">
+                            <div class="font-40 mb-4 bx bx-globe text-danger bg-gray-700 rounded-2 p-3"></div>
+                            <h3 class="fw-bold font-24 mb-3 m-0 text-white">Web development</h3>
+                            <p class="text-muted font-16">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rerum tempore
+                                accusamus sed
+                                voluptas vel a natus provident commodi, doloremque nihil, maiores odio voluptates
+                                rem
+                                quasi nam autem.
+                                Accusamus, doloribus? n
+                            </p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pt-0">
+                            <a href=""
+                                class="btn btn-dark border border-primary border-2 fw-bold rounded-pill px-3 font-14">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <!------- Col ------->
+            </div>
+            <!------- Row ------->
+        </section>
+    </div>
+
+    <!------ Process ------>
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+      <div class="row">
+        <div class="col-sm-6 py-2">
+          <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-white font-12">Our process</b>
+          <h3 class="text-white display-5 fw-bold m-0 my-2"> Watch the creative  process behind our company</h3>
+          <div class="accordion" id="points">
+            <div class="accordion-item bg-gray-900 border-0 shadow-none">
+              <button class="accordion-button py-2 bg-transparent text-white border-0 shadow-none collapsed font-18"
+                type="button" data-bs-toggle="collapse" data-bs-target="#point1" aria-expanded="true"
+                aria-controls="point1">
+                Unique and Influential Design
+              </button>
+              <div id="point1" class="accordion-collapse collapse" data-bs-parent="#points">
+                <div class="accordion-body">
+                  <ol class="font-18 text-muted mb-3">
+                    <li>
+                      Taken possession of my entire soul, like these sweet mornings of spring which i enjoy with my
+                      whole.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-gray-900 border-0 shadow-none">
+              <button class="accordion-button py-2 bg-transparent text-white border-0 shadow-none collapsed font-18"
+                type="button" data-bs-toggle="collapse" data-bs-target="#point2" aria-expanded="true"
+                aria-controls="point2">
+                The Power of Influencer Marketing
+              </button>
+              <div id="point2" class="accordion-collapse collapse" data-bs-parent="#points">
+                <div class="accordion-body">
+                  <ol class="font-18 text-muted mb-3 ">
+                    <li>
+                      aken possession of my entire soul, like these sweet mornings of spring which i enjoy with my
+                      whole.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 py-2 position-relative">
+          <div class="bg-dotted position-absolute border-0 start-0 top-0 size-100 z-index-1"
+          style="margin-top:-30px;margin-left: -30px;"></div>
+        <div class="bg-dotted bg-dotted-primary position-absolute border-0 end-0 border-bottom-0 size-100 z-index-1"
+          style="bottom:-30px;margin-right: -30px;"></div>
+        <img src="/src/images/about/2.jpg"
+          class="img-fluid rounded-2 shadow z-index-3 position-relative border border-primary border-5 p-2" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+    <!------ Process ------>
+</div>
+
+    </main>
+    <!------- Content ------->
+    <!-------- Footer ------->
+    <footer class="fw-bold position-relative z-index-999">
+  <section class="py-5 bg-1 bg-dots border-top border-5 border-primary " style="margin-bottom: -100px;">
+    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+      <div class="d-flex align-items-center flex-column justify-content-center col-sm-8 offset-sm-2">
+        <div class="mb-2">
+          <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-white font-14 fw-bold">
+            Work with us
+          </b>
+        </div>
+        <h3 class="text-white display-4 mb-3 text-center p-2 px-3 fw-bold">
+          We would love to hear more about your project
+        </h3>
+        <a href="/contact-us"
+          class="btn btn-dark text-white fw-bold position-relative d-inline-flex rounded-circle shadow d-inline-block size-150 bg-triangles bg-cover">
+          <div class="m-auto font-14">
+            Let's discuss <i class="bx bx-right-top-arrow-circle font-20 ms-2 text-primary"></i>
+          </div>
+        </a>
+      </div>
+  </section>
+  <section class="shadow ">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="waves-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" class="shadow" fill="#111" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="#444" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="#FF0000" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#000" />
+      </g>
+    </svg>
+  </section>
+  <section
+    class="bg-triangles bg-fixed fw-bold shadow border-5 border-primary border-top border-bottom position-relative z-index-9">
+    <div class="container container-sm container-md container-lg container-xl container-xxl">
+      <div class="row py-5 justify-content-between">
+        <article class="col-xl-4 col-md-4 my-3">
+          <div class="d-flex align-items-center">
+            <i class="bx bx-map text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
+            <div class="ms-3">
+              <h4 class="text-white font-18 m-0 mb-1 fw-bold">Find us</h4>
+              <p class="text-muted font-16 m-0">1010 Avenue, sw 54321, chandigarh</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-xl-4 col-md-4 my-3">
+          <div class="d-flex align-items-center">
+            <i class="bx bx-phone text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
+            <div class="ms-3">
+              <h4 class="text-white font-18 m-0 mb-1 fw-bold">Call us</h4>
+              <p class="text-muted font-16 m-0">+98765432100</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-xl-4 col-md-4 my-3">
+          <div class="d-flex align-items-center">
+            <i class="bx bx-envelope-open text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
+            <div class="ms-3">
+              <h4 class="text-white font-18 m-0 mb-1 fw-bold">Mail us</h4>
+              <p class="text-muted font-16 m-0">mail@info.com</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="bg-1 bg-cover ">
+    <div class="container container-sm container-md container-lg container-xl container-xxl">
+      <div class="row font-14">
+        <div class="col-sm-4 py-5 ">
+          <a href="/" class="mb-4 d-inline-block" role="img" aria-label="Nextash logo">
+            <img src="/src/images/logos/logo.png" width="50" height="70"
+              class="img-fluid size-70" alt="Nextash logo">
+          </a>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+            incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit amet.
+          </p>
+          <h3 class="text-white font-20 mb-3">Follow us</h3>
+          <div class="d-flex align-items-center mt-3">
+            <a href="#" class="bx bxl-facebook-square font-24 btn text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-twitter font-24 btn text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-google font-24 btn text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-instagram font-24 btn text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-github font-24 btn text-muted p-1 rounded-circle me-1"></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 py-5 ">
+          <h3 class="text-white font-20 mb-3" role="heading" aria-level="3">Information</h3>
+          <ul type="none" class="p-0 m-0">
+            <li class="float-start w-50 mb-2">
+              <a href="/about-us" class="text-decoration-none text-muted font-14">About us</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/contact-us" class="text-decoration-none text-muted font-14">Contact us</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/services" class="text-decoration-none text-muted font-14">Services</a>
+            </li>
+
+            <li class="float-start w-50 mb-2">
+              <a href="/team" class="text-decoration-none text-muted font-14">Expert team</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/blogs" class="text-decoration-none text-muted font-14">Blogs</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/projects" class="text-decoration-none text-muted font-14">Projects</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/jobs" class="text-decoration-none text-muted font-14">Jobs</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/blogs" class="text-decoration-none text-muted font-14">Latest News</a>
+            </li>
+            <li class="float-start w-50 mb-2">
+              <a href="/faqs" class="text-decoration-none text-muted font-14">Faqs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4 py-5">
+          <h3 class="text-white font-20 mb-3" role="heading" aria-level="3">Subscribe</h3>
+          <p class="text-muted mb-4">
+            Don’t miss to subscribe to our new feeds, kindly fill the form below.
+          </p>
+          <form action="/subscribed-successfully" class="input-group bg-gray-700 my-3 font-14 rounded-pill">
+            <input type="text" placeholder="Email Address..."
+              class="form-control shadow-none py-3 fw-bold bg-transparent text-white border-0 font-14 px-3">
+            <button class="bx bx-send btn font-20 fw-normal text-white p-2 px-4"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-gray-800 py-3 border-top border-dark border-2 font-14">
+    <div class="container">
+      <div class="d-flex flex-column flex-lg-row justify-content-between text-muted ">
+        <p class="m-0 my-1">Copyright &copy; 2023, All Right Reserved
+          <a href="/" class="text-decoration-none text-white">Nextash</a>
+        </p>
+        <ul class="d-flex align-items-center m-0 p-0 my-1" type="none">
+          <li>
+            <a href="/terms-and-conditions" class="text-decoration-none text-muted px-2">Terms</a>
+          </li>
+          <li>
+            <a href="/privacy-policy" class="text-decoration-none text-muted px-2">Privacy</a>
+          </li>
+          <li>
+            <a href="/cookies-policy" class="text-decoration-none text-muted px-2">Cookies</a>
+          </li>
+          <li>
+            <a href="/contact-us" class="text-decoration-none text-muted px-2">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</footer>
+    <!-------- Footer ------->
+
+    <!------- Scripts ------->
+    <script src="/src/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/src/js/utils.js"></script>
+     
+    <!------- Scripts ------->
+
+</body>
+
+</html>

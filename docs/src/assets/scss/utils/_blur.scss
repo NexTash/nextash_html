@@ -1,0 +1,18 @@
+$backdrop: 0;
+
+@while $backdrop < 10 {
+    $backdrop: $backdrop +2;
+
+    .backdrop-#{$backdrop} {
+        -webkit-backdrop-filter: blur($backdrop + px);
+        backdrop-filter: blur($backdrop + px);
+    }
+
+    .backdrop-hover-#{$backdrop} {
+        &:hover {
+            -webkit-backdrop-filter: blur($backdrop + px);
+            backdrop-filter: blur($backdrop + px);
+        }
+    }
+
+}
