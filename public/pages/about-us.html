@@ -30,6 +30,7 @@
 {% endblock %}
 
 {% block content %}
+<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
 <!-- Header -->
 <section class="shadow py-5">
   <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
@@ -48,7 +49,7 @@
 </section>
 <!-- Header -->
 <!-- Intro -->
-<section class="bg-1 bg-cover bg-no-repeat bg-fixed shadow py-2 py-sm-2 py-md-5 py-lg-5">
+<section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
   <div class="container container-sm container-md container-lg container-xl container-xxl">
     <div class="row align-items-center">
       <div class="col-sm-6">
@@ -69,7 +70,7 @@
 {% include "components/story.html" %}
 <!------ Story ------>
 <!------ Mission ------>
-<section class="bg-1 bg-cover bg-no-repeat bg-fixed shadow py-2 py-sm-2 py-md-5 py-lg-5">
+<section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
   <div class="card-dotted py-5">
     <div class="container container-sm container-md container-lg container-xl container-xxl">
       <div class="text-center p-3 backdrop-6 py-5 shadow border border-primary border-4">
@@ -97,6 +98,7 @@
 <!------ Clients ------->
 {% include "components/clients.html" %}
 <!------ Clients ------->
+</div>
 {% endblock %}
 
 {% block scripts %} {% endblock %}
