@@ -138,7 +138,7 @@
           <div
             class="card bg-gray-800 shadow text-white blog-card h-100 card-hover bg-triangles bg-cover border border-2 border-dark ">
             <div class="card-header border-0 p-0 position-relative image-zoom">
-              <img src="{{ url_for('static', filename='/images/blogs/1.jpg')}}" alt=""
+              <img src="{{ url_for('static', filename='images/blogs/1.jpg')}}" alt=""
                 class="card-img-top object-cover">
             </div>
             <div class="card-body">
@@ -162,7 +162,7 @@
           <div
             class="card bg-gray-800 shadow text-white blog-card h-100 card-hover bg-triangles bg-cover border border-2 border-dark ">
             <div class="card-header border-0 p-0 position-relative image-zoom">
-              <img src="{{ url_for('static', filename='/images/blogs/2.jpg')}}" alt=""
+              <img src="{{ url_for('static', filename='images/blogs/2.jpg')}}" alt=""
                 class="card-img-top object-cover">
             </div>
             <div class="card-body">
@@ -213,7 +213,7 @@
             ">
             <div class="row g-0 align-items-center">
               <div class="col-md-5">
-                <img src="{{ url_for('static', filename='/images/services/1.')}}jpg"
+                <img src="{{ url_for('static', filename='images/services/1.')}}jpg"
                   class="img-fluid h-100 rounded-start" alt="..." />
               </div>
               <div class="col-md-7">
@@ -242,9 +242,9 @@
 </main>
 <!------ Content ------>
 {% endblock %} {% block scripts %}
-<script src="{{ url_for('static', filename='/js/bootstrap/bootstrap.min.js')}}"></script>
-<script src="{{ url_for('static', filename='/libs/anime/anime.min.js')}}"></script>
-<script src="{{ url_for('static', filename='/js/utils.js')}}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap/bootstrap.min.js')}}"></script>
+<script src="{{ url_for('static', filename='libs/anime/anime.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/utils.js')}}"></script>
 <script>
   const cursor = document.querySelector(".cb-cursor");
   window.onpointermove = (event) => {
