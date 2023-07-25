@@ -15,44 +15,20 @@
 }
 
 .bg-1 {
-    background-image: url(#{$images_path}/patterns/1-min.webp);
+    background-image: url(#{$images_path}/patterns/1.webp);
 }
 
-// .bg-2 {
-//     background-image: url(#{$images_path}/patterns/2-min.webp);
-
-// }
-
-// .bg-3 {
-//     background-image: url(#{$images_path}/patterns/3-min.webp);
-
-// }
-
-// .bg-4 {
-//     background-image: url(#{$images_path}/patterns/4-min.jpg);
-
-// }
-
-// .bg-5 {
-//     background-image: url(#{$images_path}/patterns/5.png);
-
-// }
-
-// .bg-6 {
-//     background-image: url(#{$images_path}/patterns/6-min.webp);
-
-// }
-
+.bg-2 {
+    background-image: url(#{$images_path}/patterns/2.webp);
+}
 
 .bg-triangles {
-    background-image: url(#{$images_path}/patterns/bg-triangles.png);
+    background-image: url(#{$images_path}/patterns/4.webp);
     background-position: top left;
-    
-
 }
 
 .bg-rects {
-    background-image: url(#{$images_path}/patterns/bg-rect.png);
+    background-image: url(#{$images_path}/patterns/3.webp);
 }
 
 .bg-dots{

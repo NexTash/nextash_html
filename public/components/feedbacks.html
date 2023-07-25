@@ -1,0 +1,53 @@
+<section class="shadow py-2 py-sm-2 py-md-5 py-lg-5 shadow bg-1 bg-fixed bg-cover">
+    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+      <div class="text-white py-5">
+        <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
+          Feedbacks
+        </b>
+        <h3 class="text-white font-40 fw-bold m-0 my-2">What Client Say About Us?</h3>
+        <p class="text-muted font-18 m-0 col-sm-6">
+          Trusted By All Over The World's Professionals
+        </p>
+      </div>
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="text-white fw-bold font-18 col-sm-6 offset-md-3 d-flex align-items-center flex-column">
+              <div class="size-100 mb-5 border border-4 border-primary p-2">
+                <img src="{{ url_for('static', filename='/images/team/3.jpg')}}"
+                  class="h-150 w-150 object-cover rounded-4" width="100" height="100" alt="">
+              </div>
+              <h3 class="fw-bold font-18">Janita cooper</h3>
+              <h4 class="fw-bold font-14 text-muted">Sales manager</h4>
+              <p class="font-20 text-white my-2 mt-4 text-center">
+                <span class="bx bxs-quote-left float-start me-2 font-40 text-primary"></span>
+                I wish I would have thought of it first. Creative agency is the
+                most tech valuable business resource we
+                have ever purchased. Dude your stuff is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi
+                architecto beatae vitae dicta sunt to the explicabo.
+                <span class="bx bxs-quote-right float-end ms-2 font-40 text-primary"></span>
+              </p>
+              <div class="my-3">
+                <span class="bx bxs-star text-warning"></span>
+                <span class="bx bxs-star text-warning"></span>
+                <span class="bx bxs-star text-warning"></span>
+                <span class="bx bxs-star text-warning"></span>
+                <span class="bx bxs-star text-warning"></span>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        <!-- Left and right controls/icons -->
+        <div class="text-center">
+          <button type="button" class="btn btn-outline-light rounded-3 mx-2 px-3 fw-bold bx bx-left-arrow-alt"
+            data-bs-target="#demo" data-bs-slide="prev">
+          </button>
+          <button type="button" class="btn btn-outline-light rounded-3 mx-1 px-3 fw-bold bx bx-right-arrow-alt"
+            data-bs-target="#demo" data-bs-slide="next">
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
