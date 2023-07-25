@@ -27,7 +27,7 @@
 
 <body class="bg-dark font-bevietnam h-100">
     <!-- Bg -->
-    <div class="galaxy"></div>
+    <!-- <div class="galaxy"></div> -->
     <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
         <div class="line"></div>
         <div class="line"></div>
@@ -443,11 +443,11 @@
           </p>
           <h3 class="text-white font-20 mb-3">Follow us</h3>
           <div class="d-flex align-items-center mt-3">
-            <a href="#" class="bx bxl-facebook-square font-24 btn text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-twitter font-24 btn text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-google font-24 btn text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-instagram font-24 btn text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-github font-24 btn text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-facebook-square font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-twitter font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-google font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-instagram font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-github font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
           </div>
         </div>
 

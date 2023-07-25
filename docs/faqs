@@ -27,7 +27,7 @@
 
 <body class="bg-dark font-bevietnam h-100">
     <!-- Bg -->
-    <div class="galaxy"></div>
+    <!-- <div class="galaxy"></div> -->
     <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
         <div class="line"></div>
         <div class="line"></div>
@@ -83,15 +83,14 @@
         
 <div class="bg-1 bg-cover bg-fixed bg-no-repeat">
   <!-- Header -->
-  <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+  <section class="shadow py-5">
     <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
       <div class="row">
         <div class="col-sm-12 text-white py-2">
           <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">FAQ's</b>
-          <h3 class="display-1 fw-bold m-0 mb-2 col-sm-8">Frequently Asked Questions </h3>
+          <h3 class="display-1 fw-bold m-0 mb-2  col-12 col-sm-12 col-md-12 col-lg-8">Frequently Asked Questions </h3>
         </div>
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6 text-muted py-2 font-20">
+        <div class="col-sm-8 offset-sm-2 text-muted py-2 font-20">
           - We’re a diverse team that works as fancies attention to details, enjoys beers on Friday nights and
           aspires to design the dent in the universe.
         </div>
@@ -103,7 +102,7 @@
   <!------- FAQs ------->
   <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
     <div class="row">
-      <div class="col-sm-7 py-2">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xll-7 py-2">
         <div class="accordion border-0 rounded-4" id="faqs">
           <div class="accordion-item border-dark border border-1 shadow ">
             <h2 class="accordion-header border-0 bg-gray-700" id="heading1">
@@ -123,9 +122,8 @@
           </div>
           <div class="accordion-item border-dark shadow">
             <h2 class="accordion-header border-0 bg-gray-700" id="heading2">
-              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false"
-                aria-controls="faq2">
+              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
                 <b class="text-primary me-2">2.</b> How can I request a quote for NexTash services?
               </button>
             </h2>
@@ -140,9 +138,8 @@
           </div>
           <div class="accordion-item border-dark shadow">
             <h2 class="accordion-header border-0 bg-gray-700" id="heading3">
-              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false"
-                aria-controls="faq3">
+              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
                 <b class="text-primary me-2">3.</b> What industries does NexTash serve?
               </button>
             </h2>
@@ -156,9 +153,8 @@
           </div>
           <div class="accordion-item border-dark shadow">
             <h2 class="accordion-header border-0 bg-gray-700" id="heading4">
-              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false"
-                aria-controls="faq4">
+              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
                 <b class="text-primary me-2">4.</b> Are NexTash's services tailored to small businesses or larger
                 enterprises?
               </button>
@@ -173,9 +169,8 @@
           </div>
           <div class="accordion-item border-dark shadow">
             <h2 class="accordion-header border-0 bg-gray-700" id="heading5">
-              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false"
-                aria-controls="faq5">
+              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
                 <b class="text-primary me-2">5.</b> How experienced is the team at NexTash?
               </button>
             </h2>
@@ -189,9 +184,8 @@
           </div>
           <div class="accordion-item border-dark shadow">
             <h2 class="accordion-header border-0 bg-gray-700" id="heading6">
-              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false"
-                aria-controls="faq6">
+              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
                 <b class="text-primary me-2">6.</b> Can NexTash handle both front-end and back-end development?
               </button>
             </h2>
@@ -205,9 +199,8 @@
           </div>
           <div class="accordion-item border-dark shadow">
             <h2 class="accordion-header border-0 bg-gray-700" id="heading7">
-              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false"
-                aria-controls="faq7">
+              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
                 <b class="text-primary me-2">7.</b> What technologies does NexTash specialize in?
               </button>
             </h2>
@@ -221,9 +214,8 @@
           </div>
           <div class="accordion-item border-dark shadow">
             <h2 class="accordion-header border-0 bg-gray-700" id="heading8">
-              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false"
-                aria-controls="faq8">
+              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
                 <b class="text-primary me-2">8.</b> Can NexTash help with website redesign or revamp an existing
                 application?
               </button>
@@ -238,9 +230,8 @@
           </div>
           <div class="accordion-item border-dark shadow">
             <h2 class="accordion-header border-0 bg-gray-700" id="heading9">
-              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false"
-                aria-controls="faq9">
+              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
                 <b class="text-primary me-2">9.</b> Does NexTash provide ongoing maintenance and support for its
                 delivered solutions?
               </button>
@@ -256,9 +247,8 @@
           </div>
           <div class="accordion-item border-dark shadow">
             <h2 class="accordion-header border-0 bg-gray-700" id="heading10">
-              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#faq10" aria-expanded="false"
-                aria-controls="faq10">
+              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq10" aria-expanded="false" aria-controls="faq10">
                 <b class="text-primary me-2">10.</b> Can NexTash assist with cloud migration or setting up cloud
                 infrastructure?
               </button>
@@ -274,9 +264,8 @@
           </div>
           <div class="accordion-item border-dark shadow">
             <h2 class="accordion-header border-0 bg-gray-700" id="heading11">
-              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#faq11" aria-expanded="false"
-                aria-controls="faq11">
+              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq11" aria-expanded="false" aria-controls="faq11">
                 <b class="text-primary me-2">11.</b> What is the typical timeframe for completing a project with
                 NexTash?
               </button>
@@ -292,9 +281,8 @@
           </div>
           <div class="accordion-item border-dark shadow">
             <h2 class="accordion-header bg-gray-700" id="heading12">
-              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#faq12" aria-expanded="false"
-                aria-controls="faq12">
+              <button class="accordion-button shadow-none border-dark bg-transparent text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq12" aria-expanded="false" aria-controls="faq12">
                 <b class="text-primary me-2">12.</b> Does NexTash offer custom software development or only pre-built
                 solutions?
               </button>
@@ -309,7 +297,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-5 py-2">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 py-2">
         <form class="card bg-gray-700 bg-triangles shadow border-dark border-0 rounded-2" id="faqQueryform">
           <div class="card-header border-0 bg-transparent p-4 pt-5">
             <h2 class="m-0 fw-bold font-30 text-white mb-2">Ask your question</h2>
@@ -321,8 +309,8 @@
           <div class="card-body bg-transparent">
             <div class="form-group mb-3 border border-dark">
               <input type="text"
-                class="form-control bg-dark placeholder-text shadow-none p-3 border-0 font-16 text-muted"
-                id="fullname" placeholder="Fullname*">
+                class="form-control bg-dark placeholder-text shadow-none p-3 border-0 font-16 text-muted" id="fullname"
+                placeholder="Fullname*">
             </div>
             <div class="form-group mb-3 border border-dark">
               <input type="text"
@@ -348,8 +336,8 @@
       </div>
     </div>
   </section>
-  </div>
-  
+</div>
+
     </main>
     <!------- Content ------->
     <!-------- Footer ------->
@@ -435,11 +423,11 @@
           </p>
           <h3 class="text-white font-20 mb-3">Follow us</h3>
           <div class="d-flex align-items-center mt-3">
-            <a href="#" class="bx bxl-facebook-square font-24 btn text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-twitter font-24 btn text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-google font-24 btn text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-instagram font-24 btn text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-github font-24 btn text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-facebook-square font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-twitter font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-google font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-instagram font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-github font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
           </div>
         </div>
 

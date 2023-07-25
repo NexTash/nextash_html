@@ -37,7 +37,7 @@
 
 <body class="bg-dark font-bevietnam h-100">
     <!-- Bg -->
-    <div class="galaxy"></div>
+    <!-- <div class="galaxy"></div> -->
     <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
         <div class="line"></div>
         <div class="line"></div>
@@ -91,11 +91,11 @@
     <!------- Content ------->
     <main class="bg-rects bg-no-repeat bg-cover bg-fixed">
         
-<div class="bg-1 bg-no-repeat">
+<div class="bg-1 bg-cover bg-fixed bg-no-repeat">
     <!-- Header -->
-    <section>
-        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <div class="row py-5">
+    <section class="shadow py-5">
+      <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+        <div class="row">
                 <div class="col-sm-12 text-white py-2">
                     <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">About</b>
                     <h3 class="display-1 fw-bold m-0 mb-2 col-sm-7">Terms and <br> conditions </h3>
@@ -485,11 +485,11 @@
           </p>
           <h3 class="text-white font-20 mb-3">Follow us</h3>
           <div class="d-flex align-items-center mt-3">
-            <a href="#" class="bx bxl-facebook-square font-24 btn text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-twitter font-24 btn text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-google font-24 btn text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-instagram font-24 btn text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-github font-24 btn text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-facebook-square font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-twitter font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-google font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-instagram font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-github font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
           </div>
         </div>
 

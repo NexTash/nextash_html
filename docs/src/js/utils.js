@@ -5,6 +5,6 @@ function scroller() {
     if (document.body.scrollTop > pos || document.documentElement.scrollTop > pos) {
         document.getElementById("navbar").classList.add("bg-dark");
     } else {
-        document.getElementById("navbar").classList.remove("backdrop-8");
+        document.getElementById("navbar").classList.remove("bg-dark");
     }
 }
