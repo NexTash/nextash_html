@@ -6,6 +6,7 @@ app = Flask(__name__, template_folder="public", static_folder="src")
 
 # Route - Page - Function
 routes = [
+    {"page": "test", "url": "test"},
     {"page": "index", "url": ""},
     {"page": "about-us", "url": "about-us"},
     {"page": "contact-us", "url": "contact-us"},
