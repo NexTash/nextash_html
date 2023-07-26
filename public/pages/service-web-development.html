@@ -1,3 +1,368 @@
+{% extends "layouts/primary.html" %}
+
+{% block title %} Services | {% endblock %}
+
+{% block seo %}
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="" />
+<meta property="og:title" content=" | Nextash" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Nextash" />
+<meta property="og:url" content="" />
+{% endblock %}
+
+{% block style %}{% endblock %}
+
+{% block content %}
+<div class="bg-1 bg-cover bg-fixed bg-no-repeat">
+    <!-- Header -->
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+            <div class="row">
+                <div class="col-sm-12 text-white py-2">
+                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">Service</b>
+                    <h3 class="display-1 fw-bold m-0 mb-2 col-sm-5">Web Development </h3>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 my-3">
+                    <div class="row text-muted font-18">
+                        <div class="col-sm-6 mb-3">
+                            <p class="m-0">
+                                Every decision we make needs to answer the million-dollar question: how will
+                                this benefit our partner’s goal best? We work to develop solutions
+                            </p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <p class="m-0">
+                                We like to be different, in the same way that every mission is different. Every
+                                project
+                                is
+                                an
+                                opportunity to create result that will help you
+                            </p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <ul>
+                                <li>Website Design and Development</li>
+                                <li>E-commerce Development</li>
+                                <li>Web Application Development</li>
+                                <li>Content Management Systems (CMS)</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <ul>
+                                <li>Web Hosting and Maintenance</li>
+                                <li>Mobile Responsive Design</li>
+                                <li>Search Engine Optimization (SEO)</li>
+                                <li>Website Analytics and Tracking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Header -->
+
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/1-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/2-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">01.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> Website Design and Development </h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>Custom website design and development tailored to your specific business needs.</li>
+                        <li>Responsive web design to ensure your website looks great on all devices.</li>
+                        <li>User-friendly interfaces and intuitive navigation for enhanced user experience.</li>
+                        <li>Integration of interactive elements, such as forms, maps, videos, and social media plugins.</li>
+                        <li>Content management system (CMS) implementation for easy website maintenance and updates.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/3-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/4-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">02.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> E-commerce Development</h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>Creation of robust and secure e-commerce platforms to sell products or services online.</li>
+                        <li>Integration with popular payment gateways for seamless and secure online transactions.</li>
+                        <li>Shopping cart functionality with features like product catalog management, inventory tracking, and
+                            order
+                            management.</li>
+                        <li>User account management, including registration, login, and personalized shopping experiences.</li>
+                        <li>Streamlined checkout processes and integration with shipping and fulfillment services.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/5-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/6-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">03.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> Web Application Development </h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>Custom web application development for specific business requirements.</li>
+                        <li>Development of scalable and secure web applications using modern technologies.</li>
+                        <li>Integration with databases and third-party APIs to enhance functionality.</li>
+                        <li>User management and role-based access control for secure access to sensitive information.</li>
+                        <li>Ongoing maintenance, updates, and support for web applications.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/7-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/8-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">04.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">Content Management Systems (CMS)</h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>Development and customization of CMS platforms like WordPress, Drupal, or Joomla.</li>
+                        <li>Theme and plugin development to extend the functionality and appearance of your CMS.</li>
+                        <li>Training and support to help you manage and update your website's content.</li>
+                        <li>Migration services to transfer your existing website to a CMS for easier management.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/9-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/10-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">05.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> Web Hosting and Maintenance </h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>Assistance with domain registration and selection of a suitable web hosting provider.</li>
+                        <li>Continuous monitoring, backups, and security updates to ensure the stability and safety of your
+                            website.
+                        </li>
+                        <li>Performance optimization to enhance page load speed and overall user experience.</li>
+                        <li>Regular content updates, bug fixes, and troubleshooting.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/11-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/12-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">06.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> Mobile Responsive Design</h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>Optimization of websites for mobile devices, ensuring a seamless experience across different screen
+                            sizes.
+                        </li>
+                        <li>Responsive design techniques to adapt layouts, images, and content for optimal mobile viewing.</li>
+                        <li>Mobile app development to complement your web presence and reach a wider audience.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/13-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/14-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-1">
+                    <span class="display-1 text- text-stroke rounded-circle">07.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">Search Engine Optimization (SEO)</h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>On-page and off-page optimization techniques to improve your website's visibility in search engine
+                            rankings.
+                        </li>
+                        <li>Keyword research, content optimization, and link building strategies to increase organic traffic.
+                        </li>
+                        <li> SEO audits and analysis to identify areas for improvement and implement effective strategies.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/15-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/16-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">08.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">Website Analytics and Tracking</h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>Implementation of tracking tools like Google Analytics to monitor website performance and user
+                            behavior.
+                        </li>
+                        <li>Reporting and analysis of key metrics to measure the success of your online presence.</li>
+                        <li>Data-driven insights to make informed decisions and optimize your website for better results.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- Row --------->
+    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
+        <div class="text-white mb-5">
+            <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
+                OUR WORK
+            </b>
+            <h3 class="text-white font-40 fw-bold m-0 my-2">Recent Projects Showcase</h3>
+            <p class="text-muted font-18 m-0 col-sm-6">
+                Creating impact with every project, experience the innovation.
+            </p>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4">
+            <article class="col">
+                <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
+                    <div class="card-header border-0 p-0 bg-transparent  rounded-4">
+                        <img src="{{ url_for('static', filename='images/projects/1.webp')}}"
+                            class="card-img-top object-cover rounded-4" alt="">
+                    </div>
+                    <div
+                        class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
+                        <div class="mt-auto py-3">
+                            <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
+                            <h3 class="fw-bold font-20 my-4 m-0 text-white ">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </h3>
+                            <a href=""
+                                class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
+                                study</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col">
+                <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
+                    <div class="card-header border-0 p-0 bg-transparent  rounded-4">
+                        <img src="{{ url_for('static', filename='images/projects/2.webp')}}"
+                            class="card-img-top object-cover rounded-4" alt="">
+                    </div>
+                    <div
+                        class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
+                        <div class="mt-auto py-3">
+                            <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
+                            <h3 class="fw-bold font-20 my-4 m-0 text-white ">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </h3>
+                            <a href=""
+                                class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
+                                study</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="text-center py-5">
+            <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">Load more</button>
+        </div>
+    </section>
+    <!--------- Row --------->
+
+    <!-- Feedbacks -->
+    {% include "components/feedbacks.html" %}
+    <!-- Feedbacks -->
+
+    <!------ Process ------>
+    {% include "components/process.html" %}
+    <!------ Process ------>
+    <!------ Clients ------->
+    {% include "components/clients.html" %}
+    <!------ Clients ------->
+</div>
+{% endblock %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,75 +438,24 @@
             <h2 class="text-big font-bowlbyone text-white mb-5"> Sure! Here are some details about web development IT
                 services:
             </h2>
-            <h3 class="font-20 text-white fw-bold mb-4">1. Website Design and Development</h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>Custom website design and development tailored to your specific business needs.</li>
-                <li>Responsive web design to ensure your website looks great on all devices.</li>
-                <li>User-friendly interfaces and intuitive navigation for enhanced user experience.</li>
-                <li>Integration of interactive elements, such as forms, maps, videos, and social media plugins.</li>
-                <li>Content management system (CMS) implementation for easy website maintenance and updates.</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">2. E-commerce Development:</h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>Creation of robust and secure e-commerce platforms to sell products or services online.</li>
-                <li>Integration with popular payment gateways for seamless and secure online transactions.</li>
-                <li>Shopping cart functionality with features like product catalog management, inventory tracking, and
-                    order
-                    management.</li>
-                <li>User account management, including registration, login, and personalized shopping experiences.</li>
-                <li>Streamlined checkout processes and integration with shipping and fulfillment services.</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">3. Web Application Development:</h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>Custom web application development for specific business requirements.</li>
-                <li>Development of scalable and secure web applications using modern technologies.</li>
-                <li>Integration with databases and third-party APIs to enhance functionality.</li>
-                <li>User management and role-based access control for secure access to sensitive information.</li>
-                <li>Ongoing maintenance, updates, and support for web applications.</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">4. Content Management Systems (CMS)</h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>Development and customization of CMS platforms like WordPress, Drupal, or Joomla.</li>
-                <li>Theme and plugin development to extend the functionality and appearance of your CMS.</li>
-                <li>Training and support to help you manage and update your website's content.</li>
-                <li>Migration services to transfer your existing website to a CMS for easier management.</li>
-            </ol>
+            <h3 class="font-20 text-white fw-bold mb-4">1. </h3>
+        
+            <h3 class="font-20 text-white fw-bold mb-4">2. :</h3>
+    
+            <h3 class="font-20 text-white fw-bold mb-4">3. :</h3>
+        
+            <h3 class="font-20 text-white fw-bold mb-4">4. </h3>
+        
 
-            <h3 class="font-20 text-white fw-bold mb-4">5. Web Hosting and Maintenance</h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>Assistance with domain registration and selection of a suitable web hosting provider.</li>
-                <li>Continuous monitoring, backups, and security updates to ensure the stability and safety of your
-                    website.
-                </li>
-                <li>Performance optimization to enhance page load speed and overall user experience.</li>
-                <li>Regular content updates, bug fixes, and troubleshooting.</li>
-            </ol>
+            <h3 class="font-20 text-white fw-bold mb-4">5. </h3>
+        
 
-            <h3 class="font-20 text-white fw-bold mb-4">6. Mobile Responsive Design:</h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>Optimization of websites for mobile devices, ensuring a seamless experience across different screen
-                    sizes.
-                </li>
-                <li>Responsive design techniques to adapt layouts, images, and content for optimal mobile viewing.</li>
-                <li>Mobile app development to complement your web presence and reach a wider audience.</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">7. Search Engine Optimization (SEO):</h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>On-page and off-page optimization techniques to improve your website's visibility in search engine
-                    rankings.
-                </li>
-                <li>Keyword research, content optimization, and link building strategies to increase organic traffic.
-                </li>
-                <li> SEO audits and analysis to identify areas for improvement and implement effective strategies.</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">8. Website Analytics and Tracking:</h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>Implementation of tracking tools like Google Analytics to monitor website performance and user
-                    behavior.
-                </li>
-                <li>Reporting and analysis of key metrics to measure the success of your online presence.</li>
-                <li>Data-driven insights to make informed decisions and optimize your website for better results.</li>
-            </ol>
+            <h3 class="font-20 text-white fw-bold mb-4">6. :</h3>
+        
+            <h3 class="font-20 text-white fw-bold mb-4">7. :</h3>
+        
+            <h3 class="font-20 text-white fw-bold mb-4">8. :</h3>
+        
             <p class="font-16 text-muted mb-3">
                 Remember, these details can vary depending on the specific web development service provider. It's
                 essential to

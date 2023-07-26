@@ -1,8 +1,8 @@
 <section class="bg-1 bg-cover bg-no-repeat bg-fixed shadow py-2 py-sm-2 py-md-5 py-lg-5">
     <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
         <div class="row align-items-center">
-            <div class="col-sm-6">
-                <div class="animation-wrapper">
+            <div class="col-sm-6 py-2">
+                <div class="animation-wrapper" hidden>
                     <div class="sphere-animation">
                         <svg class="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)" fill="#111">
                             <defs>
@@ -57,8 +57,21 @@
                         </svg>
                     </div>
                 </div>
+                <div class="position-relative p-2 border border-primary border-5">
+                    <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                    </div>
+                    <div
+                        class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                    </div>
+                    <img src="{{ url_for('static', filename='images/services/app-development/3-min.webp')}}"
+                        class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                    <img src="{{ url_for('static', filename='images/services/app-development/4-min.webp')}}"
+                        class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                        alt="">
+                </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 py-2">
                 <div class="mb-2">
                     <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">Featured
                         services</b>

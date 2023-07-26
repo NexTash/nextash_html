@@ -86,7 +86,7 @@
 <!------ Header ------>
 
 <!------ Vision ------>
-<section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+<section class="shadow py-2 py-sm-2 py-md-5 py-lg-5 bg-2">
   <div class="card bg-transparent border-0 py-5 rounded-0">
     <div class="container container-sm container-md container-lg container-xl container-xxl">
       <div class="text-center p-3 backdrop-8 py-5 border border-primary border-5">
@@ -287,100 +287,5 @@
       cursor.classList.remove("-video");
     };
   });
-</script>
-<script>
-  function fitElementToParent(el, padding) {
-    var timeout = null;
-    function resize() {
-      if (timeout) clearTimeout(timeout);
-      anime.set(el, { scale: 1 });
-      var pad = padding || 0;
-      var parentEl = el.parentNode;
-      var elOffsetWidth = el.offsetWidth - pad;
-      var parentOffsetWidth = parentEl.offsetWidth;
-      var ratio = parentOffsetWidth / elOffsetWidth;
-      timeout = setTimeout(anime.set(el, { scale: ratio }), 10);
-    }
-    resize();
-    window.addEventListener("resize", resize);
-  }
-
-  var sphereAnimation = (function () {
-    var sphereEl = document.querySelector(".sphere-animation");
-    var spherePathEls = sphereEl.querySelectorAll(".sphere path");
-    var pathLength = spherePathEls.length;
-    var hasStarted = false;
-    var aimations = [];
-
-    fitElementToParent(sphereEl);
-
-    var breathAnimation = anime({
-      begin: function () {
-        for (var i = 0; i < pathLength; i++) {
-          aimations.push(
-            anime({
-              targets: spherePathEls[i],
-              stroke: {
-                value: ["rgba(255,75,75,1)", "rgba(80,80,80,.35)"],
-                duration: 100,
-              },
-              translateX: [2, -4],
-              translateY: [2, -4],
-              easing: "easeOutQuad",
-              autoplay: false,
-            })
-          );
-        }
-      },
-      update: function (ins) {
-        aimations.forEach(function (animation, i) {
-          var percent = (1 - Math.sin(i * 0.35 + 0.0022 * ins.currentTime)) / 2;
-          animation.seek(animation.duration * percent);
-        });
-      },
-      duration: Infinity,
-      autoplay: false,
-    });
-
-    var introAnimation = anime
-      .timeline({
-        autoplay: false,
-      })
-      .add(
-        {
-          targets: spherePathEls,
-          strokeDashoffset: {
-            value: [anime.setDashoffset, 0],
-            duration: 100,
-            easing: "easeInOutCirc",
-            delay: anime.stagger(100, { direction: "reverse" }),
-          },
-          duration: 100,
-          delay: anime.stagger(10, { direction: "reverse" }),
-          easing: "linear",
-        },
-        0
-      );
-
-    let shadowAnimation = anime(
-      {
-        targets: "#sphereGradient",
-        x1: "25%",
-        x2: "25%",
-        y1: "0%",
-        y2: "75%",
-        duration: 3000,
-        easing: "easeOutQuint",
-        autoplay: false,
-      },
-      0
-    );
-    function init() {
-      introAnimation.play();
-      breathAnimation.play();
-      shadowAnimation.play();
-    }
-    init();
-  })();
 </script>
 {% endblock %}
