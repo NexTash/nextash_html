@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Terms and conditions |  Nextash</title>
+    <title> Terms and conditions |  NexTash</title>
     <link rel="shortcut icon" href="/src/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/libs/boxicons/css/boxicons.min.css">
@@ -14,11 +14,11 @@
 <meta name="keywords" content="">
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="" />
-<meta property="og:title" content=" | Nextash" />
+<meta property="og:title" content=" | NexTash" />
 <meta property="og:description" content="" />
 <meta property="og:image" content="" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:site_name" content="Nextash" />
+<meta property="og:site_name" content="NexTash" />
 <meta property="og:url" content="" />
 
 </head>
@@ -475,9 +475,9 @@
     <div class="container container-sm container-md container-lg container-xl container-xxl">
       <div class="row font-14">
         <div class="col-sm-4 py-5 ">
-          <a href="/" class="mb-4 d-inline-block" role="img" aria-label="Nextash logo">
+          <a href="/" class="mb-4 d-inline-block" role="img" aria-label="NexTash logo">
             <img src="/src/images/logos/logo.png" width="50" height="70"
-              class="img-fluid size-70" alt="Nextash logo">
+              class="img-fluid size-70" alt="NexTash logo">
           </a>
           <p class="text-muted">
             Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
@@ -544,7 +544,7 @@
     <div class="container">
       <div class="d-flex flex-column flex-lg-row justify-content-between text-muted ">
         <p class="m-0 my-1">Copyright &copy; 2023, All Right Reserved
-          <a href="/" class="text-decoration-none text-white">Nextash</a>
+          <a href="/" class="text-decoration-none text-white">NexTash</a>
         </p>
         <ul class="d-flex align-items-center m-0 p-0 my-1" type="none">
           <li>

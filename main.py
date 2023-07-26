@@ -10,6 +10,7 @@ routes = [
     {"page": "about-us", "url": "about-us"},
     {"page": "contact-us", "url": "contact-us"},
     {"page": "expert-team", "url": "expert-team"},
+    {"page": "team-details", "url": "team-details"},
     {"page": "faqs", "url": "faqs"},
     {"page": "terms-and-conditions", "url": "terms-and-conditions"},
     {"page": "privacy-policy", "url": "privacy-policy"},

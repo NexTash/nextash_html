@@ -1,13 +1,13 @@
 {% extends "layouts/primary.html" %}
 
-{% block title %} Blogs | {% endblock %}
+{% block title %} News | {% endblock %}
 
 {% block seo %}
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="" />
-<meta property="og:title" content="Blogs | NexTash" />
+<meta property="og:title" content="News | NexTash" />
 <meta property="og:description" content="" />
 <meta property="og:image" content="" />
 <meta property="og:locale" content="en_US" />
@@ -24,8 +24,8 @@
     <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
       <div class="row">
         <div class="col-sm-12 text-white py-2">
-          <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">Blogs</b>
-          <h3 class="display-1 fw-bold m-0 mb-2 col-sm-8">Read our latest blogs and articles</h3>
+          <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">News</b>
+          <h3 class="display-1 fw-bold m-0 mb-2 col-sm-8">Read our latest news and articles</h3>
         </div>
         <div class="col-sm-3"></div>
         <div class="col-sm-6 text-muted py-2 font-20">
@@ -45,9 +45,6 @@
             <img src="{{ url_for('static', filename='images/blogs/1.webp')}}" alt="" class="card-img-top object-cover">
           </div>
           <div class="card-body">
-            <div class="my-2">
-              <span class="badge bg-danger rounded-0 font-12 px-2">News</span>
-            </div>
             <h3 class="fw-bold font-18 mb-3 m-0">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             </h3>
@@ -56,7 +53,7 @@
             </p>
           </div>
           <div class="card-footer pb-4 border-0 bg-transparent d-flex justify-content-between">
-            <p class="font-12 m-0">By <a href="" class="link-light">John doe</a> - 3 mins read</p>
+            <p class="font-12 m-0">By <a href="" class="link-light">John doe</a></p>
             <p class="font-12 m-0"><time>24-july-2023</time></p>
           </div>
         </div>
@@ -68,9 +65,6 @@
             <img src="{{ url_for('static', filename='images/blogs/2.webp')}}" alt="" class="card-img-top object-cover">
           </div>
           <div class="card-body">
-            <div class="my-2">
-              <span class="badge bg-danger rounded-0 font-12 px-2">News</span>
-            </div>
             <h3 class="fw-bold font-20 mb-3 m-0">Lorem ipsum dolor, sit amet consectetur adipisicing
               elit.
             </h3>
@@ -91,6 +85,6 @@
   </section>
   <!--------- Row --------->
 </div>
-  {% endblock %}
+{% endblock %}
 
-  {% block scripts %} {% endblock %}
+{% block scripts %} {% endblock %}

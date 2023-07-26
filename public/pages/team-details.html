@@ -1,0 +1,67 @@
+{% extends "layouts/primary.html" %}
+
+{% block title %} Team details | {% endblock %}
+
+{% block seo %}
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="" />
+<meta property="og:title" content="About us | NexTash" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="NexTash" />
+<meta property="og:url" content="" />
+{% endblock %}
+
+{% block style %}
+
+{% endblock %}
+
+{% block content %}
+<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
+  <!-- Header -->
+  <section class="shadow py-5">
+    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+      <div class="row align-items-center justify-content-center my-5 py-5">
+        <div class="col-sm-12 text-white py-2 mb-5">
+          <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">Meet the Dream Team </b>
+          <h3 class="display-1 fw-bold m-0 mb-2 col-sm-10"> Uniting Brilliance, Passion, and Creativity!</h3>
+        </div>
+        <div class="col-sm-4">
+          <div class="d-block text-decoration-none   p-2 border-primary border border-4 rounded-circle">
+            <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
+              class="card-img-top object-cover rounded-circle h-200 w-100">
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+          <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
+            Web developer
+          </b>
+          <h3 class="fw-bold display-1 mb-2 m-0 text-white">Abdul Hannan </h3>
+          <h4 class="text-white font-20 my-3">Follow us</h4>
+          <div class="d-flex align-items-center my-3">
+            <a href="#" class="bx bxl-facebook-square font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-twitter font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-google font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-instagram font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-github font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <p class="text-muted font-18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            porro corrupti! Rem in maxime provident, quidem eligendi soluta vero temporibus sed saepe dicta
+            ea, mollitia, quibusdam repudiandae quo doloremque distinctio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Header -->
+</div>
+{% endblock %}
+
+{% block scripts %} {% endblock %}
