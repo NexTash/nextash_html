@@ -12272,7 +12272,7 @@ img {
   src: url("../fonts/bevietnam-regular.ttf");
 }
 .font-bevietnam {
-  font-family: "bevietnam-regular", "arial";
+  font-family: "bevietnam-regular";
   font-display: fallback;
 }
 

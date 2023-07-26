@@ -18,11 +18,8 @@
 {% block style %}{% endblock %}
 
 {% block content %}
-
-<iframe name="blank_f19695c0d5d744" width="60px" tabindex="-1" data-testid="bubble_iframe" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v11.0/plugins/customer_chat/bubble" style="background: none; border-radius: 60px; bottom: 24px; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px; display: block; height: 60px; margin: 0px 12px; overflow: visible; padding: 0px; position: fixed; right: 12px; top: auto; width: 60px; z-index: 2147483644;"></iframe>
-
 <div class="bg-1 bg-cover bg-fixed bg-no-repeat">
-    <!-- Header -->
+    <!-- HEADER -->
     <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
         <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
             <div class="row align-items-center">
@@ -63,7 +60,7 @@
             </div>
         </div>
     </section>
-    <!-- Header -->
+    <!-- HEADER -->
 
     <!-- PERKS -->
     <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
@@ -141,6 +138,7 @@
     <!-- JOBS -->
     <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
         <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+
             <div class="py-5">
                 <div class="text-white ">
                     <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
@@ -152,8 +150,42 @@
                         others and want to advance professionally, our company could be a good fit for you.
                     </p>
                 </div>
-
-                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-4 py-5">
+                <h3 class="font-18 fw-bold m-0 text-white my-3">Posts <span id="totalCount">1 to 9 of 0</span></h3>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-6 mb-3">
+                        <form class="input-group border rounded-pill px-2 border-3 border-light bg-dark"
+                            id="searchForm">
+                            <input type="search" value="" name="search" id="search" placeholder="Search..."
+                                class="bg-dark border-0 shadow-none form-control font-16 text-dark">
+                            <button class="btn border-0 shadow-none bx bx-search font-18 me-2 text-primary"></button>
+                        </form>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="input-group border rounded-pill px-2 border-3 border-light bg-dark">
+                            <label for="category_id"
+                                class="input-group-text bg-dark border-0 fw-bold text-white">Category</label>
+                            <select name="category_id" id="category_id" data-selected=""
+                                class=" border-0 shadow-none font-16 text-white bg-dark form-control form-select">
+                                <option value="" selected="">Select</option>
+                                <option value="3">Javascript</option>
+                                <option value="2">Css</option>
+                                <option value="1">Html</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="input-group border rounded-pill px-2 border-3 border-light bg-dark">
+                            <label for="ordering"
+                                class="input-group-text bg-dark border-0 fw-bold text-white">Sort</label>
+                            <select name="ordering" id="ordering"
+                                class=" border-0 shadow-none font-16 text-white bg-dark form-control form-select">
+                                <option value="-id">Recent</option>
+                                <option value="id">Oldest</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-4 py-5 pt-2">
                     <div class="col">
                         <div
                             class="card bg-gray-800 shadow h-100 card-hover bg-triangles border border-2 border-dark rounded-4">
@@ -298,9 +330,8 @@
     </section>
     <!-- WHY CHOOSE US -->
 
-    <!------ Process ------>
+    <!------ PROCESS ------>
     {% include "components/process.html" %}
-    <!------ Process ------>
-
+    <!------ PROCESS ------>
 </div>
 {% endblock %}

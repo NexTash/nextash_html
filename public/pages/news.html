@@ -37,6 +37,41 @@
   <!-- Header -->
   <!--------- Row --------->
   <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
+    <h3 class="font-18 fw-bold m-0 text-white my-3">Posts <span id="totalCount">1 to 9 of 0</span></h3>
+    <div class="row mb-3">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-6 mb-3">
+            <form class="input-group border rounded-pill px-2 border-3 border-light bg-dark"
+                id="searchForm">
+                <input type="search" value="" name="search" id="search" placeholder="Search..."
+                    class="bg-dark border-0 shadow-none form-control font-16 text-dark">
+                    <button class="btn border-0 shadow-none bx bx-search font-18 me-2 text-primary"></button>
+            </form>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="input-group border rounded-pill px-2 border-3 border-light bg-dark">
+                <label for="category_id"
+                    class="input-group-text bg-dark border-0 fw-bold text-white">Category</label>
+                <select name="category_id" id="category_id" data-selected=""
+                    class=" border-0 shadow-none font-16 text-white bg-dark form-control form-select">
+                    <option value="" selected="">Select</option>
+                    <option value="3">Javascript</option>
+                    <option value="2">Css</option>
+                    <option value="1">Html</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="input-group border rounded-pill px-2 border-3 border-light bg-dark">
+                <label for="ordering"
+                    class="input-group-text bg-dark border-0 fw-bold text-white">Sort</label>
+                <select name="ordering" id="ordering"
+                    class=" border-0 shadow-none font-16 text-white bg-dark form-control form-select">
+                    <option value="-id">Recent</option>
+                    <option value="id">Oldest</option>
+                </select>
+            </div>
+        </div>
+    </div>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
       <article class="col">
         <div
