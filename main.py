@@ -39,11 +39,12 @@ routes = [
     {"page": "service-server-administration", "url": "service-server-administration"},
     {"page": "service-cyber-security", "url": "service-cyber-security"},
     {"page": "service-networking", "url": "service-networking"},
-    {"page": "service-manage-hosting", "url": "service-manage-hosting"},
+    {"page": "service-managed-hosting", "url": "service-managed-hosting"},
     {"page": "service-cloud-management", "url": "service-cloud-management"},
     {"page": "service-technical-support", "url": "service-technical-support"},
     {"page": "service-business-analysis", "url": "service-business-analysis"},
     {"page": "service-devops", "url": "service-devops"},
+    {"page": "service-seo", "url": "service-seo"},
 ]
 
 for route in routes:
