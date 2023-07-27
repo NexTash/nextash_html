@@ -1,338 +1,383 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layouts/primary.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexTash</title>
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel="stylesheet" href="./libs/boxicons/css/boxicons.min.css">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="" />
-    <meta property="og:title" content=" | NexTash" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="NexTash" />
-    <meta property="og:url" content="" />
-</head>
+{% block title %} Services | {% endblock %}
 
-<body class="bg-black font-bevietnam">
+{% block seo %}
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="" />
+<meta property="og:title" content=" | NexTash" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="NexTash" />
+<meta property="og:url" content="" />
+{% endblock %}
 
-    <!-------- Navbar ------->
-    <header class="navbar navbar-expand fixed-top top-0 p-0" id="navbar">
-        <nav class="container container-sm container-md container-lg container-xl container-xxl w-100">
-            <ul class="navbar-nav d-flex align-items-center justify-content-between w-100 font-kaushan">
-                <li class="nav-item">
-                    <a href="index.html">
-                        <img src="./images/logo.png" class="d-inline-block" width="60">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="nav-link btn p-0 text-white font-30 bx bx-menu-alt-right"></button>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-------- Navbar ------->
+{% block style %}{% endblock %}
 
-    <!--------- Bg ---------->
-    <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
-    <!--------- Bg ---------->
-
-    <!------- Content ------->
-    <main class="bg-1 bg-cover">
-        <section class="bg-clip py-5 mt-3">
-            <div class="design"></div>
-            <div class="d-flex align-items-center flex-column py-5">
-                <h2 class="fw-bold text-big mb-2 m-0 text-white z-index-999">Services</h2>
-                <div class="breadcrumb d-flex align-items-center font-kaushan z-index-999 m-0">
-                    <nuxt-link to="/" class="breadcrumb-item p-1 text-white font-20 text-decoration-none">
-                        Home
-                    </nuxt-link>
-                    <nuxt-link to="/services" class="breadcrumb-item p-1 text-white font-20 text-decoration-none">
-                        Services
-                    </nuxt-link>
-                    <nuxt-link to="/services/hosting"
-                        class="breadcrumb-item p-1 text-primary font-20 text-decoration-none">
-                        Hosting
-                    </nuxt-link>
+{% block content %}
+<div class="bg-1 bg-cover bg-fixed bg-no-repeat">
+    <!-- Header -->
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+            <div class="row">
+                <div class="col-sm-12 text-white py-2">
+                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">Service</b>
+                    <h3 class="display-1 fw-bold m-0 mb-2 col-sm-5">Digital marketing </h3>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 my-3">
+                    <div class="row text-muted font-18">
+                        <div class="col-sm-6 mb-3">
+                            <p class="m-0">
+                                Every decision we make needs to answer the million-dollar question: how will
+                                this benefit our partner’s goal best? We work to develop solutions
+                            </p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <p class="m-0">
+                                We like to be different, in the same way that every mission is different. Every
+                                project
+                                is
+                                an
+                                opportunity to create result that will help you
+                            </p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <ul>
+                                <li>Shared Hosting</li>
+                                <li>Virtual Private Server (VPS) Hosting</li>
+                                <li>Dedicated Server Hosting</li>
+                                <li>Cloud Hosting</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <ul>
+                                <li>Managed WordPress Hosting</li>
+                                <li>E-commerce Hosting</li>
+                                <li>Email Hosting</li>
+                                <li>Domain Name Registration</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <h3 class="font-20 text-white fw-bold mb-4">
-                1. Shared Hosting
-            </h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>Shared hosting is a cost-effective option where multiple websites are hosted on the same server.
-                </li>
-                <li>Ideal for small to medium-sized websites with moderate traffic and resource requirements.</li>
-                <li>Hosting provider manages server maintenance, security, and technical support.</li>
-                <li>Limited control and resources allocated among multiple websites on the same server.</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">
-                2. Virtual Private Server (VPS) Hosting
-            </h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>VPS hosting offers a virtualized environment with dedicated resources within a shared server.</li>
-                <li>Provides more control, flexibility, and scalability compared to shared hosting.</li>
-                <li>Each VPS operates independently, ensuring better performance and security.</li>
-                <li>Suitable for websites with higher traffic, resource-intensive applications, or specific
-                    customization
-                    needs.</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">
-                3. Dedicated Server Hosting
-            </h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>Dedicated server hosting provides an entire physical server dedicated to a single website or
-                    application.
-                </li>
-                <li>Offers maximum control, customization, and performance for high-traffic websites or
-                    resource-intensive
-                    applications.</li>
-                <li>Flexibility to choose hardware specifications, operating system, and server management options.</li>
-                <li>Requires technical expertise or managed services for server administration and maintenance.</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">
-                4. Cloud Hosting
-            </h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>Cloud hosting utilizes a network of interconnected servers to distribute website data and resources.
-                </li>
-                <li>Offers high scalability, flexibility, and redundancy to handle traffic spikes and ensure high
-                    availability.
-                </li>
-                <li>Pay-as-you-go pricing model allows scaling resources based on demand.</li>
-                <li>Ideal for websites with varying traffic patterns or those requiring high availability and
-                    scalability.</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">
-                5. Managed WordPress Hosting
-            </h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>Managed WordPress hosting is specifically designed for WordPress-powered websites.</li>
-                <li>Offers optimized performance, security, and automatic WordPress updates.</li>
-                <li>Dedicated support for WordPress-related issues and expert assistance with plugin and theme
-                    management.</li>
-                <li>Pre-installed caching, CDN integration, and other optimizations for enhanced WordPress performance.
-                </li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">6. E-commerce Hosting</h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>E-commerce hosting focuses on hosting online stores and providing features specific to e-commerce
-                    websites.
-                </li>
-                <li>Includes shopping cart functionality, secure payment gateways, SSL certificates, and inventory
-                    management
-                    tools.</li>
-                <li>Scalability to handle high traffic and resources required for online transactions.</li>
-                <li>Enhanced security measures to protect customer data and sensitive financial information.</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">7. Email Hosting</h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>Email hosting provides professional email services using your domain name.</li>
-                <li>Offers features such as email account creation, mailbox storage, spam filtering, and email
-                    forwarding.</li>
-                <li>Web-based email clients or support for popular email clients like Microsoft Outlook.</li>
-                <li>Secure protocols (POP3, IMAP, SMTP) for email access and transmission.</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">
-                8. Domain Name Registration
-            </h3>
-            <ol class="font-16 text-muted mb-3">
-                <li>Domain name registration service allows you to register and manage your website's domain name.</li>
-                <li>Helps in finding and securing a unique domain name for your website.</li>
-                <li>Assistance with domain transfers, DNS management, and domain privacy protection.</li>
-                <li>Integration with web hosting services for easy setup and management.</li>
-            </ol>
-            <p class="font-16 text-muted mb-3">
-                Please note that specific details and services may vary depending on the web hosting service provider.
-                It's
-                important to discuss your requirements and verify the features offered by the provider to ensure they
-                align with your
-                needs.
+        </div>
+    </section>
+    <!-- Header -->
+
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/1-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/2-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">01.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">Shared Hosting</h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>Shared hosting is a cost-effective option where multiple websites are hosted on the same
+                            server.
+                        </li>
+                        <li>Ideal for small to medium-sized websites with moderate traffic and resource requirements.
+                        </li>
+                        <li>Hosting provider manages server maintenance, security, and technical support.</li>
+                        <li>Limited control and resources allocated among multiple websites on the same server.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/3-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/4-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">02.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> Virtual Private Server (VPS) Hosting</h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>VPS hosting offers a virtualized environment with dedicated resources within a shared
+                            server.</li>
+                        <li>Provides more control, flexibility, and scalability compared to shared hosting.</li>
+                        <li>Each VPS operates independently, ensuring better performance and security.</li>
+                        <li>Suitable for websites with higher traffic, resource-intensive applications, or specific
+                            customization
+                            needs.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/5-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/6-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">03.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> Dedicated Server Hosting </h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>Dedicated server hosting provides an entire physical server dedicated to a single website or
+                            application.
+                        </li>
+                        <li>Offers maximum control, customization, and performance for high-traffic websites or
+                            resource-intensive
+                            applications.</li>
+                        <li>Flexibility to choose hardware specifications, operating system, and server management
+                            options.</li>
+                        <li>Requires technical expertise or managed services for server administration and maintenance.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/7-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/8-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">04.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">Cloud Hosting</h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>Cloud hosting utilizes a network of interconnected servers to distribute website data and
+                            resources.
+                        </li>
+                        <li>Offers high scalability, flexibility, and redundancy to handle traffic spikes and ensure
+                            high
+                            availability.
+                        </li>
+                        <li>Pay-as-you-go pricing model allows scaling resources based on demand.</li>
+                        <li>Ideal for websites with varying traffic patterns or those requiring high availability and
+                            scalability.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/9-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/10-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">05.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">Managed WordPress Hosting </h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>Managed WordPress hosting is specifically designed for WordPress-powered websites.</li>
+                        <li>Offers optimized performance, security, and automatic WordPress updates.</li>
+                        <li>Dedicated support for WordPress-related issues and expert assistance with plugin and theme
+                            management.</li>
+                        <li>Pre-installed caching, CDN integration, and other optimizations for enhanced WordPress
+                            performance.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/11-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/12-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">06.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">E-commerce Hosting</h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>E-commerce hosting focuses on hosting online stores and providing features specific to
+                            e-commerce
+                            websites.
+                        </li>
+                        <li>Includes shopping cart functionality, secure payment gateways, SSL certificates, and
+                            inventory
+                            management
+                            tools.</li>
+                        <li>Scalability to handle high traffic and resources required for online transactions.</li>
+                        <li>Enhanced security measures to protect customer data and sensitive financial information.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/13-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/14-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-1">
+                    <span class="display-1 text- text-stroke rounded-circle">07.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">mail Hosting</h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>Email hosting provides professional email services using your domain name.</li>
+                        <li>Offers features such as email account creation, mailbox storage, spam filtering, and email
+                            forwarding.</li>
+                        <li>Web-based email clients or support for popular email clients like Microsoft Outlook.</li>
+                        <li>Secure protocols (POP3, IMAP, SMTP) for email access and transmission.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/15-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/16-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">08.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">Domain Name Registration</h3>
+                    <ol class="font-16 text-muted mb-3">
+                        <li>Domain name registration service allows you to register and manage your website's domain
+                            name.</li>
+                        <li>Helps in finding and securing a unique domain name for your website.</li>
+                        <li>Assistance with domain transfers, DNS management, and domain privacy protection.</li>
+                        <li>Integration with web hosting services for easy setup and management.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- Row --------->
+    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
+        <div class="text-white mb-5">
+            <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
+                OUR WORK
+            </b>
+            <h3 class="text-white font-40 fw-bold m-0 my-2">Recent Projects Showcase</h3>
+            <p class="text-muted font-18 m-0 col-sm-6">
+                Creating impact with every project, experience the innovation.
             </p>
-        </section>
-    </main>
-
-    <!------- Content ------->
-
-    <!-------- Footer ------->
-    <footer class="fw-bold position-relative z-index-999">
-        <section class="py-5"
-            style="background-image: url(./images/patterns/2-min.webp);background-size: cover;margin-bottom: -80px;">
-            <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-                <div class="d-flex align-items-center flex-column justify-content-center">
-                    <h3 class="text-white font-40 mb-5 text-center bg-black p-2 rounded-2">
-                        We would love to hear <br> more about your project
-                    </h3>
-
-                    <a href=""
-                        class="btn btn-dark  text-white fw-bold position-relative d-flex rounded-circle d-inline-block size-150">
-                        <div class="m-auto font-14">
-                            Let's discuss <i class="bx bx-right-top-arrow-circle font-20 ms-2"></i>
-                        </div>
-                    </a>
-                </div>
-
-        </section>
-        <section class="shadow border-5 border-primary border-bottom">
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                    <path id="gentle-wave"
-                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="waves-parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" class="shadow" fill="#111" />
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="#444" />
-                    <use xlink:href="#gentle-wave" x="48" y="5" fill="#FF0000" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#000" />
-                </g>
-            </svg>
-        </section>
-        <section class="bg-dark fw-bold shadow border-dark border-bottom position-relative z-index-9">
-            <div class="container container-sm container-md container-lg container-xl container-xxl">
-                <div class="row py-5 justify-content-between">
-                    <article class="col-xl-4 col-md-4 my-3">
-                        <div class="d-flex align-items-center">
-                            <i class="bx bx-map text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
-                            <div class="ms-3">
-                                <h4 class="text-white font-18 m-0 mb-1 fw-bold">Find us</h4>
-                                <p class="text-muted font-16 m-0">1010 Avenue, sw 54321, chandigarh</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-xl-4 col-md-4 my-3">
-                        <div class="d-flex align-items-center">
-                            <i class="bx bx-phone text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
-                            <div class="ms-3">
-                                <h4 class="text-white font-18 m-0 mb-1 fw-bold">Call us</h4>
-                                <p class="text-muted font-16 m-0">+98765432100</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-xl-4 col-md-4 my-3">
-                        <div class="d-flex align-items-center">
-                            <i class="bx bx-envelope-open text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
-                            <div class="ms-3">
-                                <h4 class="text-white font-18 m-0 mb-1 fw-bold">Mail us</h4>
-                                <p class="text-muted font-16 m-0">mail@info.com</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section class="bg-1 bg-cover">
-            <div class="container container-sm container-md container-lg container-xl container-xxl">
-                <div class="row font-14">
-                    <div class="col-sm-4 py-5 ">
-                        <a href="index.html" class="mb-4 d-inline-block" role="img" aria-label="NexTash logo">
-                            <img src="./images/logo.png" class="img-fluid size-70" alt="NexTash logo">
-                        </a>
-                        <p class="text-muted">
-                            Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
-                            incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit amet.
-                        </p>
-                        <h3 class="text-white font-20 mb-3">Follow us</h3>
-                        <div class="d-flex align-items-center mt-3">
-                            <a href="#"
-                                class="bx bxl-facebook-square font-24 btn text-muted p-1 rounded-circle me-1"></a>
-                            <a href="#" class="bx bxl-twitter font-24 btn text-muted p-1 rounded-circle me-1"></a>
-                            <a href="#" class="bx bxl-google font-24 btn text-muted p-1 rounded-circle me-1"></a>
-                            <a href="#" class="bx bxl-instagram font-24 btn text-muted p-1 rounded-circle me-1"></a>
-                            <a href="#" class="bx bxl-github font-24 btn text-muted p-1 rounded-circle me-1"></a>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4">
+            <article class="col">
+                <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
+                    <div class="card-header border-0 p-0 bg-transparent  rounded-4">
+                        <img src="{{ url_for('static', filename='images/projects/1.webp')}}"
+                            class="card-img-top object-cover rounded-4" alt="">
+                    </div>
+                    <div
+                        class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
+                        <div class="mt-auto py-3">
+                            <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
+                            <h3 class="fw-bold font-20 my-4 m-0 text-white ">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </h3>
+                            <a href=""
+                                class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
+                                study</a>
                         </div>
                     </div>
-                    <div class="col-sm-4 py-5 ">
-                        <h3 class="text-white font-20 mb-3" role="heading" aria-level="3">Information</h3>
-                        <ul type="none" class="p-0 m-0">
-                            <li class="float-start w-50 mb-2">
-                                <a href="about-us.html" class="text-decoration-none text-muted font-14">About us</a>
-                            </li>
-                            <li class="float-start w-50 mb-2">
-                                <a href="contact-us.html" class="text-decoration-none text-muted font-14">Contact us</a>
-                            </li>
-                            <li class="float-start w-50 mb-2">
-                                <a href="services.html" class="text-decoration-none text-muted font-14">Services</a>
-                            </li>
-
-                            <li class="float-start w-50 mb-2">
-                                <a href="expert-team.html" class="text-decoration-none text-muted font-14">Expert
-                                    team</a>
-                            </li>
-                            <li class="float-start w-50 mb-2">
-                                <a href="blogs.html" class="text-decoration-none text-muted font-14">Blogs</a>
-                            </li>
-                            <li class="float-start w-50 mb-2">
-                                <a href="projects.html" class="text-decoration-none text-muted font-14">Projects</a>
-                            </li>
-                            <li class="float-start w-50 mb-2">
-                                <a href="jobs.html" class="text-decoration-none text-muted font-14">Jobs</a>
-                            </li>
-
-                            <li class="float-start w-50 mb-2">
-                                <a href="news.html" class="text-decoration-none text-muted font-14">Latest News</a>
-                            </li>
-                        </ul>
+                </div>
+            </article>
+            <article class="col">
+                <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
+                    <div class="card-header border-0 p-0 bg-transparent  rounded-4">
+                        <img src="{{ url_for('static', filename='images/projects/2.webp')}}"
+                            class="card-img-top object-cover rounded-4" alt="">
                     </div>
-                    <div class="col-sm-4 py-5">
-                        <h3 class="text-white font-20 mb-3" role="heading" aria-level="3">Subscribe</h3>
-                        <p class="text-muted mb-4">
-                            Don’t miss to subscribe to our new feeds, kindly fill the form below.
-                        </p>
-                        <form action="subscribed-successfully.html"
-                            class="input-group bg-gray-700 my-3 font-14 rounded-pill">
-                            <input type="text" placeholder="Email Address..."
-                                class="form-control shadow-none py-3 fw-bold bg-transparent text-white border-0 font-14 px-3">
-                            <button class="bx bx-send btn font-20 fw-normal text-white p-2 px-4"></button>
-                        </form>
+                    <div
+                        class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
+                        <div class="mt-auto py-3">
+                            <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
+                            <h3 class="fw-bold font-20 my-4 m-0 text-white ">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </h3>
+                            <a href=""
+                                class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
+                                study</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </article>
+        </div>
+        <div class="text-center py-5">
+            <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">Load more</button>
+        </div>
+    </section>
+    <!--------- Row --------->
 
-        <section class="bg-black py-3 border-top border-dark border-2 font-14">
-            <div class="container">
-                <div class="d-flex flex-column flex-lg-row justify-content-between text-muted ">
-                    <p class="m-0 my-1">Copyright &copy; 2023, All Right Reserved
-                        <a href="https://NexTash.com/" class="text-decoration-none text-white">NexTash</a>
-                    </p>
-                    <ul class="d-flex align-items-center m-0 p-0 my-1" type="none">
-                        <li>
-                            <a href="terms-and-conditions.html" class="text-decoration-none text-muted px-2">Terms</a>
-                        </li>
-                        <li>
-                            <a href="privacy-policy.html" class="text-decoration-none text-muted px-2">Privacy</a>
-                        </li>
-                        <li>
-                            <a href="cookies-policy.html" class="text-decoration-none text-muted px-2">Cookies</a>
-                        </li>
-                        <li>
-                            <a href="contact-us.html" class="text-decoration-none text-muted px-2">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </footer>
-    <!-------- Footer ------->
+    <!-- Feedbacks -->
+    {% include "components/feedbacks.html" %}
+    <!-- Feedbacks -->
 
-    <!------- Scripts ------->
-    <script src="./js/bootstrap/bootstrap.min.js"></script>
-    <!------- Scripts ------->
-</body>
-
-</html>
+    <!------ Process ------>
+    {% include "components/process.html" %}
+    <!------ Process ------>
+    <!------ Clients ------->
+    {% include "components/clients.html" %}
+    <!------ Clients ------->
+</div>
+{% endblock %}

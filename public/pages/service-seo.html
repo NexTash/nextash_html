@@ -1,324 +1,387 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layouts/primary.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexTash</title>
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel="stylesheet" href="./libs/boxicons/css/boxicons.min.css">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="" />
-    <meta property="og:title" content=" | NexTash" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="NexTash" />
-    <meta property="og:url" content="" />
-</head>
+{% block title %} Services | {% endblock %}
 
-<body class="bg-black font-bevietnam">
+{% block seo %}
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="" />
+<meta property="og:title" content=" | NexTash" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="NexTash" />
+<meta property="og:url" content="" />
+{% endblock %}
 
-    <!-------- Navbar ------->
-    <header class="navbar navbar-expand fixed-top top-0 p-0" id="navbar">
-        <nav class="container container-sm container-md container-lg container-xl container-xxl w-100">
-            <ul class="navbar-nav d-flex align-items-center justify-content-between w-100 font-kaushan">
-                <li class="nav-item">
-                    <a href="index.html">
-                        <img src="./images/logo.png" class="d-inline-block" width="60">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="nav-link btn p-0 text-white font-30 bx bx-menu-alt-right"></button>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-------- Navbar ------->
+{% block style %}{% endblock %}
 
-    <!--------- Bg ---------->
-    <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
-    <!--------- Bg ---------->
+{% block content %}
+<div class="bg-1 bg-cover bg-fixed bg-no-repeat">
+    <!-- Header -->
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+            <div class="row">
+                <div class="col-sm-12 text-white py-2">
+                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">Service</b>
+                    <h3 class="display-1 fw-bold m-0 mb-2 col-sm-5">Digital marketing </h3>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 my-3">
+                    <div class="row text-muted font-18">
+                        <div class="col-sm-6 mb-3">
+                            <p class="m-0">
+                                Every decision we make needs to answer the million-dollar question: how will
+                                this benefit our partner’s goal best? We work to develop solutions
+                            </p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <p class="m-0">
+                                We like to be different, in the same way that every mission is different. Every
+                                project
+                                is
+                                an
+                                opportunity to create result that will help you
+                            </p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <ul>
+                                <li> SEO Audit and Analysis</li>
+                                <li>On-Page Optimization</li>
+                                <li>Off-Page Optimization</li>
+                                <li>Technical SEO</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <ul>
+                                <li>Content Creation and Optimization</li>
+                                <li>Local SEO</li>
+                                <li>SEO Reporting and Analysis</li>
+                                <li> SEO Consultation and Strategy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Header -->
 
-    <!------- Content ------->
-    <main class="bg-1 bg-cover">
-        <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <h3 class="font-20 text-white fw-bold mb-4">1. SEO Audit and Analysis</h3>
-            <ol class="font-20 text-muted ">
-                <li>Comprehensive website analysis to identify technical issues, on-page optimization opportunities, and
-                    areas
-                    for
-                    improvement.</li>
-                <li>Keyword research and analysis to determine relevant keywords and phrases for targeting.</li>
-                <li>Competitor analysis to understand their SEO strategies and identify areas of competitive advantage.
-                </li>
-                <li>Identification of website performance metrics, including organic traffic, rankings, and user
-                    engagement.
-                </li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">2. On-Page Optimization</h3>
-            <ol class="font-20 text-muted ">
-                <li>Keyword optimization of website content, including headings, meta tags, URLs, and image alt tags.
-                </li>
-                <li>Content optimization to ensure relevance, readability, and user engagement.</li>
-                <li>Site structure optimization, including navigation, internal linking, and XML sitemap creation.</li>
-                <li>Optimization of page load speed, mobile responsiveness, and usability for enhanced user experience.
-                </li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">3. Off-Page Optimization</h3>
-            <ol class="font-20 text-muted ">
-                <li>Link building strategies to increase the number and quality of backlinks to the website</li>
-                <li>Guest blogging, outreach, and content promotion to generate high-quality backlinks from
-                    authoritative
-                    websites
-                </li>
-                <li>Social media signals and social bookmarking to enhance website visibility and reach</li>
-                <li>Online directory submissions and local SEO optimization for location-based businesses</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">4. Technical SEO</h3>
-            <ol class="font-20 text-muted ">
-                <li>Website crawlability and indexability analysis to ensure search engines can access and understand
-                    the
-                    website's content</li>
-                <li>Website speed optimization to improve user experience and search engine rankings.</li>
-                <li>Mobile optimization to ensure the website is mobile-friendly and meets mobile search requirements.
-                </li>
-                <li>Schema markup implementation to enhance search engine understanding of structured data on the
-                    website.</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">5. Content Creation and Optimization</h3>
-            <ol class="font-20 text-muted ">
-                <li>Creation of high-quality, relevant, and optimized content for website pages, blog posts, articles,
-                    and
-                    other
-                    resources.</li>
-                <li>Keyword integration and optimization within content to improve visibility for target search terms.
-                </li>
-                <li>Content strategy development to align with target audience needs and search intent.</li>
-                <li>Optimization of multimedia content such as images and videos for search engines.</li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">6. Local SEO</h3>
-            <ol class="font-20 text-muted ">
-                <li>Local keyword research and optimization for businesses targeting specific geographic locations.</li>
-                <li>Google My Business optimization to enhance local business visibility on Google Maps and local search
-                    results.
-                </li>
-                <li>Online reviews management and reputation management for local businesses.</li>
-                <li>Local citation building and NAP (Name, Address, Phone number) consistency across directories and
-                    listings.
-                </li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">7. SEO Reporting and Analysis</h3>
-            <ol class="font-20 text-muted ">
-                <li>
-                    Regular monitoring and reporting of website performance metrics, including organic traffic, keyword
-                    rankings,
-                    and conversions.
-                </li>
-                <li>
-                    Analysis of user behavior, click-through rates, and bounce rates to identify areas of improvement.
-                </li>
-                <li>
-                    Identification of trends, opportunities, and recommendations for ongoing SEO optimization.
-                </li>
-                <li>
-                    Customized reports and dashboards to track progress and measure ROI.
-                </li>
-            </ol>
-            <h3 class="font-20 text-white fw-bold mb-4">8. SEO Consultation and Strategy</h3>
-            <ol class="font-20 text-muted ">
-                <li>Consultation services to understand business goals and develop an effective SEO strategy</li>
-                <li>Guidance on best practices, industry trends, and algorithm updates</li>
-                <li>Assistance with website migrations, domain changes, or other SEO-sensitive activities.</li>
-                <li>Ongoing SEO support, guidance, and collaboration with internal teams.</li>
-            </ol>
-            <p class="font-20 text-muted ">
-
-                Remember, these details can vary depending on the specific SEO service provider and the specific goals
-                and
-                needs of your business. It's important to discuss your requirements with the service provider to ensure
-                they
-                can deliver
-                the desired SEO solutions and help improve your website's visibility and organic search rankings.
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/1-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/2-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">01.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">SEO Audit and Analysis</h3>
+                    <ol class="font-20 text-muted ">
+                        <li>Comprehensive website analysis to identify technical issues, on-page optimization opportunities, and
+                            areas
+                            for
+                            improvement.</li>
+                        <li>Keyword research and analysis to determine relevant keywords and phrases for targeting.</li>
+                        <li>Competitor analysis to understand their SEO strategies and identify areas of competitive advantage.
+                        </li>
+                        <li>Identification of website performance metrics, including organic traffic, rankings, and user
+                            engagement.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/3-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/4-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">02.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> On-Page Optimization</h3>
+                    <ol class="font-20 text-muted ">
+                        <li>Keyword optimization of website content, including headings, meta tags, URLs, and image alt tags.
+                        </li>
+                        <li>Content optimization to ensure relevance, readability, and user engagement.</li>
+                        <li>Site structure optimization, including navigation, internal linking, and XML sitemap creation.</li>
+                        <li>Optimization of page load speed, mobile responsiveness, and usability for enhanced user experience.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/5-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/6-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">03.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> Off-Page Optimization </h3>
+                    <ol class="font-20 text-muted ">
+                        <li>Link building strategies to increase the number and quality of backlinks to the website</li>
+                        <li>Guest blogging, outreach, and content promotion to generate high-quality backlinks from
+                            authoritative
+                            websites
+                        </li>
+                        <li>Social media signals and social bookmarking to enhance website visibility and reach</li>
+                        <li>Online directory submissions and local SEO optimization for location-based businesses</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/7-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/8-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">04.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">Technical SEO</h3>
+                    <ol class="font-20 text-muted ">
+                        <li>Website crawlability and indexability analysis to ensure search engines can access and understand
+                            the
+                            website's content</li>
+                        <li>Website speed optimization to improve user experience and search engine rankings.</li>
+                        <li>Mobile optimization to ensure the website is mobile-friendly and meets mobile search requirements.
+                        </li>
+                        <li>Schema markup implementation to enhance search engine understanding of structured data on the
+                            website.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/9-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/10-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">05.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">Content Creation and Optimization </h3>
+                    <ol class="font-20 text-muted ">
+                        <li>Creation of high-quality, relevant, and optimized content for website pages, blog posts, articles,
+                            and
+                            other
+                            resources.</li>
+                        <li>Keyword integration and optimization within content to improve visibility for target search terms.
+                        </li>
+                        <li>Content strategy development to align with target audience needs and search intent.</li>
+                        <li>Optimization of multimedia content such as images and videos for search engines.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/11-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/12-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">06.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">Local SEO</h3>
+                    <ol class="font-20 text-muted ">
+                        <li>Local keyword research and optimization for businesses targeting specific geographic locations.</li>
+                        <li>Google My Business optimization to enhance local business visibility on Google Maps and local search
+                            results.
+                        </li>
+                        <li>Online reviews management and reputation management for local businesses.</li>
+                        <li>Local citation building and NAP (Name, Address, Phone number) consistency across directories and
+                            listings.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/13-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/14-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-1">
+                    <span class="display-1 text- text-stroke rounded-circle">07.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">SEO Reporting and Analysis</h3>
+                    <ol class="font-20 text-muted ">
+                        <li>
+                            Regular monitoring and reporting of website performance metrics, including organic traffic, keyword
+                            rankings,
+                            and conversions.
+                        </li>
+                        <li>
+                            Analysis of user behavior, click-through rates, and bounce rates to identify areas of improvement.
+                        </li>
+                        <li>
+                            Identification of trends, opportunities, and recommendations for ongoing SEO optimization.
+                        </li>
+                        <li>
+                            Customized reports and dashboards to track progress and measure ROI.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/15-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/16-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">08.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">SEO Consultation and Strategy</h3>
+                    <ol class="font-20 text-muted ">
+                        <li>Consultation services to understand business goals and develop an effective SEO strategy</li>
+                        <li>Guidance on best practices, industry trends, and algorithm updates</li>
+                        <li>Assistance with website migrations, domain changes, or other SEO-sensitive activities.</li>
+                        <li>Ongoing SEO support, guidance, and collaboration with internal teams.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- Row --------->
+    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
+        <div class="text-white mb-5">
+            <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
+                OUR WORK
+            </b>
+            <h3 class="text-white font-40 fw-bold m-0 my-2">Recent Projects Showcase</h3>
+            <p class="text-muted font-18 m-0 col-sm-6">
+                Creating impact with every project, experience the innovation.
             </p>
-        </section>
-    </main>
-    <!------- Content ------->
-
-    <!-------- Footer ------->
-    <footer class="fw-bold position-relative z-index-999">
-        <section class="py-5"
-            style="background-image: url(./images/patterns/2-min.webp);background-size: cover;margin-bottom: -80px;">
-            <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-                <div class="d-flex align-items-center flex-column justify-content-center">
-                    <h3 class="text-white font-40 mb-5 text-center bg-black p-2 rounded-2">
-                        We would love to hear <br> more about your project
-                    </h3>
-
-                    <a href=""
-                        class="btn btn-dark  text-white fw-bold position-relative d-flex rounded-circle d-inline-block size-150">
-                        <div class="m-auto font-14">
-                            Let's discuss <i class="bx bx-right-top-arrow-circle font-20 ms-2"></i>
-                        </div>
-                    </a>
-                </div>
-
-        </section>
-        <section class="shadow border-5 border-primary border-bottom">
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                    <path id="gentle-wave"
-                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="waves-parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" class="shadow" fill="#111" />
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="#444" />
-                    <use xlink:href="#gentle-wave" x="48" y="5" fill="#FF0000" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#000" />
-                </g>
-            </svg>
-        </section>
-        <section class="bg-dark fw-bold shadow border-dark border-bottom position-relative z-index-9">
-            <div class="container container-sm container-md container-lg container-xl container-xxl">
-                <div class="row py-5 justify-content-between">
-                    <article class="col-xl-4 col-md-4 my-3">
-                        <div class="d-flex align-items-center">
-                            <i class="bx bx-map text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
-                            <div class="ms-3">
-                                <h4 class="text-white font-18 m-0 mb-1 fw-bold">Find us</h4>
-                                <p class="text-muted font-16 m-0">1010 Avenue, sw 54321, chandigarh</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-xl-4 col-md-4 my-3">
-                        <div class="d-flex align-items-center">
-                            <i class="bx bx-phone text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
-                            <div class="ms-3">
-                                <h4 class="text-white font-18 m-0 mb-1 fw-bold">Call us</h4>
-                                <p class="text-muted font-16 m-0">+98765432100</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-xl-4 col-md-4 my-3">
-                        <div class="d-flex align-items-center">
-                            <i class="bx bx-envelope-open text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
-                            <div class="ms-3">
-                                <h4 class="text-white font-18 m-0 mb-1 fw-bold">Mail us</h4>
-                                <p class="text-muted font-16 m-0">mail@info.com</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section class="bg-1 bg-cover">
-            <div class="container container-sm container-md container-lg container-xl container-xxl">
-                <div class="row font-14">
-                    <div class="col-sm-4 py-5 ">
-                        <a href="index.html" class="mb-4 d-inline-block" role="img" aria-label="NexTash logo">
-                            <img src="./images/logo.png" class="img-fluid size-70" alt="NexTash logo">
-                        </a>
-                        <p class="text-muted">
-                            Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
-                            incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit amet.
-                        </p>
-                        <h3 class="text-white font-20 mb-3">Follow us</h3>
-                        <div class="d-flex align-items-center mt-3">
-                            <a href="#"
-                                class="bx bxl-facebook-square font-24 btn text-muted p-1 rounded-circle me-1"></a>
-                            <a href="#" class="bx bxl-twitter font-24 btn text-muted p-1 rounded-circle me-1"></a>
-                            <a href="#" class="bx bxl-google font-24 btn text-muted p-1 rounded-circle me-1"></a>
-                            <a href="#" class="bx bxl-instagram font-24 btn text-muted p-1 rounded-circle me-1"></a>
-                            <a href="#" class="bx bxl-github font-24 btn text-muted p-1 rounded-circle me-1"></a>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4">
+            <article class="col">
+                <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
+                    <div class="card-header border-0 p-0 bg-transparent  rounded-4">
+                        <img src="{{ url_for('static', filename='images/projects/1.webp')}}"
+                            class="card-img-top object-cover rounded-4" alt="">
+                    </div>
+                    <div
+                        class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
+                        <div class="mt-auto py-3">
+                            <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
+                            <h3 class="fw-bold font-20 my-4 m-0 text-white ">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </h3>
+                            <a href=""
+                                class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
+                                study</a>
                         </div>
                     </div>
-                    <div class="col-sm-4 py-5 ">
-                        <h3 class="text-white font-20 mb-3" role="heading" aria-level="3">Information</h3>
-                        <ul type="none" class="p-0 m-0">
-                            <li class="float-start w-50 mb-2">
-                                <a href="about-us.html" class="text-decoration-none text-muted font-14">About us</a>
-                            </li>
-                            <li class="float-start w-50 mb-2">
-                                <a href="contact-us.html" class="text-decoration-none text-muted font-14">Contact us</a>
-                            </li>
-                            <li class="float-start w-50 mb-2">
-                                <a href="services.html" class="text-decoration-none text-muted font-14">Services</a>
-                            </li>
-
-                            <li class="float-start w-50 mb-2">
-                                <a href="expert-team.html" class="text-decoration-none text-muted font-14">Expert
-                                    team</a>
-                            </li>
-                            <li class="float-start w-50 mb-2">
-                                <a href="blogs.html" class="text-decoration-none text-muted font-14">Blogs</a>
-                            </li>
-                            <li class="float-start w-50 mb-2">
-                                <a href="projects.html" class="text-decoration-none text-muted font-14">Projects</a>
-                            </li>
-                            <li class="float-start w-50 mb-2">
-                                <a href="jobs.html" class="text-decoration-none text-muted font-14">Jobs</a>
-                            </li>
-
-                            <li class="float-start w-50 mb-2">
-                                <a href="news.html" class="text-decoration-none text-muted font-14">Latest News</a>
-                            </li>
-                        </ul>
+                </div>
+            </article>
+            <article class="col">
+                <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
+                    <div class="card-header border-0 p-0 bg-transparent  rounded-4">
+                        <img src="{{ url_for('static', filename='images/projects/2.webp')}}"
+                            class="card-img-top object-cover rounded-4" alt="">
                     </div>
-                    <div class="col-sm-4 py-5">
-                        <h3 class="text-white font-20 mb-3" role="heading" aria-level="3">Subscribe</h3>
-                        <p class="text-muted mb-4">
-                            Don’t miss to subscribe to our new feeds, kindly fill the form below.
-                        </p>
-                        <form action="subscribed-successfully.html"
-                            class="input-group bg-gray-700 my-3 font-14 rounded-pill">
-                            <input type="text" placeholder="Email Address..."
-                                class="form-control shadow-none py-3 fw-bold bg-transparent text-white border-0 font-14 px-3">
-                            <button class="bx bx-send btn font-20 fw-normal text-white p-2 px-4"></button>
-                        </form>
+                    <div
+                        class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
+                        <div class="mt-auto py-3">
+                            <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
+                            <h3 class="fw-bold font-20 my-4 m-0 text-white ">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </h3>
+                            <a href=""
+                                class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
+                                study</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </article>
+        </div>
+        <div class="text-center py-5">
+            <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">Load more</button>
+        </div>
+    </section>
+    <!--------- Row --------->
 
-        <section class="bg-black py-3 border-top border-dark border-2 font-14">
-            <div class="container">
-                <div class="d-flex flex-column flex-lg-row justify-content-between text-muted ">
-                    <p class="m-0 my-1">Copyright &copy; 2023, All Right Reserved
-                        <a href="https://NexTash.com/" class="text-decoration-none text-white">NexTash</a>
-                    </p>
-                    <ul class="d-flex align-items-center m-0 p-0 my-1" type="none">
-                        <li>
-                            <a href="terms-and-conditions.html" class="text-decoration-none text-muted px-2">Terms</a>
-                        </li>
-                        <li>
-                            <a href="privacy-policy.html" class="text-decoration-none text-muted px-2">Privacy</a>
-                        </li>
-                        <li>
-                            <a href="cookies-policy.html" class="text-decoration-none text-muted px-2">Cookies</a>
-                        </li>
-                        <li>
-                            <a href="contact-us.html" class="text-decoration-none text-muted px-2">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </footer>
-    <!-------- Footer ------->
+    <!-- Feedbacks -->
+    {% include "components/feedbacks.html" %}
+    <!-- Feedbacks -->
 
-    <!------- Scripts ------->
-    <script src="./js/bootstrap/bootstrap.min.js"></script>
-    <!------- Scripts ------->
-</body>
+    <!------ Process ------>
+    {% include "components/process.html" %}
+    <!------ Process ------>
+    <!------ Clients ------->
+    {% include "components/clients.html" %}
+    <!------ Clients ------->
+</div>
+{% endblock %}
 
-</html>
