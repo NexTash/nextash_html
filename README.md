@@ -1,31 +1,22 @@
-Services
-+ Branding
-+ Graphics Design
-+ Web Development
-+ Mobile App Development
-+ Digital Marketing
-+ Cyber Security
-+ DevOps
-+ Networking
-+ ERP Development
-+ Database Administration
-+ Server Administration
-+ Customized Cloud Management
-+ Managed Hosting
-+ Technical Support
-+ Business Analysis
+- Industries
 
-Industries
-+ Education
-+ Mediction
- 
+* Education
+* Medication
 
-Todo
-+ About us
-- Header
-- Our Story
-- Featured services
-- Process
-- Work done
-- Team
-- Companies
+- Services + ToDos
+
+* Branding (Not done)
+* Graphics Design (Not done)
+* Web development (Half done)
+* Mobile app development (Done)
+* Digital marketing (Not done)
+* Cyber security (Not done)
+* DevOps (Not done)
+* Networking (Not done)
+* Erp development (Not done)
+* Database administration (Not done)
+* Server administration (Not done)
+* Customized Cloud management (Not done)
+* Manage hosting (Not done)
+* Technical support (Not done)
+* Business analysis (Not done)
