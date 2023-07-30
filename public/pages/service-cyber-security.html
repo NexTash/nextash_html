@@ -1,0 +1,409 @@
+{% extends "layouts/primary.html" %}
+
+{% block title %} Cyber security | {% endblock %}
+
+{% block seo %}
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="" />
+<meta property="og:title" content=" | NexTash" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="NexTash" />
+<meta property="og:url" content="" />
+{% endblock %}
+
+{% block style %}{% endblock %}
+
+{% block content %}
+<div class="bg-1 bg-cover bg-fixed bg-no-repeat">
+    <!-- HEADER -->
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+            <div class="row">
+                <div class="col-sm-12 text-white py-2">
+                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">Service</b>
+                    <h3 class="display-1 fw-bold m-0 mb-2 col-sm-5">Cyber security</h3>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 my-3">
+                    <div class="row text-muted font-18">
+                        <div class="col-sm-6 mb-3">
+                            <p class="m-0">
+                                Every decision we make needs to answer the million-dollar question: how will
+                                this benefit our partner’s goal best? We work to develop solutions
+                            </p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <p class="m-0">
+                                We like to be different, in the same way that every mission is different. Every
+                                project
+                                is
+                                an
+                                opportunity to create result that will help you
+                            </p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <ul>
+                                <li>Cyber Risk Assessment</li>
+                                <li>Network Security</li>
+                                <li>Endpoint Protection</li>
+                                <li>Incident Response and Management</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <ul>
+                                <li>Cloud Security</li>
+                                <li>Employee Training and Awareness</li>
+                                <li>Penetration Testing</li>
+                                <li>Security Awareness Training</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HEADER -->
+
+    <!-- DETAILS -->
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/1-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/2-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">01.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> Cyber Risk Assessment </h3>
+                    <ol class="font-18 text-muted mb-3">
+                        <li>In-depth evaluation of your organization's cybersecurity posture.
+                        </li>
+                        <li>Identifying potential vulnerabilities and weak points in your infrastructure.
+                        </li>
+                        <li>Assessing the potential impact of cyber threats on your business operations.
+                        </li>
+                        <li>Providing actionable recommendations to mitigate identified risks.
+                        </li>
+                        <li>Assisting with compliance requirements and industry regulations.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/3-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/4-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">02.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> Network Security</h3>
+                    <ol class="font-18 text-muted mb-3 ">
+                        <li>Deploying robust firewalls, intrusion detection, and prevention systems.
+                        </li>
+                        <li>Setting up secure Virtual Private Networks (VPNs) for remote access.
+                        </li>
+                        <li>Implementing secure access controls and multi-factor authentication.
+                        </li>
+                        <li>Monitoring network traffic for suspicious activities and anomalies.
+                        </li>
+                        <li>Conducting regular security audits and updates.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/5-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/6-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">03.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> Endpoint Protection </h3>
+                    <ol class="font-18 text-muted mb-3 ">
+                        <li>Deploying advanced anti-malware and anti-virus solutions.
+                        </li>
+                        <li>Securing endpoints (computers, laptops, mobile devices) against threats.
+                        </li>
+                        <li>Enforcing data encryption and data loss prevention (DLP) measures.
+                        </li>
+                        <li>Implementing patch management to keep software up to date.
+                        </li>
+                        <li>Monitoring endpoint activities for potential breaches.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/7-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/8-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">04.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">Incident Response and Management</h3>
+                    <ol class="font-18 text-muted mb-3 ">
+                        <li>Developing incident response plans tailored to your organization.
+                        </li>
+                        <li>Establishing protocols for immediate response to cybersecurity incidents.
+                        </li>
+                        <li>Conducting thorough investigations to understand the scope of breaches.
+                        </li>
+                        <li>Containing and mitigating the impact of security incidents.
+                        </li>
+                        <li>Implementing measures to prevent similar incidents in the future.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/9-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/10-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">05.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> Cloud Security </h3>
+                    <ol class="font-18 text-muted mb-3 ">
+                        <li>Evaluating cloud service providers for security compliance.
+                        </li>
+                        <li>Implementing encryption and access controls for cloud data.
+                        </li>
+                        <li>Securing cloud infrastructure with firewalls and intrusion detection.
+                        </li>
+                        <li>Continuous monitoring of cloud resources for unauthorized access.
+                        </li>
+                        <li>Ensuring secure backups and disaster recovery plans.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/11-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/12-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">06.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold"> Employee Training and Awareness</h3>
+                    <ol class="font-18 text-muted mb-3 ">
+                        <li>Conducting cybersecurity awareness programs for employees.
+                        </li>
+                        <li>Educating staff on identifying phishing attempts and social engineering.
+                        </li>
+                        <li>Encouraging strong password management and data handling practices.
+                        </li>
+                        <li>Fostering a culture of cybersecurity vigilance throughout the organization.
+                        </li>
+                        <li>Training employees to respond appropriately to potential threats.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/13-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/14-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-1">
+                    <span class="display-1 text- text-stroke rounded-circle">07.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">Penetration Testing</h3>
+                    <ol class="font-18 text-muted mb-3 ">
+                        <li>Simulating real-world cyberattacks to identify vulnerabilities.
+                        </li>
+                        <li>Conducting ethical hacking to test the effectiveness of security measures.
+                        </li>
+                        <li>Identifying weak points and potential entry points for attackers.
+                        </li>
+                        <li>Providing detailed reports and recommendations for remediation.
+                        </li>
+                        <li>Ensuring your organization is well-prepared for actual cyber threats.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/15-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/16-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">08.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">Security Awareness Training</h3>
+                    <ol class="font-18 text-muted mb-3 ">
+                        <li>Providing comprehensive cybersecurity training for employees.
+                        </li>
+                        <li>Educating staff about the latest cyber threats and attack vectors.
+                        </li>
+                        <li>Training on safe browsing practices and email security.
+                        </li>
+                        <li>Creating a security-conscious workforce to prevent human errors.
+                        </li>
+                        <li>Conducting phishing simulations to test employee readiness.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DETAILS -->
+
+    <!-- WHY CHOOSE US -->
+    {% include "components/why-choose-us.html" %}
+    <!-- WHY CHOOSE US -->
+
+    <!--PROCESS-->
+    {% include "components/process.html" %}
+    <!--PROCESS-->
+
+    <!--PROJECTS-->
+    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
+        <div class="text-white mb-5">
+            <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
+                OUR WORK
+            </b>
+            <h3 class="text-white font-40 fw-bold m-0 my-2">Recent Projects Showcase</h3>
+            <p class="text-muted font-18 m-0 col-sm-6">
+                Creating impact with every project, experience the innovation.
+            </p>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4">
+            <article class="col">
+                <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
+                    <div class="card-header border-0 p-0 bg-transparent  rounded-4">
+                        <img src="{{ url_for('static', filename='images/projects/1.webp')}}"
+                            class="card-img-top object-cover rounded-4" alt="">
+                    </div>
+                    <div
+                        class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
+                        <div class="mt-auto py-3">
+                            <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
+                            <h3 class="fw-bold font-20 my-4 m-0 text-white ">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </h3>
+                            <a href=""
+                                class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
+                                study</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col">
+                <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
+                    <div class="card-header border-0 p-0 bg-transparent  rounded-4">
+                        <img src="{{ url_for('static', filename='images/projects/2.webp')}}"
+                            class="card-img-top object-cover rounded-4" alt="">
+                    </div>
+                    <div
+                        class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
+                        <div class="mt-auto py-3">
+                            <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
+                            <h3 class="fw-bold font-20 my-4 m-0 text-white ">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </h3>
+                            <a href=""
+                                class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
+                                study</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="text-center py-5">
+            <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">Load more</button>
+        </div>
+    </section>
+    <!--PROJECTS-->
+
+    <!-- FEEDBACKS -->
+    {% include "components/feedbacks.html" %}
+    <!-- FEEDBACKS -->
+
+    <!-- CLIENTS -->
+    {% include "components/clients.html" %}
+    <!-- CLIENTS -->
+</div>
+{% endblock %}

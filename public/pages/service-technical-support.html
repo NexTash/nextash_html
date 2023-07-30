@@ -1,0 +1,425 @@
+{% extends "layouts/primary.html" %}
+
+{% block title %} Technical Support | {% endblock %}
+
+{% block seo %}
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="" />
+<meta property="og:title" content=" | NexTash" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="NexTash" />
+<meta property="og:url" content="" />
+{% endblock %}
+
+{% block style %}{% endblock %}
+
+{% block content %}
+<div class="bg-1 bg-cover bg-fixed bg-no-repeat">
+    <!-- HEADER -->
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+            <div class="row">
+                <div class="col-sm-12 text-white py-2">
+                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">Service</b>
+                    <h3 class="display-1 fw-bold m-0 mb-2 col-sm-5">Technical Support</h3>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 my-3">
+                    <div class="row text-muted font-18">
+                        <div class="col-sm-6 mb-3">
+                            <p class="m-0">
+                                Every decision we make needs to answer the million-dollar question: how will
+                                this benefit our partner’s goal best? We work to develop solutions
+                            </p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <p class="m-0">
+                                We like to be different, in the same way that every mission is different. Every
+                                project
+                                is
+                                an
+                                opportunity to create result that will help you
+                            </p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <ul>
+                                <li>Help Desk Support</li>
+                                <li>Remote Technical Support:</li>
+                                <li>Hardware Support</li>
+                                <li>Software Support</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <ul>
+                                <li>Network Support</li>
+                                <li>Email Support</li>
+                                <li>Data Backup and Recovery Support</li>
+                                <li>24/7 Technical Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HEADER -->
+
+    <!-- DETAILS -->
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/1-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/2-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">01.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">
+                        Help Desk Support
+                    </h3>
+                    <ol class="font-18 text-muted mb-3">
+                        <li>Friendly and knowledgeable support agents available via phone, email, or chat.
+                        </li>
+                        <li>Prompt response to troubleshoot and resolve user-reported issues.
+                        </li>
+                        <li>Guided step-by-step assistance to help users resolve technical problems.
+                        </li>
+                        <li>Ticketing system to track and prioritize support requests efficiently.
+                        </li>
+                        <li>Timely escalation and follow-up for complex issues.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/3-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/4-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">02.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">
+                        Remote Technical Support
+                    </h3>
+                    <ol class="font-18 text-muted mb-3">
+                        <li>Remote access capabilities to diagnose and resolve issues quickly.
+                        </li>
+                        <li>Secure and encrypted connections for data privacy and confidentiality.
+                        </li>
+                        <li>Troubleshooting software installations, configuration, and errors remotely.
+                        </li>
+                        <li>Efficiently resolving problems without the need for on-site visits.
+                        </li>
+                        <li>Supporting users regardless of their geographic location.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/5-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/6-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">03.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">
+                        Hardware Support
+                    </h3>
+                    <ol class="font-18 text-muted mb-3">
+                        <li>Troubleshooting and diagnosing hardware-related issues.
+                        </li>
+                        <li>Repairing or replacing faulty hardware components.
+                        </li>
+                        <li>Providing hardware compatibility guidance for upgrades.
+                        </li>
+                        <li>Assisting with hardware setup, installation, and configuration.
+                        </li>
+                        <li>Performing preventive maintenance to maximize hardware lifespan.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/7-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/8-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">04.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">
+                        Software Support
+                    </h3>
+                    <ol class="font-18 text-muted mb-3">
+                        <li>Assisting with software installations and updates.
+                        </li>
+                        <li>Troubleshooting software errors, crashes, and compatibility issues.
+                        </li>
+                        <li>Guiding users through software configuration and usage.
+                        </li>
+                        <li>Providing software patches and updates to fix known issues.
+                        </li>
+                        <li>Offering software recommendations based on specific needs.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/9-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/10-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-2">
+                    <span class="display-1 text- text-stroke rounded-circle">05.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">
+                        Network Support
+                    </h3>
+                    <ol class="font-18 text-muted mb-3">
+                        <li>Diagnosing and resolving network connectivity issues.
+                        </li>
+                        <li>Troubleshooting network equipment, such as routers and switches.
+                        </li>
+                        <li>Optimizing network performance and bandwidth management.
+                        </li>
+                        <li>Configuring network security measures, such as firewalls and VPNs.
+                        </li>
+                        <li>Providing remote support for both wired and wireless networks.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/11-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/12-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">06.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">
+                        Email Support
+                    </h3>
+                    <ol class="font-18 text-muted mb-3">
+                        <li>Setting up and configuring email clients and accounts.
+                        </li>
+                        <li>Troubleshooting email delivery and synchronization issues.
+                        </li>
+                        <li>Assisting with spam and malware filtering for email security.
+                        </li>
+                        <li>Guiding users on email best practices and etiquette.
+                        </li>
+                        <li>Resolving issues related to email attachments and file sharing.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-0">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/13-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/14-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-1">
+                    <span class="display-1 text- text-stroke rounded-circle">07.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">
+                        Data Backup and Recovery Support
+                    </h3>
+                    <ol class="font-18 text-muted mb-3">
+                        <li>Assisting with data backup setup and scheduling.
+                        </li>
+                        <li>Recovering data from backups in case of data loss.
+                        </li>
+                        <li>Ensuring data integrity and verification of backups.
+                        </li>
+                        <li>Guiding users on data recovery procedures and options.
+                        </li>
+                        <li>Providing preventive measures to avoid data loss.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row py-5 my-5 align-items-center">
+                <div class="col-sm-6 py-2 order-1">
+                    <div class="position-relative p-2 border border-primary border-5">
+                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+                        </div>
+                        <div
+                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        </div>
+                        <img src="{{ url_for('static', filename='images/services/app-development/15-min.webp')}}"
+                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow" alt="">
+                        <img src="{{ url_for('static', filename='images/services/app-development/16-min.webp')}}"
+                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 py-2 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle">08.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold">
+                        24/7 Technical Support
+                    </h3>
+                    <ol class="font-18 text-muted mb-3">
+                        <li>Offering round-the-clock technical assistance for critical issues.
+                        </li>
+                        <li>Ensuring continuous support during weekends and holidays.
+                        </li>
+                        <li>Providing peace of mind with constant availability.
+                        </li>
+                        <li>Rapid response times for urgent matters.
+                        </li>
+                        <li>Resolving issues promptly, regardless of the time.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DETAILS -->
+
+    <!-- WHY CHOOSE US -->
+    {% include "components/why-choose-us.html" %}
+    <!-- WHY CHOOSE US -->
+
+    <!--PROCESS-->
+    {% include "components/process.html" %}
+    <!--PROCESS-->
+
+    <!--PROJECTS-->
+    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
+        <div class="text-white mb-5">
+            <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
+                OUR WORK
+            </b>
+            <h3 class="text-white font-40 fw-bold m-0 my-2">Recent Projects Showcase</h3>
+            <p class="text-muted font-18 m-0 col-sm-6">
+                Creating impact with every project, experience the innovation.
+            </p>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4">
+            <article class="col">
+                <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
+                    <div class="card-header border-0 p-0 bg-transparent  rounded-4">
+                        <img src="{{ url_for('static', filename='images/projects/1.webp')}}"
+                            class="card-img-top object-cover rounded-4" alt="">
+                    </div>
+                    <div
+                        class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
+                        <div class="mt-auto py-3">
+                            <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
+                            <h3 class="fw-bold font-20 my-4 m-0 text-white ">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </h3>
+                            <a href=""
+                                class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
+                                study</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col">
+                <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
+                    <div class="card-header border-0 p-0 bg-transparent  rounded-4">
+                        <img src="{{ url_for('static', filename='images/projects/2.webp')}}"
+                            class="card-img-top object-cover rounded-4" alt="">
+                    </div>
+                    <div
+                        class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
+                        <div class="mt-auto py-3">
+                            <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
+                            <h3 class="fw-bold font-20 my-4 m-0 text-white ">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </h3>
+                            <a href=""
+                                class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
+                                study</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="text-center py-5">
+            <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">Load more</button>
+        </div>
+    </section>
+    <!--PROJECTS-->
+
+    <!-- FEEDBACKS -->
+    {% include "components/feedbacks.html" %}
+    <!-- FEEDBACKS -->
+
+    <!-- CLIENTS -->
+    {% include "components/clients.html" %}
+    <!-- CLIENTS -->
+</div>
+{% endblock %}

@@ -40,7 +40,7 @@ routes = [
     {"page": "service-cyber-security", "url": "service-cyber-security"},
     {"page": "service-networking", "url": "service-networking"},
     {"page": "service-managed-hosting", "url": "service-managed-hosting"},
-    {"page": "service-cloud-management", "url": "service-cloud-management"},
+    {"page": "service-cloud-hosting", "url": "service-cloud-hosting"},
     {"page": "service-technical-support", "url": "service-technical-support"},
     {"page": "service-business-analysis", "url": "service-business-analysis"},
     {"page": "service-devops", "url": "service-devops"},
