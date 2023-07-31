@@ -12269,7 +12269,7 @@ img {
 /*  2. Fonts */
 @font-face {
   font-family: "bevietnam-regular";
-  src: url("../fonts/bevietnam-regular.ttf");
+  src: url("../fonts/text/bevietnam-regular.ttf");
 }
 .font-bevietnam {
   font-family: "bevietnam-regular";
@@ -12280,8 +12280,8 @@ img {
   font-family: "boxicons";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/boxicons.eot");
-  src: url("../fonts/boxicons.eot") format("embedded-opentype"), url("../fonts/boxicons.woff2") format("woff2"), url("../fonts/boxicons.woff") format("woff"), url("../fonts/boxicons.ttf") format("truetype"), url("../fonts/boxicons.svg?#boxicons") format("svg");
+  src: url("../fonts/icons/boxicons.eot");
+  src: url("../fonts/icons/boxicons.eot") format("embedded-opentype"), url("../fonts/icons/boxicons.woff2") format("woff2"), url("../fonts/icons/boxicons.woff") format("woff"), url("../fonts/icons/boxicons.ttf") format("truetype"), url("../fonts/icons/boxicons.svg?#boxicons") format("svg");
 }
 .bx {
   font-family: "boxicons" !important;

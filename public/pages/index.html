@@ -139,54 +139,7 @@
         value for money plans.
       </p>
     </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
-      <article class="col">
-        <div
-          class="card bg-gray-800 shadow text-white blog-card h-100 card-hover bg-triangles bg-cover border border-2 border-dark ">
-          <div class="card-header border-0 p-0 position-relative image-zoom">
-            <img src="{{ url_for('static', filename='images/blogs/1.webp')}}" alt="" class="card-img-top object-cover">
-          </div>
-          <div class="card-body">
-            <div class="my-2">
-              <span class="badge bg-danger rounded-0 font-12 px-2">News</span>
-            </div>
-            <h3 class="fw-bold font-18 mb-3 m-0">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            </h3>
-            <p class="fw-normal text-muted font-14 mb-1 m-0">
-              Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit
-            </p>
-          </div>
-          <div class="card-footer pb-4 border-0 bg-transparent d-flex justify-content-between">
-            <p class="font-12 m-0">By <a href="" class="link-light">John doe</a> - 3 mins read</p>
-            <p class="font-12 m-0"><time>24-july-2023</time></p>
-          </div>
-        </div>
-      </article>
-      <article class="col">
-        <div
-          class="card bg-gray-800 shadow text-white blog-card h-100 card-hover bg-triangles bg-cover border border-2 border-dark ">
-          <div class="card-header border-0 p-0 position-relative image-zoom">
-            <img src="{{ url_for('static', filename='images/blogs/2.webp')}}" alt="" class="card-img-top object-cover">
-          </div>
-          <div class="card-body">
-            <div class="my-2">
-              <span class="badge bg-danger rounded-0 font-12 px-2">News</span>
-            </div>
-            <h3 class="fw-bold font-20 mb-3 m-0">Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit.
-            </h3>
-            <p class="fw-normal text-muted font-14 mb-1 m-0">
-              Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit
-            </p>
-          </div>
-          <div class="card-footer pb-4 border-0 bg-transparent d-flex justify-content-between">
-            <p class="font-12 m-0">By <a href="" class="link-light">John doe</a> - 3 mins read</p>
-            <p class="font-12 m-0">24-july-2023</p>
-          </div>
-        </div>
-      </article>
-    </div>
+    {% include "components/blogs.html" %}
     <div class="text-center text-muted my-2 mt-5 offset-md-3 col-sm-6">
       <p>Explore more company News, read more blogs & know about our thoughts in News Page.</p>
       <a href="/blogs" class="btn btn-dark fw-bold px-4 py-2 rounded-pill border-primary border-2 border">
@@ -209,48 +162,7 @@
         Creating impact with every project, experience the innovation.
       </p>
     </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4">
-      <article class="col">
-        <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
-          <div class="card-header border-0 p-0 bg-transparent  rounded-4">
-            <img src="{{ url_for('static', filename='/images/projects/1.webp')}}"
-              class="card-img-top object-cover rounded-4" alt="">
-          </div>
-          <div
-            class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
-            <div class="mt-auto py-3">
-              <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
-              <h3 class="fw-bold font-20 my-4 m-0 text-white ">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </h3>
-              <a href=""
-                class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
-                study</a>
-            </div>
-          </div>
-        </div>
-      </article>
-      <article class="col">
-        <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
-          <div class="card-header border-0 p-0 bg-transparent  rounded-4">
-            <img src="{{ url_for('static', filename='/images/projects/2.webp')}}"
-              class="card-img-top object-cover rounded-4" alt="">
-          </div>
-          <div
-            class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
-            <div class="mt-auto py-3">
-              <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
-              <h3 class="fw-bold font-20 my-4 m-0 text-white ">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </h3>
-              <a href=""
-                class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
-                study</a>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
+    {% include "components/projects.html" %}
     <div class="text-center text-muted my-2 mt-5 offset-md-3 col-sm-6">
       <p>Explore more company News, read more blogs & know about our thoughts in News Page.</p>
       <a href="/projects" class="btn btn-dark fw-bold px-4 py-2 rounded-pill border-primary border-2 border">

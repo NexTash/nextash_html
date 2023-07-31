@@ -3,12 +3,12 @@
   font-weight: normal;
   font-style: normal;
 
-  src: url("#{$fonts_path}/boxicons.eot");
-  src: url("#{$fonts_path}/boxicons.eot") format("embedded-opentype"),
-    url("#{$fonts_path}/boxicons.woff2") format("woff2"),
-    url("#{$fonts_path}/boxicons.woff") format("woff"),
-    url("#{$fonts_path}/boxicons.ttf") format("truetype"),
-    url("#{$fonts_path}/boxicons.svg?#boxicons") format("svg");
+  src: url("#{$fonts_path}/icons/boxicons.eot");
+  src: url("#{$fonts_path}/icons/boxicons.eot") format("embedded-opentype"),
+    url("#{$fonts_path}/icons/boxicons.woff2") format("woff2"),
+    url("#{$fonts_path}/icons/boxicons.woff") format("woff"),
+    url("#{$fonts_path}/icons/boxicons.ttf") format("truetype"),
+    url("#{$fonts_path}/icons/boxicons.svg?#boxicons") format("svg");
 }
 .bx {
   font-family: "boxicons" !important;
