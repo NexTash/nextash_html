@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from flask_frozen import Freezer
 from utils import if_file_exist
 
-app = Flask(__name__, template_folder="public", static_folder="src")
+app = Flask(__name__, template_folder="public", static_folder="assets")
 
 # Route - Page - Function
 routes = [
