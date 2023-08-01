@@ -48,6 +48,7 @@
     <!-------- Footer ------->
     <!------- Scripts ------->
     <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/aos.js')}}"></script>
     <script>
         window.onscroll = function () { navbar() };
 
@@ -60,6 +61,9 @@
             }
         }
     </script>
+    <script>
+        AOS.init();
+      </script>
     {% block scripts %} {% endblock %}
     <!------- Scripts ------->
 
