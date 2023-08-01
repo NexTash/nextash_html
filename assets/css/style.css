@@ -19021,6 +19021,40 @@ img {
           transform: scale(1.5);
 }
 
+/* Component mixins */ /* Component variables */ /* CSS */
+.btn-frame {
+  display: inline-block;
+  padding: 15px 25px;
+  color: #FF0000;
+  background: conic-gradient(from 90deg at 3px 3px, rgba(0, 0, 0, 0) 90deg, #FF0000 0) 0.45em 0.45em/calc(100% - 3px - 0.9em) calc(100% - 3px - 0.9em);
+  -webkit-transition: 0.3s linear, color 0s, background-color 0s;
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: 3px solid rgba(0, 0, 0, 0);
+  outline-offset: 0.2em;
+  font-size: 16px;
+  border: 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  text-decoration: none;
+  color: white;
+}
+.btn-frame:hover, .btn-frame:focus-visible {
+  background-color: #FF0000;
+  outline-color: #FF0000;
+  outline-offset: 0.05em;
+  color: white;
+  -webkit-box-shadow: rgba(238, 40, 14, 0.1) 0px 8px 24px, rgba(211, 38, 7, 0.1) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px;
+          box-shadow: rgba(238, 40, 14, 0.1) 0px 8px 24px, rgba(211, 38, 7, 0.1) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px;
+}
+.btn-frame:active {
+  background: #FF0000;
+  color: #fff;
+}
+
 /*  5. Utils */
 .bg-gray-700 {
   background-color: #1b1b1b;
@@ -20342,6 +20376,18 @@ svg #airplain {
 .image-zoom img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.border-shadow {
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+  -webkit-box-shadow: rgba(238, 40, 14, 0.1) 0px 8px 24px, rgba(211, 38, 7, 0.1) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px;
+          box-shadow: rgba(238, 40, 14, 0.1) 0px 8px 24px, rgba(211, 38, 7, 0.1) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px;
+}
+
+.border-shadow:hover {
+  -webkit-box-shadow: rgba(255, 30, 0, 0.24) 0px 8px 24px, rgba(255, 38, 0, 0.158) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px !important;
+          box-shadow: rgba(255, 30, 0, 0.24) 0px 8px 24px, rgba(255, 38, 0, 0.158) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px !important;
 }
 
 /*  6. Pages*/

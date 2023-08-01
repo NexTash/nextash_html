@@ -86,10 +86,10 @@
 <!------ Header ------>
 
 <!------ Vision ------>
-<section class="shadow py-2 py-sm-2 py-md-5 py-lg-5 bg-2">
+<section class="shadow py-2 py-sm-2 py-md-5 py-lg-5 ">
   <div class="card bg-transparent border-0 py-5 rounded-0">
     <div class="container container-sm container-md container-lg container-xl container-xxl">
-      <div class="text-center p-3 backdrop-8 py-5 border border-primary border-5">
+      <div class="text-center p-3 backdrop-8 py-5 border border-primary border-5 border-shadow">
         <b class="border border-primary border-2 rounded-pill px-3 py-1 text-white font-14">About</b>
         <h2 class="text-white font-40 fw-bold m-0 my-2">Our Vision</h2>
         <p class="text-white font-18 m-0 mb-4">
@@ -100,7 +100,7 @@
           Through our expertise and passion, we aim to be at the forefront of
           shaping this future and making a lasting impact on the world.
         </p>
-        <a href="/about-us" class="btn btn-light fw-bold font-14 px-3 rounded-pill">Learn More</a>
+        <a href="/about-us" class="btn-frame mt-2">Learn More</a>
       </div>
     </div>
   </div>
@@ -142,9 +142,7 @@
     {% include "components/blogs.html" %}
     <div class="text-center text-muted my-2 mt-5 offset-md-3 col-sm-6">
       <p>Explore more company News, read more blogs & know about our thoughts in News Page.</p>
-      <a href="/blogs" class="btn btn-dark fw-bold px-4 py-2 rounded-pill border-primary border-2 border">
-        Read all
-      </a>
+      <a href="/blogs" class="btn-frame mt-2"> Read more</a>
     </div>
   </div>
 </section>
@@ -165,19 +163,17 @@
     {% include "components/projects.html" %}
     <div class="text-center text-muted my-2 mt-5 offset-md-3 col-sm-6">
       <p>Explore more company News, read more blogs & know about our thoughts in News Page.</p>
-      <a href="/projects" class="btn btn-dark fw-bold px-4 py-2 rounded-pill border-primary border-2 border">
-        Read all
-      </a>
+      <a href="/projects" class="btn-frame mt-2"> Discover more</a>
     </div>
   </div>
 </section>
 <!------ Projects ------>
 </main>
 <!------ Content ------>
-{% endblock %} {% block scripts %}
-<script src="{{ url_for('static', filename='js/bootstrap/bootstrap.min.js')}}"></script>
-<script src="{{ url_for('static', filename='libs/anime/anime.min.js')}}"></script>
-<script src="{{ url_for('static', filename='js/utils.js')}}"></script>
+{% endblock %}
+
+
+{% block scripts %}
 <script>
   const cursor = document.querySelector(".cb-cursor");
   window.onpointermove = (event) => {

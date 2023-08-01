@@ -17,87 +17,97 @@
 
 {% block style %}
 <style>
-  .bg-dotted {
-    background-image: radial-gradient(rgba(255, 255, 255) 1px, transparent 1px);
-    background-position: 50% 50%;
-    background-size: 0.5rem 0.5rem;
+  .logo-border {
+    width: 320px;
+    height: 320px;
+    transition: transform, 0.5s;
+    transform: rotate(45deg);
+    box-shadow: rgba(238, 40, 14, 0.1) 0px 8px 24px, rgba(211, 38, 7, 0.1) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px;
   }
 
-  .bg-dotted-primary {
-    background-image: radial-gradient(rgba(255, 0, 0) 1px, transparent 1px);
+  .logo-wrapper:hover .logo-border {
+    transform: rotate(-90deg);
+    box-shadow: rgba(238, 40, 14, 0.2) 0px 8px 24px, rgba(211, 38, 7, 0.2) 0px 16px 56px, rgba(235, 6, 25, 0.3) 0px 24px 80px;
   }
 </style>
 {% endblock %}
 
 {% block content %}
 <div class="bg-1 bg-cover bg-no-repeat bg-fixed">
-<!-- Header -->
-<section class="shadow py-5">
-  <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-    <div class="row">
-      <div class="col-sm-12 text-white py-2">
-        <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16">WHO WE ARE ?</b>
-        <h3 class="display-1 fw-bold m-0 mb-2">We're a digital agency <br>based in Pakistan.</h3>
-      </div>
-      <div class="col-sm-3"></div>
-      <div class="col-sm-6 text-muted py-2 font-20">
-        - We’re a diverse team that works as fancies attention to details, enjoys beers on Friday nights and
-        aspires to design the dent in the universe.
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Header -->
-<!-- Intro -->
-<section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-  <div class="container container-sm container-md container-lg container-xl container-xxl">
-    <div class="row align-items-center">
-      <div class="col-sm-6">
-        <img src="{{ url_for('static', filename='images/logos/logo-min.png')}}" class="img-fluid" alt="Logo">
-      </div>
-      <div class="col-sm-6">
-        <p class="text-white font-18">
-          Welcome to NexTash, a leading IT solutions provider revolutionizing the digital landscape. With a
-          passion for innovation and a commitment to excellence, we are dedicated to empowering businesses and
-          individuals to thrive in the rapidly evolving world of technology.
-        </p>
+  <!-- Header -->
+  <section class="shadow py-5">
+    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+      <div class="row">
+        <div class="col-sm-12 text-white py-2">
+          <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2">WHO
+            WE ARE ?</b>
+          <h3 class="display-1 fw-bold m-0 mb-2">We're a digital agency <br>based in Pakistan.</h3>
+        </div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 text-muted py-2 font-20">
+          - We’re a diverse team that works as fancies attention to details, enjoys beers on Friday nights and
+          aspires to design the dent in the universe.
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- Intro -->
-<!------ Story ------>
-{% include "components/story.html" %}
-<!------ Story ------>
-<!------ Mission ------>
-<section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-  <div class="card-dotted py-5">
+  </section>
+  <!-- Header -->
+  <!-- Intro -->
+  <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
     <div class="container container-sm container-md container-lg container-xl container-xxl">
-      <div class="text-center p-3 backdrop-6 py-5 shadow border border-primary border-4">
-        <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-white font-12">About</b>
-        <h3 class="text-white display-4 fw-bold m-0 mb-3">Our Mission</h3>
-        <p class="text-white font-18 m-0 mb-4">
-          At NexTash, our mission is to deliver cutting-edge IT solutions that drive success and transform
-          the way businesses operate. We strive to be a trusted partner for our clients, helping them achieve their
-          goals through innovative technology, expert guidance, and unparalleled support.
-        </p>
+      <div class="row align-items-center">
+        <div class="col-sm-4 position-relative d-flex align-items-center justify-content-center logo-wrapper">
+          <div class="border border-primary border-4 position-absolute  logo-border z-index-1"></div>
+          <img src="{{ url_for('static', filename='images/logos/logo-min.png')}}"
+            class="img-fluid h-100 w-100 z-index-2" alt="Logo">
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-6">
+          <p class="text-white font-18">
+            Welcome to NexTash, a leading IT solutions provider revolutionizing the digital landscape. With a
+            passion for innovation and a commitment to excellence, we are dedicated to empowering businesses and
+            individuals to thrive in the rapidly evolving world of technology.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!------ Mission ------>
-<!------- Services ------->
-{% include "components/services.html" %}
-<!------- Services ------->
-<!------ Team ------>
-{% include "components/team.html" %}
-<!------ Team ------>
-<!------ Process ------>
-{% include "components/process.html" %}
-<!------ Process ------>
-<!------ Clients ------->
-{% include "components/clients.html" %}
-<!------ Clients ------->
+  </section>
+  <!-- Intro -->
+
+  <!------ Story ------>
+  {% include "components/story.html" %}
+  <!------ Story ------>
+
+  <!------ Mission ------>
+  <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+    <div class="card-dotted py-5">
+      <div class="container container-sm container-md container-lg container-xl container-xxl">
+        <div class="text-center p-3 backdrop-6 py-5 border border-primary border-4 border-shadow">
+          <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-white font-12">About</b>
+          <h3 class="text-white display-4 fw-bold m-0 mb-3">Our Mission</h3>
+          <p class="text-white font-18 m-0 mb-4">
+            At NexTash, our mission is to deliver cutting-edge IT solutions that drive success and transform
+            the way businesses operate. We strive to be a trusted partner for our clients, helping them achieve their
+            goals through innovative technology, expert guidance, and unparalleled support.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------ Mission ------>
+
+  <!------- Services ------->
+  {% include "components/services.html" %}
+  <!------- Services ------->
+  <!------ Team ------>
+  {% include "components/team.html" %}
+  <!------ Team ------>
+  <!------ Process ------>
+  {% include "components/process.html" %}
+  <!------ Process ------>
+  <!------ Clients ------->
+  {% include "components/clients.html" %}
+  <!------ Clients ------->
 </div>
 {% endblock %}
 

@@ -1,0 +1,10 @@
+.border-shadow {
+  transition: all, 0.5s;
+  box-shadow: rgba(238, 40, 14, 0.1) 0px 8px 24px,
+    rgba(211, 38, 7, 0.1) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px;
+}
+
+.border-shadow:hover {
+  box-shadow: rgba(255, 30, 0, 0.24) 0px 8px 24px,
+    rgba(255, 38, 0, 0.158) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px !important;
+}

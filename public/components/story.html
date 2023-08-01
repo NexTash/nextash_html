@@ -1,7 +1,7 @@
 <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
     <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
         <div class="row align-items-center">
-            <div class="col-sm-6 py-2">
+            <div class="col-sm-5 py-2">
                 <div class="mb-2">
                     <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">About
                     </b>
@@ -14,16 +14,19 @@
                     goals through innovative technology, expert guidance, and unparalleled support.
                 </p>
             </div>
+            <div class="col-sm-1"></div>
             <div class="col-sm-6 py-2">
                 <div class="position-relative ">
                     <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
                     </div>
-                    <div
-                        class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                    <div class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
                     </div>
-                    <img src="{{ url_for('static', filename='images/about/2.webp')}}"
-                        class="img-fluid  shadow z-index-3 position-relative border border-5 border-primary p-3 backdrop-6"
-                        alt="">
+                    <div class="border-shadow">
+                        <img src="{{ url_for('static', filename='images/about/2.webp')}}"
+                            class="img-fluid  shadow z-index-3 position-relative border border-5 border-primary p-3 backdrop-6 "
+                            alt="">
+                    </div>
+
                 </div>
             </div>
         </div>
