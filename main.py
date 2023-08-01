@@ -10,7 +10,7 @@ routes = [
     {"page": "index", "url": ""},
     {"page": "about-us", "url": "about-us"},
     {"page": "contact-us", "url": "contact-us"},
-    {"page": "expert-team", "url": "expert-team"},
+    {"page": "team", "url": "team"},
     {"page": "team-details", "url": "team-details"},
     {"page": "faqs", "url": "faqs"},
     {"page": "terms-and-conditions", "url": "terms-and-conditions"},
@@ -20,7 +20,7 @@ routes = [
     {"page": "blog-details", "url": "blog-details"},
     {"page": "news", "url": "news"},
     {"page": "news-details", "url": "news-details"},
-    {"page": "jobs", "url": "jobs"},
+    {"page": "careers", "url": "careers"},
     {"page": "job-details", "url": "job-details"},
     {"page": "projects", "url": "projects"},
     {"page": "project-details", "url": "project-details"},
@@ -45,6 +45,7 @@ routes = [
     {"page": "service-business-analysis", "url": "service-business-analysis"},
     {"page": "service-devops", "url": "service-devops"},
     {"page": "service-seo", "url": "service-seo"},
+    {"page": "service-graphics-designing", "url": "service-graphics-designing"},
 ]
 
 for route in routes:

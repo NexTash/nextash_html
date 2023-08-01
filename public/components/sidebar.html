@@ -1,26 +1,154 @@
-<div class="offcanvas bg-dark offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="offcanvasExampleLabel">
+<div class="offcanvas bg-1 bg-fixed bg-dark offcanvas-end show" tabindex="-1" id="sidebar"
+    aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <a href="/">
+            <img src="{{ url_for('static', filename='images/logos/logo.png')}}" class="d-inline-block" width="60">
+        </a>
+        <button type="button" class="bx bx-x p-1 text-white border border-2 border-primary font-26 rounded-circle btn"
+            data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
+    <div class="offcanvas-body px-4">
+        <form action="/" class="input-group bg-gray-700 my-5 font-14 rounded-pill">
+            <input type="text" placeholder="Search..."
+                class="form-control shadow-none py-3 fw-bold bg-transparent text-white border-0 font-14 px-3">
+            <button class="bx bx-search btn font-20 fw-normal text-white p-2 px-4"></button>
+        </form>
         <div class="accordion border-0" id="menu">
-            <div class="accordion-item border-dark border border-1 shadow">
-                <h2 class="accordion-header border-0 bg-black" id="heading1">
-                    <button class="accordion-button shadow-none border-0 bg-black text-white collapsed" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
-                        <b class="text-primary me-2">1.</b> What services does NexTash offer?
-                    </button>
-                </h2>
-                <div id="faq1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#menu">
-                    <div class="accordion-body bg-black text-muted pb-4">
-                        NexTash offers a wide range of IT services including software
-                        development, web development,
-                        mobile app development, cloud computing, IT consulting, network solutions, cybersecurity, and
-                        managed IT services.
+            <a href="/" class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                <span class="bx bx-circle text-primary me-4 fw-normal"></span> Home
+            </a>
+            <div class="accordion-item border-dark border border-1 bg-transparent p-0 mb-3">
+                <button
+                    class="accordion-button collapsed bg-transparent p-0 d-block text-white font-20 text-decoration-none fw-bold shadow-none d-flex align-items-center"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#item-1" aria-expanded="false"
+                    aria-controls="faq1">
+                    <span class="bx bx-circle text-primary me-4 fw-normal"></span> Services
+                </button>
+                <div id="item-1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#menu">
+                    <div class="accordion-body text-muted py-2 pt-4">
+                        <a href="/service-branding"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Branding
+                        </a>
+                        <a href="/service-business-analysis"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Business analysis
+                        </a>
+                        <a href="/service-web-development"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Web development
+                        </a>
+                        <a href="/service-mobile-app-development"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Mobile app development
+                        </a>
+                        <a href="/service-erp-development"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Erp solutions
+                        </a>
+                        <a href="/service-networking"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Networking
+                        </a>
+                        <a href="/service-devops"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            DevOps
+                        </a>
+                        <a href="/service-cyber-security"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Cyber security
+                        </a>
+                        <a href="/service-managed-hosting"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Managed hosting
+                        </a>
+                        <a href="/service-cloud-hosting"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Cloud hosting
+                        </a>
+                        <a href="/service-database-administration"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Database administration
+                        </a>
+                        <a href="/service-server-administration"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Server administration
+                        </a>
+                        <a href="/service-graphics-designing"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Graphics designing
+                        </a>
+                        <a href="/service-digital-marketing"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Digital marketing
+                        </a>
+                        <a href="/service-seo"
+                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Seo
+                        </a>
+                        <a href="/service-technical-support"
+                            class="d-block text-white font-16 text-decoration-none fw-bold d-flex align-items-center">
+                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
+                            Technical support
+                        </a>
                     </div>
                 </div>
             </div>
+            <a href="/about-us"
+                class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                <span class="bx bx-circle text-primary me-4 fw-normal"></span>
+                About us
+            </a>
+            <a href="/contact-us"
+                class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                <span class="bx bx-circle text-primary me-4 fw-normal"></span>
+                Contact us
+            </a>
+            <a href="/team"
+                class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                <span class="bx bx-circle text-primary me-4 fw-normal"></span>
+                Team
+            </a>
+            <a href="/blogs"
+                class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                <span class="bx bx-circle text-primary me-4 fw-normal"></span>
+                Blogs
+            </a>
+            <a href="/projects"
+                class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                <span class="bx bx-circle text-primary me-4 fw-normal"></span>
+                Case studies
+            </a>
+            <a href="/career"
+                class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
+                <span class="bx bx-circle text-primary me-4 fw-normal"></span>
+                Careers
+            </a>
+        </div>
+    </div>
+    <div class="p-3">
+        <h3 class="text-white font-20 mb-3">Follow us</h3>
+        <div class="d-flex align-items-center mt-3">
+            <a href="#" class="bx bxl-facebook-square font-20 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-twitter font-20 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-google font-20 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-instagram font-20 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+            <a href="#" class="bx bxl-github font-20 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
         </div>
     </div>
 </div>
