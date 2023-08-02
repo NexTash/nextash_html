@@ -18,19 +18,21 @@
 {% block style %}{% endblock %}
 
 {% block content %}
-<div class="bg-1 bg-cover bg-fixed bg-no-repeat">
+<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
     <!-- HEADER -->
-    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <div class="row">
-                <div class="col-sm-12 text-white py-2">
+    <section class="shadow py-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl">
+            <div
+                class="row align-items-center justify-content-center my-5 py-2 py-sm-2 py-md-5 py-lg-5 py-xl-5 py-xl-5">
+                <div class="col-sm-12 text-white">
                     <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
                         data-aos-duration="1000" data-aos="fade-up">Service</b>
-                    <h3 class="display-1 fw-bold m-0 mb-2 col-sm-5" data-aos-duration="1000" data-aos="fade-up">Cyber
-                        security</h3>
+                    <h3 class="display-1 fw-bold m-0 mb-2 col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8"
+                        data-aos-duration="1000" data-aos="fade-up">
+                        Cyber security
+                    </h3>
                 </div>
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8 my-3">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xll-8 my-5">
                     <div class="row text-muted font-18">
                         <div class="col-sm-6 mb-3">
                             <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
@@ -73,23 +75,28 @@
     <!-- DETAILS -->
     <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
         <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <div class="row py-5 my-5 align-items-center">
-                <div class="col-sm-6 py-2 order-0">
-                    <div class="position-relative p-2 border border-primary border-5">
-                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
                         </div>
-                        <div
-                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2">
                         </div>
-                        <img src="{{ url_for('static', filename='images/services/app-development/1-min.webp')}}"
-                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
-                        <img src="{{ url_for('static', filename='images/services/app-development/2-min.webp')}}"
-                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/51.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/49.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 py-2 order-2">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
                     <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
                         data-aos="zoom-in-up">01.</span>
                     <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up"> Cyber
@@ -108,23 +115,28 @@
                     </ol>
                 </div>
             </div>
-            <div class="row py-5 my-5 align-items-center">
-                <div class="col-sm-6 py-2 order-1">
-                    <div class="position-relative p-2 border border-primary border-5">
-                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+            <div class="row align-items-center justify-content-between">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
                         </div>
-                        <div
-                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2">
                         </div>
-                        <img src="{{ url_for('static', filename='images/services/app-development/3-min.webp')}}"
-                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
-                        <img src="{{ url_for('static', filename='images/services/app-development/4-min.webp')}}"
-                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/50.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/56.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 py-2 order-0">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
                     <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
                         data-aos="zoom-in-up">02.</span>
                     <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
@@ -143,23 +155,28 @@
                     </ol>
                 </div>
             </div>
-            <div class="row py-5 my-5 align-items-center">
-                <div class="col-sm-6 py-2 order-0">
-                    <div class="position-relative p-2 border border-primary border-5">
-                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
                         </div>
-                        <div
-                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2">
                         </div>
-                        <img src="{{ url_for('static', filename='images/services/app-development/5-min.webp')}}"
-                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
-                        <img src="{{ url_for('static', filename='images/services/app-development/6-min.webp')}}"
-                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/65.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/64.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 py-2 order-2">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
                     <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
                         data-aos="zoom-in-up">03.</span>
                     <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
@@ -178,23 +195,28 @@
                     </ol>
                 </div>
             </div>
-            <div class="row py-5 my-5 align-items-center">
-                <div class="col-sm-6 py-2 order-1">
-                    <div class="position-relative p-2 border border-primary border-5">
-                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+            <div class="row align-items-center justify-content-between">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
                         </div>
-                        <div
-                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2">
                         </div>
-                        <img src="{{ url_for('static', filename='images/services/app-development/7-min.webp')}}"
-                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
-                        <img src="{{ url_for('static', filename='images/services/app-development/8-min.webp')}}"
-                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/48.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/55.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 py-2 order-0">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
                     <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
                         data-aos="zoom-in-up">04.</span>
                     <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
@@ -213,23 +235,28 @@
                     </ol>
                 </div>
             </div>
-            <div class="row py-5 my-5 align-items-center">
-                <div class="col-sm-6 py-2 order-0">
-                    <div class="position-relative p-2 border border-primary border-5">
-                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
                         </div>
-                        <div
-                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2">
                         </div>
-                        <img src="{{ url_for('static', filename='images/services/app-development/9-min.webp')}}"
-                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
-                        <img src="{{ url_for('static', filename='images/services/app-development/10-min.webp')}}"
-                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/94.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/14.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 py-2 order-2">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
                     <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
                         data-aos="zoom-in-up">05.</span>
                     <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up"> Cloud
@@ -248,23 +275,28 @@
                     </ol>
                 </div>
             </div>
-            <div class="row py-5 my-5 align-items-center">
-                <div class="col-sm-6 py-2 order-1">
-                    <div class="position-relative p-2 border border-primary border-5">
-                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+            <div class="row align-items-center justify-content-between">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
                         </div>
-                        <div
-                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2">
                         </div>
-                        <img src="{{ url_for('static', filename='images/services/app-development/11-min.webp')}}"
-                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
-                        <img src="{{ url_for('static', filename='images/services/app-development/12-min.webp')}}"
-                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/28.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/26.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 py-2 order-0">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
                     <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
                         data-aos="zoom-in-up">06.</span>
                     <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
@@ -283,23 +315,28 @@
                     </ol>
                 </div>
             </div>
-            <div class="row py-5 my-5 align-items-center">
-                <div class="col-sm-6 py-2 order-0">
-                    <div class="position-relative p-2 border border-primary border-5">
-                        <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
                         </div>
-                        <div
-                            class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2">
                         </div>
-                        <img src="{{ url_for('static', filename='images/services/app-development/13-min.webp')}}"
-                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
-                        <img src="{{ url_for('static', filename='images/services/app-development/14-min.webp')}}"
-                            class="size-200 object-cover shadow position-absolute bottom-0 start-0 z-index-3 border-primary border border-5 p-2 ms--30 mb--30"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/38.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/43.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 py-2 order-1">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
                     <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
                         data-aos="zoom-in-up">07.</span>
                     <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
@@ -318,23 +355,28 @@
                     </ol>
                 </div>
             </div>
-            <div class="row py-5 my-5 align-items-center">
-                <div class="col-sm-6 py-2 order-1">
-                    <div class="position-relative p-2 border border-primary border-5">
-                        <div class="bg-dotted position-absolute end-0 top-0 size-100 z-index-1 me--30 mt--30">
+            <div class="row align-items-center justify-content-between">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
                         </div>
-                        <div
-                            class="bg-dotted-primary position-absolute bottom-0 start-0 size-100 z-index-1 ms--30 mb--30">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2">
                         </div>
-                        <img src="{{ url_for('static', filename='images/services/app-development/15-min.webp')}}"
-                            class="shadow z-index-2 position-relative w-100 h-100 object-cover shadow"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
-                        <img src="{{ url_for('static', filename='images/services/app-development/16-min.webp')}}"
-                            class="size-200 object-cover shadow position-absolute bottom-0 end-0 z-index-3 border-primary border border-5 p-2 me--30 mb--30"
-                            data-aos-duration="1000" data-aos="zoom-in-up" alt="">
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/31.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/32.webp')}}"
+                                class=" object-cover h-100 w-100" alt="Brand Strategy">
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 py-2 order-0">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
                     <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
                         data-aos="zoom-in-up">08.</span>
                     <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
