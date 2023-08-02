@@ -24,35 +24,32 @@
 {% block style %} {% endblock %}
 
 <body class="bg-dark font-bevietnam overflow-hidden">
-    <!-- Bg -->
+    <!-- BG -->
     <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
     </div>
-    <!-- Bg -->
-    <!-------- Navbar ------->
+    <!-- BG -->
+    <!-- NAVBAR -->
     {% include "components/navbar.html" %}
-    <!-------- Navbar ------->
-    <!-------- Sidebar ------->
+    <!-- NAVBAR -->
+    <!-- SIDEBAR -->
     {% include "components/sidebar.html" %}
-    <!-------- Sidebar ------->
-    <!------- Content ------->
-    <main class="bg- bg-no-repeat bg-cover bg-fixed">
-        {% block content %} {% endblock %}
-    </main>
-    <!------- Content ------->
-    <!-------- Footer ------->
+    <!-- SIDEBAR -->
+    <!-- CONTENT -->
+    <main>{% block content %} {% endblock %}</main>
+    <!-- CONTENT -->
+    <!-- FOOTER -->
     {% include "components/footer.html" %}
-    <!-------- Footer ------->
-
-    <!------- Scripts ------->
+    <!-- FOOTER -->
+    <!-- SCRIPTS -->
     <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
     <script src="{{ url_for('static', filename='js/aos.js')}}"></script>
-    <script src="{{ url_for('static', filename='js/smooth-scrollbar.js')}}"></script>
     <script>
-        window.onscroll = function () { navbar() };
+        AOS.init();
 
+        window.onscroll = function () { navbar() };
         function navbar() {
             let position = 20
             if (document.body.scrollTop > position || document.documentElement.scrollTop > position) {
@@ -61,21 +58,9 @@
                 document.getElementById("navbar").classList.remove("bg-dark");
             }
         }
-
-    </script>
-    <script>
-        AOS.init();
-    </script>
-    <script>
-        var Scrollbar = window.Scrollbar;
-
-        const scrollbar = Scrollbar.init(document.body, {
-            damping: 0.2,
-        });
     </script>
     {% block scripts %} {% endblock %}
-    <!------- Scripts ------->
-
+    <!-- SCRIPTS -->
 </body>
 
 </html>

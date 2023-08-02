@@ -18,18 +18,22 @@
 {% block style %}{% endblock %}
 
 {% block content %}
-<div class="bg-1 bg-cover bg-fixed bg-no-repeat">
-  <!-- Header -->
+<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
+  <!-- HEADER -->
   <section class="shadow py-5">
     <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-      <div class="row">
-        <div class="col-sm-12 text-white py-2">
-          <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2" data-aos-duration="1000" data-aos="fade-up">FAQ's</b>
-          <h3 class="display-1 fw-bold m-0 mb-2  col-12 col-sm-12 col-md-12 col-lg-8" data-aos-duration="1000" data-aos="fade-up">Frequently Asked Questions </h3>
+      <div class="row align-items-center justify-content-center my-5 py-5">
+        <div class="col-sm-12 text-white py-2 mb-5">
+          <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
+            data-aos-duration="1000" data-aos="fade-up">FAQ's</b>
+          <h3 class="display-1 fw-bold m-0 mb-2  col-12 col-sm-12 col-md-12 col-lg-8" data-aos-duration="1000"
+            data-aos="fade-up">Frequently Asked Questions </h3>
         </div>
-        <div class="col-sm-8 offset-sm-2 text-muted py-2 font-20" data-aos-duration="1000" data-aos="fade-up">
-          - We’re a diverse team that works as fancies attention to details, enjoys beers on Friday nights and
-          aspires to design the dent in the universe.
+        <div class="col-sm-3"></div>
+        <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8 text-muted py-2 font-20">
+          <p data-aos-duration="1000" data-aos="fade-up">
+            - We’re a diverse team that works as fancies attention to
+            details, enjoys beers on Friday nights and aspires to design the dent in the universe.</p>
         </div>
       </div>
     </div>
@@ -39,9 +43,10 @@
   <!------- FAQs ------->
   <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
     <div class="row">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xll-7 py-2">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6">
         <div class="accordion border-0 rounded-4" id="faqs">
-          <div class="accordion-item border-dark border border-1 shadow " data-aos-duration="1000" data-aos="zoom-in-up">
+          <div class="accordion-item border-dark border border-1 shadow " data-aos-duration="1000"
+            data-aos="zoom-in-up">
             <h2 class="accordion-header border-0 bg-gray-700" id="heading1">
               <button class="accordion-button shadow-none border-0 bg-transparent text-white collapsed" type="button"
                 data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
@@ -234,38 +239,42 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 py-2">
-        <form class="card bg-gray-700 bg-triangles shadow border-dark border-0 rounded-2 border-shadow" id="faqQueryform" data-aos-duration="1000" data-aos="fade-up">
+      <div class="col-sm-1 my-5"></div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5">
+        <form class="card bg-gray-700 bg-triangles shadow border-dark border-0 rounded-2 border-shadow"
+          id="faqQueryform" data-aos-duration="1000" data-aos="fade-up">
           <div class="card-header border-0 bg-transparent p-4 pt-5">
-            <h2 class="m-0 fw-bold font-30 text-white mb-2" data-aos-duration="1000" data-aos="zoom-in-up">Ask your question</h2>
+            <h2 class="m-0 fw-bold font-30 text-white mb-2" data-aos-duration="1000" data-aos="zoom-in-up">Ask your
+              question</h2>
             <p class="m-0 text-muted font-16" data-aos-duration="1000" data-aos="zoom-in-up">
               If you have any query please fill out the form below. We do our best to respond within 1
               business day.
             </p>
           </div>
           <div class="card-body bg-transparent">
-            <div class="form-group mb-3 border border-dark">
+            <div class="form-group mb-3 border border-dark" data-aos-duration="1000" data-aos="zoom-in-up">
               <input type="text"
                 class="form-control bg-dark placeholder-text shadow-none p-3 border-0 font-16 text-muted" id="fullname"
                 placeholder="Fullname*">
             </div>
-            <div class="form-group mb-3 border border-dark">
+            <div class="form-group mb-3 border border-dark" data-aos-duration="1000" data-aos="zoom-in-up">
               <input type="text"
                 class="form-control bg-dark placeholder-text shadow-none p-3 border-0 font-16 text-muted" id="email"
                 placeholder="Email*">
             </div>
-            <div class="form-group mb-3 border border-dark">
+            <div class="form-group mb-3 border border-dark" data-aos-duration="1000" data-aos="zoom-in-up">
               <input type="text"
                 class="form-control bg-dark placeholder-text shadow-none p-3 border-0 font-16 text-muted" id="subject"
                 placeholder="Subject*">
             </div>
-            <div class="form-group mb-3 border border-dark">
+            <div class="form-group mb-3 border border-dark" data-aos-duration="1000" data-aos="zoom-in-up">
               <textarea class="form-control bg-dark placeholder-text shadow-none p-3 border-0 font-16 text-muted"
                 id="message" placeholder="Type Your Message*" rows="4"></textarea>
             </div>
           </div>
           <div class="card-footer border-0 bg-transparent text-center pb-5 pt-0">
-            <button type="submit" class="btn btn-primary text-white py-3 font-18 px-5 rounded-1 fw-bold" id="btn">
+            <button type="submit" class="btn btn-primary text-white py-3 font-18 px-5 rounded-1 fw-bold" id="btn"
+              data-aos-duration="1000" data-aos="zoom-in-up">
               Send message
             </button>
           </div>

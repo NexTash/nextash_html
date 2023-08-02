@@ -18,47 +18,56 @@
 {% block style %}{% endblock %}
 
 {% block content %}
-<div class="bg-1 bg-cover bg-fixed bg-no-repeat">
-    <!-- Header -->
-    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <div class="row">
-                <div class="col-sm-12 text-white py-2">
-                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2" data-aos-duration="1000" data-aos="fade-up">OUR STAFF</b>
-                    <h3 class="display-1 fw-bold m-0 mb-2" data-aos-duration="1000" data-aos="fade-up">Meet Our  Talented Team </h3>
+<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
+    <!-- HEADER -->
+    <section class="shadow py-5">
+      <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+        <div class="row align-items-center justify-content-center my-5 py-5">
+          <div class="col-sm-12 text-white py-2 mb-5">
+            <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
+                        data-aos-duration="1000" data-aos="fade-up">OUR STAFF</b>
+                    <h3 class="display-1 fw-bold m-0 mb-2" data-aos-duration="1000" data-aos="fade-up">
+                        Meet Our Talented Team
+                    </h3>
                 </div>
                 <div class="col-sm-3"></div>
-                <div class="col-sm-6 text-muted py-2 font-20" data-aos-duration="1000" data-aos="fade-up">
+                <p class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8 text-muted py-2 font-20"
+                    data-aos-duration="1000" data-aos="fade-up">
                     - We’re a diverse team that works as fancies attention to details, enjoys beers on Friday nights and
                     aspires to design the dent in the universe.
-                </div>
+                </p>
             </div>
         </div>
     </section>
-    <!-- Header -->
+    <!-- HEADER -->
 
     <!------- Team ------->
     <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
         <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
             <div class="row align-items-center justify-content-center my-5 py-5">
-                <div class="col-sm-4">
-                    <a class="d-block text-decoration-none p-2 border-primary border border-4 rounded-circle" href="" data-aos-duration="1000" data-aos="zoom-in-up">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-4">
+                    <a class="d-block text-decoration-none p-2 border-primary border border-4 rounded-circle" href=""
+                        data-aos-duration="1000" data-aos="zoom-in-up">
                         <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
                             class="card-img-top object-cover rounded-circle h-200 w-100">
                     </a>
                 </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-4">
-                    <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14" data-aos-duration="1000" data-aos="zoom-in-up">
+                <div class="col-sm-1 my-5"></div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14 d-inline-block mb-2"
+                        data-aos-duration="1000" data-aos="zoom-in-up">
                         CEO MESSAGE
                     </b>
-                    <h3 class="fw-bold display-1 mb-2 m-0 text-white" data-aos-duration="1000" data-aos="zoom-in-up">Faisal Zahoor </h3>
-                    <p class="text-muted font-16" data-aos-duration="1000" data-aos="zoom-in-up">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+                    <h3 class="fw-bold display-1 mb-2 m-0 text-white" data-aos-duration="1000" data-aos="zoom-in-up">
+                        Faisal Zahoor </h3>
+                    <p class="text-muted font-16" data-aos-duration="1000" data-aos="zoom-in-up">Lorem ipsum dolor, sit
+                        amet consectetur adipisicing elit. Accusamus,
                         porro corrupti! Rem in maxime provident, quidem eligendi soluta vero temporibus sed saepe dicta
                         ea, mollitia, quibusdam repudiandae quo doloremque distinctio.</p>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-4 row-cols-xl-4 row-cols-xll-1">
+            <div
+                class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 row-cols-xll-1 g-5 justify-content-center">
                 <div class="col" data-aos-duration="1000" data-aos="zoom-in-up">
                     <article
                         class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4 border-shadow">
