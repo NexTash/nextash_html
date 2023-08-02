@@ -20254,6 +20254,57 @@ img {
   color: #fff;
 }
 
+/* Component mixins */ /* Component variables */
+.image-box .square-1 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-left: -20px;
+  margin-top: -20px;
+  z-index: -1;
+}
+.image-box .square-2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  z-index: -1;
+}
+.image-box .image-lg {
+  z-index: 10;
+}
+.image-box .image-sm {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -50px;
+  margin-left: -50px;
+  width: 150px;
+  height: 150px;
+}
+@media screen and (max-width: 820px) {
+  .image-box .image-sm {
+    margin-bottom: -60px;
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .image-box .image-sm {
+    margin-bottom: -50px;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
 /*  5. Utils */
 .bg-gray-700 {
   background-color: #1b1b1b;
