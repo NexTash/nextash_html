@@ -23,8 +23,18 @@
   .image-lg {
     z-index: 10;
     height: 500px;
-    @media screen and (max-width: 520px) {
-      height: 500px;
+    @media screen and (max-width: 290px) {
+      height: 250px;
+      margin-bottom: 60px;
+    }
+    @media screen and (max-width: 380px) {
+      height: 350px;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 420px) {
+      height: 380px;
+      margin-bottom: 60px;
     }
 
     img {

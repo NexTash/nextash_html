@@ -20279,9 +20279,22 @@ img {
   z-index: 10;
   height: 500px;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 290px) {
   .image-box .image-lg {
-    height: 500px;
+    height: 250px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .image-box .image-lg {
+    height: 350px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .image-box .image-lg {
+    height: 380px;
+    margin-bottom: 60px;
   }
 }
 .image-box .image-lg img {

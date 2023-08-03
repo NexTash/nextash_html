@@ -1,33 +1,39 @@
-<section class="shadow py-2 py-sm-2 py-md-5 py-lg-5" data-aos-anchor-placement="top-center" data-aos-duration="1000"
+<section class="shadow py-5" data-aos-anchor-placement="top-center" data-aos-duration="1000"
     data-aos="fade-down">
     <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-        <div class="row align-items-center">
-            <div class="col-sm-5 py-2">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
+                <div class="position-relative image-box">
+                    <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+                    </div>
+                    <div data-aos-duration="1000" data-aos="zoom-in-up"
+                        class="bg-dotted-primary border-shadow square-2">
+                    </div>
+                    <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                        data-aos="zoom-in-up">
+                        <img src="{{ url_for('static', filename='images/about/6.webp')}}"
+                            class="object-cover h-100 w-100" alt="Our Story" />
+                    </div>
+                    <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                        data-aos="zoom-in-up">
+                        <img src="{{ url_for('static', filename='images/about/7.webp')}}"
+                            class="object-cover h-100 w-100" alt="Our Story" />
+                    </div>
+                </div>
+            </div>
+            <div
+                class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 ">
                 <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14 d-inline-block mb-2"
                     data-aos-duration="1000" data-aos="zoom-in-up">About
                 </b>
-                <h3 class="text-white display-4 fw-bold m-0 mb-3" data-aos-duration="1000" data-aos="zoom-in-up">Our Story</h3>
+                <h3 class="text-white display-4 fw-bold m-0 mb-3" data-aos-duration="1000" data-aos="zoom-in-up">Our
+                    Story</h3>
                 <p class="text-muted font-18 m-0" data-aos-duration="1000" data-aos="zoom-in-up">
                     At NexTash, our mission is to deliver cutting-edge IT solutions that drive success and transform
                     the way businesses operate. We strive to be a trusted partner for our clients, helping them achieve
                     their
                     goals through innovative technology, expert guidance, and unparalleled support.
                 </p>
-            </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-6 py-2">
-                <div class="position-relative ">
-                    <div class="bg-dotted position-absolute start-0 top-0 size-100 z-index-1 ms--30 mt--30" data-aos-duration="1000" data-aos="zoom-in-up">
-                    </div>
-                    <div class="bg-dotted-primary position-absolute bottom-0 end-0 size-100 z-index-1 me--30 mb--30" data-aos-duration="1000" data-aos="zoom-in-up">
-                    </div>
-                    <div class="border-shadow z-index-999 position-relative" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/about/2.webp')}}"
-                            class="img-fluid  shadow  border border-5 border-primary p-3 backdrop-6 "
-                            alt="">
-                    </div>
-
-                </div>
             </div>
         </div>
     </div>

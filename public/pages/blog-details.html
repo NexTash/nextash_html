@@ -24,17 +24,15 @@
   <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
     <div class="row align-items-center py-5">
       <div class="col-sm-4">
-        <div class="card border-0 bg-transparent">
-          <div class="card-header bg-transparent border-0 p-0">
-            <a href="" class="btn btn-primary  text-white font-14 py-1 px-3 rounded-pill text-decoration-none">
-              Ui / Ux
-            </a>
-            <h1 class="font-40 m-0 fw-bold text-white my-3">Title will goes here.</h1>
-          </div>
+        <a href="" class="btn btn-primary  text-white font-14 py-1 px-3 rounded-pill text-decoration-none">
+          Ui / Ux
+        </a>
+        <h1 class="font-40 m-0 fw-bold text-white my-3">Title will goes here.</h1>
+        <div class=" border-0 bg-transparent">
           <div class="card-body d-flex align-items-center py-4 p-0">
             <div class="me-2">
               <a href="javascript:void(0)" class="size-40 d-inline-block">
-                <img src="./images/team/1.jpg" class="rounded-circle border w-100 h-100 object-center object-cover" />
+                <img src="{{ url_for('static', filename='images/team/1.jpg')}}" class="rounded-circle border w-100 h-100 object-center object-cover" />
               </a>
             </div>
             <div class="me-2">
@@ -42,7 +40,7 @@
               <p class="m-0 text-truncate text-muted">@abdul</p>
             </div>
           </div>
-          <div class="card-footer bg-transparent border-0 p-0 my-4" data-aos-duration="1000" data-aos="zoom-in-up">
+          <div data-aos-duration="1000" data-aos="zoom-in-up">
             <p class="mb-2 text-muted font-14 fw-bold">Share</p>
             <div class="btn-group btn-group-lg">
               <button type="button" class="btn btn-dark font-20 bx bx-link shareBtn" data-type="link"></button>
@@ -56,15 +54,17 @@
       </div>
       <div class="col-sm-1"></div>
       <div class="col-sm-7" data-aos-duration="1000" data-aos="zoom-in-up">
-        <a href="{{ url_for('static', filename='images/blogs/1.jpg')}}" class="d-inline-block w-100 position-relative p-2 border border-primary border-3"
-          href="{{ url_for('static', filename='images/blogs/1.jpg')}}">
-          <img src="{{ url_for('static', filename='images/blogs/1.jpg')}}" alt=""
-            class="card-img-top img-fluid shadow z-index-3 position-relative">
-          <div class="bg-dotted position-absolute border-0 start-0 size-100 z-index-1"
-            style="top:-30px;margin-left: -30px;"></div>
-          <div class="position-absolute border-top border-end border-light end-0 size-100 z-index-1"
-            style="top:-30px;margin-left: -20px;"></div>
-        </a>
+        <div class="position-relative image-box">
+          <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+          </div>
+          <div data-aos-duration="1000" data-aos="zoom-in-up"
+              class="bg-dotted-primary border-shadow square-2"></div>
+          <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+              data-aos="zoom-in-up">
+              <img src="{{ url_for('static', filename='images/services/97.webp')}}"
+                  class="object-cover h-100 w-100" alt="Analytics and Reporting" />
+          </div>
+      </div>
       </div>
     </div>
     <div class="row justify-content-center py-2">
@@ -101,8 +101,6 @@
             Beatae, tenetur ut?
           </p>
         </div>
-
-
         <div class="card bg-transparent border-0 rounded-4">
           <div class="card-header bg-transparent border-0 p-0">
             <div class="d-flex align-items-center justify-content-between">
@@ -123,9 +121,9 @@
             <form class="commentForm w-100">
               <div class="d-flex align-items-center">
                 <div class="size-50">
-                  <img src="./images/team/4.jpg" class="rounded-circle h-100 w-100 object-cover">
+                  <img src="{{ url_for('static', filename='images/team/1.jpg')}}" class="rounded-circle h-100 w-100 object-cover">
                 </div>
-                <input class="bg-dark w-100 font-14 form-control shadow-none p-3 mx-3 border-0 rounded-3"
+                <input class="bg-gray-700 w-100 font-14 form-control shadow-none p-3 mx-3 border-0 rounded-3"
                   placeholder="Write your comment..." />
                 <button class="btn btn-primary text-white rounded-circle p-3 font-24 bx bx-send">
                 </button>
