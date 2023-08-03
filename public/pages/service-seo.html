@@ -3,8 +3,8 @@
 {% block title %} SEO | {% endblock %}
 
 {% block seo %}
-<meta name="description" content="">
-<meta name="keywords" content="">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="" />
 <meta property="og:title" content=" | NexTash" />
@@ -15,487 +15,471 @@
 <meta property="og:url" content="" />
 {% endblock %}
 
-{% block style %}{% endblock %}
-
 {% block content %}
 <div class="bg-1 bg-cover bg-fixed bg-no-repeat">
+    <!-- HEADER -->
+    <section class="shadow py-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl">
+            <div
+                class="row align-items-center justify-content-center my-5 py-2 py-sm-2 py-md-5 py-lg-5 py-xl-5 py-xl-5">
+                <div class="col-sm-12 text-white">
+                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
+                        data-aos-duration="1000" data-aos="fade-up">Service</b>
+                    <h3 class="display-1 fw-bold m-0 mb-2 col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8"
+                        data-aos-duration="1000" data-aos="fade-up">
+                        SEO
+                    </h3>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xll-8 my-5">
+                    <div class="row text-muted font-18">
+                        <div class="col-sm-6 mb-3">
+                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
+                                Every decision we make needs to answer the million-dollar
+                                question: how will this benefit our partner’s goal best? We
+                                work to develop solutions
+                            </p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
+                                We like to be different, in the same way that every mission is
+                                different. Every project is an opportunity to create result
+                                that will help you
+                            </p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <ul data-aos-duration="1000" data-aos="fade-up">
+                                <li>SEO Audit and Analysis</li>
+                                <li>On-Page Optimization</li>
+                                <li>Off-Page Optimization</li>
+                                <li>Technical SEO</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <ul data-aos-duration="1000" data-aos="fade-up">
+                                <li>Content Creation and Optimization</li>
+                                <li>Local SEO</li>
+                                <li>SEO Reporting and Analysis</li>
+                                <li>SEO Consultation and Strategy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Header -->
-    <div class="bg-1 bg-cover bg-no-repeat bg-fixed">
-        <!-- HEADER -->
-        <section class="shadow py-5">
-            <div class="container container-sm container-md container-lg container-xl container-xxl">
+
+    <!-- DETAILS -->
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+                        </div>
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2"></div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/87.webp')}}"
+                                class="object-cover h-100 w-100" alt="SEO Audit and Analysis" />
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/86.webp')}}"
+                                class="object-cover h-100 w-100" alt="SEO Audit and Analysis" />
+                        </div>
+                    </div>
+                </div>
                 <div
-                    class="row align-items-center justify-content-center my-5 py-2 py-sm-2 py-md-5 py-lg-5 py-xl-5 py-xl-5">
-                    <div class="col-sm-12 text-white">
-                        <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
-                            data-aos-duration="1000" data-aos="fade-up">Service</b>
-                        <h3 class="display-1 fw-bold m-0 mb-2 col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8"
-                            data-aos-duration="1000" data-aos="fade-up">
-                            SEO
-                        </h3>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xll-8 my-5">
-                        <div class="row text-muted font-18">
-                            <div class="col-sm-6 mb-3">
-                                <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                    Every decision we make needs to answer the million-dollar question: how will
-                                    this benefit our partner’s goal best? We work to develop solutions
-                                </p>
-                            </div>
-                            <div class="col-sm-6 mb-3">
-                                <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                    We like to be different, in the same way that every mission is different. Every
-                                    project
-                                    is
-                                    an
-                                    opportunity to create result that will help you
-                                </p>
-                            </div>
-                            <div class="col-sm-6 mb-3">
-                                <ul data-aos-duration="1000" data-aos="fade-up">
-                                    <li>SEO Audit and Analysis</li>
-                                    <li>On-Page Optimization</li>
-                                    <li>Off-Page Optimization</li>
-                                    <li>Technical SEO</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6 mb-3">
-                                <ul data-aos-duration="1000" data-aos="fade-up">
-                                    <li>Content Creation and Optimization</li>
-                                    <li>Local SEO</li>
-                                    <li>SEO Reporting and Analysis</li>
-                                    <li>SEO Consultation and Strategy</li>
-                                </ul>
-                            </div>
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
+                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
+                        data-aos="zoom-in-up">01.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
+                        SEO Audit and Analysis
+                    </h3>
+                    <ol class="font-20 text-muted" data-aos-duration="1000" data-aos="zoom-in-up">
+                        <li>
+                            Comprehensive website analysis to identify technical issues,
+                            on-page optimization opportunities, and areas for improvement.
+                        </li>
+                        <li>
+                            Keyword research and analysis to determine relevant keywords and
+                            phrases for targeting.
+                        </li>
+                        <li>
+                            Competitor analysis to understand their SEO strategies and
+                            identify areas of competitive advantage.
+                        </li>
+                        <li>
+                            Identification of website performance metrics, including organic
+                            traffic, rankings, and user engagement.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+                        </div>
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2"></div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/89.webp')}}"
+                                class="object-cover h-100 w-100" alt=" On-Page Optimization" />
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/84.webp')}}"
+                                class="object-cover h-100 w-100" alt=" On-Page Optimization" />
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
+                        data-aos="zoom-in-up">02.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
+                        On-Page Optimization
+                    </h3>
+                    <ol class="font-20 text-muted" data-aos-duration="1000" data-aos="zoom-in-up">
+                        <li>
+                            Keyword optimization of website content, including headings,
+                            meta tags, URLs, and image alt tags.
+                        </li>
+                        <li>
+                            Content optimization to ensure relevance, readability, and user
+                            engagement.
+                        </li>
+                        <li>
+                            Site structure optimization, including navigation, internal
+                            linking, and XML sitemap creation.
+                        </li>
+                        <li>
+                            Optimization of page load speed, mobile responsiveness, and
+                            usability for enhanced user experience.
+                        </li>
+                    </ol>
+                </div>
             </div>
-        </section>
-        <!-- Header -->
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+                        </div>
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2"></div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/75.webp')}}"
+                                class="object-cover h-100 w-100" alt="Off-Page Optimization " />
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/76.webp')}}"
+                                class="object-cover h-100 w-100" alt="Off-Page Optimization " />
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
+                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
+                        data-aos="zoom-in-up">03.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
+                        Off-Page Optimization
+                    </h3>
+                    <ol class="font-20 text-muted" data-aos-duration="1000" data-aos="zoom-in-up">
+                        <li>
+                            Link building strategies to increase the number and quality of
+                            backlinks to the website
+                        </li>
+                        <li>
+                            Guest blogging, outreach, and content promotion to generate
+                            high-quality backlinks from authoritative websites
+                        </li>
+                        <li>
+                            Social media signals and social bookmarking to enhance website
+                            visibility and reach
+                        </li>
+                        <li>
+                            Online directory submissions and local SEO optimization for
+                            location-based businesses
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+                        </div>
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2"></div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/97.webp')}}"
+                                class="object-cover h-100 w-100" alt="Technical SEO" />
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/98.webp')}}"
+                                class="object-cover h-100 w-100" alt="Technical SEO" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
+                        data-aos="zoom-in-up">04.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
+                        Technical SEO
+                    </h3>
+                    <ol class="font-20 text-muted" data-aos-duration="1000" data-aos="zoom-in-up">
+                        <li>
+                            Website crawlability and indexability analysis to ensure search
+                            engines can access and understand the website's content
+                        </li>
+                        <li>
+                            Website speed optimization to improve user experience and search
+                            engine rankings.
+                        </li>
+                        <li>
+                            Mobile optimization to ensure the website is mobile-friendly and
+                            meets mobile search requirements.
+                        </li>
+                        <li>
+                            Schema markup implementation to enhance search engine
+                            understanding of structured data on the website.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+                        </div>
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2"></div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/85.webp')}}"
+                                class="object-cover h-100 w-100" alt="Content Creation and Optimization" />
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/84.webp')}}"
+                                class="object-cover h-100 w-100" alt="Content Creation and Optimization" />
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
+                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
+                        data-aos="zoom-in-up">05.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
+                        Content Creation and Optimization
+                    </h3>
+                    <ol class="font-20 text-muted" data-aos-duration="1000" data-aos="zoom-in-up">
+                        <li>
+                            Creation of high-quality, relevant, and optimized content for
+                            website pages, blog posts, articles, and other resources.
+                        </li>
+                        <li>
+                            Keyword integration and optimization within content to improve
+                            visibility for target search terms.
+                        </li>
+                        <li>
+                            Content strategy development to align with target audience needs
+                            and search intent.
+                        </li>
+                        <li>
+                            Optimization of multimedia content such as images and videos for
+                            search engines.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+                        </div>
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2"></div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/55.webp')}}"
+                                class="object-cover h-100 w-100" alt="Local SEO" />
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/57.webp')}}"
+                                class="object-cover h-100 w-100" alt="Local SEO" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
+                        data-aos="zoom-in-up">06.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
+                        Local SEO
+                    </h3>
+                    <ol class="font-20 text-muted" data-aos-duration="1000" data-aos="zoom-in-up">
+                        <li>
+                            Local keyword research and optimization for businesses targeting
+                            specific geographic locations.
+                        </li>
+                        <li>
+                            Google My Business optimization to enhance local business
+                            visibility on Google Maps and local search results.
+                        </li>
+                        <li>
+                            Online reviews management and reputation management for local
+                            businesses.
+                        </li>
+                        <li>
+                            Local citation building and NAP (Name, Address, Phone number)
+                            consistency across directories and listings.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+                        </div>
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2"></div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/97.webp')}}"
+                                class="object-cover h-100 w-100" alt="SEO Reporting and Analysis" />
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/98.webp')}}"
+                                class="object-cover h-100 w-100" alt="SEO Reporting and Analysis" />
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
+                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
+                        data-aos="zoom-in-up">07.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
+                        SEO Reporting and Analysis
+                    </h3>
+                    <ol class="font-20 text-muted" data-aos-duration="1000" data-aos="zoom-in-up">
+                        <li>
+                            Regular monitoring and reporting of website performance metrics,
+                            including organic traffic, keyword rankings, and conversions.
+                        </li>
+                        <li>
+                            Analysis of user behavior, click-through rates, and bounce rates
+                            to identify areas of improvement.
+                        </li>
+                        <li>
+                            Identification of trends, opportunities, and recommendations for
+                            ongoing SEO optimization.
+                        </li>
+                        <li>
+                            Customized reports and dashboards to track progress and measure
+                            ROI.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
+                    <div class="position-relative image-box">
+                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+                        </div>
+                        <div data-aos-duration="1000" data-aos="zoom-in-up"
+                            class="bg-dotted-primary border-shadow square-2"></div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/55.webp')}}"
+                                class="object-cover h-100 w-100" alt="SEO Consultation and Strategy" />
+                        </div>
+                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
+                            data-aos="zoom-in-up">
+                            <img src="{{ url_for('static', filename='images/services/57.webp')}}"
+                                class="object-cover h-100 w-100" alt="SEO Consultation and Strategy" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
+                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
+                        data-aos="zoom-in-up">08.</span>
+                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
+                        SEO Consultation and Strategy
+                    </h3>
+                    <ol class="font-20 text-muted" data-aos-duration="1000" data-aos="zoom-in-up">
+                        <li>
+                            Consultation services to understand business goals and develop
+                            an effective SEO strategy
+                        </li>
+                        <li>
+                            Guidance on best practices, industry trends, and algorithm
+                            updates
+                        </li>
+                        <li>
+                            Assistance with website migrations, domain changes, or other
+                            SEO-sensitive activities.
+                        </li>
+                        <li>
+                            Ongoing SEO support, guidance, and collaboration with internal
+                            teams.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DETAILS -->
 
-        <!-- DETAILS -->
-        <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-            <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                        <div class="position-relative image-box">
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted border-shadow square-1">
-                            </div>
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted-primary border-shadow square-2">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-lg"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/87.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="SEO Audit and Analysis">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-sm"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/86.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="SEO Audit and Analysis">
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                        <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                            data-aos="zoom-in-up">01.</span>
-                        <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                            SEO Audit and Analysis
-                        </h3>
-                        <ol class="font-20 text-muted " data-aos-duration="1000" data-aos="zoom-in-up">
-                            <li>Comprehensive website analysis to identify technical issues, on-page optimization
-                                opportunities, and
-                                areas
-                                for
-                                improvement.</li>
-                            <li>Keyword research and analysis to determine relevant keywords and phrases for targeting.
-                            </li>
-                            <li>Competitor analysis to understand their SEO strategies and identify areas of competitive
-                                advantage.
-                            </li>
-                            <li>Identification of website performance metrics, including organic traffic, rankings, and
-                                user
-                                engagement.
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="row align-items-center justify-content-between">
-                    <div
-                        class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                        <div class="position-relative image-box">
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted border-shadow square-1">
-                            </div>
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted-primary border-shadow square-2">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-lg"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/89.webp')}}"
-                                    class=" object-cover h-100 w-100" alt=" On-Page Optimization">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-sm"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/84.webp')}}"
-                                    class=" object-cover h-100 w-100" alt=" On-Page Optimization">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                        <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                            data-aos="zoom-in-up">02.</span>
-                        <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                            On-Page Optimization
-                        </h3>
-                        <ol class="font-20 text-muted " data-aos-duration="1000" data-aos="zoom-in-up">
-                            <li>Keyword optimization of website content, including headings, meta tags, URLs, and image
-                                alt
-                                tags.
-                            </li>
-                            <li>Content optimization to ensure relevance, readability, and user engagement.</li>
-                            <li>Site structure optimization, including navigation, internal linking, and XML sitemap
-                                creation.</li>
-                            <li>Optimization of page load speed, mobile responsiveness, and usability for enhanced user
-                                experience.
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                        <div class="position-relative image-box">
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted border-shadow square-1">
-                            </div>
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted-primary border-shadow square-2">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-lg"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/75.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="Off-Page Optimization ">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-sm"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/76.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="Off-Page Optimization ">
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                        <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                            data-aos="zoom-in-up">03.</span>
-                        <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                            Off-Page Optimization </h3>
-                        <ol class="font-20 text-muted " data-aos-duration="1000" data-aos="zoom-in-up">
-                            <li>Link building strategies to increase the number and quality of backlinks to the website
-                            </li>
-                            <li>Guest blogging, outreach, and content promotion to generate high-quality backlinks from
-                                authoritative
-                                websites
-                            </li>
-                            <li>Social media signals and social bookmarking to enhance website visibility and reach</li>
-                            <li>Online directory submissions and local SEO optimization for location-based businesses
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="row align-items-center justify-content-between">
-                    <div
-                        class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                        <div class="position-relative image-box">
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted border-shadow square-1">
-                            </div>
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted-primary border-shadow square-2">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-lg"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/97.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="Technical SEO">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-sm"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/98.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="Technical SEO">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                        <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                            data-aos="zoom-in-up">04.</span>
-                        <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                            Technical SEO
-                        </h3>
-                        <ol class="font-20 text-muted " data-aos-duration="1000" data-aos="zoom-in-up">
-                            <li>Website crawlability and indexability analysis to ensure search engines can access and
-                                understand
-                                the
-                                website's content</li>
-                            <li>Website speed optimization to improve user experience and search engine rankings.</li>
-                            <li>Mobile optimization to ensure the website is mobile-friendly and meets mobile search
-                                requirements.
-                            </li>
-                            <li>Schema markup implementation to enhance search engine understanding of structured data
-                                on
-                                the
-                                website.</li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                        <div class="position-relative image-box">
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted border-shadow square-1">
-                            </div>
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted-primary border-shadow square-2">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-lg"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/85.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="Content Creation and Optimization">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-sm"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/84.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="Content Creation and Optimization">
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                        <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                            data-aos="zoom-in-up">05.</span>
-                        <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                            Content Creation and Optimization
-                        </h3>
-                        <ol class="font-20 text-muted " data-aos-duration="1000" data-aos="zoom-in-up">
-                            <li>Creation of high-quality, relevant, and optimized content for website pages, blog posts,
-                                articles,
-                                and
-                                other
-                                resources.</li>
-                            <li>Keyword integration and optimization within content to improve visibility for target
-                                search
-                                terms.
-                            </li>
-                            <li>Content strategy development to align with target audience needs and search intent.</li>
-                            <li>Optimization of multimedia content such as images and videos for search engines.</li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="row align-items-center justify-content-between">
-                    <div
-                        class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                        <div class="position-relative image-box">
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted border-shadow square-1">
-                            </div>
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted-primary border-shadow square-2">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-lg"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/55.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="Local SEO">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-sm"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/57.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="Local SEO">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                        <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                            data-aos="zoom-in-up">06.</span>
-                        <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                            Local SEO
-                        </h3>
-                        <ol class="font-20 text-muted " data-aos-duration="1000" data-aos="zoom-in-up">
-                            <li>Local keyword research and optimization for businesses targeting specific geographic
-                                locations.</li>
-                            <li>Google My Business optimization to enhance local business visibility on Google Maps and
-                                local search
-                                results.
-                            </li>
-                            <li>Online reviews management and reputation management for local businesses.</li>
-                            <li>Local citation building and NAP (Name, Address, Phone number) consistency across
-                                directories
-                                and
-                                listings.
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                        <div class="position-relative image-box">
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted border-shadow square-1">
-                            </div>
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted-primary border-shadow square-2">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-lg"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/97.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="SEO Reporting and Analysis">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-sm"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/98.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="SEO Reporting and Analysis">
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                        <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                            data-aos="zoom-in-up">07.</span>
-                        <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                            SEO Reporting and Analysis
-                        </h3>
-                        <ol class="font-20 text-muted " data-aos-duration="1000" data-aos="zoom-in-up">
-                            <li>
-                                Regular monitoring and reporting of website performance metrics, including organic
-                                traffic,
-                                keyword
-                                rankings,
-                                and conversions.
-                            </li>
-                            <li>
-                                Analysis of user behavior, click-through rates, and bounce rates to identify areas of
-                                improvement.
-                            </li>
-                            <li>
-                                Identification of trends, opportunities, and recommendations for ongoing SEO
-                                optimization.
-                            </li>
-                            <li>
-                                Customized reports and dashboards to track progress and measure ROI.
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="row align-items-center justify-content-between">
-                    <div
-                        class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                        <div class="position-relative image-box">
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted border-shadow square-1">
-                            </div>
-                            <div data-aos-duration="1000" data-aos="zoom-in-up"
-                                class="bg-dotted-primary border-shadow square-2">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-lg"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/55.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="SEO Consultation and Strategy">
-                            </div>
-                            <div class="border-shadow border border-primary border-5 p-2 image-sm"
-                                data-aos-duration="1000" data-aos="zoom-in-up">
-                                <img src="{{ url_for('static', filename='images/services/57.webp')}}"
-                                    class=" object-cover h-100 w-100" alt="SEO Consultation and Strategy">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                        <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                            data-aos="zoom-in-up">08.</span>
-                        <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                            SEO Consultation and Strategy
-                        </h3>
-                        <ol class="font-20 text-muted " data-aos-duration="1000" data-aos="zoom-in-up">
-                            <li>Consultation services to understand business goals and develop an effective SEO strategy
-                            </li>
-                            <li>Guidance on best practices, industry trends, and algorithm updates</li>
-                            <li>Assistance with website migrations, domain changes, or other SEO-sensitive activities.
-                            </li>
-                            <li>Ongoing SEO support, guidance, and collaboration with internal teams.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--------- Row --------->
-        <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <div class="text-white mb-5">
-                <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
-                    OUR WORK
-                </b>
-                <h3 class="text-white font-40 fw-bold m-0 my-2">Recent Projects Showcase</h3>
-                <p class="text-muted font-18 m-0 col-sm-6">
-                    Creating impact with every project, experience the innovation.
-                </p>
-            </div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4">
-                <article class="col">
-                    <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
-                        <div class="card-header border-0 p-0 bg-transparent  rounded-4">
-                            <img src="{{ url_for('static', filename='images/projects/1.webp')}}"
-                                class="card-img-top object-cover rounded-4" alt="" data-aos-duration="1000"
-                                data-aos="zoom-in-up">
-                        </div>
-                        <div
-                            class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
-                            <div class="mt-auto py-3">
-                                <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
-                                <h3 class="fw-bold font-20 my-4 m-0 text-white ">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                </h3>
-                                <a href=""
-                                    class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
-                                    study</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="col">
-                    <div class="card bg-transparent shadow project-card h-100 position-relative rounded-4">
-                        <div class="card-header border-0 p-0 bg-transparent  rounded-4">
-                            <img src="{{ url_for('static', filename='images/projects/2.webp')}}"
-                                class="card-img-top object-cover rounded-4" alt="" data-aos-duration="1000"
-                                data-aos="zoom-in-up">
-                        </div>
-                        <div
-                            class="card-body position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-column flex-end p-4 rounded-4 rounded-top-0">
-                            <div class="mt-auto py-3">
-                                <b class="badge bg-danger rounded-0 font-12 px-2">UI / UX</b>
-                                <h3 class="fw-bold font-20 my-4 m-0 text-white ">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                </h3>
-                                <a href=""
-                                    class="btn btn-outline-primary btn-sm rounded-pill border border-primary border-3 px-3 font-14 text-white">Case
-                                    study</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="text-center py-5">
-                <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">Load more</button>
-            </div>
-        </section>
-        <!--------- Row --------->
+    <!-- WHY CHOOSE US -->
+    {% include "components/why-choose-us.html" %}
+    <!-- WHY CHOOSE US -->
 
-        <!-- Feedbacks -->
-        {% include "components/feedbacks.html" %}
-        <!-- Feedbacks -->
+    <!--PROCESS-->
+    {% include "components/process.html" %}
+    <!--PROCESS-->
 
-        <!------ Process ------>
-        {% include "components/process.html" %}
-        <!------ Process ------>
-        <!------ Clients ------->
-        {% include "components/clients.html" %}
-        <!------ Clients ------->
-    </div>
-    {% endblock %}
+    <!--PROJECTS-->
+    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
+        <div class="text-white mb-5">
+            <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
+                OUR WORK
+            </b>
+            <h3 class="text-white font-40 fw-bold m-0 my-2">
+                Recent Projects Showcase
+            </h3>
+            <p class="text-muted font-18 m-0 col-sm-6">
+                Creating impact with every project, experience the innovation.
+            </p>
+        </div>
+        {% include "components/projects.html" %}
+        <div class="text-center py-5">
+            <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">
+                Load more
+            </button>
+        </div>
+    </section>
+    <!--PROJECTS-->
+
+    <!-- FEEDBACKS -->
+    {% include "components/feedbacks.html" %}
+    <!-- FEEDBACKS -->
+
+    <!-- CLIENTS -->
+    {% include "components/clients.html" %}
+    <!-- CLIENTS -->
+</div>
+{% endblock %}

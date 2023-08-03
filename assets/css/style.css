@@ -20277,6 +20277,24 @@ img {
 }
 .image-box .image-lg {
   z-index: 10;
+  height: 500px;
+}
+@media screen and (max-width: 520px) {
+  .image-box .image-lg {
+    height: 500px;
+  }
+}
+.image-box .image-lg img {
+  -o-object-position: center;
+     object-position: center;
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+  -webkit-transition: all, 1s;
+  transition: all, 1s;
+}
+.image-box .image-lg img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 .image-box .image-sm {
   z-index: 10;
@@ -20287,6 +20305,16 @@ img {
   margin-left: -50px;
   width: 150px;
   height: 150px;
+}
+.image-box .image-sm img {
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+  -webkit-transition: all, 1s;
+  transition: all, 1s;
+}
+.image-box .image-sm img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 @media screen and (max-width: 820px) {
   .image-box .image-sm {
