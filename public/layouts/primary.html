@@ -2,37 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %} NexTash</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/logos/favicon.ico')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
     <meta charset="UTF-8">
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="X-UA-Compatible" content="IE=7">
-<meta name="description" content="Discover a world of unique and personalized gifts at OneTwoLife.  Find the perfect gift ideas to delight your loved ones. Explore our extensive collection of customized and thoughtfully curated items, including birthday gifts, anniversary surprises, and holiday essentials. Whether you need corporate gifts, graduation mementos, or heartfelt tokens for special occasions, our wide selection has you covered. Shop now and make every moment memorable with our exquisite range of gifts">
-<meta name="keywords" content="Unique gifts, Personalized gifts, Customized gifts, Gift ideas, Birthday gifts, Anniversary gifts, Wedding gifts, Christmas gifts, Housewarming gifts, Thank you gifts, Engagement gifts, Promotional gifts">
-<link rel="dns-prefetch" href="//onetwolife.com">
-<link rel="dns-prefetch" href="//wa.me">
-<link rel="dns-prefetch" href="//twitter.com">
-<link rel="dns-prefetch" href="//www.linkedin.com">
-<link rel="dns-prefetch" href="//www.facebook.com">
-<link rel="dns-prefetch" href="//www.instagram.com">
-<link rel="dns-prefetch" href="//www.google.com">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="/assets/css/style.css">
-<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
-<link rel="manifest" href="/assets/images/site.webmanifest" />
-<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#6F3B9F" />
-<meta name="msapplication-TileColor" content="#6F3B9F" />
-<meta name="theme-color" content="#ffffff" />
-    
-    
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="dns-prefetch" href="//nextash.com">
+    <link rel="dns-prefetch" href="//wa.me">
+    <link rel="dns-prefetch" href="//twitter.com">
+    <link rel="dns-prefetch" href="//www.linkedin.com">
+    <link rel="dns-prefetch" href="//www.facebook.com">
+    <link rel="dns-prefetch" href="//www.instagram.com">
+    <link rel="dns-prefetch" href="//www.google.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico" type="image/x-icon')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='images/apple-touch-icon.png')}}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png')}}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png')}}" />
+    <link rel="manifest" href="{{ url_for('static', filename='images/site.webmanifest')}}" />
+    <link rel="mask-icon" href="{{ url_for('static', filename='images/safari-pinned-tab.svg')}}" color="#ff0000" />
+    <meta name="msapplication-TileColor" content="#ff0000" />
+    <meta name="theme-color" content="#ffffff" />
+
+
     {% block seo %}
     <meta name="description" content="">
     <meta name="keywords" content="">
