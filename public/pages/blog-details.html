@@ -22,7 +22,7 @@
 {% block content %}
 <main class="bg-1 bg-no-repeat">
   <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-    <div class="row align-items-center py-5">
+    <section class="row align-items-center py-5">
       <div class="col-sm-4">
         <a href="" class="btn btn-primary  text-white font-14 py-1 px-3 rounded-pill text-decoration-none">
           Ui / Ux
@@ -32,7 +32,8 @@
           <div class="card-body d-flex align-items-center py-4 p-0">
             <div class="me-2">
               <a href="javascript:void(0)" class="size-40 d-inline-block">
-                <img src="{{ url_for('static', filename='images/team/1.jpg')}}" class="rounded-circle border w-100 h-100 object-center object-cover" />
+                <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
+                  class="rounded-circle border w-100 h-100 object-center object-cover" />
               </a>
             </div>
             <div class="me-2">
@@ -57,17 +58,16 @@
         <div class="position-relative image-box">
           <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
           </div>
-          <div data-aos-duration="1000" data-aos="zoom-in-up"
-              class="bg-dotted-primary border-shadow square-2"></div>
+          <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted-primary border-shadow square-2"></div>
           <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-              data-aos="zoom-in-up">
-              <img src="{{ url_for('static', filename='images/services/97.webp')}}"
-                  class="object-cover h-100 w-100" alt="Analytics and Reporting" />
+            data-aos="zoom-in-up">
+            <img src="{{ url_for('static', filename='images/services/97.webp')}}" class="object-cover h-100 w-100"
+              alt="Analytics and Reporting" />
           </div>
+        </div>
       </div>
-      </div>
-    </div>
-    <div class="row justify-content-center py-2">
+    </section>
+    <section class="row justify-content-center py-2">
       <div class="col-sm-8 ">
         <div class="font-20 text-muted py-5" data-aos-duration="1000" data-aos="zoom-in-up">
           <p>
@@ -101,40 +101,119 @@
             Beatae, tenetur ut?
           </p>
         </div>
-        <div class="card bg-transparent border-0 rounded-4">
-          <div class="card-header bg-transparent border-0 p-0">
-            <div class="d-flex align-items-center justify-content-between">
-              <h4 class="m-0 fw-bold font-18 text-white">(0) Comments</h4>
-              <div class="form-group m-0 font-14 text-white bg-dark p-1 rounded-2 px-2">
-                <label for="" class="m-0">Sort</label>
-                <select id="" class="bg-transparent text-muted bg-dark border-0">
-                  <option value="-id">Newest</option>
-                  <option value="id">Oldest</option>
-                </select>
+        <div>
+          <h4 class="text-white font-20 my-3" data-aos-duration="1000" data-aos="zoom-in-up">Related tags:</h4>
+          <p data-aos-duration="1000" data-aos="zoom-in-up">
+            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
+              HTML 5
+            </a>
+            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
+              CSS 3
+            </a>
+            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
+              SCSS
+            </a>
+            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
+              JAVASCRIPT
+            </a>
+            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
+              JQuery
+            </a>
+            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
+              Bootstrap 5
+            </a>
+            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
+              Uikit
+            </a>
+          </p>
+        </div>
+        <div class="my-5">
+          <div class="d-flex align-items-center justify-content-between">
+            <h4 class="m-0 fw-bold font-18 text-white">(0) Comments</h4>
+            <div class="form-group m-0 font-14 text-white bg-dark p-1 rounded-2 px-2">
+              <label for="" class="m-0">Sort</label>
+              <select id="" class="bg-transparent text-muted bg-dark border-0">
+                <option value="-id">Newest</option>
+                <option value="id">Oldest</option>
+              </select>
+            </div>
+          </div>
+          <div class="my-5">
+            <div id="comments">
+              <div class="d-flex my-2">
+                <div class="size-50">
+                  <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
+                    class="rounded-circle h-100 w-100 object-cover">
+                </div>
+                <div class="mb-1">
+                  <div class="px-3 p-2 bg-gray-700 rounded-3 ms-2">
+                    <h5 class="font-18 m-0 fw-bold text-white">
+                      Abdul hannan
+                    </h5>
+                    <div class="m-0 text-white mt-2 text-break" dir="auto">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium suscipit ab
+                      perferendis ducimus dicta pariatur minus iure harum qui, obcaecati quo tenetur a quasi.
+                      Perferendis adipisci ab ratione deleniti.
+                    </div>
+
+                  </div>
+                  <button type="button" data-id="${item.id}"
+                    class="btn rounded-pill p-0 font-12 d-flex align-items-center font-14 createReply">
+                    <b class="bx bx-reply me-1 font-20"></b> Reply
+                  </button>
+                </div>
+                <div class="d-flex align-items-center mt-1">
+                  <div class="dropdown ms-auto">
+                    <button type="button" class="btn p-2 rounded-circle ms-2 bx bx-dots-vertical text-white bg-gray-700"
+                      data-bs-toggle="dropdown"></button>
+                    <ul class="dropdown-menu shadow border-0">
+                      <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
+                      <li><a class="dropdown-item" href="javascript:void(0)">Delete</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card-body">
-            <div id="comments"></div>
-          </div>
-          <div class="card-footer bg-transparent border-0 p-0">
-            <form class="commentForm w-100">
-              <div class="d-flex align-items-center">
-                <div class="size-50">
-                  <img src="{{ url_for('static', filename='images/team/1.jpg')}}" class="rounded-circle h-100 w-100 object-cover">
-                </div>
-                <input class="bg-gray-700 w-100 font-14 form-control shadow-none p-3 mx-3 border-0 rounded-3"
-                  placeholder="Write your comment..." />
-                <button class="btn btn-primary text-white rounded-circle p-3 font-24 bx bx-send">
-                </button>
+          <form class="">
+            <div class="d-flex">
+              <div class="size-50 me-3">
+                <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
+                  class="rounded-circle h-100 w-100 object-cover">
               </div>
-            </form>
-          </div>
+              <textarea class="bg-gray-700 w-100 font-14 form-control shadow-none p-3 border-0 rounded-3"
+                placeholder="Write your comment..." rows="4"></textarea>
+            </div>
+            <div class="text-end mt-3">
+              <button class="btn btn-primary text-white p-3 font-18 px-5">
+                Post
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-    </div>
+    </section>
+    <!------ Blogs ------>
+    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5" data-aos-anchor-placement="top-center" data-aos-duration="1000"
+      data-aos="fade-down">
+      <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+        <div class="text-white py-5">
+          <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14 d-inline-block mb-1"
+            data-aos-duration="1000" data-aos="zoom-in-up">
+            Find out our thoughts
+          </b>
+          <h3 class="text-white font-40 fw-bold m-0 my-2 mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
+            Related Aricles
+          </h3>
+          <p class="text-muted font-18 m-0 col-sm-6" data-aos-duration="1000" data-aos="zoom-in-up">
+            In this series of blog posts, we take a more in-depth look at different aspects of [Topic]. Uncover hidden
+            insights, discover expert tips, and gain a deeper understanding of the subject matter you love
+          </p>
+        </div>
+        {% include "components/blogs.html" %}
+      </div>
+    </section>
+    <!------ Blogs ------>
   </div>
 </main>
 {% endblock %}
-
-{% block scripts %} {% endblock %}
