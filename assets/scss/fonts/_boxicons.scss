@@ -8,7 +8,7 @@
     url("#{$fonts_path}/icons/boxicons.woff2") format("woff2"),
     url("#{$fonts_path}/icons/boxicons.woff") format("woff"),
     url("#{$fonts_path}/icons/boxicons.ttf") format("truetype"),
-    url("#{$fonts_path}/icons/boxicons.svg?#boxicons") format("svg");
+    url("#{$fonts_path} boxicons.svg?#boxicons") format("svg");
 }
 .bx {
   font-family: "boxicons" !important;
