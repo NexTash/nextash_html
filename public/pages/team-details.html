@@ -16,79 +16,80 @@
 {% endblock %}
 
 {% block content %}
-<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
-  <!-- HEADER -->
-  <section class="shadow py-5">
-    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-      <div class="row align-items-center justify-content-center my-5 py-5">
-        <div class="col-sm-12 text-white py-2 mb-5">
-          <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
-            data-aos-duration="1000" data-aos="fade-up">Meet the Dream Team </b>
-          <h3 class="display-1 fw-bold m-0 mb-2" data-aos-duration="1000" data-aos="fade-up">
-            Uniting Brilliance, Passion, and Creativity!
-          </h3>
-        </div>
-        <p class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8 text-muted py-2 font-20"
-          data-aos-duration="1000" data-aos="fade-up">
+<!-- HEADER -->
+<section class="shadow py-5">
+  <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-sm-12 text-white py-2 mb-5">
+        <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2">
+          Meet the Dream Team
+        </b>
+        <h3 class="display-2 fw-bold m-0 mb-2  col-12 col-sm-12 col-md-12 col-lg-8">
+          Uniting Brilliance, Passion, and Creativity!
+        </h3>
+      </div>
+      <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8">
+        <p class="text-muted font-18 lh-base">
           - We’re a diverse team that works as fancies attention to details, enjoys beers on Friday nights and
           aspires to design the dent in the universe.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- HEADER -->
+<!-- CONTENT -->
+<section class="shadow py-5">
+  <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+    <div class="row align-items-center justify-content-center my-5 py-5">
+      <div class="col-sm-4">
+        <div class="d-block text-decoration-none p-2 border-primary border border-4 rounded-circle"
+          data-aos-duration="1000" data-aos="zoom-in-up">
+          <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
+            class="card-img-top object-cover rounded-circle h-200 w-100">
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-4">
+        <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14 d-inline-block mb-2"
+          data-aos-duration="1000" data-aos="zoom-in-up">
+          Web developer
+        </b>
+        <h3 class="fw-bold display-1 mb-5 m-0 text-white" data-aos-duration="1000" data-aos="zoom-in-up">Abdul Hannan
+        </h3>
+        <h4 class="text-muted font-20 my-3" data-aos-duration="1000" data-aos="zoom-in-up">Follow us</h4>
+        <div class="d-flex align-items-center my-3" data-aos-duration="1000" data-aos="zoom-in-up">
+          <a href="#" class="bx bxl-facebook-square font-24 btn btn-dark text-white p-1 rounded-circle me-1"></a>
+          <a href="#" class="bx bxl-twitter font-24 btn btn-dark text-white p-1 rounded-circle me-1"></a>
+          <a href="#" class="bx bxl-google font-24 btn btn-dark text-white p-1 rounded-circle me-1"></a>
+          <a href="#" class="bx bxl-instagram font-24 btn btn-dark text-white p-1 rounded-circle me-1"></a>
+          <a href="#" class="bx bxl-github font-24 btn btn-dark text-white p-1 rounded-circle me-1"></a>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="shadow py-5">
-    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-      <div class="row align-items-center justify-content-center my-5 py-5">
-        <div class="col-sm-4">
-          <div class="d-block text-decoration-none p-2 border-primary border border-4 rounded-circle"
-            data-aos-duration="1000" data-aos="zoom-in-up">
-            <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
-              class="card-img-top object-cover rounded-circle h-200 w-100">
-          </div>
-        </div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-4">
-          <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14 d-inline-block mb-2"
-            data-aos-duration="1000" data-aos="zoom-in-up">
-            Web developer
-          </b>
-          <h3 class="fw-bold display-1 mb-5 m-0 text-white" data-aos-duration="1000" data-aos="zoom-in-up">Abdul Hannan
-          </h3>
-          <h4 class="text-muted font-20 my-3" data-aos-duration="1000" data-aos="zoom-in-up">Follow us</h4>
-          <div class="d-flex align-items-center my-3" data-aos-duration="1000" data-aos="zoom-in-up">
-            <a href="#" class="bx bxl-facebook-square font-24 btn btn-dark text-white p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-twitter font-24 btn btn-dark text-white p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-google font-24 btn btn-dark text-white p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-instagram font-24 btn btn-dark text-white p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-github font-24 btn btn-dark text-white p-1 rounded-circle me-1"></a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 offset-sm-3">
-          <p class="text-muted font-18 mb-5" data-aos-duration="1000" data-aos="zoom-in-up">Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Accusamus,
-            porro corrupti! Rem in maxime provident, quidem eligendi soluta vero temporibus sed saepe dicta
-            ea, mollitia, quibusdam repudiandae quo doloremque distinctio.</p>
-          <h4 class="text-white font-20 my-3" data-aos-duration="1000" data-aos="zoom-in-up">Highlighted skills:</h4>
-          <p data-aos-duration="1000" data-aos="zoom-in-up">
-            <span class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">HTML 5</span>
-            <span class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">CSS 3</span>
-            <span class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">SCSS</span>
-            <span
-              class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">JAVASCRIPT</span>
-            <span class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">JQuery</span>
-            <span class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">Bootstrap
-              5</span>
-            <span class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">Uikit</span>
-          </p>
-        </div>
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3">
+        <p class="text-muted font-18 mb-5" data-aos-duration="1000" data-aos="zoom-in-up">Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Accusamus,
+          porro corrupti! Rem in maxime provident, quidem eligendi soluta vero temporibus sed saepe dicta
+          ea, mollitia, quibusdam repudiandae quo doloremque distinctio.</p>
+        <h4 class="text-white font-20 my-3" data-aos-duration="1000" data-aos="zoom-in-up">Highlighted skills:</h4>
+        <p data-aos-duration="1000" data-aos="zoom-in-up">
+          <span class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">HTML 5</span>
+          <span class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">CSS 3</span>
+          <span class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">SCSS</span>
+          <span
+            class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">JAVASCRIPT</span>
+          <span class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">JQuery</span>
+          <span class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">Bootstrap
+            5</span>
+          <span class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">Uikit</span>
+        </p>
       </div>
     </div>
-  </section>
-  <!-- Header -->
-</div>
+  </div>
+</section>
+<!-- CONTENT -->
 {% endblock %}
 
 {% block scripts %} {% endblock %}

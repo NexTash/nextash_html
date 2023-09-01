@@ -72,7 +72,8 @@
     <script src="{{ url_for('static', filename='js/vanilla-tilt.js')}}"></script>
     <script>
         AOS.init();
-
+        VanillaTilt.init();
+        
         window.onscroll = function () { navbar() };
         function navbar() {
             let position = 20
@@ -82,8 +83,6 @@
                 document.getElementById("navbar").classList.remove("bg-dark");
             }
         }
-
-        VanillaTilt.init();
     </script>
     {% block scripts %} {% endblock %}
     <!-- SCRIPTS -->

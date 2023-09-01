@@ -15,155 +15,149 @@
 <meta property="og:url" content="" />
 {% endblock %}
 
-{% block style %}{% endblock %}
-
 {% block content %}
-<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
-    <!-- HEADER -->
-    <section class="shadow py-5">
-      <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-        <div class="row align-items-center justify-content-center my-5 py-5">
-          <div class="col-sm-12 text-white py-2 mb-5">
-            <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
-                        data-aos-duration="1000" data-aos="fade-up">OUR STAFF</b>
-                    <h3 class="display-1 fw-bold m-0 mb-2" data-aos-duration="1000" data-aos="fade-up">
-                        Meet Our Talented Team
-                    </h3>
-                </div>
-                <p class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8 text-muted py-2 font-20"
-                    data-aos-duration="1000" data-aos="fade-up">
+<!-- HEADER -->
+<section class="shadow py-5">
+    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-sm-12 text-white py-2 mb-5">
+                <b
+                    class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2">
+                    OUR STAFF
+                </b>
+                <h3 class="display-2 fw-bold m-0 mb-2  col-12 col-sm-12 col-md-12 col-lg-8">
+                    Meet Our Talented Team
+                </h3>
+            </div>
+            <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8">
+                <p class="text-muted font-18 lh-base">
                     - We’re a diverse team that works as fancies attention to details, enjoys beers on Friday nights and
                     aspires to design the dent in the universe.
                 </p>
             </div>
         </div>
-    </section>
-    <!-- HEADER -->
-
-    <!------- Team ------->
-    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-           
-            <div
-                class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 row-cols-xll-1 g-5 justify-content-center">
-                <div class="col" data-aos-duration="1000" data-aos="zoom-in-up">
-                    <article
-                        class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4 border-shadow">
-                        <div class="card-header border-0 bg-transparent py-3 d-flex justify-content-center">
-                            <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
-                                href="">
-                                <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
-                                    class="card-img-top object-cover rounded-circle h-100 w-100">
-                            </a>
-                        </div>
-                        <div class="card-body text-center py-0">
-                            <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
-                            <p class="text-muted font-16">Web developer</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col" data-aos-duration="1000" data-aos="zoom-in-up">
-                    <article
-                        class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4 border-shadow">
-                        <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
-                            <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
-                                href="">
-                                <img src="{{ url_for('static', filename='images/team/2.jpg')}}"
-                                    class="card-img-top object-cover rounded-circle h-100 w-100">
-                            </a>
-                        </div>
-                        <div class="card-body text-center border-0 py-0">
-                            <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
-                            <p class="text-muted font-16">Web developer</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col" data-aos-duration="1000" data-aos="zoom-in-up">
-                    <article
-                        class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4 border-shadow">
-                        <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
-                            <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
-                                href="">
-                                <img src="{{ url_for('static', filename='images/team/2.jpg')}}"
-                                    class="card-img-top object-cover rounded-circle h-100 w-100">
-                            </a>
-                        </div>
-                        <div class="card-body text-center border-0 py-0">
-                            <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
-                            <p class="text-muted font-16">Web developer</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col" data-aos-duration="1000" data-aos="zoom-in-up">
-                    <article
-                        class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4 border-shadow">
-                        <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
-                            <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
-                                href="">
-                                <img src="{{ url_for('static', filename='images/team/3.jpg')}}"
-                                    class="card-img-top object-cover rounded-circle h-100 w-100">
-                            </a>
-                        </div>
-                        <div class="card-body text-center border-0 py-0">
-                            <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
-                            <p class="text-muted font-16">Web developer</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col" data-aos-duration="1000" data-aos="zoom-in-up">
-                    <article
-                        class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4 border-shadow">
-                        <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
-                            <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
-                                href="">
-                                <img src="{{ url_for('static', filename='images/team/4.jpg')}}"
-                                    class="card-img-top object-cover rounded-circle h-100 w-100">
-                            </a>
-                        </div>
-                        <div class="card-body text-center border-0 py-0">
-                            <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
-                            <p class="text-muted font-16">Web developer</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
-                            <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
-                        </div>
-                    </article>
-                </div>
+    </div>
+</section>
+<!-- HEADER -->
+<!-- TEAM -->
+<section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
+    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+        <div
+            class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 row-cols-xll-1 g-5 justify-content-center">
+            <div class="col" data-aos-duration="1000" data-aos="zoom-in-up">
+                <article
+                    class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4 border-shadow">
+                    <div class="card-header border-0 bg-transparent py-3 d-flex justify-content-center">
+                        <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
+                            href="">
+                            <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
+                                class="card-img-top object-cover rounded-circle h-100 w-100">
+                        </a>
+                    </div>
+                    <div class="card-body text-center py-0">
+                        <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
+                        <p class="text-muted font-16">Web developer</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
+                    </div>
+                </article>
             </div>
-
+            <div class="col" data-aos-duration="1000" data-aos="zoom-in-up">
+                <article
+                    class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4 border-shadow">
+                    <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
+                        <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
+                            href="">
+                            <img src="{{ url_for('static', filename='images/team/2.jpg')}}"
+                                class="card-img-top object-cover rounded-circle h-100 w-100">
+                        </a>
+                    </div>
+                    <div class="card-body text-center border-0 py-0">
+                        <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
+                        <p class="text-muted font-16">Web developer</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
+                    </div>
+                </article>
+            </div>
+            <div class="col" data-aos-duration="1000" data-aos="zoom-in-up">
+                <article
+                    class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4 border-shadow">
+                    <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
+                        <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
+                            href="">
+                            <img src="{{ url_for('static', filename='images/team/2.jpg')}}"
+                                class="card-img-top object-cover rounded-circle h-100 w-100">
+                        </a>
+                    </div>
+                    <div class="card-body text-center border-0 py-0">
+                        <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
+                        <p class="text-muted font-16">Web developer</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
+                    </div>
+                </article>
+            </div>
+            <div class="col" data-aos-duration="1000" data-aos="zoom-in-up">
+                <article
+                    class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4 border-shadow">
+                    <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
+                        <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
+                            href="">
+                            <img src="{{ url_for('static', filename='images/team/3.jpg')}}"
+                                class="card-img-top object-cover rounded-circle h-100 w-100">
+                        </a>
+                    </div>
+                    <div class="card-body text-center border-0 py-0">
+                        <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
+                        <p class="text-muted font-16">Web developer</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
+                    </div>
+                </article>
+            </div>
+            <div class="col" data-aos-duration="1000" data-aos="zoom-in-up">
+                <article
+                    class="card card-hover border-2 border border-dark bg-gray-700 bg-triangles bg-cover shadow mb-4 border-shadow">
+                    <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
+                        <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle"
+                            href="">
+                            <img src="{{ url_for('static', filename='images/team/4.jpg')}}"
+                                class="card-img-top object-cover rounded-circle h-100 w-100">
+                        </a>
+                    </div>
+                    <div class="card-body text-center border-0 py-0">
+                        <h3 class="fw-bold font-24 mb-2 m-0 text-white">Abdul</h3>
+                        <p class="text-muted font-16">Web developer</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
+                        <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
+                    </div>
+                </article>
+            </div>
         </div>
-    </section>
-    <!--------- Team -------->
 
-    <!------ Process ------>
-    {% include "components/process.html" %}
-    <!------ Process ------>
-    <!------ Clients ------->
-    {% include "components/clients.html" %}
-    <!------ Clients ------->
-</div>
+    </div>
+</section>
+<!-- TEAM -->
+<!-- PROCESS -->
+{% include "components/process.html" %}
+<!-- PROCESS -->
+<!-- CLIENTS -->
+{% include "components/clients.html" %}
+<!-- CLIENTS -->
 {% endblock %}
-
-{% block scripts %} {% endblock %}
