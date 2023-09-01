@@ -156,20 +156,20 @@
                       Perferendis adipisci ab ratione deleniti.
                     </div>
                   </div>
-                  <button type="button" data-id="${item.id}"
-                    class="btn rounded-pill p-0 font-12 d-flex align-items-center font-14 createReply">
+                  <div class="p-2">
+                    <button type="button" data-id=""
+                    class="btn rounded-pill p-0 font-12 d-flex align-items-center text-light font-14 createReply">
                     <b class="bx bx-reply me-1 font-20"></b> Reply
                   </button>
-                </div>
-                <div class="d-flex align-items-center mt-1">
-                  <div class="dropdown ms-auto">
-                    <button type="button" class="btn p-2 rounded-circle ms-2 bx bx-dots-vertical text-white bg-gray-700"
-                      data-bs-toggle="dropdown"></button>
-                    <ul class="dropdown-menu shadow border-0">
-                      <li><a class="dropdown-item" href="javascript:void(0)">Edit</a></li>
-                      <li><a class="dropdown-item" href="javascript:void(0)">Delete</a></li>
-                    </ul>
                   </div>
+                </div>
+                <div class="dropdown ms-auto dropstart">
+                  <button type="button" class="btn p-2 rounded-circle ms-2 bx bx-dots-vertical text-white bg-gray-700"
+                    data-bs-toggle="dropdown"></button>
+                  <ul class="dropdown-menu shadow border-0 bg-dark">
+                    <li><a class="dropdown-item text-white bg-dark" href="javascript:void(0)">Edit</a></li>
+                    <li><a class="dropdown-item text-white bg-dark" href="javascript:void(0)">Delete</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -180,7 +180,7 @@
                 <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
                   class="rounded-circle h-100 w-100 object-cover">
               </div>
-              <textarea class="bg-gray-700 w-100 font-14 form-control shadow-none p-3 border-0 rounded-3"
+              <textarea class="bg-dark w-100 font-14 form-control shadow-none p-3 border-primary border-2 placeholder-text text-white rounded-3"
                 placeholder="Write your comment..." rows="4"></textarea>
             </div>
             <div class="text-end mt-3">

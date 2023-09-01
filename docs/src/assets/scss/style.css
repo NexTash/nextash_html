@@ -33,7 +33,11 @@
 /* Quickly modify global styling by enabling or disabling optional features */
 /* Prefix for :root CSS variables */
 /* This gradient is also added to elements with `.bg-gradient` */
-/* Spacing variables */ /* Position variables */ /* Body tag variables */ /* Link variables */ /* Grid variables */
+/* Spacing variables */
+/* Position variables */
+/* Body tag variables */
+/* Link variables */
+/* Grid variables */
 /* Define the maximum width of `.container` for different screen sizes. */
 /* Grid columns
  Set the number of columns and specify the width of the gutters. */
@@ -41,7 +45,9 @@
 /* Border width */
 /* Border preferences */
 /* Border radius */
-/* Box shadow variables */ /* Component variables */ /* Typography variables */
+/* Box shadow variables */
+/* Component variables */
+/* Typography variables */
 /* Font family */
 /* Font size*/
 /* Font weight */
@@ -57,25 +63,46 @@
 /* Datalist */
 /* List */
 /* Highlist - Mark */
-/* Transition variables */ /* Ratio variables */ /* Table variables */ /* Buttons variables */
+/* Transition variables */
+/* Ratio variables */
+/* Table variables */
+/* Buttons variables */
 /* <imput> button */
 /* Button */
 /* Form variables */
 /* Input typography */
 /* Input label */
 /* Input options */
-/* Z index variables */ /* Navbar and nav variables */
+/* Z index variables */
+/* Navbar and nav variables */
 /* Nav */
 /* Navbar */
 /* Navbar dark */
-/* Pagination variables */ /* Placeholder variables */ /* Card variables */ /* Accordion variables */ /* Tooltips variables */
+/* Pagination variables */
+/* Placeholder variables */
+/* Card variables */
+/* Accordion variables */
+/* Tooltips variables */
 /* Form feedback */
-/* Popover variables */ /* Toast variables */ /* Badge variables */ /* Modal variables */
+/* Popover variables */
+/* Toast variables */
+/* Badge variables */
+/* Modal variables */
 /* Modal sizes */
 /* Modal animations and transitions */
-/* Alerts variables */ /* Progress variables */ /* List variables */ /* Thumbnail variables */ /* Figure variables */ /* Breadcrumb variables */ /* Carousel variables */
+/* Alerts variables */
+/* Progress variables */
+/* List variables */
+/* Thumbnail variables */
+/* Figure variables */
+/* Breadcrumb variables */
+/* Carousel variables */
 /*  Carousel dark variables */
-/* Spinner variables */ /* Close btn variables */ /* Offcanvas variables */ /* Code variables */ /* Animations variables */
+/* Spinner variables */
+/* Close btn variables */
+/* Offcanvas variables */
+/* Code variables */
+/* Animations variables */
 /* Bootstrap */
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
@@ -10942,12 +10969,17 @@ img {
 
 /*  3. Libs */
 /*  4. Components */
-/* All Components will be import here */ /* Component mixins */ /* Component variables */ /* Component code */
+/* All Components will be import here */
+/* Component mixins */
+/* Component variables */
+/* Component code */
 .blog-card .card-header .card-img-top {
   height: 250px;
 }
 
-/* Component mixins */ /* Component variables */ /* Component code */
+/* Component mixins */
+/* Component variables */
+/* Component code */
 .project-card .card-header {
   overflow: hidden;
 }
