@@ -1,31 +1,40 @@
-/* CSS */
 .btn-frame {
-  display: inline-block;
-  padding: 15px 25px;
-  color: $primary;
-  background: conic-gradient(from 90deg at 3px 3px, #0000 90deg, $primary 0)
-    0.45em 0.45em / calc(100% - 3px - 2 * 0.45em) calc(100% - 3px - 2 * 0.45em);
+  --b: 2px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #{$primary};
+
+  padding: calc(0.8em + var(--s)) calc(1.6em + var(--s));
+  color: #fff;
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
   transition: 0.3s linear, color 0s, background-color 0s;
-  outline: 3px solid #0000;
-  outline-offset: 0.2em;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
   font-size: 16px;
+
   border: 0;
+  text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  text-decoration: none;
-  color: white;
+
   &:hover,
   &:focus-visible {
-    background-color: $primary;
-    outline-color: $primary;
+    --_p: 0px;
+    --b: 1px;
+    outline-color: var(--color);
     outline-offset: 0.05em;
-    color: white;
-    box-shadow: rgba(238, 40, 14, 0.1) 0px 8px 24px,
-      rgba(211, 38, 7, 0.1) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px;
+    color: var(--color);
   }
+
   &:active {
-    background: $primary;
+    background: var(--color);
     color: #fff;
   }
 }

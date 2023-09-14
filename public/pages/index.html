@@ -1,13 +1,12 @@
-{% extends "layouts/primary.html" %}
-{% block title %} Home | {% endblock %}
-{%block seo %}{% endblock %}
-{% block style %}
-
-{% endblock %} {% block content %}
+{% extends "layouts/primary.html" %} {% block title %} Home | {% endblock %}
+{%block seo %}{% endblock %} {% block style %} {% endblock %} {% block content
+%}
 <div class="bg-1 bg-fixed bg-cover">
   <!-- HEADER -->
-  <section class="home-header w-100 text-center d-table shadow ">
-    <div class="home-header-container position-absolute top-0 w-100 h-100 start-50">
+  <section class="home-header w-100 text-center d-table">
+    <div
+      class="home-header-container position-absolute top-0 w-100 h-100 start-50"
+    >
       <div class="ani ani-1">
         <div class="ani-cube">
           <div class="cube-face face_front"></div>
@@ -43,16 +42,29 @@
         <div class="ani-moving-square"></div>
       </div>
       <div class="ani ani-6">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="0 0 1024 1024">
-          <path id="followPath"
-            d="M394.1-214.9c-49.7,89.4,114.4,192.8,175.5,475.1c13,60.1,85.4,424-98.1,552.6 c-95.7,67-267.2,74.5-346.3-22.1c-70.8-86.5-49-233.9,19.2-305.2c102.4-107,353.9-89.1,593.2,96.5c139.6,107,294.1,258.4,415,468.6 c19.2,33.5,36.6,66.6,52.3,99.3c13,8.6,34,19.5,53.3,13.2c148-48.6,165.1-1094.5-338.5-1374.8C723.7-320.8,449-313.8,394.1-214.9z">
-          </path>
-          <path id="dashedPath"
-            d="M394.1-214.9c-49.7,89.4,114.4,192.8,175.5,475.1c13,60.1,85.4,424-98.1,552.6 c-95.7,67-267.2,74.5-346.3-22.1c-70.8-86.5-49-233.9,19.2-305.2c102.4-107,353.9-89.1,593.2,96.5c139.6,107,294.1,258.4,415,468.6 c19.2,33.5,36.6,66.6,52.3,99.3c13,8.6,34,19.5,53.3,13.2c148-48.6,165.1-1094.5-338.5-1374.8C723.7-320.8,449-313.8,394.1-214.9z">
-          </path>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 1024 1024"
+        >
+          <path
+            id="followPath"
+            d="M394.1-214.9c-49.7,89.4,114.4,192.8,175.5,475.1c13,60.1,85.4,424-98.1,552.6 c-95.7,67-267.2,74.5-346.3-22.1c-70.8-86.5-49-233.9,19.2-305.2c102.4-107,353.9-89.1,593.2,96.5c139.6,107,294.1,258.4,415,468.6 c19.2,33.5,36.6,66.6,52.3,99.3c13,8.6,34,19.5,53.3,13.2c148-48.6,165.1-1094.5-338.5-1374.8C723.7-320.8,449-313.8,394.1-214.9z"
+          ></path>
+          <path
+            id="dashedPath"
+            d="M394.1-214.9c-49.7,89.4,114.4,192.8,175.5,475.1c13,60.1,85.4,424-98.1,552.6 c-95.7,67-267.2,74.5-346.3-22.1c-70.8-86.5-49-233.9,19.2-305.2c102.4-107,353.9-89.1,593.2,96.5c139.6,107,294.1,258.4,415,468.6 c19.2,33.5,36.6,66.6,52.3,99.3c13,8.6,34,19.5,53.3,13.2c148-48.6,165.1-1094.5-338.5-1374.8C723.7-320.8,449-313.8,394.1-214.9z"
+          ></path>
           <path id="airplain" d="M8.04 84L92 48 8.04 12 8 40l60 8-60 8z">
-            <animateMotion xlink:href="#airplain" dur="6s" fill="freeze" repeatCount="indefinite" rotate="auto">
+            <animateMotion
+              xlink:href="#airplain"
+              dur="6s"
+              fill="freeze"
+              repeatCount="indefinite"
+              rotate="auto"
+            >
               <mpath xlink:href="#followPath"></mpath>
             </animateMotion>
           </path>
@@ -62,11 +74,14 @@
     <div class="container align-middle d-table-cell">
       <div class="m-auto col-sm-7 text-white p-0 overflow-hidden">
         <div class="position-relative">
-          <h1 class="m-0 font-18" data-aos-duration="1000" data-aos="fade-up">
-            Welcome to <b class="text-primary">NexTash</b>
+          <h1 class="nextash-label" data-aos-duration="1000" data-aos="fade-up">
+            Welcome to <span class="text-primary">NexTash</span>
           </h1>
-          <h2 class="title text-uppercase overflow-hidden position-relative fw-normal" data-aos-duration="1000"
-            data-aos="fade-up">
+          <h2
+            class="title text-uppercase overflow-hidden position-relative fw-normal"
+            data-aos-duration="1000"
+            data-aos="fade-up"
+          >
             <div class="position-relative d-inline-block">Fortune</div>
             <div class="position-relative d-inline-block">Favors</div>
             <div class="position-relative d-inline-block">the</div>
@@ -76,8 +91,19 @@
         <div class="cb-cursor">
           <div class="cb-cursor-video">
             <div class="bg-primary p-3">
-              <video id="reel-clips" class="cursor-clips" preload="" loop="" muted="" playsinline="" autoplay="">
-                <source src="https://cdn.poolhouse.co/wp-content/uploads/2021/06/02213043/clips.mp4" type="video/mp4" />
+              <video
+                id="reel-clips"
+                class="cursor-clips"
+                preload=""
+                loop=""
+                muted=""
+                playsinline=""
+                autoplay=""
+              >
+                <source
+                  src="https://cdn.poolhouse.co/wp-content/uploads/2021/06/02213043/clips.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
@@ -88,29 +114,30 @@
   <!-- HEADER -->
 
   <!-- OUR VISION -->
-  <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5 bg-2" data-aos-anchor-placement="top-center" data-aos="fade-down"
-    data-aos-duration="1000" data-aos-easing="ease-in-sine">
-    <div class="card bg-transparent border-0 py-5 rounded-0">
-      <div class="container container-sm container-md container-lg container-xl container-xxl">
-        <div class="text-center p-3 backdrop-8 py-5 border border-primary border-5 border-shadow">
-          <b class="d-inline-block border border-primary border-2 rounded-pill px-4 py-1 text-white font-12"
-            data-aos-duration="1000" data-aos="zoom-in-down">
-            About
-          </b>
-          <h2 class="text-white font-40 fw-bold m-0 my-2 text-uppercase" data-aos-duration="1000"
-            data-aos="zoom-in-down">
-            Our Vision
-          </h2>
-          <p class="text-white font-18 m-0 mb-4" data-aos-duration="1000" data-aos="zoom-in-up">
-            At NexTash, our vision is to be a trailblazer in the IT industry,
-            empowering businesses and individuals to thrive in the digital era.
-            We envision a future where technology is harnessed to drive
-            innovation, efficiency, and positive change across all sectors.
-            Through our expertise and passion, we aim to be at the forefront of
-            shaping this future and making a lasting impact on the world.
-          </p>
-          <a href="/about-us" class="btn-frame mt-2" data-aos-duration="1000" data-aos="zoom-in-up">Learn More</a>
-        </div>
+  <section
+    class="our-vision py-2 py-sm-2 pt-md-3"
+    data-aos="fade-up"
+    data-aos-easing="ease-in-sine"
+    data-aos-duration="500"
+    data-aos-delay="300"
+    data-aos-once="true"
+  >
+    <div
+      class="container container-sm container-md container-lg container-xl container-xxl"
+    >
+      <div
+        class="ov-card text-center backdrop-8 border border-primary border-3 border-shadow"
+      >
+        <div class="nextash-label text-primary"><span>Our Vision</span></div>
+        <p class="text-white font-18">
+          At NexTash, our vision is to be a trailblazer in the IT industry,
+          empowering businesses and individuals to thrive in the digital era. We
+          envision a future where technology is harnessed to drive innovation,
+          efficiency, and positive change across all sectors. Through our
+          expertise and passion, we aim to be at the forefront of shaping this
+          future and making a lasting impact on the world.
+        </p>
+        <a href="/about-us" class="btn-frame mt-2">Learn More</a>
       </div>
     </div>
   </section>
@@ -137,64 +164,120 @@
   <!-- Feedbacks -->
 
   <!------ Blogs ------>
-  <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5" data-aos-anchor-placement="top-center" data-aos-duration="1000"
-    data-aos="fade-down">
-    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
+  <section
+    class="py-2 py-sm-2 py-md-5 py-lg-5"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1000"
+    data-aos="fade-down"
+  >
+    <div
+      class="container container-sm container-md container-lg container-xl container-xxl py-5"
+    >
       <div class="text-white py-5">
-        <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14"
-          data-aos-duration="1000" data-aos="zoom-in-up">
+        <b
+          class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14"
+          data-aos-duration="1000"
+          data-aos="zoom-in-up"
+        >
           Find out our thoughts
         </b>
-        <h3 class="text-white font-40 fw-bold m-0 my-2" data-aos-duration="1000" data-aos="zoom-in-up">Latest blogs</h3>
-        <p class="text-muted font-18 m-0 col-sm-6 lh-base" data-aos-duration="1000" data-aos="zoom-in-up">
-          We have best pricing plans according to your requirements. We traget different audience and provide them true
-          value for money plans.
+        <h3
+          class="text-white font-40 fw-bold m-0 my-2"
+          data-aos-duration="1000"
+          data-aos="zoom-in-up"
+        >
+          Latest blogs
+        </h3>
+        <p
+          class="text-muted font-18 m-0 col-sm-6 lh-base"
+          data-aos-duration="1000"
+          data-aos="zoom-in-up"
+        >
+          We have best pricing plans according to your requirements. We traget
+          different audience and provide them true value for money plans.
         </p>
       </div>
       {% include "components/blogs.html" %}
       <div class="text-center text-muted my-2 mt-5 offset-md-3 col-sm-6">
-        <p class="text-muted font-18 m-0 lh-base" data-aos-duration="1000" data-aos="zoom-in-up">
-          Explore more company News, read more blogs & know about our
-          thoughts in News Page.
+        <p
+          class="text-muted font-18 m-0 lh-base"
+          data-aos-duration="1000"
+          data-aos="zoom-in-up"
+        >
+          Explore more company News, read more blogs & know about our thoughts
+          in News Page.
         </p>
-        <a href="/blogs" class="btn-frame mt-2" data-aos-duration="1000" data-aos="zoom-in-up"> Read more</a>
+        <a
+          href="/blogs"
+          class="btn-frame mt-2"
+          data-aos-duration="1000"
+          data-aos="zoom-in-up"
+        >
+          Read more</a
+        >
       </div>
     </div>
   </section>
   <!------ Blogs ------>
 
   <!------ Projects ------>
-  <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5" data-aos-anchor-placement="top-center" data-aos-duration="1000"
-    data-aos="fade-down">
-    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-      <div class="text-white mb-5 col-12 col-sm-12 col-md-8 col-lg-8  ">
-        <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14 mb-2 d-inline-block"
-          data-aos-duration="1000" data-aos="zoom-in-up">
+  <section
+    class="py-2 py-sm-2 py-md-5 py-lg-5"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1000"
+    data-aos="fade-down"
+  >
+    <div
+      class="container container-sm container-md container-lg container-xl container-xxl py-5"
+    >
+      <div class="text-white mb-5 col-12 col-sm-12 col-md-8 col-lg-8">
+        <b
+          class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14 mb-2 d-inline-block"
+          data-aos-duration="1000"
+          data-aos="zoom-in-up"
+        >
           OUR WORK
         </b>
-        <h3 class="text-white fw-bold mb-3 display-4" data-aos-duration="1000" data-aos="zoom-in-up">
+        <h3
+          class="text-white fw-bold mb-3 display-4"
+          data-aos-duration="1000"
+          data-aos="zoom-in-up"
+        >
           Recent Projects Showcase
         </h3>
-        <p class="text-muted font-18 m-0 col-sm-6 lh-base" data-aos-duration="1000" data-aos="zoom-in-up">
+        <p
+          class="text-muted font-18 m-0 col-sm-6 lh-base"
+          data-aos-duration="1000"
+          data-aos="zoom-in-up"
+        >
           Creating impact with every project, experience the innovation.
         </p>
       </div>
       {% include "components/projects.html" %}
       <div class="text-center text-muted my-2 mt-5 offset-md-3 col-sm-6">
-        <p class="text-muted font-18 mb-3 lh-base" data-aos-duration="1000" data-aos="zoom-in-up">
-          Explore more company News, read more blogs & know about our
-          thoughts in News Page.</p>
-        <a href="/case-studies" class="btn-frame mt-2" data-aos-duration="1000" data-aos="zoom-in-up"> Discover more</a>
+        <p
+          class="text-muted font-18 mb-3 lh-base"
+          data-aos-duration="1000"
+          data-aos="zoom-in-up"
+        >
+          Explore more company News, read more blogs & know about our thoughts
+          in News Page.
+        </p>
+        <a
+          href="/case-studies"
+          class="btn-frame mt-2"
+          data-aos-duration="1000"
+          data-aos="zoom-in-up"
+        >
+          Discover more</a
+        >
       </div>
     </div>
   </section>
   <!------ Projects ------>
 </div>
 
-{% endblock %}
-
-
-{% block scripts %}
+{% endblock %} {% block scripts %}
 <script>
   const cursor = document.querySelector(".cb-cursor");
   window.onpointermove = (event) => {
