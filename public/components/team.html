@@ -1,88 +1,76 @@
 <section class="section" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true">
   <div class="section-container">
-      <div class="section-header center">
-          <span class="section-label"> Specialists behind great work</span>
-          <h3 class="section-heading">Meet Our Team</h3>
-          <p class="section-description">
-            We are here to help you achieve your business goals and the team create
+    <div class="section-header center">
+      <span class="section-label"> Specialists behind great work</span>
+      <h3 class="section-heading">Meet Our Team</h3>
+      <p class="section-description">
+        We are here to help you achieve your business goals and the team create
         an amazing outstanding product for your business.
-          </p>
-      </div>
-      <div class="section-body">
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-4 row-cols-xl-4 justify-content-center">
-          <div class="col">
-            <article
-              class="card card-hover border border-2 border-dark bg-gray-800 bg-triangles bg-cover shadow mb-4 border-shadow">
-              <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
-                <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle image-zoom"
-                  href="/team-details">
-                  <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
-                    class="card-img-top object-cover rounded-circle h-100 w-100" />
-                </a>
-              </div>
-              <div class="card-body text-center border-0 py-0">
-                <h3 class="fw-bold font-24 mb-2 m-0 text-white"><a href="/team-details"
-                    class="text-decoration-none text-white d-block">Abdul</a></h3>
-                <p class="text-muted font-16">Web developer</p>
-              </div>
-              <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
-                <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
-                <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
-                <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
-              </div>
-            </article>
-          </div>
-          <div class="col">
-            <article
-              class="card card-hover border border-2 border-primary bg-gray-800 bg-triangles bg-cover shadow mb-4 border-shadow">
-              <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
-                <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle image-zoom"
-                  href="/team-details">
-                  <img src="{{ url_for('static', filename='images/team/2.jpg')}}"
-                    class="card-img-top object-cover rounded-circle h-100 w-100" />
-                </a>
-              </div>
-              <div class="card-body text-center border-0 py-0">
-                <h3 class="fw-bold font-24 mb-2 m-0 text-white"><a href="/team-details"
-                    class="text-decoration-none text-white d-block">Abdul</a></h3>
-                <p class="text-muted font-16">Web developer</p>
-              </div>
-              <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
-                <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
-                <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
-                <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
-              </div>
-            </article>
-          </div>
-          <div class="col">
-            <article
-              class="card card-hover border border-2 border-dark bg-gray-800 bg-triangles bg-cover shadow mb-4 border-shadow">
-              <div class="card-header bg-transparent py-3 d-flex justify-content-center border-0">
-                <a class="d-block text-decoration-none w-100 size-180 p-2 border-primary border border-4 rounded-circle image-zoom"
-                  href="/team-details">
-                  <img src="{{ url_for('static', filename='images/team/3.jpg')}}"
-                    class="card-img-top object-cover rounded-circle h-100 w-100" />
-                </a>
-              </div>
-              <div class="card-body text-center border-0 py-0">
-                <h3 class="fw-bold font-24 mb-2 m-0 text-white"><a href="/team-details"
-                    class="text-decoration-none text-white d-block">Abdul</a></h3>
-                <p class="text-muted font-16">Web developer</p>
-              </div>
-              <div class="card-footer d-flex justify-content-center border-0 pb-4 bg-transparent border-0">
-                <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-facebook-square"></a>
-                <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-twitter"></a>
-                <a href="" class="btn btn-dark p-2 font-20 rounded-circle mx-1 bx bxl-instagram"></a>
-              </div>
-            </article>
-          </div>
+      </p>
+    </div>
+    <div class="section-body">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-4 row-cols-xl-4 justify-content-center">
+        <div class="col">
+          <article class="team-card bg-triangles">
+            <div class="team-header">
+              <a class="avatar image-zoom" href="/team-details">
+                <img src="{{ url_for('static', filename='images/team/1.jpg')}}" class="image" />
+              </a>
+            </div>
+            <div class="team-body">
+              <h3><a href="/team-details" class="fullname">Abdul</a></h3>
+              <p class="designation">Web developer</p>
+            </div>
+            <div class="team-footer">
+              <a href="" class="btn-social bx bxl-facebook-square"></a>
+              <a href="" class="btn-social bx bxl-twitter"></a>
+              <a href="" class="btn-social bx bxl-instagram"></a>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="team-card active bg-triangles">
+            <div class="team-header">
+              <a class="avatar image-zoom" href="/team-details">
+                <img src="{{ url_for('static', filename='images/team/1.jpg')}}" class="image" />
+              </a>
+            </div>
+            <div class="team-body">
+              <h3><a href="/team-details" class="fullname">Abdul</a></h3>
+              <p class="designation">Web developer</p>
+            </div>
+            <div class="team-footer">
+              <a href="" class="btn-social bx bxl-facebook-square"></a>
+              <a href="" class="btn-social bx bxl-twitter"></a>
+              <a href="" class="btn-social bx bxl-instagram"></a>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="team-card bg-triangles">
+            <div class="team-header">
+              <a class="avatar image-zoom" href="/team-details">
+                <img src="{{ url_for('static', filename='images/team/1.jpg')}}" class="image" />
+              </a>
+            </div>
+            <div class="team-body">
+              <h3><a href="/team-details" class="fullname">Abdul</a></h3>
+              <p class="designation">Web developer</p>
+            </div>
+            <div class="team-footer">
+              <a href="" class="btn-social bx bxl-facebook-square"></a>
+              <a href="" class="btn-social bx bxl-twitter"></a>
+              <a href="" class="btn-social bx bxl-instagram"></a>
+            </div>
+          </article>
         </div>
       </div>
-      <div class="section-footer">
-        <p class="section-description">
-          Meet all our team members behind our great work at team page.
-        </p>
-        <a href="/team" class="btn-frame">Meet all</a>
-      </div>
+    </div>
+    <div class="section-footer">
+      <p class="section-description">
+        Meet all our team members behind our great work at team page.
+      </p>
+      <a href="/team" class="btn-frame">Meet all</a>
+    </div>
   </div>
 </section>

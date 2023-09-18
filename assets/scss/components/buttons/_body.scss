@@ -30,12 +30,15 @@
     outline-color: var(--color);
     outline-offset: 0.05em;
     color: var(--color);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) !important;
   }
 
   &:active {
     background: var(--color);
     color: #fff;
   }
+  
 }
 
 .menu-btn,
