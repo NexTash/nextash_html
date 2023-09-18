@@ -16,8 +16,7 @@
   transition: 0.3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
   outline-offset: 0.6em;
-  font-size: 16px;
-
+  font-size: 14px;
   border: 0;
   text-decoration: none;
   user-select: none;
@@ -36,5 +35,21 @@
   &:active {
     background: var(--color);
     color: #fff;
+  }
+}
+
+.menu-btn,
+.close-btn {
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  outline: none;
+  border: 2px solid var(--bs-primary);
+  border-radius: 50px;
+  font-size: 24px;
+  transition: all 0.5s;
+  &:hover {
+    background-color: var(--bs-primary);
+    color: white;
   }
 }
