@@ -158,9 +158,9 @@
                   </div>
                   <div class="p-2">
                     <button type="button" data-id=""
-                    class="btn rounded-pill p-0 font-12 d-flex align-items-center text-light font-14 createReply">
-                    <b class="bx bx-reply me-1 font-20"></b> Reply
-                  </button>
+                      class="btn rounded-pill p-0 font-12 d-flex align-items-center text-light font-14 createReply">
+                      <b class="bx bx-reply me-1 font-20"></b> Reply
+                    </button>
                   </div>
                 </div>
                 <div class="dropdown ms-auto dropstart">
@@ -180,7 +180,8 @@
                 <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
                   class="rounded-circle h-100 w-100 object-cover">
               </div>
-              <textarea class="bg-dark w-100 font-14 form-control shadow-none p-3 border-primary border-2 placeholder-text text-white rounded-3"
+              <textarea
+                class="bg-dark w-100 font-14 form-control shadow-none p-3 border-primary border-2 placeholder-text text-white rounded-3"
                 placeholder="Write your comment..." rows="4"></textarea>
             </div>
             <div class="text-end mt-3">
@@ -192,27 +193,23 @@
         </div>
       </div>
     </section>
-    <!------ Blogs ------>
-    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5" data-aos-anchor-placement="top-center" data-aos-duration="1000"
-      data-aos="fade-down">
-      <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-        <div class="text-white py-5">
-          <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14 d-inline-block mb-1"
-            data-aos-duration="1000" data-aos="zoom-in-up">
-            Find out our thoughts
-          </b>
-          <h3 class="text-white font-40 fw-bold m-0 my-2 mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-            Related Aricles
-          </h3>
-          <p class="text-muted font-18 m-0 col-sm-6" data-aos-duration="1000" data-aos="zoom-in-up">
-            In this series of blog posts, we take a more in-depth look at different aspects of [Topic]. Uncover hidden
-            insights, discover expert tips, and gain a deeper understanding of the subject matter you love
-          </p>
-        </div>
-        {% include "components/blogs.html" %}
-      </div>
-    </section>
-    <!------ Blogs ------>
   </div>
+  <!-- Blogs -->
+  <section class="section" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Find out our thoughts</span>
+        <h3 class="section-heading">Related Aricles</h3>
+        <p class="section-description">
+          In this series of blog posts, we take a more in-depth look at different aspects of [Topic]. Uncover hidden
+          insights, discover expert tips, and gain a deeper understanding of the subject matter you love
+        </p>
+      </div>
+      <div class="section-body">{% include "components/blogs.html" %}</div>
+    </div>
+  </section>
+  <!-- Blogs -->
+
+
 </main>
 {% endblock %}

@@ -18,42 +18,39 @@
 {% block style %}{% endblock %}
 
 {% block content %}
-<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
-  <!-- HEADER -->
-  <section class="shadow py-5">
-    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-      <div class="row align-items-center justify-content-center my-5 py-5">
-        <div class="col-sm-12 text-white py-2 mb-5">
-          <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
-            data-aos-duration="1000" data-aos="fade-up">Projects</b>
-          <h3 class="display-1 fw-bold m-0 mb-2 col-sm-8" data-aos-duration="1000" data-aos="fade-up">SEE ALL OUR WORKS
-          </h3>
-        </div>
-        <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8 text-muted py-2 font-20"
-        data-aos-duration="1000" data-aos="fade-up">
-         - We help our clients succeed by creating brand identities, digital experiences, and print materials
-          that communicate clearly, achieve marketing goals, and look fantastic.
-        </div>
-      </div>
-  </section>
-  <!-- Header -->
-  <!--------- Row --------->
-  <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
-    {% include "components/projects.html" %}
-    <div class="text-center py-5">
-      <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14" data-aos-duration="1000"
-        data-aos="zoom-in-up">Load more</button>
+<!-- HEADER -->
+<section class="section" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true">
+  <div class="section-container ">
+    <div class="section-body">
+      <div class="section-label page-label"><span>Projects</span></div>
+      <h2 class="section-heading page-heading">See all our works</h2>
+      <p class="section-description page-description">
+        - We help our clients succeed by creating brand identities, digital experiences, and print materials
+        that communicate clearly, achieve marketing goals, and look fantastic.
+      </p>
     </div>
-  </section>
-  <!--------- Row --------->
+  </div>
+</section>
+<!-- HEADER -->
 
-  <!------ Process ------>
-  {% include "components/process.html" %}
-  <!------ Process ------>
-  <!------ Clients ------->
-  {% include "components/clients.html" %}
-  <!------ Clients ------->
-</div>
+<!-- PROJECTS -->
+<section class="section" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true">
+  <div class="section-container">
+    <div class="section-header"></div>
+    <div class="section-body"> {% include "components/projects.html" %}</div>
+    <div class="section-footer">
+      <button class="btn-frame">Load More</button>
+    </div>
+  </div>
+</section>
+<!-- PROJECTS -->
+
+<!------ Process ------>
+{% include "components/process.html" %}
+<!------ Process ------>
+<!------ Clients ------->
+{% include "components/clients.html" %}
+<!------ Clients ------->
 {% endblock %}
 
 {% block scripts %} {% endblock %}
