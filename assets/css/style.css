@@ -20326,21 +20326,7 @@ img {
   padding-bottom: 100px;
   padding-top: 100px;
 }
-.section .section-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1320px;
-}
-.section .section-container .section-label {
+.section .section-label {
   background-color: #171717;
   color: var(--bs-primary);
   padding: 3px 12px;
@@ -20355,37 +20341,97 @@ img {
   font-weight: 800;
   text-transform: uppercase;
 }
-.section .section-container .section-label.page-label {
+.section .section-label.page-label {
   border: 3px solid var(--bs-primary);
 }
-.section .section-container .section-heading {
+.section .section-heading {
   display: block;
   text-decoration: none;
   color: white;
   font-size: 34px;
   font-weight: bold;
   margin-bottom: 15px;
+  position: relative;
+  z-index: 5;
 }
-.section .section-container .section-heading.page-heading {
+.section .section-heading.page-heading {
   font-size: 50px;
   width: 50%;
   margin-right: auto;
 }
-.section .section-container .section-description {
+.section .section-heading.dotted-square {
+  position: relative;
+}
+.section .section-heading.dotted-square::before {
+  z-index: -1;
+  background-image: radial-gradient(var(--bs-primary) 1.5px, transparent 1.5px);
+  background-position: 50% 50%;
+  background-size: 0.5rem 0.5rem;
+  position: absolute;
+  margin-left: -14px;
+  left: 0px;
+  bottom: 7px;
+  width: 40px;
+  height: 40px;
+  content: "";
+  border-radius: 10px;
+}
+.section .section-heading.h-center {
+  margin: 0 auto;
+}
+.section .section-description {
   color: #c7bfbf;
   font-size: 16px;
   margin-bottom: 14px;
-  width: 50%;
 }
-.section .section-container .section-description.page-description {
+.section .section-description.page-description {
+  width: 50%;
   margin: 0 auto;
+}
+.section .section-description.d-center {
+  margin: 0 auto;
+}
+.section .section-slist {
+  list-style: none;
+  color: #c7bfbf;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.section .section-slist li {
+  margin-bottom: 5px;
+}
+.section .section-slist li::before {
+  content: "•";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.section .section-link {
+  text-decoration: none;
+  color: var(--bs-primary);
+}
+.section .center {
+  text-align: center;
+  padding: 0 50px;
+}
+.section .section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1320px;
 }
 .section .section-container .section-header {
   margin-bottom: 30px;
-}
-.section .section-container .center {
-  text-align: center;
-  padding: 0 50px;
 }
 .section .section-container .section-body {
   padding: 40px 0px;
@@ -20393,12 +20439,6 @@ img {
 .section .section-container .section-footer {
   text-align: center;
   padding-top: 50px;
-}
-.section .section-container .section-footer .section-description {
-  color: #c7bfbf;
-  font-size: 16px;
-  margin-bottom: 30px;
-  line-height: 25px;
 }
 @media (min-width: 576px) {
   .section .section-container {
@@ -20608,6 +20648,7 @@ img {
           box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  margin-bottom: 40px;
 }
 .feedback-card .feedback-header {
   padding: 15px 20px;
@@ -20634,14 +20675,12 @@ img {
   padding: 15px 20px;
 }
 .feedback-card .feedback-body .bxs-quote-right {
-  font-size: 40px;
-  float: right;
+  font-size: 30px;
   margin-right: 10px;
   color: var(--bs-primary);
 }
 .feedback-card .feedback-body .bxs-quote-left {
-  font-size: 40px;
-  float: left;
+  font-size: 30px;
   margin-left: 10px;
   color: var(--bs-primary);
 }
@@ -20658,7 +20697,12 @@ img {
 }
 .feedback-card .feedback-body .description {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: justify;
+  -moz-text-align-last: center;
+       text-align-last: center;
 }
 .feedback-card .feedback-footer {
   padding: 15px 20px;
@@ -20828,6 +20872,60 @@ img {
   border: 2px solid var(--bs-primary);
   -webkit-box-shadow: rgba(255, 30, 0, 0.24) 0px 8px 24px, rgba(255, 38, 0, 0.158) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px;
           box-shadow: rgba(255, 30, 0, 0.24) 0px 8px 24px, rgba(255, 38, 0, 0.158) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px;
+}
+
+/* Component mixins */ /* Component variables */
+.form-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid var(--bs-dark);
+  background-size: cover;
+}
+.form-card .form-group {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form-card .input-field {
+  background-color: black;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 20px 25px;
+  border-radius: 5px;
+  color: white;
+  resize: none;
+  border: 1px solid var(--bs-dark);
+}
+.form-card .form-header {
+  padding: 10px 40px;
+  padding-top: 30px;
+}
+.form-card .form-body {
+  padding: 10px 40px;
+}
+.form-card .form-footer {
+  text-align: center;
+  padding: 10px 40px;
+  padding-bottom: 20px;
 }
 
 /* Component mixins */ /* Component variables */
@@ -21006,18 +21104,6 @@ img {
 
 .bg-gray-900 {
   background-color: #121212;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .ms--30 {

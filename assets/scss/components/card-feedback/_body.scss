@@ -8,6 +8,7 @@
   backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   transition: all 0.5s;
+  margin-bottom: 40px;
   .feedback-header {
     padding: 15px 20px;
     .avatar {
@@ -32,14 +33,12 @@
     padding: 15px 20px;
 
     .bxs-quote-right {
-      font-size: 40px;
-      float: right;
+      font-size: 30px;
       margin-right: 10px;
       color: var(--bs-primary);
     }
     .bxs-quote-left {
-      font-size: 40px;
-      float: left;
+      font-size: 30px;
       margin-left: 10px;
       color: var(--bs-primary);
     }
@@ -58,7 +57,11 @@
 
     .description {
       color: white;
-      font-size: 20px;
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 5px;
+      text-align: justify;
+      text-align-last: center;
     }
   }
 

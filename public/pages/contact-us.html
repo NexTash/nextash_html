@@ -15,18 +15,17 @@
 <meta property="og:url" content="" />
 {% endblock %}
 
-{% block style %}{% endblock %}
-
 {% block content %}
 <!-- HEADER -->
 <section class="section" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true">
   <div class="section-container ">
     <div class="section-body">
-      <div class="section-label page-label"><span>BLOGS</span></div>
-      <h2 class="section-heading page-heading">Read our latest blogs and articles.</h2>
+      <div class="section-label page-label"><span>CONTACT US</span></div>
+      <h2 class="section-heading page-heading">We're Here to Help!</h2>
       <p class="section-description page-description">
-        - We help our clients succeed by creating brand identities, digital experiences, and print materials
-        that communicate clearly, achieve marketing goals, and look fantastic.
+        - Welcome to our Contact Us page! We're thrilled that you're reaching out. Whether you have a question,
+        feedback, or just want to say hello, we'd love to hear from you. Please use the form below to get in touch with
+        us, and we'll do our best to respond promptly.
       </p>
     </div>
   </div>
@@ -34,10 +33,10 @@
 <!-- HEADER -->
 
 <!-- CONTENT -->
-<section class="py-2 py-sm-2 py-md-5 py-lg-5" data-aos-duration="1000" data-aos="fade-up">
-  <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-    <div class="row align-items-center justify-content-center">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xll-4">
+<section class="section" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true">
+  <div class="section-container ">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-5 justify-content-between align-items-center">
+      <div class="col">
         <ul class="list-group">
           <li class="list-group-item border-0 d-flex align-items-start pb-4 bg-transparent" data-aos-duration="1000"
             data-aos="zoom-in-up">
@@ -82,79 +81,53 @@
           </li>
         </ul>
       </div>
-      <div class="col-sm-1 my-5"></div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6">
-        <form id="contactform" autocomplete="on"
-          class="card bg-gray-700 bg-triangles shadow border-dark border-0 rounded-5 border-shadow"
-          data-aos-duration="1000" data-aos="zoom-in-up">
-          <div class="card-header border-0 bg-transparent p-4 pt-5">
-            <h2 class="m-0 fw-bold font-40 text-white mb-2">Get in touch</h2>
-            <p class="m-0 text-muted font-16">
+      <div class="col">
+        <form class="form-card bg-triangles" id="form" autocomplete="on" data-aos-duration="1000" data-aos="zoom-in-up">
+          <div class="form-header">
+            <h2 class="section-heading">Get in touch</h2>
+            <p class="section-description">
               If you have any query please fill out the form below. We do our best to respond within 1
               business day.
             </p>
           </div>
-          <div class="card-body pb-2">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-sm-12 mb-3">
-                  <div class="form-group mb-3 bg-black">
-                    <input type="text"
-                      class="form-control bg-transparent placeholder-text shadow-none p-3 border-0 font-18 text-muted"
-                      id="fullname" placeholder="Fullname...">
-                  </div>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <div class="form-group mb-3 bg-black">
-                    <input type="text"
-                      class="form-control bg-transparent placeholder-text shadow-none p-3 border-0 font-18 text-muted"
-                      id="email" placeholder="Email address...">
-                  </div>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <div class="form-group mb-3 bg-black">
-                    <input type="text"
-                      class="form-control bg-transparent placeholder-text shadow-none p-3 border-0 font-18 text-muted"
-                      id="phone" placeholder="Phone number...">
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-group mb-3 bg-black">
-                    <textarea
-                      class="form-control bg-transparent placeholder-text shadow-none p-3 border-0 font-18 text-muted"
-                      id="message" rows="4" placeholder="Message..."></textarea>
-                  </div>
-                </div>
-              </div>
+          <div class="form-body">
+            <div class="form-group">
+              <input type="text" class="input-field" id="fullname" placeholder="Full name...">
+            </div>
+            <div class="form-group">
+              <input type="email" class="input-field" id="email" placeholder="Email address...">
+            </div>
+            <div class="form-group">
+              <input type="tel" class="input-field" id="phone" placeholder="Phone number...">
+            </div>
+            <div class="form-group">
+              <textarea class="input-field" id="message" rows="3" placeholder="Message..."></textarea>
             </div>
           </div>
-          <div class="card-footer border-0 bg-transparent text-center py-4 pb-5">
-            <button type="submit" class="btn btn-primary text-white py-3 font-18 px-5 rounded-1 fw-bold" id="btn"
-              data-aos-duration="1000" data-aos="zoom-in-up">
-              Send message
-            </button>
+          <div class="form-footer">
+            <button type="submit" class="btn-outline" id="btn">Send message</button>
           </div>
         </form>
       </div>
     </div>
   </div>
 </section>
+<!-- CONTENT -->
 
-<section class="shadow">
-  <div class="container container-sm container-md container-lg container-xl container-xxl py-2 py-sm-2 py-md-5 py-lg-5">
-    <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-white font-12"
-      data-aos-duration="1000" data-aos="zoom-in-up">
-      Our office
-    </b>
-    <h4 class="text-white display-4 fw-bold m-0 mb-3" data-aos-duration="1000" data-aos="zoom-in-up">Locate at map
-    </h4>
+<!-- LOCATION -->
+<section class="section p-0" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true">
+  <div class="section-container p-0">
+    <div class="section-body">
+      <div class="section-label"><span>Meet us</span></div>
+      <h2 class="section-heading"> Our office!</h2>
+    </div>
   </div>
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.561176316256!2d74.26910127491064!3d31.453745693527463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919014b3b4fb059%3A0x380d5fccd434fd5c!2sProgrammers%20Force!5e0!3m2!1sen!2s!4v1689754149000!5m2!1sen!2s"
     class="w-100" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
     data-aos-duration="1000" data-aos="zoom-in-up"></iframe>
 </section>
-<!-- CONTENT -->
+<!-- LOCATION -->
 {% endblock %}
 
 {% block scripts %} {% endblock %}
