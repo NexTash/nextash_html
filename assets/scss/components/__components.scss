@@ -1,17 +1,12 @@
 /* All Components will be import here */
 @import "./navbar/_navbar";
-// @import "./footer/_footer";
-
+@import "./footer/_footer";
 @import "./section/_section";
+@import "./row/_row";
 @import "./card-blog/_card-blog";
 @import "./card-project/_card-project";
 @import "./card-feedback/_card-feedback";
 @import "./card-team/_card-team";
-
-
-
-// @import "./cards/project/_project";
+@import "./card-service/_card-service";
 @import "./buttons/_buttons";
-@import "./badge/_badge";
 @import "./image-box/_image-box";
-@import "label/label";

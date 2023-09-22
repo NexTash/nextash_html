@@ -1,0 +1,57 @@
+/* Component code */
+.service-card {
+  height: 100%;
+  background-size: cover;
+  border: 2px solid var(--bs-dark);
+  color: white;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  display: flex;
+  flex-direction: column;
+  .service-header {
+    padding: 20px;
+    width: 100%;
+    .icon {
+      padding: 20px;
+      border: 2px solid var(--bs-primary);
+      border-radius: 10px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .service-body {
+    padding: 15px 20px;
+    width: 100%;
+
+    .service-title {
+      display: block;
+      text-decoration: none;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      line-height: 30px;
+    }
+    .service-description {
+      color: #c7bfbf;
+      font-size: 14px;
+      margin-bottom: 10px;
+      line-height: 25px;
+    }
+  }
+  .service-footer {
+    text-align: right;
+    padding: 15px 20px;
+    padding-bottom: 35px;
+    width: 100%;
+    margin-top: auto;
+  }
+  &:hover {
+    border: 2px solid var(--bs-primary);
+    box-shadow: rgba(255, 30, 0, 0.24) 0px 8px 24px,
+      rgba(255, 38, 0, 0.158) 0px 16px 56px,
+      rgba(235, 6, 25, 0.233) 0px 24px 80px;
+  }
+}

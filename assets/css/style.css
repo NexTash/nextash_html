@@ -20325,8 +20325,6 @@ img {
 .section {
   padding-bottom: 100px;
   padding-top: 100px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .section .section-container {
   display: -webkit-box;
@@ -20347,7 +20345,7 @@ img {
   color: var(--bs-primary);
   padding: 3px 12px;
   border-radius: 50px;
-  font-size: 14px;
+  font-size: 12px;
   display: inline-block;
   -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
           box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -20364,22 +20362,22 @@ img {
   display: block;
   text-decoration: none;
   color: white;
-  font-size: 44px;
+  font-size: 34px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 .section .section-container .section-heading.page-heading {
-  font-size: 80px;
-  width: 80%;
+  font-size: 50px;
+  width: 50%;
   margin-right: auto;
 }
 .section .section-container .section-description {
   color: #c7bfbf;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 14px;
+  width: 50%;
 }
 .section .section-container .section-description.page-description {
-  width: 80%;
   margin: 0 auto;
 }
 .section .section-container .section-header {
@@ -20423,7 +20421,7 @@ img {
   }
 }
 
-/* Component mixins */ /* Component variables */ /* Component code */
+/* Component mixins */ /* Component variables */ /* Component code */ /* Component mixins */ /* Component variables */ /* Component code */
 .blog-card {
   height: 100%;
   background-size: cover;
@@ -20770,8 +20768,70 @@ img {
           transform: scale(1.5);
 }
 
+/* Component mixins */ /* Component variables */ /* Component code */
+.service-card {
+  height: 100%;
+  background-size: cover;
+  border: 2px solid var(--bs-dark);
+  color: white;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.service-card .service-header {
+  padding: 20px;
+  width: 100%;
+}
+.service-card .service-header .icon {
+  padding: 20px;
+  border: 2px solid var(--bs-primary);
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+.service-card .service-body {
+  padding: 15px 20px;
+  width: 100%;
+}
+.service-card .service-body .service-title {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+.service-card .service-body .service-description {
+  color: #c7bfbf;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+.service-card .service-footer {
+  text-align: right;
+  padding: 15px 20px;
+  padding-bottom: 35px;
+  width: 100%;
+  margin-top: auto;
+}
+.service-card:hover {
+  border: 2px solid var(--bs-primary);
+  -webkit-box-shadow: rgba(255, 30, 0, 0.24) 0px 8px 24px, rgba(255, 38, 0, 0.158) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px;
+          box-shadow: rgba(255, 30, 0, 0.24) 0px 8px 24px, rgba(255, 38, 0, 0.158) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px;
+}
+
 /* Component mixins */ /* Component variables */
-.btn-frame {
+.btn-outline {
   --b: 2px; /* border thickness */
   --s: 0.45em; /* size of the corner */
   --color: #FF0000;
@@ -20793,7 +20853,7 @@ img {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
 }
-.btn-frame:hover, .btn-frame:focus-visible {
+.btn-outline:hover, .btn-outline:focus-visible {
   --_p: 0px;
   --b: 1px;
   outline-color: var(--color);
@@ -20802,7 +20862,7 @@ img {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px) !important;
 }
-.btn-frame:active {
+.btn-outline:active {
   background: var(--color);
   color: #fff;
 }
@@ -20822,20 +20882,6 @@ img {
 .menu-btn:hover,
 .close-btn:hover {
   background-color: var(--bs-primary);
-  color: white;
-}
-
-/* Component mixins */ /* Component variables */ /* CSS */
-.theme-badge {
-  display: inline-block;
-  padding: 5px 15px;
-  color: #FF0000;
-  background: conic-gradient(from 90deg at 1px 1px, rgba(0, 0, 0, 0) 90deg, #FF0000 0) 0.45em 0.45em/calc(100% - 1px - 0.9em) calc(100% - 1px - 0.9em);
-  outline: 1px solid rgba(0, 0, 0, 0);
-  outline-offset: 0.2em;
-  font-size: 12px;
-  border: 0;
-  text-decoration: none;
   color: white;
 }
 
@@ -20947,20 +20993,6 @@ img {
     width: 100px;
     height: 100px;
   }
-}
-
-.nextash-label {
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 1;
-  color: #fff;
-  margin-bottom: 15px;
-  display: inline-block;
-}
-.nextash-label span {
-  font-weight: 700;
 }
 
 /*  5. Utils */
