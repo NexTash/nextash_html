@@ -1,0 +1,36 @@
+@include create-utils(
+  (
+    default: (
+      ".vertical-baseline": (
+        vertical-align: baseline,
+      ),
+      ".vertical-middle": (
+        vertical-align: middle,
+      ),
+      ".vertical-top": (
+        vertical-align: top,
+      ),
+      ".vertical-bottom": (
+        vertical-align: bottom,
+      ),
+      ".vertical-text-top": (
+        vertical-align: text-top,
+      ),
+      ".vertical-text-bottom": (
+        vertical-align: text-bottom,
+      ),
+      ".vertical-sub": (
+        vertical-align: sub,
+      ),
+      ".vertical-sup": (
+        vertical-align: super,
+      ),
+    ),
+    xs: (),
+    sm: (),
+    md: (),
+    lg: (),
+    xl: (),
+    xxl: (),
+  )
+);

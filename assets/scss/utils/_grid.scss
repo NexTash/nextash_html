@@ -1,0 +1,938 @@
+@include create-utils(
+  (
+    default: (
+      ".row": (
+        --gutter-x: 1.5rem,
+        --gutter-y: 0,
+        display: flex,
+        flex-wrap: wrap,
+        margin-top: calc(-1 * var(--gutter-y)),
+        margin-right: calc(-0.5 * var(--gutter-x)),
+        margin-left: calc(-0.5 * var(--gutter-x)),
+      ),
+      ".row>*": (
+        box-sizing: border-box,
+        flex-shrink: 0,
+        width: 100%,
+        max-width: 100%,
+        padding-right: calc(var(--gutter-x) * 0.5),
+        padding-left: calc(var(--gutter-x) * 0.5),
+        margin-top: var(--gutter-y),
+      ),
+      ".row-cols-auto > *": (
+        flex: 0 0 auto,
+        width: auto,
+      ),
+      ".row-cols-1 > *": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".row-cols-2> *": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".row-cols-3> *": (
+        flex: 0 0 auto,
+        width: 33.3333333333%,
+      ),
+      ".row-cols-4> *": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".row-cols-5> *": (
+        flex: 0 0 auto,
+        width: 20%,
+      ),
+      ".row-cols-6> *": (
+        flex: 0 0 auto,
+        width: 16.6666666667%,
+      ),
+      ".col": (
+        flex: 1 0 0%,
+      ),
+      ".col-auto": (
+        flex: 0 0 auto,
+        width: auto,
+      ),
+      ".col-1": (
+        flex: 0 0 auto,
+        width: 8.33333333%,
+      ),
+      ".col-2": (
+        flex: 0 0 auto,
+        width: 16.66666667%,
+      ),
+      ".col-3": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".col-4": (
+        flex: 0 0 auto,
+        width: 33.33333333%,
+      ),
+      ".col-5": (
+        flex: 0 0 auto,
+        width: 41.66666667%,
+      ),
+      ".col-6": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".col-7": (
+        flex: 0 0 auto,
+        width: 58.33333333%,
+      ),
+      ".col-8": (
+        flex: 0 0 auto,
+        width: 66.66666667%,
+      ),
+      ".col-9": (
+        flex: 0 0 auto,
+        width: 75%,
+      ),
+      ".col-10": (
+        flex: 0 0 auto,
+        width: 83.33333333%,
+      ),
+      ".col-11": (
+        flex: 0 0 auto,
+        width: 91.66666667%,
+      ),
+      ".col-12": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".offset-1": (
+        margin-left: 8.33333333%,
+      ),
+      ".offset-2": (
+        margin-left: 16.66666667%,
+      ),
+      ".offset-3": (
+        margin-left: 25%,
+      ),
+      ".offset-4": (
+        margin-left: 33.33333333%,
+      ),
+      ".offset-5": (
+        margin-left: 41.66666667%,
+      ),
+      ".offset-6": (
+        margin-left: 50%,
+      ),
+      ".offset-7": (
+        margin-left: 58.33333333%,
+      ),
+      ".offset-8": (
+        margin-left: 66.66666667%,
+      ),
+      ".offset-9": (
+        margin-left: 75%,
+      ),
+      ".offset-10": (
+        margin-left: 83.33333333%,
+      ),
+      ".g-0, .gx-0": (
+        --gutter-x: 0,
+      ),
+      ".g-0, .gy-0": (
+        --gutter-y: 0,
+      ),
+      ".g-1, .gx-1": (
+        --gutter-x: 0.25rem,
+      ),
+      ".g-1, .gy-1": (
+        --gutter-y: 0.25rem,
+      ),
+      ".g-2, .gx-2": (
+        --gutter-x: 0.5rem,
+      ),
+      ".g-2, .gy-2": (
+        --gutter-y: 0.5rem,
+      ),
+      ".g-3, .gx-3": (
+        --gutter-x: 1rem,
+      ),
+      ".g-3, .gy-3": (
+        --gutter-y: 1rem,
+      ),
+      ".g-4, .gx-4": (
+        --gutter-x: 1.5rem,
+      ),
+      ".g-4, .gy-4": (
+        --gutter-y: 1.5rem,
+      ),
+      ".g-5, .gx-5": (
+        --gutter-x: 3rem,
+      ),
+      ".g-5, .gy-5": (
+        --gutter-y: 3rem,
+      ),
+    ),
+    sm: (
+      ".row-cols-auto-sm > *": (
+        flex: 0 0 auto,
+        width: auto,
+      ),
+      ".row-cols-1-sm > *": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".row-cols-2-sm > *": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".row-cols-3-sm > *": (
+        flex: 0 0 auto,
+        width: 33.3333333333%,
+      ),
+      ".row-cols-4-sm > *": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".row-cols-5-sm > *": (
+        flex: 0 0 auto,
+        width: 20%,
+      ),
+      ".row-cols-6-sm > *": (
+        flex: 0 0 auto,
+        width: 16.6666666667%,
+      ),
+      ".col-sm": (
+        flex: 1 0 0%,
+      ),
+      ".col-auto-sm": (
+        flex: 0 0 auto,
+        width: auto,
+      ),
+      ".col-1-sm": (
+        flex: 0 0 auto,
+        width: 8.33333333%,
+      ),
+      ".col-2-sm": (
+        flex: 0 0 auto,
+        width: 16.66666667%,
+      ),
+      ".col-3-sm": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".col-4-sm": (
+        flex: 0 0 auto,
+        width: 33.33333333%,
+      ),
+      ".col-5-sm": (
+        flex: 0 0 auto,
+        width: 41.66666667%,
+      ),
+      ".col-6-sm": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".col-7-sm": (
+        flex: 0 0 auto,
+        width: 58.33333333%,
+      ),
+      ".col-8-sm": (
+        flex: 0 0 auto,
+        width: 66.66666667%,
+      ),
+      ".col-9-sm": (
+        flex: 0 0 auto,
+        width: 75%,
+      ),
+      ".col-10-sm": (
+        flex: 0 0 auto,
+        width: 83.33333333%,
+      ),
+      ".col-11-sm": (
+        flex: 0 0 auto,
+        width: 91.66666667%,
+      ),
+      ".col-12-sm": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".offset-1-sm": (
+        margin-left: 8.33333333%,
+      ),
+      ".offset-2-sm": (
+        margin-left: 16.66666667%,
+      ),
+      ".offset-3-sm": (
+        margin-left: 25%,
+      ),
+      ".offset-4-sm": (
+        margin-left: 33.33333333%,
+      ),
+      ".offset-5-sm": (
+        margin-left: 41.66666667%,
+      ),
+      ".offset-6-sm": (
+        margin-left: 50%,
+      ),
+      ".offset-7-sm": (
+        margin-left: 58.33333333%,
+      ),
+      ".offset-8-sm": (
+        margin-left: 66.66666667%,
+      ),
+      ".offset-9-sm": (
+        margin-left: 75%,
+      ),
+      ".offset-10-sm": (
+        margin-left: 83.33333333%,
+      ),
+      ".g-0-sm, .gx-0-sm": (
+        --gutter-x: 0,
+      ),
+      ".g-0-sm, .gy-0-sm": (
+        --gutter-y: 0,
+      ),
+      ".g-1-sm, .gx-1-sm": (
+        --gutter-x: 0.25rem,
+      ),
+      ".g-1-sm, .gy-1-sm": (
+        --gutter-y: 0.25rem,
+      ),
+      ".g-2-sm, .gx-2-sm": (
+        --gutter-x: 0.5rem,
+      ),
+      ".g-2-sm, .gy-2-sm": (
+        --gutter-y: 0.5rem,
+      ),
+      ".g-3-sm, .gx-3-sm": (
+        --gutter-x: 1rem,
+      ),
+      ".g-3-sm, .gy-3-sm": (
+        --gutter-y: 1rem,
+      ),
+      ".g-4-sm, .gx-4-sm": (
+        --gutter-x: 1.5rem,
+      ),
+      ".g-4-sm, .gy-4-sm": (
+        --gutter-y: 1.5rem,
+      ),
+      ".g-5-sm, .gx-5-sm": (
+        --gutter-x: 3rem,
+      ),
+      ".g-5-sm, .gy-5-sm": (
+        --gutter-y: 3rem,
+      ),
+      scale: min-width,
+      prefix: null,
+    ),
+    md: (
+      ".row-cols-auto-md > *": (
+        flex: 0 0 auto,
+        width: auto,
+      ),
+      ".row-cols-1-md > *": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".row-cols-2-md > *": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".row-cols-3-md > *": (
+        flex: 0 0 auto,
+        width: 33.3333333333%,
+      ),
+      ".row-cols-4-md > *": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".row-cols-5-md > *": (
+        flex: 0 0 auto,
+        width: 20%,
+      ),
+      ".row-cols-6-md > *": (
+        flex: 0 0 auto,
+        width: 16.6666666667%,
+      ),
+      ".col-md": (
+        flex: 1 0 0%,
+      ),
+      ".col-auto-md": (
+        flex: 0 0 auto,
+        width: auto,
+      ),
+      ".col-1-md": (
+        flex: 0 0 auto,
+        width: 8.33333333%,
+      ),
+      ".col-2-md": (
+        flex: 0 0 auto,
+        width: 16.66666667%,
+      ),
+      ".col-3-md": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".col-4-md": (
+        flex: 0 0 auto,
+        width: 33.33333333%,
+      ),
+      ".col-5-md": (
+        flex: 0 0 auto,
+        width: 41.66666667%,
+      ),
+      ".col-6-md": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".col-7-md": (
+        flex: 0 0 auto,
+        width: 58.33333333%,
+      ),
+      ".col-8-md": (
+        flex: 0 0 auto,
+        width: 66.66666667%,
+      ),
+      ".col-9-md": (
+        flex: 0 0 auto,
+        width: 75%,
+      ),
+      ".col-10-md": (
+        flex: 0 0 auto,
+        width: 83.33333333%,
+      ),
+      ".col-11-md": (
+        flex: 0 0 auto,
+        width: 91.66666667%,
+      ),
+      ".col-12-md": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".offset-1-md": (
+        margin-left: 8.33333333%,
+      ),
+      ".offset-2-md": (
+        margin-left: 16.66666667%,
+      ),
+      ".offset-3-md": (
+        margin-left: 25%,
+      ),
+      ".offset-4-md": (
+        margin-left: 33.33333333%,
+      ),
+      ".offset-5-md": (
+        margin-left: 41.66666667%,
+      ),
+      ".offset-6-md": (
+        margin-left: 50%,
+      ),
+      ".offset-7-md": (
+        margin-left: 58.33333333%,
+      ),
+      ".offset-8-md": (
+        margin-left: 66.66666667%,
+      ),
+      ".offset-9-md": (
+        margin-left: 75%,
+      ),
+      ".offset-10-md": (
+        margin-left: 83.33333333%,
+      ),
+      ".g-0-md, .gx-0-md": (
+        --gutter-x: 0,
+      ),
+      ".g-0-md, .gy-0-md": (
+        --gutter-y: 0,
+      ),
+      ".g-1-md, .gx-1-md": (
+        --gutter-x: 0.25rem,
+      ),
+      ".g-1-md, .gy-1-md": (
+        --gutter-y: 0.25rem,
+      ),
+      ".g-2-md, .gx-2-md": (
+        --gutter-x: 0.5rem,
+      ),
+      ".g-2-md, .gy-2-md": (
+        --gutter-y: 0.5rem,
+      ),
+      ".g-3-md, .gx-3-md": (
+        --gutter-x: 1rem,
+      ),
+      ".g-3-md, .gy-3-md": (
+        --gutter-y: 1rem,
+      ),
+      ".g-4-md, .gx-4-md": (
+        --gutter-x: 1.5rem,
+      ),
+      ".g-4-md, .gy-4-md": (
+        --gutter-y: 1.5rem,
+      ),
+      ".g-5-md, .gx-5-md": (
+        --gutter-x: 3rem,
+      ),
+      ".g-5-md, .gy-5-md": (
+        --gutter-y: 3rem,
+      ),
+      scale: min-width,
+      prefix: null,
+    ),
+    lg: (
+      ".row-cols-auto-lg > *": (
+        flex: 0 0 auto,
+        width: auto,
+      ),
+      ".row-cols-1-lg > *": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".row-cols-2-lg > *": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".row-cols-3-lg > *": (
+        flex: 0 0 auto,
+        width: 33.3333333333%,
+      ),
+      ".row-cols-4-lg > *": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".row-cols-5-lg > *": (
+        flex: 0 0 auto,
+        width: 20%,
+      ),
+      ".row-cols-6-lg > *": (
+        flex: 0 0 auto,
+        width: 16.6666666667%,
+      ),
+      ".col-lg": (
+        flex: 1 0 0%,
+      ),
+      ".col-auto-lg": (
+        flex: 0 0 auto,
+        width: auto,
+      ),
+      ".col-1-lg": (
+        flex: 0 0 auto,
+        width: 8.33333333%,
+      ),
+      ".col-2-lg": (
+        flex: 0 0 auto,
+        width: 16.66666667%,
+      ),
+      ".col-3-lg": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".col-4-lg": (
+        flex: 0 0 auto,
+        width: 33.33333333%,
+      ),
+      ".col-5-lg": (
+        flex: 0 0 auto,
+        width: 41.66666667%,
+      ),
+      ".col-6-lg": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".col-7-lg": (
+        flex: 0 0 auto,
+        width: 58.33333333%,
+      ),
+      ".col-8-lg": (
+        flex: 0 0 auto,
+        width: 66.66666667%,
+      ),
+      ".col-9-lg": (
+        flex: 0 0 auto,
+        width: 75%,
+      ),
+      ".col-10-lg": (
+        flex: 0 0 auto,
+        width: 83.33333333%,
+      ),
+      ".col-11-lg": (
+        flex: 0 0 auto,
+        width: 91.66666667%,
+      ),
+      ".col-12-lg": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".offset-1-lg": (
+        margin-left: 8.33333333%,
+      ),
+      ".offset-2-lg": (
+        margin-left: 16.66666667%,
+      ),
+      ".offset-3-lg": (
+        margin-left: 25%,
+      ),
+      ".offset-4-lg": (
+        margin-left: 33.33333333%,
+      ),
+      ".offset-5-lg": (
+        margin-left: 41.66666667%,
+      ),
+      ".offset-6-lg": (
+        margin-left: 50%,
+      ),
+      ".offset-7-lg": (
+        margin-left: 58.33333333%,
+      ),
+      ".offset-8-lg": (
+        margin-left: 66.66666667%,
+      ),
+      ".offset-9-lg": (
+        margin-left: 75%,
+      ),
+      ".offset-10-lg": (
+        margin-left: 83.33333333%,
+      ),
+      ".g-0-lg, .gx-0-lg": (
+        --gutter-x: 0,
+      ),
+      ".g-0-lg, .gy-0-lg": (
+        --gutter-y: 0,
+      ),
+      ".g-1-lg, .gx-1-lg": (
+        --gutter-x: 0.25rem,
+      ),
+      ".g-1-lg, .gy-1-lg": (
+        --gutter-y: 0.25rem,
+      ),
+      ".g-2-lg, .gx-2-lg": (
+        --gutter-x: 0.5rem,
+      ),
+      ".g-2-lg, .gy-2-lg": (
+        --gutter-y: 0.5rem,
+      ),
+      ".g-3-lg, .gx-3-lg": (
+        --gutter-x: 1rem,
+      ),
+      ".g-3-lg, .gy-3-lg": (
+        --gutter-y: 1rem,
+      ),
+      ".g-4-lg, .gx-4-lg": (
+        --gutter-x: 1.5rem,
+      ),
+      ".g-4-lg, .gy-4-lg": (
+        --gutter-y: 1.5rem,
+      ),
+      ".g-5-lg, .gx-5-lg": (
+        --gutter-x: 3rem,
+      ),
+      ".g-5-lg, .gy-5-lg": (
+        --gutter-y: 3rem,
+      ),
+      scale: min-width,
+      prefix: null,
+    ),
+    xl: (
+      ".row-cols-auto-xl > *": (
+        flex: 0 0 auto,
+        width: auto,
+      ),
+      ".row-cols-1-xl > *": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".row-cols-2-xl > *": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".row-cols-3-xl > *": (
+        flex: 0 0 auto,
+        width: 33.3333333333%,
+      ),
+      ".row-cols-4-xl > *": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".row-cols-5-xl > *": (
+        flex: 0 0 auto,
+        width: 20%,
+      ),
+      ".row-cols-6-xl > *": (
+        flex: 0 0 auto,
+        width: 16.6666666667%,
+      ),
+      ".col-xl": (
+        flex: 1 0 0%,
+      ),
+      ".col-auto-xl": (
+        flex: 0 0 auto,
+        width: auto,
+      ),
+      ".col-1-xl": (
+        flex: 0 0 auto,
+        width: 8.33333333%,
+      ),
+      ".col-2-xl": (
+        flex: 0 0 auto,
+        width: 16.66666667%,
+      ),
+      ".col-3-xl": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".col-4-xl": (
+        flex: 0 0 auto,
+        width: 33.33333333%,
+      ),
+      ".col-5-xl": (
+        flex: 0 0 auto,
+        width: 41.66666667%,
+      ),
+      ".col-6-xl": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".col-7-xl": (
+        flex: 0 0 auto,
+        width: 58.33333333%,
+      ),
+      ".col-8-xl": (
+        flex: 0 0 auto,
+        width: 66.66666667%,
+      ),
+      ".col-9-xl": (
+        flex: 0 0 auto,
+        width: 75%,
+      ),
+      ".col-10-xl": (
+        flex: 0 0 auto,
+        width: 83.33333333%,
+      ),
+      ".col-11-xl": (
+        flex: 0 0 auto,
+        width: 91.66666667%,
+      ),
+      ".col-12-xl": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".offset-1-xl": (
+        margin-left: 8.33333333%,
+      ),
+      ".offset-2-xl": (
+        margin-left: 16.66666667%,
+      ),
+      ".offset-3-xl": (
+        margin-left: 25%,
+      ),
+      ".offset-4-xl": (
+        margin-left: 33.33333333%,
+      ),
+      ".offset-5-xl": (
+        margin-left: 41.66666667%,
+      ),
+      ".offset-6-xl": (
+        margin-left: 50%,
+      ),
+      ".offset-7-xl": (
+        margin-left: 58.33333333%,
+      ),
+      ".offset-8-xl": (
+        margin-left: 66.66666667%,
+      ),
+      ".offset-9-xl": (
+        margin-left: 75%,
+      ),
+      ".offset-10-xl": (
+        margin-left: 83.33333333%,
+      ),
+      ".g-0-xl, .gx-0-xl": (
+        --gutter-x: 0,
+      ),
+      ".g-0-xl, .gy-0-xl": (
+        --gutter-y: 0,
+      ),
+      ".g-1-xl, .gx-1-xl": (
+        --gutter-x: 0.25rem,
+      ),
+      ".g-1-xl, .gy-1-xl": (
+        --gutter-y: 0.25rem,
+      ),
+      ".g-2-xl, .gx-2-xl": (
+        --gutter-x: 0.5rem,
+      ),
+      ".g-2-xl, .gy-2-xl": (
+        --gutter-y: 0.5rem,
+      ),
+      ".g-3-xl, .gx-3-xl": (
+        --gutter-x: 1rem,
+      ),
+      ".g-3-xl, .gy-3-xl": (
+        --gutter-y: 1rem,
+      ),
+      ".g-4-xl, .gx-4-xl": (
+        --gutter-x: 1.5rem,
+      ),
+      ".g-4-xl, .gy-4-xl": (
+        --gutter-y: 1.5rem,
+      ),
+      ".g-5-xl, .gx-5-xl": (
+        --gutter-x: 3rem,
+      ),
+      ".g-5-xl, .gy-5-xl": (
+        --gutter-y: 3rem,
+      ),
+      scale: min-width,
+      prefix: null,
+    ),
+    xxl: (
+      ".row-cols-auto-xxl > *": (
+        flex: 0 0 auto,
+        width: auto,
+      ),
+      ".row-cols-1-xxl > *": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".row-cols-2-xxl > *": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".row-cols-3-xxl > *": (
+        flex: 0 0 auto,
+        width: 33.3333333333%,
+      ),
+      ".row-cols-4-xxl > *": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".row-cols-5-xxl > *": (
+        flex: 0 0 auto,
+        width: 20%,
+      ),
+      ".row-cols-6-xxl > *": (
+        flex: 0 0 auto,
+        width: 16.6666666667%,
+      ),
+      ".col-xxl": (
+        flex: 1 0 0%,
+      ),
+      ".col-auto-xxl": (
+        flex: 0 0 auto,
+        width: auto,
+      ),
+      ".col-1-xxl": (
+        flex: 0 0 auto,
+        width: 8.33333333%,
+      ),
+      ".col-2-xxl": (
+        flex: 0 0 auto,
+        width: 16.66666667%,
+      ),
+      ".col-3-xxl": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".col-4-xxl": (
+        flex: 0 0 auto,
+        width: 33.33333333%,
+      ),
+      ".col-5-xxl": (
+        flex: 0 0 auto,
+        width: 41.66666667%,
+      ),
+      ".col-6-xxl": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".col-7-xxl": (
+        flex: 0 0 auto,
+        width: 58.33333333%,
+      ),
+      ".col-8-xxl": (
+        flex: 0 0 auto,
+        width: 66.66666667%,
+      ),
+      ".col-9-xxl": (
+        flex: 0 0 auto,
+        width: 75%,
+      ),
+      ".col-10-xxl": (
+        flex: 0 0 auto,
+        width: 83.33333333%,
+      ),
+      ".col-11-xxl": (
+        flex: 0 0 auto,
+        width: 91.66666667%,
+      ),
+      ".col-12-xxl": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".offset-1-xxl": (
+        margin-left: 8.33333333%,
+      ),
+      ".offset-2-xxl": (
+        margin-left: 16.66666667%,
+      ),
+      ".offset-3-xxl": (
+        margin-left: 25%,
+      ),
+      ".offset-4-xxl": (
+        margin-left: 33.33333333%,
+      ),
+      ".offset-5-xxl": (
+        margin-left: 41.66666667%,
+      ),
+      ".offset-6-xxl": (
+        margin-left: 50%,
+      ),
+      ".offset-7-xxl": (
+        margin-left: 58.33333333%,
+      ),
+      ".offset-8-xxl": (
+        margin-left: 66.66666667%,
+      ),
+      ".offset-9-xxl": (
+        margin-left: 75%,
+      ),
+      ".offset-10-xxl": (
+        margin-left: 83.33333333%,
+      ),
+      ".g-0-xxl, .gx-0-xxl": (
+        --gutter-x: 0,
+      ),
+      ".g-0-xxl, .gy-0-xxl": (
+        --gutter-y: 0,
+      ),
+      ".g-1-xxl, .gx-1-xxl": (
+        --gutter-x: 0.25rem,
+      ),
+      ".g-1-xxl, .gy-1-xxl": (
+        --gutter-y: 0.25rem,
+      ),
+      ".g-2-xxl, .gx-2-xxl": (
+        --gutter-x: 0.5rem,
+      ),
+      ".g-2-xxl, .gy-2-xxl": (
+        --gutter-y: 0.5rem,
+      ),
+      ".g-3-xxl, .gx-3-xxl": (
+        --gutter-x: 1rem,
+      ),
+      ".g-3-xxl, .gy-3-xxl": (
+        --gutter-y: 1rem,
+      ),
+      ".g-4-xxl, .gx-4-xxl": (
+        --gutter-x: 1.5rem,
+      ),
+      ".g-4-xxl, .gy-4-xxl": (
+        --gutter-y: 1.5rem,
+      ),
+      ".g-5-xxl, .gx-5-xxl": (
+        --gutter-x: 3rem,
+      ),
+      ".g-5-xxl, .gy-5-xxl": (
+        --gutter-y: 3rem,
+      ),
+      scale: min-width,
+      prefix: null,
+    ),
+  )
+);

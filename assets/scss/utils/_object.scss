@@ -1,15 +1,27 @@
-.object-center {
-    object-position: center;
-}
-
-.object-cover {
-    object-fit: cover;
-}
-
-.object-contain {
-    object-fit: contain;
-}
-
-.object-fill {
-    object-fit: fill;
-}
+@include create-utils(
+  (
+    default: (
+      ".object-cover": (
+        object-fit: cover,
+      ),
+      ".object-contain": (
+        object-fit: contain,
+      ),
+      ".object-fill": (
+        object-fit: fill,
+      ),
+      ".object-none": (
+        object-fit: none,
+      ),
+      ".object-sd": (
+        object-fit: scale-down,
+      ),
+    ),
+    xs: (),
+    sm: (),
+    md: (),
+    lg: (),
+    xl: (),
+    xxl: (),
+  )
+);

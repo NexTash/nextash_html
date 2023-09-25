@@ -1,11 +1,133 @@
-.bg-gray-700 {
-    background-color: $gray-700;
-}
-
-.bg-gray-800 {
-    background-color: $gray-800;
-}
-
-.bg-gray-900 {
-    background-color: $gray-900
-}
+@include create-utils(
+  (
+    default: (
+      ".bg-primary": (
+        background-color: get-var(primary),
+      ),
+      ".bg-secondary": (
+        background-color: get-var(secondary),
+      ),
+      ".bg-warning": (
+        background-color: get-var(secondary),
+      ),
+      ".bg-danger": (
+        background-color: get-var(danger),
+      ),
+      ".bg-success": (
+        background-color: get-var(success),
+      ),
+      ".bg-info": (
+        background-color: get-var(info),
+      ),
+      ".bg-muted": (
+        background-color: get-var(muted),
+      ),
+      ".bg-dark": (
+        background-color: get-var(dark),
+      ),
+      ".bg-light": (
+        background-color: get-var(light),
+      ),
+      ".bg-body": (
+        background-color: get-var(body),
+      ),
+      ".bg-black": (
+        background-color: get-var(black),
+      ),
+      ".bg-white": (
+        background-color: get-var(white),
+      ),
+      ".bg-transparent": (
+        background-color: get-var(transparent),
+      ),
+      ".text-primary": (
+        color: get-var(primary),
+      ),
+      ".text-secondary": (
+        color: get-var(secondary),
+      ),
+      ".text-warning": (
+        color: get-var(warning),
+      ),
+      ".text-danger": (
+        color: get-var(danger),
+      ),
+      ".text-success": (
+        color: get-var(success),
+      ),
+      ".text-info": (
+        color: get-var(info),
+      ),
+      ".text-muted": (
+        color: get-var(muted),
+      ),
+      ".text-dark": (
+        color: get-var(dark),
+      ),
+      ".text-light": (
+        color: get-var(light),
+      ),
+      ".text-body": (
+        color: get-var(body),
+      ),
+      ".text-black": (
+        color: get-var(black),
+      ),
+      ".text-white": (
+        color: get-var(white),
+      ),
+      ".bt-primary": (
+        background-color: get-var(primary),
+        color: #fff,
+      ),
+      ".bt-secondary": (
+        background-color: get-var(secondary),
+        color: #fff,
+      ),
+      ".bt-warning": (
+        background-color: get-var(secondary),
+        color: #000,
+      ),
+      ".bt-danger": (
+        background-color: get-var(danger),
+        color: #fff,
+      ),
+      ".bt-success": (
+        background-color: get-var(success),
+        color: #fff,
+      ),
+      ".bt-info": (
+        background-color: get-var(info),
+        color: #fff,
+      ),
+      ".bt-muted": (
+        background-color: get-var(muted),
+        color: #fff,
+      ),
+      ".bt-dark": (
+        background-color: get-var(dark),
+        color: #fff,
+      ),
+      ".bt-light": (
+        background-color: get-var(light),
+        color: #000,
+      ),
+      ".bt-body": (
+        background-color: get-var(body),
+        color: #fff,
+      ),
+      ".bt-black": (
+        background-color: get-var(black),
+        color: #fff,
+      ),
+      ".bt-white": (
+        background-color: get-var(white),
+        color: #000,
+      ),
+      ".bt-transparent": (
+        background-color: get-var(transparent),
+        color: #000,
+      ),
+    ),
+  )
+);

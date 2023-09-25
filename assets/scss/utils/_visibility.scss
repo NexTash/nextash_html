@@ -1,0 +1,18 @@
+@include create-utils(
+  (
+    default: (
+      ".visible": (
+        visibility: visible,
+      ),
+      ".invisible": (
+        visibility: hidden,
+      ),
+    ),
+    xs: (),
+    sm: (),
+    md: (),
+    lg: (),
+    xl: (),
+    xxl: (),
+  )
+);

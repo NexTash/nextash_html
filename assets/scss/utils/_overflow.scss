@@ -1,0 +1,233 @@
+@include create-utils(
+  (
+    default: (
+      ".scroll-visible": (
+        overflow: visible,
+      ),
+      ".scroll-hidden": (
+        overflow: hidden,
+      ),
+      ".scroll": (
+        overflow: scroll,
+      ),
+      ".scroll-auto": (
+        overflow: auto,
+      ),
+      ".scrollX-visible": (
+        overflow-x: visible,
+      ),
+      ".scrollX-hidden": (
+        overflow-x: hidden,
+      ),
+      ".scrollX": (
+        overflow-x: scroll,
+      ),
+      ".scrollX-auto": (
+        overflow-x: auto,
+      ),
+      ".scrollY-visible": (
+        overflow-y: visible,
+      ),
+      ".scrollY-hidden": (
+        overflow-y: hidden,
+      ),
+      ".scrollY": (
+        overflow-y: scroll,
+      ),
+      ".scrollY-auto": (
+        overflow-y: auto,
+      ),
+    ),
+   
+    sm: (
+      ".scroll-visible": (
+        overflow: visible,
+      ),
+      ".scroll-hidden": (
+        overflow: hidden,
+      ),
+      ".scroll": (
+        overflow: scroll,
+      ),
+      ".scroll-auto": (
+        overflow: auto,
+      ),
+      ".scrollX-visible": (
+        overflow-x: visible,
+      ),
+      ".scrollX-hidden": (
+        overflow-x: hidden,
+      ),
+      ".scrollX": (
+        overflow-x: scroll,
+      ),
+      ".scrollX-auto": (
+        overflow-x: auto,
+      ),
+      ".scrollY-visible": (
+        overflow-y: visible,
+      ),
+      ".scrollY-hidden": (
+        overflow-y: hidden,
+      ),
+      ".scrollY": (
+        overflow-y: scroll,
+      ),
+      ".scrollY-auto": (
+        overflow-y: auto,
+      ),
+    ),
+    md: (
+      ".scroll-visible": (
+        overflow: visible,
+      ),
+      ".scroll-hidden": (
+        overflow: hidden,
+      ),
+      ".scroll": (
+        overflow: scroll,
+      ),
+      ".scroll-auto": (
+        overflow: auto,
+      ),
+      ".scrollX-visible": (
+        overflow-x: visible,
+      ),
+      ".scrollX-hidden": (
+        overflow-x: hidden,
+      ),
+      ".scrollX": (
+        overflow-x: scroll,
+      ),
+      ".scrollX-auto": (
+        overflow-x: auto,
+      ),
+      ".scrollY-visible": (
+        overflow-y: visible,
+      ),
+      ".scrollY-hidden": (
+        overflow-y: hidden,
+      ),
+      ".scrollY": (
+        overflow-y: scroll,
+      ),
+      ".scrollY-auto": (
+        overflow-y: auto,
+      ),
+    ),
+    lg: (
+      ".scroll-visible": (
+        overflow: visible,
+      ),
+      ".scroll-hidden": (
+        overflow: hidden,
+      ),
+      ".scroll": (
+        overflow: scroll,
+      ),
+      ".scroll-auto": (
+        overflow: auto,
+      ),
+      ".scrollX-visible": (
+        overflow-x: visible,
+      ),
+      ".scrollX-hidden": (
+        overflow-x: hidden,
+      ),
+      ".scrollX": (
+        overflow-x: scroll,
+      ),
+      ".scrollX-auto": (
+        overflow-x: auto,
+      ),
+      ".scrollY-visible": (
+        overflow-y: visible,
+      ),
+      ".scrollY-hidden": (
+        overflow-y: hidden,
+      ),
+      ".scrollY": (
+        overflow-y: scroll,
+      ),
+      ".scrollY-auto": (
+        overflow-y: auto,
+      ),
+    ),
+    xl: (
+      ".scroll-visible": (
+        overflow: visible,
+      ),
+      ".scroll-hidden": (
+        overflow: hidden,
+      ),
+      ".scroll": (
+        overflow: scroll,
+      ),
+      ".scroll-auto": (
+        overflow: auto,
+      ),
+      ".scrollX-visible": (
+        overflow-x: visible,
+      ),
+      ".scrollX-hidden": (
+        overflow-x: hidden,
+      ),
+      ".scrollX": (
+        overflow-x: scroll,
+      ),
+      ".scrollX-auto": (
+        overflow-x: auto,
+      ),
+      ".scrollY-visible": (
+        overflow-y: visible,
+      ),
+      ".scrollY-hidden": (
+        overflow-y: hidden,
+      ),
+      ".scrollY": (
+        overflow-y: scroll,
+      ),
+      ".scrollY-auto": (
+        overflow-y: auto,
+      ),
+    ),
+    xxl: (
+      ".scroll-visible": (
+        overflow: visible,
+      ),
+      ".scroll-hidden": (
+        overflow: hidden,
+      ),
+      ".scroll": (
+        overflow: scroll,
+      ),
+      ".scroll-auto": (
+        overflow: auto,
+      ),
+      ".scrollX-visible": (
+        overflow-x: visible,
+      ),
+      ".scrollX-hidden": (
+        overflow-x: hidden,
+      ),
+      ".scrollX": (
+        overflow-x: scroll,
+      ),
+      ".scrollX-auto": (
+        overflow-x: auto,
+      ),
+      ".scrollY-visible": (
+        overflow-y: visible,
+      ),
+      ".scrollY-hidden": (
+        overflow-y: hidden,
+      ),
+      ".scrollY": (
+        overflow-y: scroll,
+      ),
+      ".scrollY-auto": (
+        overflow-y: auto,
+      ),
+    ),
+  )
+);

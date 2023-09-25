@@ -1,0 +1,70 @@
+@include create-utils(
+  (
+    default: (
+      ".float-none": (
+        float: none,
+      ),
+      ".float-right": (
+        float: right,
+      ),
+      ".float-left": (
+        float: left,
+      ),
+    ),
+    sm: (
+      ".float-none": (
+        float: none,
+      ),
+      ".float-right": (
+        float: right,
+      ),
+      ".float-left": (
+        float: left,
+      ),
+    ),
+    md: (
+      ".float-none": (
+        float: none,
+      ),
+      ".float-right": (
+        float: right,
+      ),
+      ".float-left": (
+        float: left,
+      ),
+    ),
+    lg: (
+      ".float-none": (
+        float: none,
+      ),
+      ".float-right": (
+        float: right,
+      ),
+      ".float-left": (
+        float: left,
+      ),
+    ),
+    xl: (
+      ".float-none": (
+        float: none,
+      ),
+      ".float-right": (
+        float: right,
+      ),
+      ".float-left": (
+        float: left,
+      ),
+    ),
+    xxl: (
+      ".float-none": (
+        float: none,
+      ),
+      ".float-right": (
+        float: right,
+      ),
+      ".float-left": (
+        float: left,
+      ),
+    ),
+  )
+);

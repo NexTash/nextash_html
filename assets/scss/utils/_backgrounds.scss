@@ -1,0 +1,54 @@
+@include create-utils(
+  (
+    default: (
+      ".bg-fixed": (
+        background-attachment: fixed,
+      ),
+      ".bg-scroll": (
+        background-attachment: scroll,
+      ),
+      ".bg-local": (
+        background-attachment: local,
+      ),
+      ".bg-repeat": (
+        background-repeat: repeat,
+      ),
+      ".bg-repeat-x": (
+        background-repeat: repeat-x,
+      ),
+      ".bg-repeat-y": (
+        background-repeat: repeat-y,
+      ),
+      ".bg-no-repeat": (
+        background-repeat: no-repeat,
+      ),
+      ".bg-cover": (
+        background-size: cover,
+      ),
+      ".bg-contain": (
+        background-size: contain,
+      ),
+      ".bg-padding-box": (
+        background-origin: padding-box,
+      ),
+      ".bg-content-box": (
+        background-origin: content-box,
+      ),
+      ".bg-border-box": (
+        background-origin: border-box,
+      ),
+      ".bg-right-top": (
+        background-position: right top,
+      ),
+      ".bg-left-top": (
+        background-position: left top,
+      ),
+      ".bg-left-bottom": (
+        background-position: left bottom,
+      ),
+      ".bg-right-bottom": (
+        background-position: right bottom,
+      ),
+    ),
+  )
+);

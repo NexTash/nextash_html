@@ -1,0 +1,970 @@
+@include create-utils(
+  (
+    default: (
+      ".flex-fill": (
+        flex-direction: 1 1 auto,
+      ),
+      ".flex-column": (
+        flex-direction: column,
+      ),
+      ".flex-row": (
+        flex-direction: row,
+      ),
+      ".flex-row-reverse": (
+        flex-direction: row-reverse,
+      ),
+      ".flex-column-reverse": (
+        flex-direction: column-reverse,
+      ),
+      ".flex-wrap": (
+        flex-wrap: wrap,
+      ),
+      ".flex-nowrap": (
+        flex-wrap: nowrap,
+      ),
+      ".flex-wrap-reverse": (
+        flex-wrap: wrap-reverse,
+      ),
+      ".justify-content-start": (
+        justify-content: flex-start,
+      ),
+      ".justify-content-end": (
+        justify-content: flex-end,
+      ),
+      ".justify-content-center": (
+        justify-content: center,
+      ),
+      ".justify-content-around": (
+        justify-content: space-around,
+      ),
+      ".justify-content-between": (
+        justify-content: space-between,
+      ),
+      ".justify-content-evenly": (
+        justify-content: space-evenly,
+      ),
+      ".align-content-center": (
+        align-content: center,
+      ),
+      ".align-content-start": (
+        align-content: start,
+      ),
+      ".align-content-stretch": (
+        align-content: stretch,
+      ),
+      ".align-content-between": (
+        align-content: space-between,
+      ),
+      ".align-content-around": (
+        align-content: space-around,
+      ),
+      ".align-content-evenly": (
+        align-content: space-evenly,
+      ),
+      ".align-items-start": (
+        align-items: flex-start,
+      ),
+      ".align-items-end": (
+        align-items: flex-end,
+      ),
+      ".align-items-center": (
+        align-items: center,
+      ),
+      ".align-items-stretch": (
+        align-items: stretch,
+      ),
+      ".align-items-baseline": (
+        align-items: baseline,
+      ),
+      ".align-items-around": (
+        align-items: space-around,
+      ),
+      ".align-items-between": (
+        align-items: space-between,
+      ),
+      ".align-items-evenly": (
+        align-items: space-evenly,
+      ),
+      ".align-self-center": (
+        align-self: center,
+      ),
+      ".align-self-start": (
+        align-self: flex-start,
+      ),
+      ".align-self-end": (
+        align-self: flex-end,
+      ),
+      ".align-self-stretch": (
+        align-self: stretch,
+      ),
+      ".align-self-baseline": (
+        align-self: baseline,
+      ),
+      ".align-self-around": (
+        align-self: space-around,
+      ),
+      ".align-self-between": (
+        align-self: space-between,
+      ),
+      ".align-self-evenly": (
+        align-self: space-evenly,
+      ),
+      ".order-first": (
+        order: -1,
+      ),
+      ".order-0": (
+        order: 0,
+      ),
+      ".order-1": (
+        order: 1,
+      ),
+      ".order-2": (
+        order: 2,
+      ),
+      ".order-3": (
+        order: 3,
+      ),
+      ".order-4": (
+        order: 4,
+      ),
+      ".order-5": (
+        order: 5,
+      ),
+      ".flex-grow-1": (
+        flex-grow: 1,
+      ),
+      ".flex-grow-2": (
+        flex-grow: 2,
+      ),
+      ".flex-grow-3": (
+        flex-grow: 3,
+      ),
+      ".flex-grow-4": (
+        flex-grow: 4,
+      ),
+      ".flex-grow-5": (
+        flex-grow: 5,
+      ),
+      ".flex-shrink-1": (
+        flex-shrink: 1,
+      ),
+      ".flex-shrink-2": (
+        flex-shrink: 2,
+      ),
+      ".flex-shrink-3": (
+        flex-shrink: 3,
+      ),
+      ".flex-shrink-4": (
+        flex-shrink: 4,
+      ),
+      ".flex-shrink-5": (
+        flex-shrink: 5,
+      ),
+    ),
+    sm: (
+      ".flex-fill": (
+        flex-direction: 1 1 auto,
+      ),
+      ".flex-column": (
+        flex-direction: column,
+      ),
+      ".flex-row": (
+        flex-direction: row,
+      ),
+      ".flex-row-reverse": (
+        flex-direction: row-reverse,
+      ),
+      ".flex-column-reverse": (
+        flex-direction: column-reverse,
+      ),
+      ".flex-wrap": (
+        flex-wrap: wrap,
+      ),
+      ".flex-nowrap": (
+        flex-wrap: nowrap,
+      ),
+      ".flex-wrap-reverse": (
+        flex-wrap: wrap-reverse,
+      ),
+      ".justify-content-start": (
+        justify-content: flex-start,
+      ),
+      ".justify-content-end": (
+        justify-content: flex-end,
+      ),
+      ".justify-content-center": (
+        justify-content: center,
+      ),
+      ".justify-content-around": (
+        justify-content: space-around,
+      ),
+      ".justify-content-between": (
+        justify-content: space-between,
+      ),
+      ".justify-content-evenly": (
+        justify-content: space-evenly,
+      ),
+      ".align-content-center": (
+        align-content: center,
+      ),
+      ".align-content-start": (
+        align-content: start,
+      ),
+      ".align-content-stretch": (
+        align-content: stretch,
+      ),
+      ".align-content-between": (
+        align-content: space-between,
+      ),
+      ".align-content-around": (
+        align-content: space-around,
+      ),
+      ".align-content-evenly": (
+        align-content: space-evenly,
+      ),
+      ".align-items-start": (
+        align-items: flex-start,
+      ),
+      ".align-items-end": (
+        align-items: flex-end,
+      ),
+      ".align-items-center": (
+        align-items: center,
+      ),
+      ".align-items-stretch": (
+        align-items: stretch,
+      ),
+      ".align-items-baseline": (
+        align-items: baseline,
+      ),
+      ".align-items-around": (
+        align-items: space-around,
+      ),
+      ".align-items-between": (
+        align-items: space-between,
+      ),
+      ".align-items-evenly": (
+        align-items: space-evenly,
+      ),
+      ".align-self-center": (
+        align-self: center,
+      ),
+      ".align-self-start": (
+        align-self: flex-start,
+      ),
+      ".align-self-end": (
+        align-self: flex-end,
+      ),
+      ".align-self-stretch": (
+        align-self: stretch,
+      ),
+      ".align-self-baseline": (
+        align-self: baseline,
+      ),
+      ".align-self-around": (
+        align-self: space-around,
+      ),
+      ".align-self-between": (
+        align-self: space-between,
+      ),
+      ".align-self-evenly": (
+        align-self: space-evenly,
+      ),
+      ".order-first": (
+        order: -1,
+      ),
+      ".order-0": (
+        order: 0,
+      ),
+      ".order-1": (
+        order: 1,
+      ),
+      ".order-2": (
+        order: 2,
+      ),
+      ".order-3": (
+        order: 3,
+      ),
+      ".order-4": (
+        order: 4,
+      ),
+      ".order-5": (
+        order: 5,
+      ),
+      ".flex-grow-1": (
+        flex-grow: 1,
+      ),
+      ".flex-grow-2": (
+        flex-grow: 2,
+      ),
+      ".flex-grow-3": (
+        flex-grow: 3,
+      ),
+      ".flex-grow-4": (
+        flex-grow: 4,
+      ),
+      ".flex-grow-5": (
+        flex-grow: 5,
+      ),
+      ".flex-shrink-1": (
+        flex-shrink: 1,
+      ),
+      ".flex-shrink-2": (
+        flex-shrink: 2,
+      ),
+      ".flex-shrink-3": (
+        flex-shrink: 3,
+      ),
+      ".flex-shrink-4": (
+        flex-shrink: 4,
+      ),
+      ".flex-shrink-5": (
+        flex-shrink: 5,
+      ),
+    ),
+    md: (
+      ".flex-fill": (
+        flex-direction: 1 1 auto,
+      ),
+      ".flex-column": (
+        flex-direction: column,
+      ),
+      ".flex-row": (
+        flex-direction: row,
+      ),
+      ".flex-row-reverse": (
+        flex-direction: row-reverse,
+      ),
+      ".flex-column-reverse": (
+        flex-direction: column-reverse,
+      ),
+      ".flex-wrap": (
+        flex-wrap: wrap,
+      ),
+      ".flex-nowrap": (
+        flex-wrap: nowrap,
+      ),
+      ".flex-wrap-reverse": (
+        flex-wrap: wrap-reverse,
+      ),
+      ".justify-content-start": (
+        justify-content: flex-start,
+      ),
+      ".justify-content-end": (
+        justify-content: flex-end,
+      ),
+      ".justify-content-center": (
+        justify-content: center,
+      ),
+      ".justify-content-around": (
+        justify-content: space-around,
+      ),
+      ".justify-content-between": (
+        justify-content: space-between,
+      ),
+      ".justify-content-evenly": (
+        justify-content: space-evenly,
+      ),
+      ".align-content-center": (
+        align-content: center,
+      ),
+      ".align-content-start": (
+        align-content: start,
+      ),
+      ".align-content-stretch": (
+        align-content: stretch,
+      ),
+      ".align-content-between": (
+        align-content: space-between,
+      ),
+      ".align-content-around": (
+        align-content: space-around,
+      ),
+      ".align-content-evenly": (
+        align-content: space-evenly,
+      ),
+      ".align-items-start": (
+        align-items: flex-start,
+      ),
+      ".align-items-end": (
+        align-items: flex-end,
+      ),
+      ".align-items-center": (
+        align-items: center,
+      ),
+      ".align-items-stretch": (
+        align-items: stretch,
+      ),
+      ".align-items-baseline": (
+        align-items: baseline,
+      ),
+      ".align-items-around": (
+        align-items: space-around,
+      ),
+      ".align-items-between": (
+        align-items: space-between,
+      ),
+      ".align-items-evenly": (
+        align-items: space-evenly,
+      ),
+      ".align-self-center": (
+        align-self: center,
+      ),
+      ".align-self-start": (
+        align-self: flex-start,
+      ),
+      ".align-self-end": (
+        align-self: flex-end,
+      ),
+      ".align-self-stretch": (
+        align-self: stretch,
+      ),
+      ".align-self-baseline": (
+        align-self: baseline,
+      ),
+      ".align-self-around": (
+        align-self: space-around,
+      ),
+      ".align-self-between": (
+        align-self: space-between,
+      ),
+      ".align-self-evenly": (
+        align-self: space-evenly,
+      ),
+      ".order-first": (
+        order: -1,
+      ),
+      ".order-0": (
+        order: 0,
+      ),
+      ".order-1": (
+        order: 1,
+      ),
+      ".order-2": (
+        order: 2,
+      ),
+      ".order-3": (
+        order: 3,
+      ),
+      ".order-4": (
+        order: 4,
+      ),
+      ".order-5": (
+        order: 5,
+      ),
+      ".flex-grow-1": (
+        flex-grow: 1,
+      ),
+      ".flex-grow-2": (
+        flex-grow: 2,
+      ),
+      ".flex-grow-3": (
+        flex-grow: 3,
+      ),
+      ".flex-grow-4": (
+        flex-grow: 4,
+      ),
+      ".flex-grow-5": (
+        flex-grow: 5,
+      ),
+      ".flex-shrink-1": (
+        flex-shrink: 1,
+      ),
+      ".flex-shrink-2": (
+        flex-shrink: 2,
+      ),
+      ".flex-shrink-3": (
+        flex-shrink: 3,
+      ),
+      ".flex-shrink-4": (
+        flex-shrink: 4,
+      ),
+      ".flex-shrink-5": (
+        flex-shrink: 5,
+      ),
+    ),
+    lg: (
+      ".flex-fill": (
+        flex-direction: 1 1 auto,
+      ),
+      ".flex-column": (
+        flex-direction: column,
+      ),
+      ".flex-row": (
+        flex-direction: row,
+      ),
+      ".flex-row-reverse": (
+        flex-direction: row-reverse,
+      ),
+      ".flex-column-reverse": (
+        flex-direction: column-reverse,
+      ),
+      ".flex-wrap": (
+        flex-wrap: wrap,
+      ),
+      ".flex-nowrap": (
+        flex-wrap: nowrap,
+      ),
+      ".flex-wrap-reverse": (
+        flex-wrap: wrap-reverse,
+      ),
+      ".justify-content-start": (
+        justify-content: flex-start,
+      ),
+      ".justify-content-end": (
+        justify-content: flex-end,
+      ),
+      ".justify-content-center": (
+        justify-content: center,
+      ),
+      ".justify-content-around": (
+        justify-content: space-around,
+      ),
+      ".justify-content-between": (
+        justify-content: space-between,
+      ),
+      ".justify-content-evenly": (
+        justify-content: space-evenly,
+      ),
+      ".align-content-center": (
+        align-content: center,
+      ),
+      ".align-content-start": (
+        align-content: start,
+      ),
+      ".align-content-stretch": (
+        align-content: stretch,
+      ),
+      ".align-content-between": (
+        align-content: space-between,
+      ),
+      ".align-content-around": (
+        align-content: space-around,
+      ),
+      ".align-content-evenly": (
+        align-content: space-evenly,
+      ),
+      ".align-items-start": (
+        align-items: flex-start,
+      ),
+      ".align-items-end": (
+        align-items: flex-end,
+      ),
+      ".align-items-center": (
+        align-items: center,
+      ),
+      ".align-items-stretch": (
+        align-items: stretch,
+      ),
+      ".align-items-baseline": (
+        align-items: baseline,
+      ),
+      ".align-items-around": (
+        align-items: space-around,
+      ),
+      ".align-items-between": (
+        align-items: space-between,
+      ),
+      ".align-items-evenly": (
+        align-items: space-evenly,
+      ),
+      ".align-self-center": (
+        align-self: center,
+      ),
+      ".align-self-start": (
+        align-self: flex-start,
+      ),
+      ".align-self-end": (
+        align-self: flex-end,
+      ),
+      ".align-self-stretch": (
+        align-self: stretch,
+      ),
+      ".align-self-baseline": (
+        align-self: baseline,
+      ),
+      ".align-self-around": (
+        align-self: space-around,
+      ),
+      ".align-self-between": (
+        align-self: space-between,
+      ),
+      ".align-self-evenly": (
+        align-self: space-evenly,
+      ),
+      ".order-first": (
+        order: -1,
+      ),
+      ".order-0": (
+        order: 0,
+      ),
+      ".order-1": (
+        order: 1,
+      ),
+      ".order-2": (
+        order: 2,
+      ),
+      ".order-3": (
+        order: 3,
+      ),
+      ".order-4": (
+        order: 4,
+      ),
+      ".order-5": (
+        order: 5,
+      ),
+      ".flex-grow-1": (
+        flex-grow: 1,
+      ),
+      ".flex-grow-2": (
+        flex-grow: 2,
+      ),
+      ".flex-grow-3": (
+        flex-grow: 3,
+      ),
+      ".flex-grow-4": (
+        flex-grow: 4,
+      ),
+      ".flex-grow-5": (
+        flex-grow: 5,
+      ),
+      ".flex-shrink-1": (
+        flex-shrink: 1,
+      ),
+      ".flex-shrink-2": (
+        flex-shrink: 2,
+      ),
+      ".flex-shrink-3": (
+        flex-shrink: 3,
+      ),
+      ".flex-shrink-4": (
+        flex-shrink: 4,
+      ),
+      ".flex-shrink-5": (
+        flex-shrink: 5,
+      ),
+    ),
+    xl: (
+      ".flex-fill": (
+        flex-direction: 1 1 auto,
+      ),
+      ".flex-column": (
+        flex-direction: column,
+      ),
+      ".flex-row": (
+        flex-direction: row,
+      ),
+      ".flex-row-reverse": (
+        flex-direction: row-reverse,
+      ),
+      ".flex-column-reverse": (
+        flex-direction: column-reverse,
+      ),
+      ".flex-wrap": (
+        flex-wrap: wrap,
+      ),
+      ".flex-nowrap": (
+        flex-wrap: nowrap,
+      ),
+      ".flex-wrap-reverse": (
+        flex-wrap: wrap-reverse,
+      ),
+      ".justify-content-start": (
+        justify-content: flex-start,
+      ),
+      ".justify-content-end": (
+        justify-content: flex-end,
+      ),
+      ".justify-content-center": (
+        justify-content: center,
+      ),
+      ".justify-content-around": (
+        justify-content: space-around,
+      ),
+      ".justify-content-between": (
+        justify-content: space-between,
+      ),
+      ".justify-content-evenly": (
+        justify-content: space-evenly,
+      ),
+      ".align-content-center": (
+        align-content: center,
+      ),
+      ".align-content-start": (
+        align-content: start,
+      ),
+      ".align-content-stretch": (
+        align-content: stretch,
+      ),
+      ".align-content-between": (
+        align-content: space-between,
+      ),
+      ".align-content-around": (
+        align-content: space-around,
+      ),
+      ".align-content-evenly": (
+        align-content: space-evenly,
+      ),
+      ".align-items-start": (
+        align-items: flex-start,
+      ),
+      ".align-items-end": (
+        align-items: flex-end,
+      ),
+      ".align-items-center": (
+        align-items: center,
+      ),
+      ".align-items-stretch": (
+        align-items: stretch,
+      ),
+      ".align-items-baseline": (
+        align-items: baseline,
+      ),
+      ".align-items-around": (
+        align-items: space-around,
+      ),
+      ".align-items-between": (
+        align-items: space-between,
+      ),
+      ".align-items-evenly": (
+        align-items: space-evenly,
+      ),
+      ".align-self-center": (
+        align-self: center,
+      ),
+      ".align-self-start": (
+        align-self: flex-start,
+      ),
+      ".align-self-end": (
+        align-self: flex-end,
+      ),
+      ".align-self-stretch": (
+        align-self: stretch,
+      ),
+      ".align-self-baseline": (
+        align-self: baseline,
+      ),
+      ".align-self-around": (
+        align-self: space-around,
+      ),
+      ".align-self-between": (
+        align-self: space-between,
+      ),
+      ".align-self-evenly": (
+        align-self: space-evenly,
+      ),
+      ".order-first": (
+        order: -1,
+      ),
+      ".order-0": (
+        order: 0,
+      ),
+      ".order-1": (
+        order: 1,
+      ),
+      ".order-2": (
+        order: 2,
+      ),
+      ".order-3": (
+        order: 3,
+      ),
+      ".order-4": (
+        order: 4,
+      ),
+      ".order-5": (
+        order: 5,
+      ),
+      ".flex-grow-1": (
+        flex-grow: 1,
+      ),
+      ".flex-grow-2": (
+        flex-grow: 2,
+      ),
+      ".flex-grow-3": (
+        flex-grow: 3,
+      ),
+      ".flex-grow-4": (
+        flex-grow: 4,
+      ),
+      ".flex-grow-5": (
+        flex-grow: 5,
+      ),
+      ".flex-shrink-1": (
+        flex-shrink: 1,
+      ),
+      ".flex-shrink-2": (
+        flex-shrink: 2,
+      ),
+      ".flex-shrink-3": (
+        flex-shrink: 3,
+      ),
+      ".flex-shrink-4": (
+        flex-shrink: 4,
+      ),
+      ".flex-shrink-5": (
+        flex-shrink: 5,
+      ),
+    ),
+    xxl: (
+      ".flex-fill": (
+        flex-direction: 1 1 auto,
+      ),
+      ".flex-column": (
+        flex-direction: column,
+      ),
+      ".flex-row": (
+        flex-direction: row,
+      ),
+      ".flex-row-reverse": (
+        flex-direction: row-reverse,
+      ),
+      ".flex-column-reverse": (
+        flex-direction: column-reverse,
+      ),
+      ".flex-wrap": (
+        flex-wrap: wrap,
+      ),
+      ".flex-nowrap": (
+        flex-wrap: nowrap,
+      ),
+      ".flex-wrap-reverse": (
+        flex-wrap: wrap-reverse,
+      ),
+      ".justify-content-start": (
+        justify-content: flex-start,
+      ),
+      ".justify-content-end": (
+        justify-content: flex-end,
+      ),
+      ".justify-content-center": (
+        justify-content: center,
+      ),
+      ".justify-content-around": (
+        justify-content: space-around,
+      ),
+      ".justify-content-between": (
+        justify-content: space-between,
+      ),
+      ".justify-content-evenly": (
+        justify-content: space-evenly,
+      ),
+      ".align-content-center": (
+        align-content: center,
+      ),
+      ".align-content-start": (
+        align-content: start,
+      ),
+      ".align-content-stretch": (
+        align-content: stretch,
+      ),
+      ".align-content-between": (
+        align-content: space-between,
+      ),
+      ".align-content-around": (
+        align-content: space-around,
+      ),
+      ".align-content-evenly": (
+        align-content: space-evenly,
+      ),
+      ".align-items-start": (
+        align-items: flex-start,
+      ),
+      ".align-items-end": (
+        align-items: flex-end,
+      ),
+      ".align-items-center": (
+        align-items: center,
+      ),
+      ".align-items-stretch": (
+        align-items: stretch,
+      ),
+      ".align-items-baseline": (
+        align-items: baseline,
+      ),
+      ".align-items-around": (
+        align-items: space-around,
+      ),
+      ".align-items-between": (
+        align-items: space-between,
+      ),
+      ".align-items-evenly": (
+        align-items: space-evenly,
+      ),
+      ".align-self-center": (
+        align-self: center,
+      ),
+      ".align-self-start": (
+        align-self: flex-start,
+      ),
+      ".align-self-end": (
+        align-self: flex-end,
+      ),
+      ".align-self-stretch": (
+        align-self: stretch,
+      ),
+      ".align-self-baseline": (
+        align-self: baseline,
+      ),
+      ".align-self-around": (
+        align-self: space-around,
+      ),
+      ".align-self-between": (
+        align-self: space-between,
+      ),
+      ".align-self-evenly": (
+        align-self: space-evenly,
+      ),
+      ".order-first": (
+        order: -1,
+      ),
+      ".order-0": (
+        order: 0,
+      ),
+      ".order-1": (
+        order: 1,
+      ),
+      ".order-2": (
+        order: 2,
+      ),
+      ".order-3": (
+        order: 3,
+      ),
+      ".order-4": (
+        order: 4,
+      ),
+      ".order-5": (
+        order: 5,
+      ),
+      ".flex-grow-1": (
+        flex-grow: 1,
+      ),
+      ".flex-grow-2": (
+        flex-grow: 2,
+      ),
+      ".flex-grow-3": (
+        flex-grow: 3,
+      ),
+      ".flex-grow-4": (
+        flex-grow: 4,
+      ),
+      ".flex-grow-5": (
+        flex-grow: 5,
+      ),
+      ".flex-shrink-1": (
+        flex-shrink: 1,
+      ),
+      ".flex-shrink-2": (
+        flex-shrink: 2,
+      ),
+      ".flex-shrink-3": (
+        flex-shrink: 3,
+      ),
+      ".flex-shrink-4": (
+        flex-shrink: 4,
+      ),
+      ".flex-shrink-5": (
+        flex-shrink: 5,
+      ),
+    ),
+  )
+);

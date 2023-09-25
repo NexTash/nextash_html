@@ -4,19 +4,19 @@
 
   .section-label {
     background-color: #171717;
-    color: var(--bs-primary);
+    color: get-var(primary);
     padding: 3px 12px;
     border-radius: 50px;
     font-size: 12px;
     display: inline-block;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     margin-bottom: 12px;
-    border-left: 5px solid var(--bs-primary);
-    border-right: 5px solid var(--bs-primary);
+    border-left: 3px solid get-var(primary);
+    border-right: 3px solid get-var(primary);
     font-weight: 800;
     text-transform: uppercase;
     &.page-label {
-      border: 3px solid var(--bs-primary);
+      border: 3px solid get-var(primary);
     }
   }
 
@@ -39,7 +39,7 @@
       &::before {
         z-index: -1;
         background-image: radial-gradient(
-          var(--bs-primary) 1.5px,
+          get-var(primary) 1.5px,
           transparent 1.5px
         );
         background-position: 50% 50%;
@@ -72,6 +72,10 @@
       margin: 0 auto;
     }
   }
+  .btn-outline {
+    margin-top: 10px;
+    display: inline-block;
+  }
 
   .section-slist {
     list-style: none;
@@ -93,7 +97,7 @@
 
   .section-link {
     text-decoration: none;
-    color: var(--bs-primary);
+    color: get-var(primary);
   }
 
   .center {
@@ -120,19 +124,19 @@
       padding-top: 50px;
     }
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint(sm, min-width) {
       max-width: 540px;
     }
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint(md, min-width) {
       max-width: 720px;
     }
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint(lg, min-width) {
       max-width: 960px;
     }
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint(xl, min-width) {
       max-width: 1140px;
     }
-    @include media-breakpoint-up(xll) {
+    @include media-breakpoint(xll, min-width) {
       max-width: 1320px;
     }
   }

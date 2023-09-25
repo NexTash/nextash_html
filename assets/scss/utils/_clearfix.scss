@@ -1,0 +1,93 @@
+@include create-utils(
+  (
+    default: (
+      ".clearfix::after": (
+        display: block,
+        clear: both,
+        content: "",
+      ),
+      ".clear-none": (
+        clear: none,
+      ),
+      ".clear-right": (
+        clear: right,
+      ),
+      ".clear-left": (
+        clear: left,
+      ),
+      ".clear-both": (
+        clear: both,
+      ),
+    ),
+    sm: (
+      ".clear-none": (
+        clear: none,
+      ),
+      ".clear-right": (
+        clear: right,
+      ),
+      ".clear-left": (
+        clear: left,
+      ),
+      ".clear-both": (
+        clear: both,
+      ),
+    ),
+    md: (
+      ".clear-none": (
+        clear: none,
+      ),
+      ".clear-right": (
+        clear: right,
+      ),
+      ".clear-left": (
+        clear: left,
+      ),
+      ".clear-both": (
+        clear: both,
+      ),
+    ),
+    lg: (
+      ".clear-none": (
+        clear: none,
+      ),
+      ".clear-right": (
+        clear: right,
+      ),
+      ".clear-left": (
+        clear: left,
+      ),
+      ".clear-both": (
+        clear: both,
+      ),
+    ),
+    xl: (
+      ".clear-none": (
+        clear: none,
+      ),
+      ".clear-right": (
+        clear: right,
+      ),
+      ".clear-left": (
+        clear: left,
+      ),
+      ".clear-both": (
+        clear: both,
+      ),
+    ),
+    xxl: (
+      ".clear-none": (
+        clear: none,
+      ),
+      ".clear-right": (
+        clear: right,
+      ),
+      ".clear-left": (
+        clear: left,
+      ),
+      ".clear-both": (
+        clear: both,
+      ),
+    ),
+  )
+);

@@ -1,0 +1,116 @@
+@include create-utils(
+  (
+    default: (
+      ".border-0": (
+        border: 0,
+      ),
+      ".border": (
+        border: get-var(border-width) get-var(border-style)
+          get-var(border-color),
+      ),
+      ".border-top-0": (
+        border-top: 0,
+      ),
+      ".border-top": (
+        border-top: get-var(border-width) get-var(border-style)
+          get-var(border-color),
+      ),
+      ".border-left-0": (
+        border-left: 0,
+      ),
+      ".border-left": (
+        border-left: get-var(border-width) get-var(border-style)
+          get-var(border-color),
+      ),
+      ".border-right-0": (
+        border-right: 0,
+      ),
+      ".border-right": (
+        border-right: get-var(border-width) get-var(border-style)
+          get-var(border-color),
+      ),
+      ".border-bottom-0": (
+        border-bottom: 0,
+      ),
+      ".border-bottom": (
+        border-bottom: get-var(border-width) get-var(border-style)
+          get-var(border-color),
+      ),
+      ".border-1": (
+        border-width: 1px,
+      ),
+      ".border-2": (
+        border-width: 2px,
+      ),
+      ".border-3": (
+        border-width: 3px,
+      ),
+      ".border-4": (
+        border-width: 4px,
+      ),
+      ".border-5": (
+        border-width: 5px,
+      ),
+      ".border-dotted": (
+        border-style: dotted,
+      ),
+      ".border-dashed": (
+        border-style: dashed,
+      ),
+      ".border-solid": (
+        border-style: solid,
+      ),
+      ".border-double": (
+        border-style: double,
+      ),
+      ".border-groove": (
+        border-style: groove,
+      ),
+      ".border-ridge": (
+        border-style: ridge,
+      ),
+      ".border-inset": (
+        border-style: inset,
+      ),
+      ".border-outset": (
+        border-style: outset,
+      ),
+      ".border-none": (
+        border-style: none,
+      ),
+      ".border-hidden": (
+        border-style: hidden,
+      ),
+      ".border-primary": (
+        border-color: rgba(get-var(primary-rgb), get-var(border-opacity)),
+      ),
+      ".border-secondary": (
+        border-color: rgba(get-var(secondary-rgb), get-var(border-opacity)),
+      ),
+      ".border-success": (
+        border-color: rgba(get-var(success-rgb), get-var(border-opacity)),
+      ),
+      ".border-info": (
+        border-color: rgba(get-var(info-rgb), get-var(border-opacity)),
+      ),
+      ".border-warning": (
+        border-color: rgba(get-var(warning-rgb), get-var(border-opacity)),
+      ),
+      ".border-danger": (
+        border-color: rgba(get-var(danger-rgb), get-var(border-opacity)),
+      ),
+      ".border-light": (
+        border-color: rgba(get-var(light-rgb), get-var(border-opacity)),
+      ),
+      ".border-dark": (
+        border-color: rgba(get-var(dark-rgb), get-var(border-opacity)),
+      ),
+      ".border-white": (
+        border-color: rgba(get-var(white-rgb), get-var(border-opacity)),
+      ),
+      ".border-black": (
+        border-color: rgba(get-var(black-rgb), get-var(border-opacity)),
+      ),
+    ),
+  )
+);

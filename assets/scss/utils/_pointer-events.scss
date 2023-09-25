@@ -1,0 +1,18 @@
+@include create-utils(
+  (
+    default: (
+      ".pe-none": (
+        pointer-events: none,
+      ),
+      ".pe-auto": (
+        pointer-events: auto,
+      ),
+    ),
+    xs: (),
+    sm: (),
+    md: (),
+    lg: (),
+    xl: (),
+    xxl: (),
+  )
+);

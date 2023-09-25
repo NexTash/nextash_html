@@ -2,7 +2,7 @@
   <section class="section bg-dots footer-first">
     <div class="section-container">
       <div class="section-label"> Work with us </div>
-      <h3 class="section-heading" data-aos-duration="1000" data-aos="flip-down">
+      <h3 class="section-heading" data-aos-duration="1000" data-aos="flip-down" data-aos-once="true">
         We would love to hear more about your project
       </h3>
       <a href="/contact-us" class="btn-contact  bg-triangles border-shadow">
@@ -16,7 +16,7 @@
         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
       </defs>
       <g class="waves-parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" class="shadow" fill="#111" />
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="#111" />
         <use xlink:href="#gentle-wave" x="48" y="3" fill="#444" />
         <use xlink:href="#gentle-wave" x="48" y="5" fill="#FF0000" />
         <use xlink:href="#gentle-wave" x="48" y="7" fill="#000" />
@@ -25,104 +25,82 @@
   </section>
   <section class="section footer-contact bg-triangles">
     <div class="section-container">
-      <div class="row py-5 justify-content-between align-items-center">
-        <article class="col-xl-4 col-md-4 my-3">
-          <div class="d-flex align-items-center">
-            <i class="bx bx-map text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
-            <div class="ms-3">
-              <h4 class="text-white font-18 m-0 mb-1 fw-bold">Find us</h4>
-              <p class="text-muted font-16 m-0">1010 Avenue, sw 54321, chandigarh</p>
+      <div class="footer-row">
+        <article class="footer-col">
+          <div class="media">
+            <i class="bx bx-phone icon"></i>
+            <div class="media-body">
+              <h4 class="media-heading">Call us</h4>
+              <p class="description">+98765432100</p>
             </div>
           </div>
         </article>
-        <article class="col-xl-4 col-md-4 my-3">
-          <div class="d-flex align-items-center">
-            <i class="bx bx-phone text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
-            <div class="ms-3">
-              <h4 class="text-white font-18 m-0 mb-1 fw-bold">Call us</h4>
-              <p class="text-muted font-16 m-0">+98765432100</p>
+        <article class="footer-col">
+          <div class="media">
+            <i class="bx bx-envelope-open icon"></i>
+            <div class="media-body">
+              <h4 class="media-heading">Mail us</h4>
+              <p class="description">mail@info.com</p>
             </div>
           </div>
         </article>
-        <article class="col-xl-4 col-md-4 my-3">
-          <div class="d-flex align-items-center">
-            <i class="bx bx-envelope-open text-danger font-40 rounded-5 p-2 bg-gray-700 shadow-sm"></i>
-            <div class="ms-3">
-              <h4 class="text-white font-18 m-0 mb-1 fw-bold">Mail us</h4>
-              <p class="text-muted font-16 m-0">mail@info.com</p>
+        <article class="footer-col">
+          <div class="media">
+            <i class="bx bx-map icon"></i>
+            <div class="media-body">
+              <h4 class="media-heading">Find us</h4>
+              <p class="description">Lahore Pakistan</p>
             </div>
           </div>
         </article>
       </div>
     </div>
   </section>
-  <section class="section bg-1 bg-cover p-0">
+  <section class="section footer-main bg-1">
     <div class="section-container">
-      <div class="row font-14">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xll-4 py-5 ">
-          <a href="/" class="mb-4 d-inline-block" role="img" aria-label="NexTash logo">
-            <img src="{{ url_for('static', filename='images/logos/logo.png')}}" width="50" height="70"
-              class="img-fluid size-70" alt="NexTash logo">
+      <div class="row">
+        <div class="footer-col">
+          <a href="/" class="logo" role="img" aria-label="NexTash logo">
+            <img src="{{ url_for('static', filename='images/logos/logo.png')}}" width="70" height="70" class="image"
+              alt="NexTash logo">
           </a>
-          <p class="text-muted font-16 mb-4">
+          <p class="description">
             Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
             incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit amet.
           </p>
-          <h3 class="text-white font-20 m-0">Follow us</h3>
-          <div class="d-inline-flex align-items-center my-2 p-2 rounded-pill shadow bg-gray-700">
-            <a href="#" class="bx bxl-facebook-square font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-twitter font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-google font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-instagram font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-github font-24 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
+          <h3 class="heading">Follow us</h3>
+          <div class="social-links">
+            <a href="#" class="bx bxl-facebook-square icon"></a>
+            <a href="#" class="bx bxl-twitter icon"></a>
+            <a href="#" class="bx bxl-google icon"></a>
+            <a href="#" class="bx bxl-instagram icon"></a>
+            <a href="#" class="bx bxl-github icon"></a>
           </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xll-4 py-5 ">
-          <h3 class="text-white font-20 mb-3" role="heading" aria-level="3">
-            Information</h3>
-          <ul type="none" class="p-0 m-0">
-            <li class="float-start w-50 mb-2">
-              <a href="/about-us" class="text-decoration-none text-muted font-14">About us</a>
-            </li>
-            <li class="float-start w-50 mb-2">
-              <a href="/contact-us" class="text-decoration-none text-muted font-14">Contact us</a>
-            </li>
-            <li class="float-start w-50 mb-2">
-              <a href="/services" class="text-decoration-none text-muted font-14">Services</a>
-            </li>
-            <li class="float-start w-50 mb-2">
-              <a href="/team" class="text-decoration-none text-muted font-14">Team</a>
-            </li>
-            <li class="float-start w-50 mb-2">
-              <a href="/blogs" class="text-decoration-none text-muted font-14">Blogs</a>
-            </li>
-            <li class="float-start w-50 mb-2">
-              <a href="/projects" class="text-decoration-none text-muted font-14">Projects</a>
-            </li>
-            <li class="float-start w-50 mb-2">
-              <a href="/careers" class="text-decoration-none text-muted font-14">Careers</a>
-            </li>
-            <li class="float-start w-50 mb-2">
-              <a href="/faqs" class="text-decoration-none text-muted font-14">Faqs</a>
-            </li>
+        <div class="footer-col">
+          <h3 class="heading" role="heading" aria-level="3">Information</h3>
+          <ul type="none" class="footer-list">
+            <li class="list-item"><a href="/about-us" class="list-link">About us</a></li>
+            <li class="list-item"><a href="/contact-us" class="list-link">Contact us</a></li>
+            <li class="list-item"><a href="/services" class="list-link">Services</a></li>
+            <li class="list-item"><a href="/team" class="list-link">Team</a></li>
+            <li class="list-item"><a href="/blogs" class="list-link">Blogs</a></li>
+            <li class="list-item"><a href="/projects" class="list-link">Projects</a></li>
+            <li class="list-item"><a href="/careers" class="list-link">Careers</a></li>
+            <li class="list-item"><a href="/faqs" class="list-link">Faqs</a></li>
           </ul>
         </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xll-4 py-5">
-          <h3 class="text-white font-20 mb-3" role="heading" aria-level="3">
-            Subscribe</h3>
-          <p class="text-muted mb-4">
-            Don’t miss to subscribe to our new feeds, kindly fill the form below.
-          </p>
-          <form action="/subscribed-successfully" class="input-group bg-gray-700 my-3 font-14 rounded-pill">
-            <input type="text" placeholder="Email Address..."
-              class="form-control shadow-none py-3 fw-bold bg-transparent text-white border-0 font-14 px-3">
-            <button class="bx bx-send btn font-20 fw-normal text-white p-2 px-4"></button>
+        <div class="footer-col">
+          <h3 class="heading" role="heading" aria-level="3">Subscribe</h3>
+          <p class="description">Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+          <form action="/subscribed-successfully" class="subscribe-form">
+            <input type="text" placeholder="Email Address..." class="input-field">
+            <button class="bx bx-send btn-send"></button>
           </form>
         </div>
       </div>
     </div>
   </section>
-
   <section class="section footer-last">
     <div class="section-container">
       <div class="last-row">

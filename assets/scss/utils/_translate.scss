@@ -1,0 +1,21 @@
+@include create-utils(
+  (
+    default: (
+      ".tm": (
+        transform: translate(-50%, -50%),
+      ),
+      ".tm-x": (
+        transform: translateX(-50%),
+      ),
+      ".tm-y": (
+        transform: translateY(-50%),
+      ),
+    ),
+    xs: (),
+    sm: (),
+    md: (),
+    lg: (),
+    xl: (),
+    xxl: (),
+  )
+);

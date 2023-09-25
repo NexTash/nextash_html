@@ -1,13 +1,15 @@
-<header class="navbar" id="navbar">
-    <ul class="navbar-items">
-        <li class="item">
-            <a href="/" class="logo">
-                <img src="{{ url_for('static', filename='images/logos/logo.png')}}" class="image" width="560">
-            </a>
-        </li>
-        <li class="item">
-            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
-                class="menu-btn  bx-tada-hover bx bx-menu-alt-right"></button>
-        </li>
-    </ul>
+<header class="section navbar" id="navbar">
+    <div class="section-container">
+        <ul class="navbar-items">
+            <li class="item">
+                <a href="/" class="logo">
+                    <img src="{{ url_for('static', filename='images/logos/logo.png')}}" class="image" width="560">
+                </a>
+            </li>
+            <li class="item">
+                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+                    class="menu-btn  bx-tada-hover bx bx-menu-alt-right"></button>
+            </li>
+        </ul>
+    </div>
 </header>

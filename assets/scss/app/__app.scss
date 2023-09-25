@@ -1,4 +1,7 @@
-/* Imports all the files */ 
+@import "./prefixes";
+@import "./functions";
+@import "./colors";
 @import "./root";
 @import "./reboot";
-@import "./type";
+@import "./config";
+@import "./breakpoints";

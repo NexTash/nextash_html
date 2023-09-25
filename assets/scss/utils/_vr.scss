@@ -1,0 +1,20 @@
+@include create-utils(
+  (
+    default: (
+      ".vr": (
+        display: inline-block,
+        align-self: stretch,
+        width: 1px,
+        min-height: 1em,
+        background-color: currentcolor,
+        opacity: 0.25,
+      ),
+    ),
+    xs: (),
+    sm: (),
+    md: (),
+    lg: (),
+    xl: (),
+    xxl: (),
+  )
+);

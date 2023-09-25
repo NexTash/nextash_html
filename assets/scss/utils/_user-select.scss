@@ -1,0 +1,27 @@
+@include create-utils(
+  (
+    default: (
+      ".us-all": (
+        -webkit-user-select: all,
+        -moz-user-select: all,
+        user-select: all,
+      ),
+      ".us-auto": (
+        -webkit-user-select: auto,
+        -moz-user-select: auto,
+        user-select: auto,
+      ),
+      ".us-none": (
+        -webkit-user-select: none,
+        -moz-user-select: none,
+        user-select: none,
+      ),
+    ),
+    xs: (),
+    sm: (),
+    md: (),
+    lg: (),
+    xl: (),
+    xxl: (),
+  )
+);

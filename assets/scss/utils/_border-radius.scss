@@ -1,0 +1,178 @@
+@include create-utils(
+  (
+    default: (
+      ".rounded": (
+        border-radius: get-var(rounded),
+      ),
+      ".rounded-0": (
+        border-radius: 0,
+      ),
+      ".rounded-1": (
+        border-radius: get-var(rounded-1),
+      ),
+      ".rounded-2": (
+        border-radius: get-var(rounded-2),
+      ),
+      ".rounded-3": (
+        border-radius: get-var(rounded-3),
+      ),
+      ".rounded-4": (
+        border-radius: get-var(rounded-4),
+      ),
+      ".rounded-5": (
+        border-radius: get-var(rounded-5),
+      ),
+      ".rounded-pill": (
+        border-radius: get-var(rounded-pill),
+      ),
+      ".rounded-circle": (
+        border-radius: get-var(rounded-circle),
+      ),
+      ".rounded-top": (
+        border-top-left-radius: get-var(rounded),
+        border-bottom-right-radius: get-var(rounded),
+      ),
+      ".rounded-top-0": (
+        border-top-left-radius: 0,
+        border-bottom-right-radius: 0,
+      ),
+      ".rounded-top-1": (
+        border-top-left-radius: get-var(rounded-1),
+        border-bottom-right-radius: get-var(rounded-1),
+      ),
+      ".rounded-top-2": (
+        border-top-left-radius: get-var(rounded-2),
+        border-bottom-right-radius: get-var(rounded-2),
+      ),
+      ".rounded-top-3": (
+        border-top-left-radius: get-var(rounded-3),
+        border-bottom-right-radius: get-var(rounded-3),
+      ),
+      ".rounded-top-4": (
+        border-top-left-radius: get-var(rounded-4),
+        border-bottom-right-radius: get-var(rounded-4),
+      ),
+      ".rounded-top-5": (
+        border-top-left-radius: get-var(rounded-5),
+        border-bottom-right-radius: get-var(rounded-5),
+      ),
+      ".rounded-top-pill": (
+        border-top-left-radius: get-var(rounded-pill),
+        border-bottom-right-radius: get-var(rounded-pill),
+      ),
+      ".rounded-top-circle": (
+        border-top-left-radius: get-var(rounded-circle),
+        border-bottom-right-radius: get-var(rounded-circle),
+      ),
+      ".rounded-bottom": (
+        border-bottom-left-radius: get-var(rounded),
+        border-bottom-right-radius: get-var(rounded),
+      ),
+      ".rounded-bottom-0": (
+        border-bottom-left-radius: 0,
+        border-bottom-right-radius: 0,
+      ),
+      ".rounded-bottom-1": (
+        border-bottom-left-radius: get-var(rounded-1),
+        border-bottom-right-radius: get-var(rounded-1),
+      ),
+      ".rounded-bottom-2": (
+        border-bottom-left-radius: get-var(rounded-2),
+        border-bottom-right-radius: get-var(rounded-2),
+      ),
+      ".rounded-bottom-3": (
+        border-bottom-left-radius: get-var(rounded-3),
+        border-bottom-right-radius: get-var(rounded-3),
+      ),
+      ".rounded-bottom-4": (
+        border-bottom-left-radius: get-var(rounded-4),
+        border-bottom-right-radius: get-var(rounded-4),
+      ),
+      ".rounded-bottom-5": (
+        border-bottom-left-radius: get-var(rounded-5),
+        border-bottom-right-radius: get-var(rounded-5),
+      ),
+      ".rounded-bottom-pill": (
+        border-bottom-left-radius: get-var(rounded-pill),
+        border-bottom-right-radius: get-var(rounded-pill),
+      ),
+      ".rounded-bottom-circle": (
+        border-bottom-left-radius: get-var(rounded-circle),
+        border-bottom-right-radius: get-var(rounded-circle),
+      ),
+      ".rounded-left": (
+        border-bottom-left-radius: get-var(rounded),
+        border-top-left-radius: get-var(rounded),
+      ),
+      ".rounded-left-0": (
+        border-bottom-left-radius: 0,
+        border-top-left-radius: 0,
+      ),
+      ".rounded-left-1": (
+        border-bottom-left-radius: get-var(rounded-1),
+        border-top-left-radius: get-var(rounded-1),
+      ),
+      ".rounded-left-2": (
+        border-bottom-left-radius: get-var(rounded-2),
+        border-top-left-radius: get-var(rounded-2),
+      ),
+      ".rounded-left-3": (
+        border-bottom-left-radius: get-var(rounded-3),
+        border-top-left-radius: get-var(rounded-3),
+      ),
+      ".rounded-left-4": (
+        border-bottom-left-radius: get-var(rounded-4),
+        border-top-left-radius: get-var(rounded-4),
+      ),
+      ".rounded-left-5": (
+        border-bottom-left-radius: get-var(rounded-5),
+        border-top-left-radius: get-var(rounded-5),
+      ),
+      ".rounded-left-pill": (
+        border-bottom-left-radius: get-var(rounded-pill),
+        border-top-left-radius: get-var(rounded-pill),
+      ),
+      ".rounded-left-circle": (
+        border-bottom-left-radius: get-var(rounded-circle),
+        border-top-left-radius: get-var(rounded-circle),
+      ),
+
+      ".rounded-right": (
+        border-top-right-radius: get-var(rounded),
+        border-bottom-right-radius: get-var(rounded),
+      ),
+      ".rounded-right-0": (
+        border-top-right-radius: 0,
+        border-bottom-right-radius: 0,
+      ),
+      ".rounded-right-1": (
+        border-top-right-radius: get-var(rounded-1),
+        border-bottom-right-radius: get-var(rounded-1),
+      ),
+      ".rounded-right-2": (
+        border-top-right-radius: get-var(rounded-2),
+        border-bottom-right-radius: get-var(rounded-2),
+      ),
+      ".rounded-right-3": (
+        border-top-right-radius: get-var(rounded-3),
+        border-bottom-right-radius: get-var(rounded-3),
+      ),
+      ".rounded-right-4": (
+        border-top-right-radius: get-var(rounded-4),
+        border-bottom-right-radius: get-var(rounded-4),
+      ),
+      ".rounded-right-5": (
+        border-top-right-radius: get-var(rounded-5),
+        border-bottom-right-radius: get-var(rounded-5),
+      ),
+      ".rounded-right-pill": (
+        border-top-right-radius: get-var(rounded-pill),
+        border-bottom-right-radius: get-var(rounded-pill),
+      ),
+      ".rounded-right-circle": (
+        border-top-right-radius: get-var(rounded-circle),
+        border-bottom-right-radius: get-var(rounded-circle),
+      ),
+    ),
+  )
+);

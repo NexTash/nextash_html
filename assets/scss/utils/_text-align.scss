@@ -1,0 +1,108 @@
+@include create-utils(
+  (
+    default: (
+      ".text-center": (
+        text-align: center,
+      ),
+      ".text-right": (
+        text-align: right,
+      ),
+      ".text-left": (
+        text-align: left,
+      ),
+      ".text-justify": (
+        text-align: justify,
+      ),
+      ".text-last-center": (
+        text-align-last: center,
+      ),
+      ".text-last-right": (
+        text-align-last: right,
+      ),
+      ".text-last-left": (
+        text-align-last: left,
+      ),
+      ".text-last-justify": (
+        text-align-last: justify,
+      ),
+      ".text-last-start": (
+        text-align-last: start,
+      ),
+      ".text-last-end": (
+        text-align-last: end,
+      ),
+    ),
+    xxl: (
+      ".text-center": (
+        text-align: center,
+      ),
+      ".text-right": (
+        text-align: right,
+      ),
+      ".text-left": (
+        text-align: left,
+      ),
+      ".text-justify": (
+        text-align: justify,
+      ),
+    ),
+    xl: (
+      ".text-center": (
+        text-align: center,
+      ),
+      ".text-right": (
+        text-align: right,
+      ),
+      ".text-left": (
+        text-align: left,
+      ),
+      ".text-justify": (
+        text-align: justify,
+      ),
+    ),
+    lg: (
+      ".text-center": (
+        text-align: center,
+      ),
+      ".text-right": (
+        text-align: right,
+      ),
+      ".text-left": (
+        text-align: left,
+      ),
+      ".text-justify": (
+        text-align: justify,
+      ),
+    ),
+    md: (
+      ".text-center": (
+        text-align: center,
+      ),
+      ".text-right": (
+        text-align: right,
+      ),
+      ".text-left": (
+        text-align: left,
+      ),
+      ".text-justify": (
+        text-align: justify,
+      ),
+    ),
+
+    sm: (
+      ".text-center": (
+        text-align: center,
+      ),
+      ".text-right": (
+        text-align: right,
+      ),
+      ".text-left": (
+        text-align: left,
+      ),
+      ".text-justify": (
+        text-align: justify,
+      ),
+    ),
+
+  )
+);

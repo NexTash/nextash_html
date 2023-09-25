@@ -45,14 +45,14 @@
 </head>
 {% block style %} {% endblock %}
 
-<body class="bg-dark font-bevietnam overflow-hidden">
+<body class="font-bevietnam overflow-hidden">
     <!-- BG -->
     <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
     </div>
-    <div class="galaxy"></div>
+    <!-- <div class="galaxy"></div> -->
     <!-- BG -->
     <!-- NAVBAR -->
     {% include "components/navbar.html" %}
@@ -79,9 +79,9 @@
         function navbar() {
             let position = 20
             if (document.body.scrollTop > position || document.documentElement.scrollTop > position) {
-                document.getElementById("navbar").classList.add("bg-dark");
+                document.getElementById("navbar").classList.add("navbar-dark");
             } else {
-                document.getElementById("navbar").classList.remove("bg-dark");
+                document.getElementById("navbar").classList.remove("navbar-dark");
             }
         }
     </script>

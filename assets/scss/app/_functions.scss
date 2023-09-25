@@ -1,0 +1,28 @@
+@function get-contrast-color($color) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+  $luminance: 0.2126 * $red + 0.7152 * $green + 0.0722 * $blue;
+
+  @if ($luminance > 128) {
+    @return #000; // Use black for light background
+  } @else {
+    @return #fff;
+  }
+}
+
+@function extract-rgb($color) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+  @return $red, $green, $blue;
+}
+
+@function screen-size($breakpoints, $size) {
+  @return map-get($breakpoints, $size);
+}
+
+@function get-var($var) {
+  @return var(-- + $prefix-var + $var);
+}
+

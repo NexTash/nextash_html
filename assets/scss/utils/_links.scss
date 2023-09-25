@@ -1,0 +1,101 @@
+@include create-utils(
+  (
+    default: (
+      ".stretched-link::after": (
+        position: absolute,
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+        z-index: 1,
+        content: "",
+      ),
+      ".link-primary": (
+        color: rgba(get-var(primary-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(primary-rgb), 1),
+        text-decoration-color: rgba(get-var(primary-rgb), 1),
+      ),
+      ".link-primary:hover, .link-primary:focus": (
+        color: rgba(get-var(primary-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(primary-rgb), 1),
+        text-decoration-color: rgba(get-var(primary-rgb), 1),
+      ),
+      ".link-secondary": (
+        color: rgba(get-var(secondary-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(secondary-rgb), 1),
+        text-decoration-color: rgba(get-var(secondary-rgb), 1),
+      ),
+      ".link-secondary:hover, .link-secondary:focus": (
+        color: rgba(get-var(secondary-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(secondary-rgb), 1),
+        text-decoration-color: rgba(get-var(secondary-rgb), 1),
+      ),
+      ".link-success": (
+        color: rgba(get-var(success-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(success-rgb), 1),
+        text-decoration-color: rgba(get-var(success-rgb), 1),
+      ),
+      ".link-success:hover, .link-success:focus": (
+        color: rgba(get-var(success-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(success-rgb), 1),
+        text-decoration-color: rgba(get-var(success-rgb), 1),
+      ),
+      ".link-info": (
+        color: rgba(get-var(info-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(info-rgb), 1),
+        text-decoration-color: rgba(get-var(info-rgb), 1),
+      ),
+      ".link-info:hover, .link-info:focus": (
+        color: rgba(get-var(info-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(info-rgb), 1),
+        text-decoration-color: rgba(get-var(info-rgb), 1),
+      ),
+      ".link-warning": (
+        color: rgba(get-var(warning-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(warning-rgb), 1),
+        text-decoration-color: rgba(get-var(warning-rgb), 1),
+      ),
+      ".link-warning:hover, .link-warning:focus": (
+        color: rgba(get-var(warning-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(warning-rgb), 1),
+        text-decoration-color: rgba(get-var(warning-rgb), 1),
+      ),
+      ".link-danger": (
+        color: rgba(get-var(danger-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(danger-rgb), 1),
+        text-decoration-color: rgba(get-var(danger-rgb), 1),
+      ),
+      ".link-danger:hover, .link-danger:focus": (
+        color: rgba(get-var(danger-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(danger-rgb), 1),
+        text-decoration-color: rgba(get-var(danger-rgb), 1),
+      ),
+      ".link-light": (
+        color: rgba(get-var(light-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(light-rgb), 1),
+        text-decoration-color: rgba(get-var(light-rgb), 1),
+      ),
+      ".link-light:hover, .link-light:focus": (
+        color: rgba(get-var(light-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(light-rgb), 1),
+        text-decoration-color: rgba(get-var(light-rgb), 1),
+      ),
+      ".link-dark": (
+        color: rgba(get-var(dark-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(dark-rgb), 1),
+        text-decoration-color: rgba(get-var(dark-rgb), 1),
+      ),
+      ".link-dark:hover, .link-dark:focus": (
+        color: rgba(get-var(dark-rgb), 1),
+        -webkit-text-decoration-color: rgba(get-var(dark-rgb), 1),
+        text-decoration-color: rgba(get-var(dark-rgb), 1),
+      ),
+    ),
+    xs: (),
+    sm: (),
+    md: (),
+    lg: (),
+    xl: (),
+    xxl: (),
+  )
+);
