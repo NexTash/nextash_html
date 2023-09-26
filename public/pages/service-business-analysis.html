@@ -1,8 +1,5 @@
-{% extends "layouts/primary.html" %}
-
-{% block title %} Business Analysis | {%endblock %}
-
-{% block seo %}
+{% extends "layouts/primary.html" %} {% block title %} Business Analysis |
+{%endblock %} {% block seo %}
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <meta name="robots" content="index, follow" />
@@ -13,41 +10,37 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="NexTash" />
 <meta property="og:url" content="" />
-{% endblock %}
-
-{% block content %}
+{% endblock %} {% block content %}
 <!-- HEADER -->
-<section class="section" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true">
-    <div class="section-container ">
+<section class="section">
+    <div class="section-container">
         <div class="section-body">
             <div class="section-label page-label"><span>Service</span></div>
             <h2 class="section-heading page-heading">Business analysis</h2>
             <div class="section-description page-description">
-                <div class="row text-muted font-18">
-                    <div class="col-sm-6 mb-3">
-                        <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                            Every decision we make needs to answer the million-dollar
-                            question: how will this benefit our partner’s goal best? We work
-                            to develop solutions
-                        </p>
-                    </div>
-                    <div class="col-sm-6 mb-3">
-                        <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                            We like to be different, in the same way that every mission is
-                            different. Every project is an opportunity to create result that
-                            will help you
-                        </p>
-                    </div>
-                    <div class="col-sm-6 mb-3">
-                        <ul data-aos-duration="1000" data-aos="fade-up">
+                <p>
+                    Every decision we make needs to answer the million-dollar question:
+                    how will this benefit our partner’s goal best? We work to develop
+                    solutions
+                </p>
+                <br />
+                <p>
+                    We like to be different, in the same way that every mission is
+                    different. Every project is an opportunity to create result that will
+                    help you
+                </p>
+                <br />
+                <div class="row">
+                    <div class="col">
+                        <ul class="section-slist">
                             <li>Requirement Elicitation and Analysis</li>
                             <li>Process Mapping and Improvement</li>
                             <li>Data Analysis and Insights</li>
                             <li>Feasibility Studies and Cost-Benefit Analysis</li>
                         </ul>
                     </div>
-                    <div class="col-sm-6 mb-3">
-                        <ul data-aos-duration="1000" data-aos="fade-up">
+                    <div class="col">
+                        <ul class="section-slist">
                             <li>Business Case Development</li>
                             <li>Market Research and Competitive Analysis</li>
                             <li>Requirements Management and Traceability</li>
@@ -61,80 +54,61 @@
 </section>
 <!-- HEADER -->
 
-
-
-
 <!-- DETAILS -->
-<section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-    <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                <div class="position-relative image-box">
-                    <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/13.webp')}}" class="image"
+                            alt="Requirement Elicitation and Analysis" />
                     </div>
-                    <div data-aos-duration="1000" data-aos="zoom-in-up"
-                        class="bg-dotted-primary border-shadow square-2"></div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/13.webp')}}"
-                            class="object-cover h-100 w-100" alt="Requirement Elicitation and Analysis" />
-                    </div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/20.webp')}}"
-                            class="object-cover h-100 w-100" alt="Requirement Elicitation and Analysis" />
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/20.webp')}}" class="image"
+                            alt="Requirement Elicitation and Analysis" />
                     </div>
                 </div>
             </div>
-            <div
-                class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                    data-aos="zoom-in-up">01.</span>
-                <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                    Requirement Elicitation and Analysis
-                </h3>
-                <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
+            <div class="col">
+                <span class="section-label">01.</span>
+                <h3 class="section-heading">Requirement Elicitation and Analysis</h3>
+                <ol class="section-slist">
                     <li>
-                        Conducting interviews and workshops to gather business
-                        requirements.
+                        Conducting interviews and workshops to gather business requirements.
                     </li>
                     <li>Analyzing and documenting stakeholder needs and objectives.</li>
-                    <li>
-                        Defining clear and measurable project goals and deliverables.
-                    </li>
-                    <li>
-                        Developing detailed user stories and use cases for projects.
-                    </li>
+                    <li>Defining clear and measurable project goals and deliverables.</li>
+                    <li>Developing detailed user stories and use cases for projects.</li>
                 </ol>
             </div>
         </div>
-        <div class="row align-items-center justify-content-between">
-            <div
-                class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                <div class="position-relative image-box">
-                    <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/97.webp')}}" class="image"
+                            alt="Process Mapping and Improvement" />
                     </div>
-                    <div data-aos-duration="1000" data-aos="zoom-in-up"
-                        class="bg-dotted-primary border-shadow square-2"></div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/97.webp')}}"
-                            class="object-cover h-100 w-100" alt="Process Mapping and Improvement" />
-                    </div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/56.webp')}}"
-                            class="object-cover h-100 w-100" alt="Process Mapping and Improvement" />
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/56.webp')}}" class="image"
+                            alt="Process Mapping and Improvement" />
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                    data-aos="zoom-in-up">02.</span>
-                <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                    Process Mapping and Improvement
-                </h3>
-                <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
+            <div class="col">
+                <span class="section-label">02.</span>
+                <h3 class="section-heading">Process Mapping and Improvement</h3>
+                <ol class="section-slist">
                     <li>Identifying and mapping current business processes.</li>
                     <li>Analyzing process inefficiencies and bottlenecks.</li>
                     <li>
@@ -144,37 +118,31 @@
                 </ol>
             </div>
         </div>
-        <div class="row align-items-center justify-content-between">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                <div class="position-relative image-box">
-                    <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/98.webp')}}" class="image"
+                            alt="Data Analysis and Insights" />
                     </div>
-                    <div data-aos-duration="1000" data-aos="zoom-in-up"
-                        class="bg-dotted-primary border-shadow square-2"></div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/98.webp')}}"
-                            class="object-cover h-100 w-100" alt="Data Analysis and Insights" />
-                    </div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/86.webp')}}"
-                            class="object-cover h-100 w-100" alt="Data Analysis and Insights" />
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/86.webp')}}" class="image"
+                            alt="Data Analysis and Insights" />
                     </div>
                 </div>
             </div>
-            <div
-                class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                    data-aos="zoom-in-up">03.</span>
-                <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                    Data Analysis and Insights
-                </h3>
-                <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
+            <div class="col">
+                <span class="section-label">03.</span>
+                <h3 class="section-heading">Data Analysis and Insights</h3>
+                <ol class="section-slist">
                     <li>Gathering and analyzing data from various sources.</li>
-                    <li>
-                        Applying statistical methods to uncover trends and patterns.
-                    </li>
+                    <li>Applying statistical methods to uncover trends and patterns.</li>
                     <li>
                         Generating meaningful insights and actionable recommendations.
                     </li>
@@ -184,33 +152,31 @@
                 </ol>
             </div>
         </div>
-        <div class="row align-items-center justify-content-between">
-            <div
-                class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                <div class="position-relative image-box">
-                    <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/94.webp')}}" class="image"
+                            alt="Feasibility Studies and Cost-Benefit Analysis" />
                     </div>
-                    <div data-aos-duration="1000" data-aos="zoom-in-up"
-                        class="bg-dotted-primary border-shadow square-2"></div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/94.webp')}}"
-                            class="object-cover h-100 w-100" alt="Feasibility Studies and Cost-Benefit Analysis" />
-                    </div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/96.webp')}}"
-                            class="object-cover h-100 w-100" alt="Feasibility Studies and Cost-Benefit Analysis" />
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/96.webp')}}" class="image"
+                            alt="Feasibility Studies and Cost-Benefit Analysis" />
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                    data-aos="zoom-in-up">04.</span>
-                <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
+            <div class="col">
+                <span class="section-label">04.</span>
+                <h3 class="section-heading">
                     Feasibility Studies and Cost-Benefit Analysis
                 </h3>
-                <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
+                <ol class="section-slist">
                     <li>
                         Conducting feasibility studies for potential projects or
                         initiatives.
@@ -226,72 +192,64 @@
                 </ol>
             </div>
         </div>
-        <div class="row align-items-center justify-content-between">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                <div class="position-relative image-box">
-                    <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/94.webp')}}" class="image"
+                            alt="Business Case Development" />
                     </div>
-                    <div data-aos-duration="1000" data-aos="zoom-in-up"
-                        class="bg-dotted-primary border-shadow square-2"></div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/94.webp')}}"
-                            class="object-cover h-100 w-100" alt="Business Case Development" />
-                    </div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/14.webp')}}"
-                            class="object-cover h-100 w-100" alt="Business Case Development" />
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/14.webp')}}" class="image"
+                            alt="Business Case Development" />
                     </div>
                 </div>
             </div>
-            <div
-                class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                    data-aos="zoom-in-up">05.</span>
-                <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                    Business Case Development
-                </h3>
-                <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
+            <div class="col">
+                <span class="section-label">05.</span>
+                <h3 class="section-heading">Business Case Development</h3>
+                <ol class="section-slist">
                     <li>
-                        Creating compelling business cases for new projects or
-                        investments.
+                        Creating compelling business cases for new projects or investments.
                     </li>
-                    <li>
-                        Identifying project scope, objectives, and expected outcomes.
-                    </li>
+                    <li>Identifying project scope, objectives, and expected outcomes.</li>
                     <li>Outlining resource requirements and estimated timelines.</li>
                     <li>Presenting business cases to key stakeholders for approval.</li>
                 </ol>
             </div>
         </div>
-        <div class="row align-items-center justify-content-between">
-            <div
-                class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                <div class="position-relative image-box">
-                    <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/28.webp')}}" class="image"
+                            alt="Market Research and Competitive Analysis" />
                     </div>
-                    <div data-aos-duration="1000" data-aos="zoom-in-up"
-                        class="bg-dotted-primary border-shadow square-2"></div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/28.webp')}}"
-                            class="object-cover h-100 w-100" alt="Market Research and Competitive Analysis" />
-                    </div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/26.webp')}}"
-                            class="object-cover h-100 w-100" alt="Market Research and Competitive Analysis" />
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/26.webp')}}" class="image"
+                            alt="Market Research and Competitive Analysis" />
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                    data-aos="zoom-in-up">06.</span>
-                <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
+            <div class="col">
+                <span class="section-label">06.</span>
+                <h3 class="section-heading">
                     Market Research and Competitive Analysis
                 </h3>
-                <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
+                <ol class="section-slist">
                     <li>
                         Conducting market research to understand industry trends and
                         customer needs.
@@ -304,38 +262,36 @@
                 </ol>
             </div>
         </div>
-        <div class="row align-items-center justify-content-between">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                <div class="position-relative image-box">
-                    <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/38.webp')}}" class="image"
+                            alt="Requirements Management and Traceability" />
                     </div>
-                    <div data-aos-duration="1000" data-aos="zoom-in-up"
-                        class="bg-dotted-primary border-shadow square-2"></div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/38.webp')}}"
-                            class="object-cover h-100 w-100" alt="Requirements Management and Traceability" />
-                    </div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/43.webp')}}"
-                            class="object-cover h-100 w-100" alt="Requirements Management and Traceability" />
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/43.webp')}}" class="image"
+                            alt="Requirements Management and Traceability" />
                     </div>
                 </div>
             </div>
-            <div
-                class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                    data-aos="zoom-in-up">07.</span>
-                <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
+            <div class="col">
+                <span class="section-label">07.</span>
+                <h3 class="section-heading">
                     Requirements Management and Traceability
                 </h3>
-                <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
+                <ol class="section-slist">
                     <li>Establishing a robust requirements management process.</li>
                     <li>Tracking and documenting changes to project requirements.</li>
                     <li>
-                        Ensuring traceability between business objectives, requirements,
-                        and deliverables.
+                        Ensuring traceability between business objectives, requirements, and
+                        deliverables.
                     </li>
                     <li>
                         Facilitating clear communication between stakeholders and project
@@ -344,43 +300,38 @@
                 </ol>
             </div>
         </div>
-        <div class="row align-items-center justify-content-between">
-            <div
-                class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                <div class="position-relative image-box">
-                    <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                    </div>
-                    <div data-aos-duration="1000" data-aos="zoom-in-up"
-                        class="bg-dotted-primary border-shadow square-2"></div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/31.webp')}}"
-                            class="object-cover h-100 w-100"
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/31.webp')}}" class="image"
                             alt="Business Process Automation and Technology Solutions" />
                     </div>
-                    <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/services/32.webp')}}"
-                            class="object-cover h-100 w-100"
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/32.webp')}}" class="image"
                             alt="Business Process Automation and Technology Solutions" />
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                    data-aos="zoom-in-up">08.</span>
-                <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
+            <div class="col">
+                <span class="section-label">08.</span>
+                <h3 class="section-heading">
                     Business Process Automation and Technology Solutions
                 </h3>
-                <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
+                <ol class="section-slist">
                     <li>Identifying opportunities for business process automation.</li>
                     <li>Recommending and evaluating technology solutions.</li>
                     <li>
                         Assisting in the selection and implementation of software tools.
                     </li>
                     <li>
-                        Ensuring seamless integration of technology with existing
-                        processes.
+                        Ensuring seamless integration of technology with existing processes.
                     </li>
                 </ol>
             </div>
@@ -402,16 +353,12 @@
     <div class="section-container">
         <div class="section-header">
             <b class="section-label">OUR WORK</b>
-            <h3 class="section-heading">
-                Recent Projects Showcase
-            </h3>
+            <h3 class="section-heading">Recent Projects Showcase</h3>
             <p class="section-description">
                 Creating impact with every project, experience the innovation.
             </p>
         </div>
-        <div class="section-body">
-            {% include "components/projects.html" %}
-        </div>
+        <div class="section-body">{% include "components/projects.html" %}</div>
         <div class="section-footer">
             <button class="btn-outline">Load more</button>
         </div>

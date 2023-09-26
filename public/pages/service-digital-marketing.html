@@ -1,8 +1,5 @@
-{% extends "layouts/primary.html" %}
-
-{% block title %} Digital Marketing | {% endblock %}
-
-{% block seo %}
+{% extends "layouts/primary.html" %} {% block title %} Digital Marketing | {%
+endblock %} {% block seo %}
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <meta name="robots" content="index, follow" />
@@ -13,473 +10,469 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="NexTash" />
 <meta property="og:url" content="" />
-{% endblock %}
-
-{% block content %}
-<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
-    <!-- HEADER -->
-    <section class="shadow py-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl">
-            <div
-                class="row align-items-center justify-content-center my-5 py-2 py-sm-2 py-md-5 py-lg-5 py-xl-5 py-xl-5">
-                <div class="col-sm-12 text-white">
-                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
-                        data-aos-duration="1000" data-aos="fade-up">Service</b>
-                    <h3 class="display-1 fw-bold m-0 mb-2 col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8"
-                        data-aos-duration="1000" data-aos="fade-up">
-                        Digital marketing
-                    </h3>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xll-8 my-5">
-                    <div class="row text-muted font-18">
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                Every decision we make needs to answer the million-dollar
-                                question: how will this benefit our partner’s goal best? We work
-                                to develop solutions
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                We like to be different, in the same way that every mission is
-                                different. Every project is an opportunity to create result that
-                                will help you
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>Search Engine Optimization (SEO)</li>
-                                <li>Pay-Per-Click Advertising (PPC)</li>
-                                <li>Social Media Marketing</li>
-                                <li>Content Marketing</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>Email Marketing</li>
-                                <li>Online Reputation Management (ORM)</li>
-                                <li>Conversion Rate Optimization (CRO)</li>
-                                <li>Analytics and Reporting</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{% endblock %} {% block content %}
+<!-- HEADER -->
+<section class="section">
+  <div class="section-container">
+    <div class="section-body">
+      <div class="section-label page-label"><span>Service</span></div>
+      <h2 class="section-heading page-heading">Digital marketing</h2>
+      <div class="section-description page-description">
+        <p>
+          Every decision we make needs to answer the million-dollar question:
+          how will this benefit our partner’s goal best? We work to develop
+          solutions
+        </p>
+        <br />
+        <p>
+          We like to be different, in the same way that every mission is
+          different. Every project is an opportunity to create result that will
+          help you
+        </p>
+        <br />
+        <div class="row">
+          <div class="col">
+            <ul class="section-slist">
+              <li>Search Engine Optimization (SEO)</li>
+              <li>Pay-Per-Click Advertising (PPC)</li>
+              <li>Social Media Marketing</li>
+              <li>Content Marketing</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="section-slist">
+              <li>Email Marketing</li>
+              <li>Online Reputation Management (ORM)</li>
+              <li>Conversion Rate Optimization (CRO)</li>
+              <li>Analytics and Reporting</li>
+            </ul>
+          </div>
         </div>
-    </section>
-    <!-- Header -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- HEADER -->
 
-    <!-- DETAILS -->
-    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/88.webp')}}"
-                                class="object-cover h-100 w-100" alt="Search Engine Optimization (SEO)" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/89.webp')}}"
-                                class="object-cover h-100 w-100" alt="Search Engine Optimization (SEO)" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">01.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Search Engine Optimization (SEO)
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            On-page optimization: Keyword research, content optimization, meta
-                            tag optimization, and URL structuring.
-                        </li>
-                        <li>
-                            Off-page optimization: Link building, social bookmarking, online
-                            directory submissions, and guest blogging.
-                        </li>
-                        <li>
-                            Technical SEO: Website speed optimization, mobile responsiveness,
-                            XML sitemap creation, and robots.txt management.
-                        </li>
-                        <li>
-                            SEO audits and analysis to identify opportunities for improvement
-                            and monitor keyword rankings.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/151.webp')}}"
-                                class="object-cover h-100 w-100" alt="Pay-Per-Click Advertising (PPC)" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/68.webp')}}"
-                                class="object-cover h-100 w-100" alt="Pay-Per-Click Advertising (PPC)" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">02.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Pay-Per-Click Advertising (PPC)
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Google Ads (formerly AdWords) and Bing Ads campaign setup and
-                            management.
-                        </li>
-                        <li>
-                            Keyword research, ad copy creation, bid management, and landing
-                            page optimization.
-                        </li>
-                        <li>
-                            Conversion tracking and performance measurement through analytics
-                            tools.
-                        </li>
-                        <li>
-                            A/B testing of ads and landing pages for improved ad performance
-                            and conversion rates.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/14.webp')}}"
-                                class="object-cover h-100 w-100" alt="Social Media Marketing " />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/41.webp')}}"
-                                class="object-cover h-100 w-100" alt="Social Media Marketing " />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">03.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Social Media Marketing
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Creation and management of social media profiles on platforms like
-                            Facebook, Twitter, Instagram, LinkedIn, and YouTube.
-                        </li>
-                        <li>
-                            Content creation and scheduling, including text, images, videos,
-                            and infographics.
-                        </li>
-                        <li>
-                            Audience targeting and engagement through organic and paid social
-                            media campaigns.
-                        </li>
-                        <li>
-                            Social media analytics and reporting to measure reach, engagement,
-                            and conversion rates.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/43.webp')}}"
-                                class="object-cover h-100 w-100" alt="Content Marketing" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/50.webp')}}"
-                                class="object-cover h-100 w-100" alt="Content Marketing" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">04.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Content Marketing
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Content strategy development to attract and engage target
-                            audiences.
-                        </li>
-                        <li>
-                            Creation of high-quality, relevant, and optimized content such as
-                            blog posts, articles, whitepapers, and case studies.
-                        </li>
-                        <li>
-                            Content distribution through various channels, including
-                            website/blog, social media, and email marketing.
-                        </li>
-                        <li>
-                            Content performance analysis and optimization based on user
-                            engagement and conversion metrics.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/186.webp')}}"
-                                class="object-cover h-100 w-100" alt="Email Marketing" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/54.webp')}}"
-                                class="object-cover h-100 w-100" alt="Email Marketing" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">05.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Email Marketing
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Creation and management of email marketing campaigns, including
-                            newsletter design, content creation, and subscriber segmentation.
-                        </li>
-                        <li>
-                            Integration with email marketing software for automated campaigns,
-                            personalization, and tracking.
-                        </li>
-                        <li>
-                            A/B testing of email subject lines, content, and call-to-action
-                            buttons.
-                        </li>
-                        <li>
-                            Performance analysis through metrics like open rates,
-                            click-through rates, and conversion rates.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/195.webp')}}"
-                                class="object-cover h-100 w-100" alt="Online Reputation Management (ORM)" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/196.webp')}}"
-                                class="object-cover h-100 w-100" alt="Online Reputation Management (ORM)" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">06.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Online Reputation Management (ORM)
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Monitoring and managing online brand reputation and customer
-                            reviews.
-                        </li>
-                        <li>
-                            Responding to customer feedback, addressing complaints, and
-                            resolving issues.
-                        </li>
-                        <li>
-                            Building positive brand sentiment through proactive engagement and
-                            content promotion.
-                        </li>
-                        <li>
-                            Implementing strategies to mitigate the impact of negative online
-                            mentions or reviews.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/37.webp')}}"
-                                class="object-cover h-100 w-100" alt="Conversion Rate Optimization (CRO)" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/8.webp')}}"
-                                class="object-cover h-100 w-100" alt="Conversion Rate Optimization (CRO)" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">07.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Conversion Rate Optimization (CRO)
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Analysis and optimization of website or landing page elements to
-                            improve conversion rates.
-                        </li>
-                        <li>
-                            User experience (UX) improvements, such as clear call-to-action
-                            buttons, intuitive navigation, and mobile responsiveness.
-                        </li>
-                        <li>
-                            A/B testing of page layouts, headlines, forms, and other elements
-                            to identify the most effective variations.
-                        </li>
-                        <li>
-                            Conversion tracking setup and analysis to measure and optimize key
-                            conversion points.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/97.webp')}}"
-                                class="object-cover h-100 w-100" alt="Analytics and Reporting" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/98.webp')}}"
-                                class="object-cover h-100 w-100" alt="Analytics and Reporting" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">08.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Analytics and Reporting
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Implementation and configuration of web analytics tools like
-                            Google Analytics or Adobe Analytics.
-                        </li>
-                        <li>
-                            Customized reporting and analysis of website traffic, user
-                            behavior, and conversion funnels.
-                        </li>
-                        <li>
-                            Performance tracking of digital marketing campaigns, channels, and
-                            key performance indicators (KPIs).
-                        </li>
-                        <li>
-                            Data-driven insights and recommendations to optimize marketing
-                            strategies and investment.
-                        </li>
-                    </ol>
-                </div>
-            </div>
+<!-- DETAILS -->
+
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/88.webp')}}"
+              class="image"
+              alt="Search Engine Optimization (SEO)"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/89.webp')}}"
+              class="image"
+              alt="Search Engine Optimization (SEO)"
+            />
+          </div>
         </div>
-    </section>
-    <!-- DETAILS -->
+      </div>
+      <div class="col">
+        <span class="section-label">01.</span>
+        <h3 class="section-heading">Search Engine Optimization (SEO)</h3>
+        <ol class="font-16 text-muted mb-3">
+          <li>
+            On-page optimization: Keyword research, content optimization, meta
+            tag optimization, and URL structuring.
+          </li>
+          <li>
+            Off-page optimization: Link building, social bookmarking, online
+            directory submissions, and guest blogging.
+          </li>
+          <li>
+            Technical SEO: Website speed optimization, mobile responsiveness,
+            XML sitemap creation, and robots.txt management.
+          </li>
+          <li>
+            SEO audits and analysis to identify opportunities for improvement
+            and monitor keyword rankings.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- WHY CHOOSE US -->
-    {% include "components/why-choose-us.html" %}
-    <!-- WHY CHOOSE US -->
-
-    <!--PROCESS-->
-    {% include "components/process.html" %}
-    <!--PROCESS-->
-
-    <!--PROJECTS-->
-    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
-        <div class="text-white mb-5">
-            <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
-                OUR WORK
-            </b>
-            <h3 class="text-white font-40 fw-bold m-0 my-2">
-                Recent Projects Showcase
-            </h3>
-            <p class="text-muted font-18 m-0 col-sm-6">
-                Creating impact with every project, experience the innovation.
-            </p>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/151.webp')}}"
+              class="image"
+              alt="Pay-Per-Click Advertising (PPC)"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/68.webp')}}"
+              class="image"
+              alt="Pay-Per-Click Advertising (PPC)"
+            />
+          </div>
         </div>
-        {% include "components/projects.html" %}
-        <div class="text-center py-5">
-            <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">
-                Load more
-            </button>
+      </div>
+      <div class="col">
+        <span class="section-label">02.</span>
+        <h3 class="section-heading">Pay-Per-Click Advertising (PPC)</h3>
+        <ol class="font-16 text-muted mb-3">
+          <li>
+            Google Ads (formerly AdWords) and Bing Ads campaign setup and
+            management.
+          </li>
+          <li>
+            Keyword research, ad copy creation, bid management, and landing page
+            optimization.
+          </li>
+          <li>
+            Conversion tracking and performance measurement through analytics
+            tools.
+          </li>
+          <li>
+            A/B testing of ads and landing pages for improved ad performance and
+            conversion rates.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/14.webp')}}"
+              class="image"
+              alt="Social Media Marketing "
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/41.webp')}}"
+              class="image"
+              alt="Social Media Marketing "
+            />
+          </div>
         </div>
-    </section>
-    <!--PROJECTS-->
+      </div>
+      <div class="col">
+        <span class="section-label">03.</span>
+        <h3 class="section-heading">Social Media Marketing</h3>
+        <ol class="font-16 text-muted mb-3">
+          <li>
+            Creation and management of social media profiles on platforms like
+            Facebook, Twitter, Instagram, LinkedIn, and YouTube.
+          </li>
+          <li>
+            Content creation and scheduling, including text, images, videos, and
+            infographics.
+          </li>
+          <li>
+            Audience targeting and engagement through organic and paid social
+            media campaigns.
+          </li>
+          <li>
+            Social media analytics and reporting to measure reach, engagement,
+            and conversion rates.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/43.webp')}}"
+              class="image"
+              alt="Content Marketing"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/50.webp')}}"
+              class="image"
+              alt="Content Marketing"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <span class="section-label">04.</span>
+        <h3 class="section-heading">Content Marketing</h3>
+        <ol class="font-16 text-muted mb-3">
+          <li>
+            Content strategy development to attract and engage target audiences.
+          </li>
+          <li>
+            Creation of high-quality, relevant, and optimized content such as
+            blog posts, articles, whitepapers, and case studies.
+          </li>
+          <li>
+            Content distribution through various channels, including
+            website/blog, social media, and email marketing.
+          </li>
+          <li>
+            Content performance analysis and optimization based on user
+            engagement and conversion metrics.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/186.webp')}}"
+              class="image"
+              alt="Email Marketing"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/54.webp')}}"
+              class="image"
+              alt="Email Marketing"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <span class="section-label">05.</span>
+        <h3 class="section-heading">Email Marketing</h3>
+        <ol class="font-16 text-muted mb-3">
+          <li>
+            Creation and management of email marketing campaigns, including
+            newsletter design, content creation, and subscriber segmentation.
+          </li>
+          <li>
+            Integration with email marketing software for automated campaigns,
+            personalization, and tracking.
+          </li>
+          <li>
+            A/B testing of email subject lines, content, and call-to-action
+            buttons.
+          </li>
+          <li>
+            Performance analysis through metrics like open rates, click-through
+            rates, and conversion rates.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/195.webp')}}"
+              class="image"
+              alt="Online Reputation Management (ORM)"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/196.webp')}}"
+              class="image"
+              alt="Online Reputation Management (ORM)"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <span class="section-label">06.</span>
+        <h3 class="section-heading">Online Reputation Management (ORM)</h3>
+        <ol class="font-16 text-muted mb-3">
+          <li>
+            Monitoring and managing online brand reputation and customer
+            reviews.
+          </li>
+          <li>
+            Responding to customer feedback, addressing complaints, and
+            resolving issues.
+          </li>
+          <li>
+            Building positive brand sentiment through proactive engagement and
+            content promotion.
+          </li>
+          <li>
+            Implementing strategies to mitigate the impact of negative online
+            mentions or reviews.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/37.webp')}}"
+              class="image"
+              alt="Conversion Rate Optimization (CRO)"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/8.webp')}}"
+              class="image"
+              alt="Conversion Rate Optimization (CRO)"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <span class="section-label">07.</span>
+        <h3 class="section-heading">Conversion Rate Optimization (CRO)</h3>
+        <ol class="font-16 text-muted mb-3">
+          <li>
+            Analysis and optimization of website or landing page elements to
+            improve conversion rates.
+          </li>
+          <li>
+            User experience (UX) improvements, such as clear call-to-action
+            buttons, intuitive navigation, and mobile responsiveness.
+          </li>
+          <li>
+            A/B testing of page layouts, headlines, forms, and other elements to
+            identify the most effective variations.
+          </li>
+          <li>
+            Conversion tracking setup and analysis to measure and optimize key
+            conversion points.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/97.webp')}}"
+              class="image"
+              alt="Analytics and Reporting"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/98.webp')}}"
+              class="image"
+              alt="Analytics and Reporting"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <span class="section-label">08.</span>
+        <h3 class="section-heading">Analytics and Reporting</h3>
+        <ol class="font-16 text-muted mb-3">
+          <li>
+            Implementation and configuration of web analytics tools like Google
+            Analytics or Adobe Analytics.
+          </li>
+          <li>
+            Customized reporting and analysis of website traffic, user behavior,
+            and conversion funnels.
+          </li>
+          <li>
+            Performance tracking of digital marketing campaigns, channels, and
+            key performance indicators (KPIs).
+          </li>
+          <li>
+            Data-driven insights and recommendations to optimize marketing
+            strategies and investment.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- DETAILS -->
 
-    <!-- FEEDBACKS -->
-    {% include "components/feedbacks.html" %}
-    <!-- FEEDBACKS -->
+<!-- WHY CHOOSE US -->
+{% include "components/why-choose-us.html" %}
+<!-- WHY CHOOSE US -->
 
-    <!-- CLIENTS -->
-    {% include "components/clients.html" %}
-    <!-- CLIENTS -->
-</div>
+<!--PROCESS-->
+{% include "components/process.html" %}
+<!--PROCESS-->
+
+<!--PROJECTS-->
+<section class="section">
+  <div class="section-container">
+    <div class="section-header">
+      <b class="section-label">OUR WORK</b>
+      <h3 class="section-heading">Recent Projects Showcase</h3>
+      <p class="section-description">
+        Creating impact with every project, experience the innovation.
+      </p>
+    </div>
+    <div class="section-body">{% include "components/projects.html" %}</div>
+    <div class="section-footer">
+      <button class="btn-outline">Load more</button>
+    </div>
+  </div>
+</section>
+<!--PROJECTS-->
+
+<!-- FEEDBACKS -->
+{% include "components/feedbacks.html" %}
+<!-- FEEDBACKS -->
+
+<!-- CLIENTS -->
+{% include "components/clients.html" %}
+<!-- CLIENTS -->
 {% endblock %}

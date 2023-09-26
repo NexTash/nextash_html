@@ -11,464 +11,412 @@
 <meta property="og:site_name" content="NexTash" />
 <meta property="og:url" content="" />
 {% endblock %} {% block style %}{% endblock %} {% block content %}
-<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
-    <!-- HEADER -->
-    <section class="shadow py-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl">
-            <div
-                class="row align-items-center justify-content-center my-5 py-2 py-sm-2 py-md-5 py-lg-5 py-xl-5 py-xl-5">
-                <div class="col-sm-12 text-white">
-                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
-                        data-aos-duration="1000" data-aos="fade-up">Service</b>
-                    <h3 class="display-1 fw-bold m-0 mb-2 col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8"
-                        data-aos-duration="1000" data-aos="fade-up">
-                        Mobile App Development
-                    </h3>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xll-8 my-5">
-                    <div class="row text-muted font-18">
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                Every decision we make needs to answer the million-dollar
-                                question: how will this benefit our partner’s goal best? We work
-                                to develop solutions.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                We like to be different, in the same way that every mission is
-                                different. Every project is an opportunity to create result that
-                                will help you.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>App Design and Development</li>
-                                <li>Native App Development</li>
-                                <li>Hybrid App Development:</li>
-                                <li>UI/UX Design</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>Backend Development</li>
-                                <li>Testing and Quality Assurance</li>
-                                <li>Deployment and Maintenance</li>
-                                <li>Store Optimization (ASO)</li>
-                            </ul>
-                        </div>
+<!-- HEADER -->
+<section class="section">
+    <div class="section-container">
+        <div class="section-body">
+            <div class="section-label page-label"><span>Service</span></div>
+            <h2 class="section-heading page-heading">Mobile App Development</h2>
+            <div class="section-description page-description">
+                <p>
+                    Every decision we make needs to answer the million-dollar question:
+                    how will this benefit our partner’s goal best? We work to develop
+                    solutions
+                </p>
+                <br />
+                <p>
+                    We like to be different, in the same way that every mission is
+                    different. Every project is an opportunity to create result that will
+                    help you
+                </p>
+                <br />
+                <div class="row">
+                    <div class="col">
+                        <ul class="section-slist">
+                            <li>App Design and Development</li>
+                            <li>Native App Development</li>
+                            <li>Hybrid App Development:</li>
+                            <li>UI/UX Design</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="section-slist">
+                            <li>Backend Development</li>
+                            <li>Testing and Quality Assurance</li>
+                            <li>Deployment and Maintenance</li>
+                            <li>Store Optimization (ASO)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- HEADER -->
+    </div>
+</section>
+<!-- HEADER -->
 
-    <!-- DETAILS -->
-    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/213.webp')}}"
-                                class="object-cover h-100 w-100" alt="App Design and Development" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/113.webp')}}"
-                                class="object-cover h-100 w-100" alt="App Design and Development" />
-                        </div>
+<!-- DETAILS -->
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/213.webp')}}" class="image"
+                            alt="App Design and Development" />
                     </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">01.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        App Design and Development
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Custom mobile app development for iOS (iPhone/iPad) and Android
-                            platforms.
-                        </li>
-                        <li>
-                            User-centric design and intuitive interfaces for a seamless user
-                            experience.
-                        </li>
-                        <li>
-                            Integration of native features like GPS, camera, push
-                            notifications, and in-app purchases.
-                        </li>
-                        <li>
-                            Cross-platform development using frameworks like React Native or
-                            Flutter for cost-effective solutions.
-                        </li>
-                        <li>
-                            App testing, debugging, and optimization for performance and
-                            stability.
-                        </li>
-                    </ol>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/113.webp')}}" class="image"
+                            alt="App Design and Development" />
+                    </div>
                 </div>
             </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/67.webp')}}"
-                                class="object-cover h-100 w-100" alt="Native App Development" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/68.webp')}}"
-                                class="object-cover h-100 w-100" alt="Native App Development" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">02.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Native App Development
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Development of native mobile apps using platform-specific
-                            languages and technologies (Swift/Objective-C for iOS, Java/Kotlin
-                            for Android).
-                        </li>
-                        <li>
-                            Utilization of platform-specific features and design guidelines to
-                            deliver a polished and seamless user experience.
-                        </li>
-                        <li>
-                            Integration with device capabilities and APIs to access
-                            functionalities like camera, contacts, sensors, and more.
-                        </li>
-                        <li>
-                            Thorough testing and debugging to ensure compatibility and
-                            performance on specific operating systems.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/75.webp')}}"
-                                class="object-cover h-100 w-100" alt="Hybrid App Development" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/68.webp')}}"
-                                class="object-cover h-100 w-100" alt="Hybrid App Development" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">03.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Hybrid App Development
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Creation of hybrid mobile apps using web technologies (HTML, CSS,
-                            JavaScript) wrapped in a native container.
-                        </li>
-                        <li>
-                            Development frameworks like Ionic, Cordova, or Xamarin to build
-                            cross-platform apps.
-                        </li>
-                        <li>
-                            Code reuse across multiple platforms for efficient development and
-                            cost savings.
-                        </li>
-                        <li>Integration with device features through plugins and APIs.</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/215.webp')}}"
-                                class="object-cover h-100 w-100" alt="UI/UX Design" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/66.webp')}}"
-                                class="object-cover h-100 w-100" alt="UI/UX Design" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">04.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        UI/UX Design
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            User interface (UI) and user experience (UX) design tailored to
-                            mobile apps.
-                        </li>
-                        <li>
-                            Creation of wireframes, prototypes, and interactive mockups to
-                            visualize app functionality and flow.
-                        </li>
-                        <li>
-                            Design consistency across platforms, maintaining brand identity
-                            and usability standards.
-                        </li>
-                        <li>
-                            User research and usability testing to ensure a user-friendly and
-                            intuitive app design.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/2.webp')}}"
-                                class="object-cover h-100 w-100" alt="Backend Development" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/9.webp')}}"
-                                class="object-cover h-100 w-100" alt="Backend Development" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">05.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Backend Development
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Comprehensive testing strategies, including functional testing,
-                            compatibility testing, performance testing, and security testing.
-                        </li>
-                        <li>
-                            Real device testing on different screen sizes, operating systems,
-                            and network conditions.
-                        </li>
-                        <li>
-                            Bug fixing, error handling, and crash reporting to ensure app
-                            stability and reliability.
-                        </li>
-                        <li>
-                            Adherence to coding standards and best practices to maintain code
-                            quality.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/92.webp')}}"
-                                class="object-cover h-100 w-100" alt="Testing and Quality Assurance" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/97.webp')}}"
-                                class="object-cover h-100 w-100" alt="Testing and Quality Assurance" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">06.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Testing and Quality Assurance
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Assistance with app store submission and compliance with platform
-                            guidelines.
-                        </li>
-                        <li>
-                            Continuous app monitoring, bug fixing, and performance
-                            optimization.
-                        </li>
-                        <li>
-                            Integration of analytics tools to gather insights on user behavior
-                            and app performance.
-                        </li>
-                        <li>
-                            Regular updates, feature enhancements, and support to keep the app
-                            up-to-date and aligned with evolving user needs.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/86.webp')}}"
-                                class="object-cover h-100 w-100" alt="App Deployment and Maintenance" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/43.webp')}}"
-                                class="object-cover h-100 w-100" alt="App Deployment and Maintenance" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">07.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        App Deployment and Maintenance
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Optimization of app metadata, keywords, descriptions, and visuals
-                            to improve app visibility and downloads.
-                        </li>
-                        <li>
-                            Competitor analysis and research to identify opportunities and
-                            enhance discoverability.
-                        </li>
-                        <li>
-                            Monitoring and analysis of user reviews and ratings to maintain
-                            app reputation and address user feedback.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/79.webp')}}"
-                                class="object-cover h-100 w-100" alt="App Store Optimization (ASO)" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/75.webp')}}"
-                                class="object-cover h-100 w-100" alt="App Store Optimization (ASO)" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">08.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        App Store Optimization (ASO)
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Optimization of app metadata, keywords, descriptions, and visuals
-                            to improve app visibility and downloads.
-                        </li>
-                        <li>
-                            Competitor analysis and research to identify opportunities and
-                            enhance discoverability.
-                        </li>
-                        <li>
-                            Monitoring and analysis of user reviews and ratings to maintain
-                            app reputation and address user feedback.
-                        </li>
-                    </ol>
-                </div>
+            <div class="col">
+                <span class="section-label">01.</span>
+                <h3 class="section-heading">App Design and Development</h3>
+                <ol class="section-description">
+                    <li>
+                        Custom mobile app development for iOS (iPhone/iPad) and Android
+                        platforms.
+                    </li>
+                    <li>
+                        User-centric design and intuitive interfaces for a seamless user
+                        experience.
+                    </li>
+                    <li>
+                        Integration of native features like GPS, camera, push notifications,
+                        and in-app purchases.
+                    </li>
+                    <li>
+                        Cross-platform development using frameworks like React Native or
+                        Flutter for cost-effective solutions.
+                    </li>
+                    <li>
+                        App testing, debugging, and optimization for performance and
+                        stability.
+                    </li>
+                </ol>
             </div>
         </div>
-    </section>
-    <!-- DETAILS -->
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/67.webp')}}" class="image"
+                            alt="Native App Development" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/68.webp')}}" class="image"
+                            alt="Native App Development" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">02.</span>
+                <h3 class="section-heading">Native App Development</h3>
+                <ol class="section-description">
+                    <li>
+                        Development of native mobile apps using platform-specific languages
+                        and technologies (Swift/Objective-C for iOS, Java/Kotlin for
+                        Android).
+                    </li>
+                    <li>
+                        Utilization of platform-specific features and design guidelines to
+                        deliver a polished and seamless user experience.
+                    </li>
+                    <li>
+                        Integration with device capabilities and APIs to access
+                        functionalities like camera, contacts, sensors, and more.
+                    </li>
+                    <li>
+                        Thorough testing and debugging to ensure compatibility and
+                        performance on specific operating systems.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/75.webp')}}" class="image"
+                            alt="Hybrid App Development" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/68.webp')}}" class="image"
+                            alt="Hybrid App Development" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">03.</span>
+                <h3 class="section-heading">Hybrid App Development</h3>
+                <ol class="section-description">
+                    <li>
+                        Creation of hybrid mobile apps using web technologies (HTML, CSS,
+                        JavaScript) wrapped in a native container.
+                    </li>
+                    <li>
+                        Development frameworks like Ionic, Cordova, or Xamarin to build
+                        cross-platform apps.
+                    </li>
+                    <li>
+                        Code reuse across multiple platforms for efficient development and
+                        cost savings.
+                    </li>
+                    <li>Integration with device features through plugins and APIs.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/215.webp')}}" class="image"
+                            alt="UI/UX Design" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/66.webp')}}" class="image"
+                            alt="UI/UX Design" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">04.</span>
+                <h3 class="section-heading">UI/UX Design</h3>
+                <ol class="section-description">
+                    <li>
+                        User interface (UI) and user experience (UX) design tailored to
+                        mobile apps.
+                    </li>
+                    <li>
+                        Creation of wireframes, prototypes, and interactive mockups to
+                        visualize app functionality and flow.
+                    </li>
+                    <li>
+                        Design consistency across platforms, maintaining brand identity and
+                        usability standards.
+                    </li>
+                    <li>
+                        User research and usability testing to ensure a user-friendly and
+                        intuitive app design.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/2.webp')}}" class="image"
+                            alt="Backend Development" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/9.webp')}}" class="image"
+                            alt="Backend Development" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">05.</span>
+                <h3 class="section-heading">Backend Development</h3>
+                <ol class="section-description">
+                    <li>
+                        Comprehensive testing strategies, including functional testing,
+                        compatibility testing, performance testing, and security testing.
+                    </li>
+                    <li>
+                        Real device testing on different screen sizes, operating systems,
+                        and network conditions.
+                    </li>
+                    <li>
+                        Bug fixing, error handling, and crash reporting to ensure app
+                        stability and reliability.
+                    </li>
+                    <li>
+                        Adherence to coding standards and best practices to maintain code
+                        quality.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/92.webp')}}" class="image"
+                            alt="Testing and Quality Assurance" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/97.webp')}}" class="image"
+                            alt="Testing and Quality Assurance" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">06.</span>
+                <h3 class="section-heading">Testing and Quality Assurance</h3>
+                <ol class="section-description">
+                    <li>
+                        Assistance with app store submission and compliance with platform
+                        guidelines.
+                    </li>
+                    <li>
+                        Continuous app monitoring, bug fixing, and performance optimization.
+                    </li>
+                    <li>
+                        Integration of analytics tools to gather insights on user behavior
+                        and app performance.
+                    </li>
+                    <li>
+                        Regular updates, feature enhancements, and support to keep the app
+                        up-to-date and aligned with evolving user needs.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/86.webp')}}" class="image"
+                            alt="App Deployment and Maintenance" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/43.webp')}}" class="image"
+                            alt="App Deployment and Maintenance" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">07.</span>
+                <h3 class="section-heading">App Deployment and Maintenance</h3>
+                <ol class="section-description">
+                    <li>
+                        Optimization of app metadata, keywords, descriptions, and visuals to
+                        improve app visibility and downloads.
+                    </li>
+                    <li>
+                        Competitor analysis and research to identify opportunities and
+                        enhance discoverability.
+                    </li>
+                    <li>
+                        Monitoring and analysis of user reviews and ratings to maintain app
+                        reputation and address user feedback.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/79.webp')}}" class="image"
+                            alt="App Store Optimization (ASO)" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/75.webp')}}" class="image"
+                            alt="App Store Optimization (ASO)" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">08.</span>
+                <h3 class="section-heading">App Store Optimization (ASO)</h3>
+                <ol class="section-description">
+                    <li>
+                        Optimization of app metadata, keywords, descriptions, and visuals to
+                        improve app visibility and downloads.
+                    </li>
+                    <li>
+                        Competitor analysis and research to identify opportunities and
+                        enhance discoverability.
+                    </li>
+                    <li>
+                        Monitoring and analysis of user reviews and ratings to maintain app
+                        reputation and address user feedback.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- DETAILS -->
 
-    <!-- WHY CHOOSE US -->
-    {% include "components/why-choose-us.html" %}
-    <!-- WHY CHOOSE US -->
+<!-- WHY CHOOSE US -->
+{% include "components/why-choose-us.html" %}
+<!-- WHY CHOOSE US -->
 
-    <!--PROCESS-->
-    {% include "components/process.html" %}
-    <!--PROCESS-->
+<!--PROCESS-->
+{% include "components/process.html" %}
+<!--PROCESS-->
 
-    <!--PROJECTS-->
-    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
-        <div class="text-white mb-5">
-            <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
-                OUR WORK
-            </b>
-            <h3 class="text-white font-40 fw-bold m-0 my-2">
-                Recent Projects Showcase
-            </h3>
-            <p class="text-muted font-18 m-0 col-sm-6">
+<!--PROJECTS-->
+<section class="section">
+    <div class="section-container">
+        <div class="section-header">
+            <b class="section-label">OUR WORK</b>
+            <h3 class="section-heading">Recent Projects Showcase</h3>
+            <p class="section-description">
                 Creating impact with every project, experience the innovation.
             </p>
         </div>
-        {% include "components/projects.html" %}
-        <div class="text-center py-5">
-            <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">
-                Load more
-            </button>
+        <div class="section-body">{% include "components/projects.html" %}</div>
+        <div class="section-footer">
+            <button class="btn-outline">Load more</button>
         </div>
-    </section>
-    <!--PROJECTS-->
+    </div>
+</section>
+<!--PROJECTS-->
 
-    <!-- FEEDBACKS -->
-    {% include "components/feedbacks.html" %}
-    <!-- FEEDBACKS -->
+<!-- FEEDBACKS -->
+{% include "components/feedbacks.html" %}
+<!-- FEEDBACKS -->
 
-    <!-- CLIENTS -->
-    {% include "components/clients.html" %}
-    <!-- CLIENTS -->
-</div>
+<!-- CLIENTS -->
+{% include "components/clients.html" %}
+<!-- CLIENTS -->
 {% endblock %}

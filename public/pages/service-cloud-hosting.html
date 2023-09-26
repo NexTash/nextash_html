@@ -1,8 +1,5 @@
-{% extends "layouts/primary.html" %}
-
-{% block title %} Cloud services | {%endblock %}
-
-{% block seo %}
+{% extends "layouts/primary.html" %} {% block title %} Cloud services |
+{%endblock %} {% block seo %}
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <meta name="robots" content="index, follow" />
@@ -13,474 +10,475 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="NexTash" />
 <meta property="og:url" content="" />
-{% endblock %}
-
-{% block content %}
-<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
-    <!-- HEADER -->
-    <section class="shadow py-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl">
-            <div
-                class="row align-items-center justify-content-center my-5 py-2 py-sm-2 py-md-5 py-lg-5 py-xl-5 py-xl-5">
-                <div class="col-sm-12 text-white">
-                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
-                        data-aos-duration="1000" data-aos="fade-up">Service</b>
-                    <h3 class="display-1 fw-bold m-0 mb-2 col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8"
-                        data-aos-duration="1000" data-aos="fade-up">
-                        Cloud services
-                    </h3>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xll-8 my-5">
-                    <div class="row text-muted font-18">
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                Every decision we make needs to answer the million-dollar
-                                question: how will this benefit our partner’s goal best? We work
-                                to develop solutions
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                We like to be different, in the same way that every mission is
-                                different. Every project is an opportunity to create result that
-                                will help you
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>Cloud Strategy and Consulting</li>
-                                <li>Cloud Infrastructure Setup and Management</li>
-                                <li>Cloud Application Development and Deployment</li>
-                                <li>Cloud Storage and Backup Solutions</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>Cloud Security and Compliance</li>
-                                <li>Cloud Cost Optimization</li>
-                                <li>Cloud Migration and Integration</li>
-                                <li>Cloud Monitoring and Performance Management</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{% endblock %} {% block content %}
+<!-- HEADER -->
+<section class="section">
+  <div class="section-container">
+    <div class="section-body">
+      <div class="section-label page-label"><span>Service</span></div>
+      <h2 class="section-heading page-heading">Cloud services</h2>
+      <div class="section-description page-description">
+        <p>
+          Every decision we make needs to answer the million-dollar question:
+          how will this benefit our partner’s goal best? We work to develop
+          solutions
+        </p>
+        <br />
+        <p>
+          We like to be different, in the same way that every mission is
+          different. Every project is an opportunity to create result that will
+          help you
+        </p>
+        <br />
+        <div class="row">
+          <div class="col">
+            <ul class="section-slist">
+              <li>Cloud Strategy and Consulting</li>
+              <li>Cloud Infrastructure Setup and Management</li>
+              <li>Cloud Application Development and Deployment</li>
+              <li>Cloud Storage and Backup Solutions</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="section-slist">
+              <li>Cloud Security and Compliance</li>
+              <li>Cloud Cost Optimization</li>
+              <li>Cloud Migration and Integration</li>
+              <li>Cloud Monitoring and Performance Management</li>
+            </ul>
+          </div>
         </div>
-    </section>
-    <!-- HEADER -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- HEADER -->
 
-    <!-- DETAILS -->
-    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/173.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Strategy and Consulting" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/49.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Strategy and Consulting" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">01.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Cloud Strategy and Consulting
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Assessment of your organization's IT infrastructure and business
-                            requirements to develop a cloud migration strategy.
-                        </li>
-                        <li>
-                            Consulting services to determine the most suitable cloud computing
-                            models (public, private, hybrid) for your needs.
-                        </li>
-                        <li>
-                            Planning and implementation of cloud adoption road maps and
-                            transformation strategies.
-                        </li>
-                        <li>
-                            Cost analysis and optimization recommendations to ensure efficient
-                            resource utilization.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/171.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Infrastructure Setup and Management" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/56.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Infrastructure Setup and Management" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">02.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Cloud Infrastructure Setup and Management
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Provisioning and configuration of cloud infrastructure resources
-                            such as virtual machines, storage, and networking.
-                        </li>
-                        <li>
-                            Deployment and management of scalable and resilient cloud
-                            environments to meet your workload demands.
-                        </li>
-                        <li>
-                            Implementation of security measures, access controls, and data
-                            encryption to protect your cloud infrastructure.
-                        </li>
-                        <li>
-                            Continuous monitoring, performance optimization, and maintenance
-                            of cloud infrastructure to ensure reliability and availability.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/160.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Application Development and Deployment" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/64.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Application Development and Deployment" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">03.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Cloud Application Development and Deployment
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Development and deployment of cloud-native applications leveraging
-                            cloud platform services like serverless computing, containers, and
-                            microservices.
-                        </li>
-                        <li>
-                            Migration of existing applications to the cloud, ensuring
-                            compatibility, scalability, and performance optimization.
-                        </li>
-                        <li>
-                            Integration of cloud-based APIs, services, and databases to
-                            enhance application functionality.
-                        </li>
-                        <li>
-                            DevOps practices for continuous integration, delivery, and
-                            automated deployment on cloud platforms.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/170.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Storage and Backup Solutions" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/55.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Storage and Backup Solutions" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">04.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Cloud Storage and Backup Solutions
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Implementation of scalable and secure cloud storage solutions for
-                            data storage and archival.
-                        </li>
-                        <li>
-                            Integration with backup and disaster recovery mechanisms to ensure
-                            data protection and business continuity.
-                        </li>
-                        <li>
-                            Configuration of data redundancy and replication strategies for
-                            high availability and fault tolerance.
-                        </li>
-                        <li>
-                            Data encryption and access controls to maintain data privacy and
-                            compliance.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/169.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Security and Compliance" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/163.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Security and Compliance" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">05.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Cloud Security and Compliance
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Implementation of security measures and best practices to protect
-                            cloud-based assets and data.
-                        </li>
-                        <li>
-                            Identity and access management (IAM) for secure user
-                            authentication and authorization.
-                        </li>
-                        <li>
-                            Regular security audits, vulnerability assessments, and
-                            penetration testing to identify and address potential risks.
-                        </li>
-                        <li>
-                            Compliance management to adhere to industry-specific regulations
-                            and standards (e.g., GDPR, HIPAA, PCI-DSS).
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/167.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Cost Optimization" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/168.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Cost Optimization" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">06.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Cloud Cost Optimization
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Analysis and optimization of cloud resource usage to minimize
-                            costs and maximize efficiency.
-                        </li>
-                        <li>
-                            Monitoring and analysis of resource utilization and cost
-                            allocation to identify optimization opportunities.
-                        </li>
-                        <li>
-                            Implementation of auto-scaling and rightsizing strategies to match
-                            resource allocation with workload demands.
-                        </li>
-                        <li>
-                            Use of cost management tools and services to monitor and control
-                            cloud spending.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/161.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Migration and Integration" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/175.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Migration and Integration" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">07.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Cloud Migration and Integration
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Assessment and planning for migrating on-premises infrastructure
-                            and applications to the cloud.
-                        </li>
-                        <li>
-                            Data migration services, ensuring secure and seamless transfer of
-                            data to the cloud.
-                        </li>
-                        <li>
-                            Integration of cloud-based systems with existing on-premises or
-                            third-party applications.
-                        </li>
-                        <li>
-                            Hybrid cloud integration for workload distribution and data
-                            synchronization between on-premises and cloud environments.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/179.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Monitoring and Performance Management" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/32.webp')}}"
-                                class="object-cover h-100 w-100" alt="Cloud Monitoring and Performance Management" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">08.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Cloud Monitoring and Performance Management
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Implementation of monitoring tools and services to track the
-                            performance and availability of cloud resources.
-                        </li>
-                        <li>
-                            Real-time monitoring of cloud infrastructure, applications, and
-                            services for proactive issue detection.
-                        </li>
-                        <li>
-                            Performance optimization through resource allocation, load
-                            balancing, and fine-tuning of cloud configurations.
-                        </li>
-                        <li>
-                            Capacity planning and scaling strategies to accommodate changing
-                            business needs.
-                        </li>
-                    </ol>
-                </div>
-            </div>
+<!-- DETAILS -->
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/173.webp')}}"
+              class="image"
+              alt="Cloud Strategy and Consulting"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/49.webp')}}"
+              class="image"
+              alt="Cloud Strategy and Consulting"
+            />
+          </div>
         </div>
-    </section>
-    <!-- DETAILS -->
-
-    <!-- WHY CHOOSE US -->
-    {% include "components/why-choose-us.html" %}
-    <!-- WHY CHOOSE US -->
-
-    <!--PROCESS-->
-    {% include "components/process.html" %}
-    <!--PROCESS-->
-
-    <!--PROJECTS-->
-    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
-        <div class="text-white mb-5">
-            <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
-                OUR WORK
-            </b>
-            <h3 class="text-white font-40 fw-bold m-0 my-2">
-                Recent Projects Showcase
-            </h3>
-            <p class="text-muted font-18 m-0 col-sm-6">
-                Creating impact with every project, experience the innovation.
-            </p>
+      </div>
+      <div class="col">
+        <span class="section-label">01.</span>
+        <h3 class="section-heading">Cloud Strategy and Consulting</h3>
+        <ol class="section-slist">
+          <li>
+            Assessment of your organization's IT infrastructure and business
+            requirements to develop a cloud migration strategy.
+          </li>
+          <li>
+            Consulting services to determine the most suitable cloud computing
+            models (public, private, hybrid) for your needs.
+          </li>
+          <li>
+            Planning and implementation of cloud adoption road maps and
+            transformation strategies.
+          </li>
+          <li>
+            Cost analysis and optimization recommendations to ensure efficient
+            resource utilization.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/171.webp')}}"
+              class="image"
+              alt="Cloud Infrastructure Setup and Management"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/56.webp')}}"
+              class="image"
+              alt="Cloud Infrastructure Setup and Management"
+            />
+          </div>
         </div>
-        {% include "components/projects.html" %}
-        <div class="text-center py-5">
-            <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">
-                Load more
-            </button>
+      </div>
+      <div class="col">
+        <span class="section-label">02.</span>
+        <h3 class="section-heading">
+          Cloud Infrastructure Setup and Management
+        </h3>
+        <ol class="section-slist">
+          <li>
+            Provisioning and configuration of cloud infrastructure resources
+            such as virtual machines, storage, and networking.
+          </li>
+          <li>
+            Deployment and management of scalable and resilient cloud
+            environments to meet your workload demands.
+          </li>
+          <li>
+            Implementation of security measures, access controls, and data
+            encryption to protect your cloud infrastructure.
+          </li>
+          <li>
+            Continuous monitoring, performance optimization, and maintenance of
+            cloud infrastructure to ensure reliability and availability.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/160.webp')}}"
+              class="image"
+              alt="Cloud Application Development and Deployment"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/64.webp')}}"
+              class="image"
+              alt="Cloud Application Development and Deployment"
+            />
+          </div>
         </div>
-    </section>
-    <!--PROJECTS-->
+      </div>
+      <div class="col">
+        <span class="section-label">03.</span>
+        <h3 class="section-heading">
+          Cloud Application Development and Deployment
+        </h3>
+        <ol class="section-slist">
+          <li>
+            Development and deployment of cloud-native applications leveraging
+            cloud platform services like serverless computing, containers, and
+            microservices.
+          </li>
+          <li>
+            Migration of existing applications to the cloud, ensuring
+            compatibility, scalability, and performance optimization.
+          </li>
+          <li>
+            Integration of cloud-based APIs, services, and databases to enhance
+            application functionality.
+          </li>
+          <li>
+            DevOps practices for continuous integration, delivery, and automated
+            deployment on cloud platforms.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/170.webp')}}"
+              class="image"
+              alt="Cloud Storage and Backup Solutions"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/55.webp')}}"
+              class="image"
+              alt="Cloud Storage and Backup Solutions"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <span class="section-label">04.</span>
+        <h3 class="section-heading">Cloud Storage and Backup Solutions</h3>
+        <ol class="section-slist">
+          <li>
+            Implementation of scalable and secure cloud storage solutions for
+            data storage and archival.
+          </li>
+          <li>
+            Integration with backup and disaster recovery mechanisms to ensure
+            data protection and business continuity.
+          </li>
+          <li>
+            Configuration of data redundancy and replication strategies for high
+            availability and fault tolerance.
+          </li>
+          <li>
+            Data encryption and access controls to maintain data privacy and
+            compliance.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/169.webp')}}"
+              class="image"
+              alt="Cloud Security and Compliance"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/163.webp')}}"
+              class="image"
+              alt="Cloud Security and Compliance"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <span class="section-label">05.</span>
+        <h3 class="section-heading">Cloud Security and Compliance</h3>
+        <ol class="section-slist">
+          <li>
+            Implementation of security measures and best practices to protect
+            cloud-based assets and data.
+          </li>
+          <li>
+            Identity and access management (IAM) for secure user authentication
+            and authorization.
+          </li>
+          <li>
+            Regular security audits, vulnerability assessments, and penetration
+            testing to identify and address potential risks.
+          </li>
+          <li>
+            Compliance management to adhere to industry-specific regulations and
+            standards (e.g., GDPR, HIPAA, PCI-DSS).
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/167.webp')}}"
+              class="image"
+              alt="Cloud Cost Optimization"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/168.webp')}}"
+              class="image"
+              alt="Cloud Cost Optimization"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <span class="section-label">06.</span>
+        <h3 class="section-heading">Cloud Cost Optimization</h3>
+        <ol class="section-slist">
+          <li>
+            Analysis and optimization of cloud resource usage to minimize costs
+            and maximize efficiency.
+          </li>
+          <li>
+            Monitoring and analysis of resource utilization and cost allocation
+            to identify optimization opportunities.
+          </li>
+          <li>
+            Implementation of auto-scaling and rightsizing strategies to match
+            resource allocation with workload demands.
+          </li>
+          <li>
+            Use of cost management tools and services to monitor and control
+            cloud spending.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/161.webp')}}"
+              class="image"
+              alt="Cloud Migration and Integration"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/175.webp')}}"
+              class="image"
+              alt="Cloud Migration and Integration"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <span class="section-label">07.</span>
+        <h3 class="section-heading">Cloud Migration and Integration</h3>
+        <ol class="section-slist">
+          <li>
+            Assessment and planning for migrating on-premises infrastructure and
+            applications to the cloud.
+          </li>
+          <li>
+            Data migration services, ensuring secure and seamless transfer of
+            data to the cloud.
+          </li>
+          <li>
+            Integration of cloud-based systems with existing on-premises or
+            third-party applications.
+          </li>
+          <li>
+            Hybrid cloud integration for workload distribution and data
+            synchronization between on-premises and cloud environments.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-container">
+    <div class="row align-items-center g-5">
+      <div class="col">
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img
+              src="{{ url_for('static', filename='images/services/179.webp')}}"
+              class="image"
+              alt="Cloud Monitoring and Performance Management"
+            />
+          </div>
+          <div class="image-sm">
+            <img
+              src="{{ url_for('static', filename='images/services/32.webp')}}"
+              class="image"
+              alt="Cloud Monitoring and Performance Management"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <span class="section-label">08.</span>
+        <h3 class="section-heading">
+          Cloud Monitoring and Performance Management
+        </h3>
+        <ol class="section-slist">
+          <li>
+            Implementation of monitoring tools and services to track the
+            performance and availability of cloud resources.
+          </li>
+          <li>
+            Real-time monitoring of cloud infrastructure, applications, and
+            services for proactive issue detection.
+          </li>
+          <li>
+            Performance optimization through resource allocation, load
+            balancing, and fine-tuning of cloud configurations.
+          </li>
+          <li>
+            Capacity planning and scaling strategies to accommodate changing
+            business needs.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- DETAILS -->
 
-    <!-- FEEDBACKS -->
-    {% include "components/feedbacks.html" %}
-    <!-- FEEDBACKS -->
+<!-- WHY CHOOSE US -->
+{% include "components/why-choose-us.html" %}
+<!-- WHY CHOOSE US -->
 
-    <!-- CLIENTS -->
-    {% include "components/clients.html" %}
-    <!-- CLIENTS -->
-</div>
+<!--PROCESS-->
+{% include "components/process.html" %}
+<!--PROCESS-->
+
+<!--PROJECTS-->
+<section class="section">
+  <div class="section-container">
+    <div class="section-header">
+      <b class="section-label">OUR WORK</b>
+      <h3 class="section-heading">Recent Projects Showcase</h3>
+      <p class="section-description">
+        Creating impact with every project, experience the innovation.
+      </p>
+    </div>
+    <div class="section-body">{% include "components/projects.html" %}</div>
+    <div class="section-footer">
+      <button class="btn-outline">Load more</button>
+    </div>
+  </div>
+</section>
+<!--PROJECTS-->
+
+<!-- FEEDBACKS -->
+{% include "components/feedbacks.html" %}
+<!-- FEEDBACKS -->
+
+<!-- CLIENTS -->
+{% include "components/clients.html" %}
+<!-- CLIENTS -->
 {% endblock %}

@@ -1,8 +1,5 @@
-{% extends "layouts/primary.html" %}
-
-{% block title %} Web Development | {% endblock %}
-
-{% block seo %}
+{% extends "layouts/primary.html" %} {% block title %} Web Development | {%
+endblock %} {% block seo %}
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <meta name="robots" content="index, follow" />
@@ -13,468 +10,432 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="NexTash" />
 <meta property="og:url" content="" />
-{% endblock %}
-
-{% block content %}
-<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
-    <!-- HEADER -->
-    <section class="shadow py-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl">
-            <div
-                class="row align-items-center justify-content-center my-5 py-2 py-sm-2 py-md-5 py-lg-5 py-xl-5 py-xl-5">
-                <div class="col-sm-12 text-white">
-                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
-                        data-aos-duration="1000" data-aos="fade-up">Service</b>
-                    <h3 class="display-1 fw-bold m-0 mb-2 col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8"
-                        data-aos-duration="1000" data-aos="fade-up">
-                        Web Development
-                    </h3>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xll-8 my-5">
-                    <div class="row text-muted font-18">
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                Every decision we make needs to answer the million-dollar
-                                question: how will this benefit our partner’s goal best? We work
-                                to develop solutions
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                We like to be different, in the same way that every mission is
-                                different. Every project is an opportunity to create result that
-                                will help you
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>Design and Development</li>
-                                <li>E-commerce Development</li>
-                                <li>Web Application Development</li>
-                                <li>Content Management Systems (CMS)</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>Web Hosting and Maintenance</li>
-                                <li>Mobile Responsive Design</li>
-                                <li>Search Engine Optimization (SEO)</li>
-                                <li>Website Analytics and Tracking</li>
-                            </ul>
-                        </div>
+{% endblock %} {% block content %}
+<!-- HEADER -->
+<section class="section">
+    <div class="section-container">
+        <div class="section-body">
+            <div class="section-label page-label"><span>Service</span></div>
+            <h2 class="section-heading page-heading">Web Development</h2>
+            <div class="section-description page-description">
+                <p>
+                    Every decision we make needs to answer the million-dollar question:
+                    how will this benefit our partner’s goal best? We work to develop
+                    solutions
+                </p>
+                <br />
+                <p>
+                    We like to be different, in the same way that every mission is
+                    different. Every project is an opportunity to create result that will
+                    help you
+                </p>
+                <br />
+                <div class="row">
+                    <div class="col">
+                        <ul class="section-slist">
+                            <li>Design and Development</li>
+                            <li>E-commerce Development</li>
+                            <li>Web Application Development</li>
+                            <li>Content Management Systems (CMS)</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="section-slist">
+                            <li>Web Hosting and Maintenance</li>
+                            <li>Mobile Responsive Design</li>
+                            <li>Search Engine Optimization (SEO)</li>
+                            <li>Website Analytics and Tracking</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Header -->
-    <!-- DETAILS -->
-    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/45.webp')}}"
-                                class="object-cover h-100 w-100" alt="Design and Development" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/44.webp')}}"
-                                class="object-cover h-100 w-100" alt="Design and Development" />
-                        </div>
+    </div>
+</section>
+<!-- HEADER -->
+
+<!-- DETAILS -->
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/45.webp')}}" class="image"
+                            alt="Design and Development" />
                     </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">01.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Design and Development
-                    </h3>
-                    <ol class="font-20 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Custom website design and development tailored to your specific
-                            business needs.
-                        </li>
-                        <li>
-                            Responsive web design to ensure your website looks great on all
-                            devices.
-                        </li>
-                        <li>
-                            User-friendly interfaces and intuitive navigation for enhanced
-                            user experience.
-                        </li>
-                        <li>
-                            Integration of interactive elements, such as forms, maps, videos,
-                            and social media plugins.
-                        </li>
-                        <li>
-                            Content management system (CMS) implementation for easy website
-                            maintenance and updates.
-                        </li>
-                    </ol>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/44.webp')}}" class="image"
+                            alt="Design and Development" />
+                    </div>
                 </div>
             </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/94.webp')}}"
-                                class="object-cover h-100 w-100" alt="E-commerce Development" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/56.webp')}}"
-                                class="object-cover h-100 w-100" alt="E-commerce Development" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">02.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        E-commerce Development
-                    </h3>
-                    <ol class="font-20 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Creation of robust and secure e-commerce platforms to sell
-                            products or services online.
-                        </li>
-                        <li>
-                            Integration with popular payment gateways for seamless and secure
-                            online transactions.
-                        </li>
-                        <li>
-                            Shopping cart functionality with features like product catalog
-                            management, inventory tracking, and order management.
-                        </li>
-                        <li>
-                            User account management, including registration, login, and
-                            personalized shopping experiences.
-                        </li>
-                        <li>
-                            Streamlined checkout processes and integration with shipping and
-                            fulfillment services.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/75.webp')}}"
-                                class="object-cover h-100 w-100" alt="Web Application Development" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/64.webp')}}"
-                                class="object-cover h-100 w-100" alt="Web Application Development" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">03.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Web Application Development
-                    </h3>
-                    <ol class="font-20 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Custom web application development for specific business
-                            requirements.
-                        </li>
-                        <li>
-                            Development of scalable and secure web applications using modern
-                            technologies.
-                        </li>
-                        <li>
-                            Integration with databases and third-party APIs to enhance
-                            functionality.
-                        </li>
-                        <li>
-                            User management and role-based access control for secure access to
-                            sensitive information.
-                        </li>
-                        <li>
-                            Ongoing maintenance, updates, and support for web applications.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/60.webp')}}"
-                                class="object-cover h-100 w-100" alt="Content Management Systems (CMS)" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/64.webp')}}"
-                                class="object-cover h-100 w-100" alt="Content Management Systems (CMS)" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">04.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Content Management Systems (CMS)
-                    </h3>
-                    <ol class="font-20 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Development and customization of CMS platforms like WordPress,
-                            Drupal, or Joomla.
-                        </li>
-                        <li>
-                            Theme and plugin development to extend the functionality and
-                            appearance of your CMS.
-                        </li>
-                        <li>
-                            Training and support to help you manage and update your website's
-                            content.
-                        </li>
-                        <li>
-                            Migration services to transfer your existing website to a CMS for
-                            easier management.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/167.webp')}}"
-                                class="object-cover h-100 w-100" alt="Hosting and Maintenance" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/5.webp')}}"
-                                class="object-cover h-100 w-100" alt="Hosting and Maintenance" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">05.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Hosting and Maintenance
-                    </h3>
-                    <ol class="font-20 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Assistance with domain registration and selection of a suitable
-                            web hosting provider.
-                        </li>
-                        <li>
-                            Continuous monitoring, backups, and security updates to ensure the
-                            stability and safety of your website.
-                        </li>
-                        <li>
-                            Performance optimization to enhance page load speed and overall
-                            user experience.
-                        </li>
-                        <li>Regular content updates, bug fixes, and troubleshooting.</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/197.webp')}}"
-                                class="object-cover h-100 w-100" alt="Mobile Responsive Design" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/69.webp')}}"
-                                class="object-cover h-100 w-100" alt="Mobile Responsive Design" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">06.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Mobile Responsive Design
-                    </h3>
-                    <ol class="font-20 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Optimization of websites for mobile devices, ensuring a seamless
-                            experience across different screen sizes.
-                        </li>
-                        <li>
-                            Responsive design techniques to adapt layouts, images, and content
-                            for optimal mobile viewing.
-                        </li>
-                        <li>
-                            Mobile app development to complement your web presence and reach a
-                            wider audience.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/89.webp')}}"
-                                class="object-cover h-100 w-100" alt="Search Engine Optimization (SEO)" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/88.webp')}}"
-                                class="object-cover h-100 w-100" alt="Search Engine Optimization (SEO)" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">07.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Search Engine Optimization (SEO)
-                    </h3>
-                    <ol class="font-20 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            On-page and off-page optimization techniques to improve your
-                            website's visibility in search engine rankings.
-                        </li>
-                        <li>
-                            Keyword research, content optimization, and link building
-                            strategies to increase organic traffic.
-                        </li>
-                        <li>
-                            SEO audits and analysis to identify areas for improvement and
-                            implement effective strategies.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/183.webp')}}"
-                                class="object-cover h-100 w-100" alt="Website Analytics and Tracking" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/195.webp')}}"
-                                class="object-cover h-100 w-100" alt="Website Analytics and Tracking" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">08.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Website Analytics and Tracking
-                    </h3>
-                    <ol class="font-20 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Implementation of tracking tools like Google Analytics to monitor
-                            website performance and user behavior.
-                        </li>
-                        <li>
-                            Reporting and analysis of key metrics to measure the success of
-                            your online presence.
-                        </li>
-                        <li>
-                            Data-driven insights to make informed decisions and optimize your
-                            website for better results.
-                        </li>
-                    </ol>
-                </div>
+            <div class="col">
+                <span class="section-label">01.</span>
+                <h3 class="section-heading">
+                    Design and Development
+                </h3>
+                <ol class="section-slist">
+                    <li>
+                        Custom website design and development tailored to your specific
+                        business needs.
+                    </li>
+                    <li>
+                        Responsive web design to ensure your website looks great on all
+                        devices.
+                    </li>
+                    <li>
+                        User-friendly interfaces and intuitive navigation for enhanced user
+                        experience.
+                    </li>
+                    <li>
+                        Integration of interactive elements, such as forms, maps, videos,
+                        and social media plugins.
+                    </li>
+                    <li>
+                        Content management system (CMS) implementation for easy website
+                        maintenance and updates.
+                    </li>
+                </ol>
             </div>
         </div>
-    </section>
-    <!-- DETAILS -->
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/94.webp')}}" class="image"
+                            alt="E-commerce Development" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/56.webp')}}" class="image"
+                            alt="E-commerce Development" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">02.</span>
+                <h3 class="section-heading">
+                    E-commerce Development
+                </h3>
+                <ol class="section-slist">
+                    <li>
+                        Creation of robust and secure e-commerce platforms to sell products
+                        or services online.
+                    </li>
+                    <li>
+                        Integration with popular payment gateways for seamless and secure
+                        online transactions.
+                    </li>
+                    <li>
+                        Shopping cart functionality with features like product catalog
+                        management, inventory tracking, and order management.
+                    </li>
+                    <li>
+                        User account management, including registration, login, and
+                        personalized shopping experiences.
+                    </li>
+                    <li>
+                        Streamlined checkout processes and integration with shipping and
+                        fulfillment services.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/75.webp')}}" class="image"
+                            alt="Web Application Development" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/64.webp')}}" class="image"
+                            alt="Web Application Development" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">03.</span>
+                <h3 class="section-heading">
+                    Web Application Development
+                </h3>
+                <ol class="section-slist">
+                    <li>
+                        Custom web application development for specific business
+                        requirements.
+                    </li>
+                    <li>
+                        Development of scalable and secure web applications using modern
+                        technologies.
+                    </li>
+                    <li>
+                        Integration with databases and third-party APIs to enhance
+                        functionality.
+                    </li>
+                    <li>
+                        User management and role-based access control for secure access to
+                        sensitive information.
+                    </li>
+                    <li>
+                        Ongoing maintenance, updates, and support for web applications.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/60.webp')}}" class="image"
+                            alt="Content Management Systems (CMS)" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/64.webp')}}" class="image"
+                            alt="Content Management Systems (CMS)" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">04.</span>
+                <h3 class="section-heading">
+                    Content Management Systems (CMS)
+                </h3>
+                <ol class="section-slist">
+                    <li>
+                        Development and customization of CMS platforms like WordPress,
+                        Drupal, or Joomla.
+                    </li>
+                    <li>
+                        Theme and plugin development to extend the functionality and
+                        appearance of your CMS.
+                    </li>
+                    <li>
+                        Training and support to help you manage and update your website's
+                        content.
+                    </li>
+                    <li>
+                        Migration services to transfer your existing website to a CMS for
+                        easier management.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/167.webp')}}" class="image"
+                            alt="Hosting and Maintenance" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/5.webp')}}" class="image"
+                            alt="Hosting and Maintenance" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">05.</span>
+                <h3 class="section-heading">
+                    Hosting and Maintenance
+                </h3>
+                <ol class="section-slist">
+                    <li>
+                        Assistance with domain registration and selection of a suitable web
+                        hosting provider.
+                    </li>
+                    <li>
+                        Continuous monitoring, backups, and security updates to ensure the
+                        stability and safety of your website.
+                    </li>
+                    <li>
+                        Performance optimization to enhance page load speed and overall user
+                        experience.
+                    </li>
+                    <li>Regular content updates, bug fixes, and troubleshooting.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/197.webp')}}" class="image"
+                            alt="Mobile Responsive Design" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/69.webp')}}" class="image"
+                            alt="Mobile Responsive Design" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">06.</span>
+                <h3 class="section-heading">
+                    Mobile Responsive Design
+                </h3>
+                <ol class="section-slist">
+                    <li>
+                        Optimization of websites for mobile devices, ensuring a seamless
+                        experience across different screen sizes.
+                    </li>
+                    <li>
+                        Responsive design techniques to adapt layouts, images, and content
+                        for optimal mobile viewing.
+                    </li>
+                    <li>
+                        Mobile app development to complement your web presence and reach a
+                        wider audience.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/89.webp')}}" class="image"
+                            alt="Search Engine Optimization (SEO)" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/88.webp')}}" class="image"
+                            alt="Search Engine Optimization (SEO)" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">07.</span>
+                <h3 class="section-heading">
+                    Search Engine Optimization (SEO)
+                </h3>
+                <ol class="section-slist">
+                    <li>
+                        On-page and off-page optimization techniques to improve your
+                        website's visibility in search engine rankings.
+                    </li>
+                    <li>
+                        Keyword research, content optimization, and link building strategies
+                        to increase organic traffic.
+                    </li>
+                    <li>
+                        SEO audits and analysis to identify areas for improvement and
+                        implement effective strategies.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/183.webp')}}" class="image"
+                            alt="Website Analytics and Tracking" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/195.webp')}}" class="image"
+                            alt="Website Analytics and Tracking" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">08.</span>
+                <h3 class="section-heading">
+                    Website Analytics and Tracking
+                </h3>
+                <ol class="section-slist">
+                    <li>
+                        Implementation of tracking tools like Google Analytics to monitor
+                        website performance and user behavior.
+                    </li>
+                    <li>
+                        Reporting and analysis of key metrics to measure the success of your
+                        online presence.
+                    </li>
+                    <li>
+                        Data-driven insights to make informed decisions and optimize your
+                        website for better results.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- DETAILS -->
 
-    <!-- WHY CHOOSE US -->
-    {% include "components/why-choose-us.html" %}
-    <!-- WHY CHOOSE US -->
+<!-- WHY CHOOSE US -->
+{% include "components/why-choose-us.html" %}
+<!-- WHY CHOOSE US -->
 
-    <!--PROCESS-->
-    {% include "components/process.html" %}
-    <!--PROCESS-->
+<!--PROCESS-->
+{% include "components/process.html" %}
+<!--PROCESS-->
 
-    <!--PROJECTS-->
-    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
-        <div class="text-white mb-5">
-            <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
-                OUR WORK
-            </b>
-            <h3 class="text-white font-40 fw-bold m-0 my-2">
-                Recent Projects Showcase
-            </h3>
-            <p class="text-muted font-18 m-0 col-sm-6">
+<!--PROJECTS-->
+<section class="section">
+    <div class="section-container">
+        <div class="section-header">
+            <b class="section-label">OUR WORK</b>
+            <h3 class="section-heading">Recent Projects Showcase</h3>
+            <p class="section-description">
                 Creating impact with every project, experience the innovation.
             </p>
         </div>
-        {% include "components/projects.html" %}
-        <div class="text-center py-5">
-            <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">
-                Load more
-            </button>
+        <div class="section-body">{% include "components/projects.html" %}</div>
+        <div class="section-footer">
+            <button class="btn-outline">Load more</button>
         </div>
-    </section>
-    <!--PROJECTS-->
+    </div>
+</section>
+<!--PROJECTS-->
 
-    <!-- FEEDBACKS -->
-    {% include "components/feedbacks.html" %}
-    <!-- FEEDBACKS -->
+<!-- FEEDBACKS -->
+{% include "components/feedbacks.html" %}
+<!-- FEEDBACKS -->
 
-    <!-- CLIENTS -->
-    {% include "components/clients.html" %}
-    <!-- CLIENTS -->
-</div>
+<!-- CLIENTS -->
+{% include "components/clients.html" %}
+<!-- CLIENTS -->
 {% endblock %}

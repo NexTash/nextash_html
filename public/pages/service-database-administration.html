@@ -1,8 +1,5 @@
-{% extends "layouts/primary.html" %}
-
-{% block title %} Database Administration | {% endblock %}
-
-{% block seo %}
+{% extends "layouts/primary.html" %} {% block title %} Database Administration |
+{% endblock %} {% block seo %}
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <meta name="robots" content="index, follow" />
@@ -13,426 +10,363 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="NexTash" />
 <meta property="og:url" content="" />
-{% endblock %}
-
-{% block content %}
-<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
-    <!-- HEADER -->
-    <section class="shadow py-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl">
-            <div
-                class="row align-items-center justify-content-center my-5 py-2 py-sm-2 py-md-5 py-lg-5 py-xl-5 py-xl-5">
-                <div class="col-sm-12 text-white">
-                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
-                        data-aos-duration="1000" data-aos="fade-up">Service</b>
-                    <h3 class="display-1 fw-bold m-0 mb-2 col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8"
-                        data-aos-duration="1000" data-aos="fade-up">
-                        Database Administration
-                    </h3>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xll-8 my-5">
-                    <div class="row text-muted font-18">
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                Every decision we make needs to answer the million-dollar
-                                question: how will this benefit our partner’s goal best? We work
-                                to develop solutions
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                We like to be different, in the same way that every mission is
-                                different. Every project is an opportunity to create result that
-                                will help you
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>Continuous Installation and Configuration</li>
-                                <li>Database Performance Tuning</li>
-                                <li>Database Security and Access Controls</li>
-                                <li>Backup and Recovery Solutions</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>Database Replication and High Availability</li>
-                                <li>Database Migration and Upgrades</li>
-                                <li>Database Monitoring and Alerts</li>
-                                <li>Database Capacity Planning</li>
-                            </ul>
-                        </div>
+{% endblock %} {% block content %}
+<!-- HEADER -->
+<section class="section">
+    <div class="section-container">
+        <div class="section-body">
+            <div class="section-label page-label"><span>Service</span></div>
+            <h2 class="section-heading page-heading">Database Administration</h2>
+            <div class="section-description page-description">
+                <p>
+                    Every decision we make needs to answer the million-dollar question:
+                    how will this benefit our partner’s goal best? We work to develop
+                    solutions
+                </p>
+                <br />
+                <p>
+                    We like to be different, in the same way that every mission is
+                    different. Every project is an opportunity to create result that will
+                    help you
+                </p>
+                <br />
+                <div class="row">
+                    <div class="col">
+                        <ul class="section-slist">
+                            <li>Continuous Installation and Configuration</li>
+                            <li>Database Performance Tuning</li>
+                            <li>Database Security and Access Controls</li>
+                            <li>Backup and Recovery Solutions</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="section-slist">
+                            <li>Database Replication and High Availability</li>
+                            <li>Database Migration and Upgrades</li>
+                            <li>Database Monitoring and Alerts</li>
+                            <li>Database Capacity Planning</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- HEADER -->
+    </div>
+</section>
+<!-- HEADER -->
 
-    <!-- DETAILS -->
-    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/175.webp')}}"
-                                class="object-cover h-100 w-100" alt="Continuous Installation and Configuration" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/174.webp')}}"
-                                class="object-cover h-100 w-100" alt="Continuous Installation and Configuration" />
-                        </div>
+<!-- DETAILS -->
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/175.webp')}}" class="image"
+                            alt="Continuous Installation and Configuration" />
                     </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">01.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Continuous Installation and Configuration
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Expert installation and configuration of various database
-                            management systems (DBMS).
-                        </li>
-                        <li>
-                            Tailoring database settings to suit your business needs and
-                            hardware infrastructure.
-                        </li>
-                        <li>
-                            Ensuring optimal performance and resource utilization from the
-                            start.
-                        </li>
-                        <li>
-                            Supporting both on-premises and cloud-based database setups.
-                        </li>
-                    </ol>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/174.webp')}}" class="image"
+                            alt="Continuous Installation and Configuration" />
+                    </div>
                 </div>
             </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/181.webp')}}"
-                                class="object-cover h-100 w-100" alt="Database Performance Tuning" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/194.webp')}}"
-                                class="object-cover h-100 w-100" alt="Database Performance Tuning" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">02.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Database Performance Tuning
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>Proactive monitoring and analysis of database performance.</li>
-                        <li>
-                            Identifying and resolving bottlenecks that impact efficiency.
-                        </li>
-                        <li>Optimizing query execution plans and database indexing.</li>
-                        <li>Improving response times and minimizing downtime.</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/167.webp')}}"
-                                class="object-cover h-100 w-100" alt="Database Security and Access Controls" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/161.webp')}}"
-                                class="object-cover h-100 w-100" alt="Database Security and Access Controls" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">03.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Database Security and Access Controls
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Implementing robust security measures to safeguard sensitive data.
-                        </li>
-                        <li>Setting up user access controls and permissions.</li>
-                        <li>
-                            Monitoring and auditing user activities to detect potential
-                            security breaches.
-                        </li>
-                        <li>Encryption and data masking for enhanced data protection.</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/164.webp')}}"
-                                class="object-cover h-100 w-100" alt="Backup and Recovery Solutions" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/170.webp')}}"
-                                class="object-cover h-100 w-100" alt="Backup and Recovery Solutions" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">04.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Backup and Recovery Solutions
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>Designing and implementing reliable backup strategies.</li>
-                        <li>
-                            Ensuring regular and automated backups to prevent data loss.
-                        </li>
-                        <li>
-                            Conducting periodic recovery testing to validate backup integrity.
-                        </li>
-                        <li>
-                            Efficient recovery processes to minimize downtime in case of data
-                            loss or corruption.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/191.webp')}}"
-                                class="object-cover h-100 w-100" alt="Database Replication and High Availability" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/189.webp')}}"
-                                class="object-cover h-100 w-100" alt="Database Replication and High Availability" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">05.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Database Replication and High Availability
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Implementing database replication for data redundancy and disaster
-                            recovery.
-                        </li>
-                        <li>
-                            Configuring high-availability solutions to minimize downtime.
-                        </li>
-                        <li>
-                            Ensuring failover mechanisms for uninterrupted access to critical
-                            data.
-                        </li>
-                        <li>Geographic distribution of data for disaster recovery.</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/162.webp')}}"
-                                class="object-cover h-100 w-100" alt="Database Migration and Upgrades" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/165.webp')}}"
-                                class="object-cover h-100 w-100" alt="Database Migration and Upgrades" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">06.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Database Migration and Upgrades
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Seamlessly migrating databases to new platforms or versions.
-                        </li>
-                        <li>
-                            Minimizing downtime and potential data loss during migration.
-                        </li>
-                        <li>Ensuring data integrity during the migration process.</li>
-                        <li>
-                            Upgrading databases to take advantage of new features and
-                            enhancements.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/183.webp')}}"
-                                class="object-cover h-100 w-100" alt="Database Monitoring and Alerts" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/182.webp')}}"
-                                class="object-cover h-100 w-100" alt="Database Monitoring and Alerts" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">07.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Database Monitoring and Alerts
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Real-time monitoring of database health and performance metrics.
-                        </li>
-                        <li>
-                            Setting up alerts to notify administrators of potential issues.
-                        </li>
-                        <li>
-                            Proactive response to anomalies and performance degradation.
-                        </li>
-                        <li>Analyzing historical data to identify trends and patterns.</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/180.webp')}}"
-                                class="object-cover h-100 w-100" alt="Database Capacity Planning" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/137.webp')}}"
-                                class="object-cover h-100 w-100" alt="Database Capacity Planning" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">08.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Database Capacity Planning
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Evaluating current database usage and forecasting future
-                            requirements.
-                        </li>
-                        <li>Ensuring sufficient storage and resources for data growth.</li>
-                        <li>Optimizing resource allocation for cost-effectiveness.</li>
-                        <li>Scaling databases to accommodate business expansion.</li>
-                    </ol>
-                </div>
+            <div class="col">
+                <span class="section-label">01.</span>
+                <h3 class="section-heading">
+                    Continuous Installation and Configuration
+                </h3>
+                <ol class="section-description">
+                    <li>
+                        Expert installation and configuration of various database management
+                        systems (DBMS).
+                    </li>
+                    <li>
+                        Tailoring database settings to suit your business needs and hardware
+                        infrastructure.
+                    </li>
+                    <li>
+                        Ensuring optimal performance and resource utilization from the
+                        start.
+                    </li>
+                    <li>Supporting both on-premises and cloud-based database setups.</li>
+                </ol>
             </div>
         </div>
-    </section>
-    <!-- DETAILS -->
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/181.webp')}}" class="image"
+                            alt="Database Performance Tuning" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/194.webp')}}" class="image"
+                            alt="Database Performance Tuning" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">02.</span>
+                <h3 class="section-heading">Database Performance Tuning</h3>
+                <ol class="section-description">
+                    <li>Proactive monitoring and analysis of database performance.</li>
+                    <li>Identifying and resolving bottlenecks that impact efficiency.</li>
+                    <li>Optimizing query execution plans and database indexing.</li>
+                    <li>Improving response times and minimizing downtime.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/167.webp')}}" class="image"
+                            alt="Database Security and Access Controls" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/161.webp')}}" class="image"
+                            alt="Database Security and Access Controls" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">03.</span>
+                <h3 class="section-heading">Database Security and Access Controls</h3>
+                <ol class="section-description">
+                    <li>
+                        Implementing robust security measures to safeguard sensitive data.
+                    </li>
+                    <li>Setting up user access controls and permissions.</li>
+                    <li>
+                        Monitoring and auditing user activities to detect potential security
+                        breaches.
+                    </li>
+                    <li>Encryption and data masking for enhanced data protection.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/164.webp')}}" class="image"
+                            alt="Backup and Recovery Solutions" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/170.webp')}}" class="image"
+                            alt="Backup and Recovery Solutions" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">04.</span>
+                <h3 class="section-heading">Backup and Recovery Solutions</h3>
+                <ol class="section-description">
+                    <li>Designing and implementing reliable backup strategies.</li>
+                    <li>Ensuring regular and automated backups to prevent data loss.</li>
+                    <li>
+                        Conducting periodic recovery testing to validate backup integrity.
+                    </li>
+                    <li>
+                        Efficient recovery processes to minimize downtime in case of data
+                        loss or corruption.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/191.webp')}}" class="image"
+                            alt="Database Replication and High Availability" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/189.webp')}}" class="image"
+                            alt="Database Replication and High Availability" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">05.</span>
+                <h3 class="section-heading">
+                    Database Replication and High Availability
+                </h3>
+                <ol class="section-description">
+                    <li>
+                        Implementing database replication for data redundancy and disaster
+                        recovery.
+                    </li>
+                    <li>Configuring high-availability solutions to minimize downtime.</li>
+                    <li>
+                        Ensuring failover mechanisms for uninterrupted access to critical
+                        data.
+                    </li>
+                    <li>Geographic distribution of data for disaster recovery.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/162.webp')}}" class="image"
+                            alt="Database Migration and Upgrades" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/165.webp')}}" class="image"
+                            alt="Database Migration and Upgrades" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">06.</span>
+                <h3 class="section-heading">Database Migration and Upgrades</h3>
+                <ol class="section-description">
+                    <li>Seamlessly migrating databases to new platforms or versions.</li>
+                    <li>Minimizing downtime and potential data loss during migration.</li>
+                    <li>Ensuring data integrity during the migration process.</li>
+                    <li>
+                        Upgrading databases to take advantage of new features and
+                        enhancements.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/183.webp')}}" class="image"
+                            alt="Database Monitoring and Alerts" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/182.webp')}}" class="image"
+                            alt="Database Monitoring and Alerts" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">07.</span>
+                <h3 class="section-heading">Database Monitoring and Alerts</h3>
+                <ol class="section-description">
+                    <li>
+                        Real-time monitoring of database health and performance metrics.
+                    </li>
+                    <li>
+                        Setting up alerts to notify administrators of potential issues.
+                    </li>
+                    <li>Proactive response to anomalies and performance degradation.</li>
+                    <li>Analyzing historical data to identify trends and patterns.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/180.webp')}}" class="image"
+                            alt="Database Capacity Planning" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/137.webp')}}" class="image"
+                            alt="Database Capacity Planning" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">08.</span>
+                <h3 class="section-heading">Database Capacity Planning</h3>
+                <ol class="section-description">
+                    <li>
+                        Evaluating current database usage and forecasting future
+                        requirements.
+                    </li>
+                    <li>Ensuring sufficient storage and resources for data growth.</li>
+                    <li>Optimizing resource allocation for cost-effectiveness.</li>
+                    <li>Scaling databases to accommodate business expansion.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- DETAILS -->
 
-    <!-- WHY CHOOSE US -->
-    {% include "components/why-choose-us.html" %}
-    <!-- WHY CHOOSE US -->
+<!-- WHY CHOOSE US -->
+{% include "components/why-choose-us.html" %}
+<!-- WHY CHOOSE US -->
 
-    <!--PROCESS-->
-    {% include "components/process.html" %}
-    <!--PROCESS-->
+<!--PROCESS-->
+{% include "components/process.html" %}
+<!--PROCESS-->
 
-    <!--PROJECTS-->
-    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
-        <div class="text-white mb-5">
-            <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
-                OUR WORK
-            </b>
-            <h3 class="text-white font-40 fw-bold m-0 my-2">
-                Recent Projects Showcase
-            </h3>
-            <p class="text-muted font-18 m-0 col-sm-6">
+<!--PROJECTS-->
+<section class="section">
+    <div class="section-container">
+        <div class="section-header">
+            <b class="section-label">OUR WORK</b>
+            <h3 class="section-heading">Recent Projects Showcase</h3>
+            <p class="section-description">
                 Creating impact with every project, experience the innovation.
             </p>
         </div>
-        {% include "components/projects.html" %}
-        <div class="text-center py-5">
-            <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">
-                Load more
-            </button>
+        <div class="section-body">{% include "components/projects.html" %}</div>
+        <div class="section-footer">
+            <button class="btn-outline">Load more</button>
         </div>
-    </section>
-    <!--PROJECTS-->
+    </div>
+</section>
+<!--PROJECTS-->
 
-    <!-- FEEDBACKS -->
-    {% include "components/feedbacks.html" %}
-    <!-- FEEDBACKS -->
+<!-- FEEDBACKS -->
+{% include "components/feedbacks.html" %}
+<!-- FEEDBACKS -->
 
-    <!-- CLIENTS -->
-    {% include "components/clients.html" %}
-    <!-- CLIENTS -->
-</div>
+<!-- CLIENTS -->
+{% include "components/clients.html" %}
+<!-- CLIENTS -->
 {% endblock %}

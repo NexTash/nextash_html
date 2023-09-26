@@ -1,8 +1,5 @@
-{% extends "layouts/primary.html" %}
-
-{% block title %} Graphics designing | {% endblock %}
-
-{% block seo %}
+{% extends "layouts/primary.html" %} {% block title %} Graphics designing | {%
+endblock %} {% block seo %}
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <meta name="robots" content="index, follow" />
@@ -13,469 +10,417 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="NexTash" />
 <meta property="og:url" content="" />
-{% endblock %}
-
-{% block content %}
-<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
-    <!-- HEADER -->
-    <section class="shadow py-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl">
-            <div
-                class="row align-items-center justify-content-center my-5 py-2 py-sm-2 py-md-5 py-lg-5 py-xl-5 py-xl-5">
-                <div class="col-sm-12 text-white">
-                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
-                        data-aos-duration="1000" data-aos="fade-up">Service</b>
-                    <h3 class="display-1 fw-bold m-0 mb-2 col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8"
-                        data-aos-duration="1000" data-aos="fade-up">
-                        Graphics designing
-                    </h3>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xll-8 my-5">
-                    <div class="row text-muted font-18">
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                Every decision we make needs to answer the million-dollar
-                                question: how will this benefit our partner’s goal best? We work
-                                to develop solutions
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                We like to be different, in the same way that every mission is
-                                different. Every project is an opportunity to create result that
-                                will help you
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>Logo Design</li>
-                                <li>Branding and Identity Design</li>
-                                <li>Website and User Interface (UI) Design</li>
-                                <li>Print Design</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>Advertising and Marketing Design</li>
-                                <li>Illustration and Infographic Design</li>
-                                <li>Motion Graphics and Animation</li>
-                                <li>Visual Branding Consultation</li>
-                            </ul>
-                        </div>
+{% endblock %} {% block content %}
+<!-- HEADER -->
+<section class="section">
+    <div class="section-container">
+        <div class="section-body">
+            <div class="section-label page-label"><span>Service</span></div>
+            <h2 class="section-heading page-heading">Graphics designing</h2>
+            <div class="section-description page-description">
+                <p>
+                    Every decision we make needs to answer the million-dollar question:
+                    how will this benefit our partner’s goal best? We work to develop
+                    solutions
+                </p>
+                <br />
+                <p>
+                    We like to be different, in the same way that every mission is
+                    different. Every project is an opportunity to create result that will
+                    help you
+                </p>
+                <br />
+                <div class="row">
+                    <div class="col">
+                        <ul class="section-slist">
+                            <li>Logo Design</li>
+                            <li>Branding and Identity Design</li>
+                            <li>Website and User Interface (UI) Design</li>
+                            <li>Print Design</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="section-slist">
+                            <li>Advertising and Marketing Design</li>
+                            <li>Illustration and Infographic Design</li>
+                            <li>Motion Graphics and Animation</li>
+                            <li>Visual Branding Consultation</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Header -->
+    </div>
+</section>
+<!-- HEADER -->
 
-    <!-- DETAILS -->
-    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/210.webp')}}"
-                                class="object-cover h-100 w-100" alt="Logo Design" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/49.webp')}}"
-                                class="object-cover h-100 w-100" alt="Logo Design" />
-                        </div>
+<!-- DETAILS -->
+
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/210.webp')}}" class="image"
+                            alt="Logo Design" />
                     </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">01.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Logo Design
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Creation of unique and memorable logos that represent a brand's
-                            identity and values.
-                        </li>
-                        <li>
-                            Collaboration with clients to understand their vision, target
-                            audience, and design preferences.
-                        </li>
-                        <li>
-                            Development of multiple logo concepts and iterations for client
-                            review and feedback.
-                        </li>
-                        <li>
-                            Delivery of final logo files in various formats suitable for
-                            digital and print media.
-                        </li>
-                    </ol>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/49.webp')}}" class="image"
+                            alt="Logo Design" />
+                    </div>
                 </div>
             </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/211.webp')}}"
-                                class="object-cover h-100 w-100" alt="Branding and Identity Design" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/212.webp')}}"
-                                class="object-cover h-100 w-100" alt="Branding and Identity Design" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">02.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Branding and Identity Design
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Development of cohesive brand identities, including color
-                            palettes, typography, and visual styles.
-                        </li>
-                        <li>
-                            Design of brand assets such as business cards, letterheads,
-                            envelopes, and brand guidelines.
-                        </li>
-                        <li>
-                            Creation of brand collateral, including brochures, flyers,
-                            banners, and social media graphics.
-                        </li>
-                        <li>
-                            Consistency in design elements to ensure a unified brand presence
-                            across all touchpoints.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/215.webp')}}"
-                                class="object-cover h-100 w-100" alt="Website and User Interface (UI) Design" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/216.webp')}}"
-                                class="object-cover h-100 w-100" alt="Website and User Interface (UI) Design" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">03.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Website and User Interface (UI) Design
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Design of visually appealing and user-friendly website interfaces.
-                        </li>
-                        <li>
-                            Wireframing and prototyping to plan and test user interactions and
-                            user flows.
-                        </li>
-                        <li>Creation of custom icons, buttons, and other UI elements.</li>
-                        <li>
-                            Collaboration with web developers to ensure seamless integration
-                            of design and functionality.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/208.webp')}}"
-                                class="object-cover h-100 w-100" alt="Print Design" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/55.webp')}}"
-                                class="object-cover h-100 w-100" alt="Print Design" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">04.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Print Design
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Design of print materials such as posters, flyers, banners,
-                            business cards, and packaging.
-                        </li>
-                        <li>
-                            Collaboration with print vendors to ensure accurate color
-                            reproduction and print quality.
-                        </li>
-                        <li>
-                            Attention to typography, layout, and visual hierarchy for
-                            effective communication.
-                        </li>
-                        <li>
-                            Preparation of print-ready files in appropriate formats and
-                            specifications.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/207.webp')}}"
-                                class="object-cover h-100 w-100" alt=" Advertising and Marketing Design" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/206.webp')}}"
-                                class="object-cover h-100 w-100" alt=" Advertising and Marketing Design" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">05.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Advertising and Marketing Design
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Creation of visually compelling graphics for online and offline
-                            advertising campaigns.
-                        </li>
-                        <li>
-                            Design of digital ad banners, social media ads, and email
-                            marketing graphics.
-                        </li>
-                        <li>
-                            Layout and design of print advertisements for magazines,
-                            newspapers, and billboards.
-                        </li>
-                        <li>
-                            Incorporation of persuasive visuals and call-to-action elements
-                            for effective marketing communication.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/209.webp')}}"
-                                class="object-cover h-100 w-100" alt=" Illustration and Infographic Design" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/213.webp')}}"
-                                class="object-cover h-100 w-100" alt=" Illustration and Infographic Design" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">06.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Illustration and Infographic Design
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Custom illustration creation to visually represent concepts,
-                            ideas, or stories.
-                        </li>
-                        <li>
-                            Design of infographics to present complex information or data in a
-                            visually appealing and easy-to-understand manner.
-                        </li>
-                        <li>
-                            Use of illustration and infographics in various digital and print
-                            media, such as websites, presentations, and reports.
-                        </li>
-                        <li>
-                            Attention to detail and artistic style to match the desired tone
-                            and message of the project.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/214.webp')}}"
-                                class="object-cover h-100 w-100" alt="Motion Graphics and Animation" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/215.webp')}}"
-                                class="object-cover h-100 w-100" alt="Motion Graphics and Animation" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">07.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Motion Graphics and Animation
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Creation of motion graphics and animations for videos,
-                            presentations, and websites.
-                        </li>
-                        <li>
-                            Incorporation of visual effects, transitions, and animated
-                            elements to enhance storytelling.
-                        </li>
-                        <li>
-                            Collaboration with video producers and animators to bring static
-                            designs to life.
-                        </li>
-                        <li>
-                            Use of industry-standard software and techniques to create
-                            professional-grade motion graphics.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/31.webp')}}"
-                                class="object-cover h-100 w-100" alt="Visual Branding Consultation" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/32.webp')}}"
-                                class="object-cover h-100 w-100" alt="Visual Branding Consultation" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">08.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Visual Branding Consultation
-                    </h3>
-                    <ol class="font-16 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Consultation services to understand a client's brand identity and
-                            visual goals.
-                        </li>
-                        <li>
-                            Guidance on visual branding strategies, including color
-                            psychology, typography selection, and style direction.
-                        </li>
-                        <li>
-                            Assistance with creating a consistent visual language and design
-                            system for brand recognition.
-                        </li>
-                        <li>
-                            Feedback and recommendations on existing designs or branding
-                            materials for improvement.
-                        </li>
-                    </ol>
-                </div>
+            <div class="col">
+                <span class="section-label">01.</span>
+                <h3 class="section-heading">Logo Design</h3>
+                <ol class="font-16 text-muted mb-3">
+                    <li>
+                        Creation of unique and memorable logos that represent a brand's
+                        identity and values.
+                    </li>
+                    <li>
+                        Collaboration with clients to understand their vision, target
+                        audience, and design preferences.
+                    </li>
+                    <li>
+                        Development of multiple logo concepts and iterations for client
+                        review and feedback.
+                    </li>
+                    <li>
+                        Delivery of final logo files in various formats suitable for digital
+                        and print media.
+                    </li>
+                </ol>
             </div>
         </div>
-    </section>
-    <!-- DETAILS -->
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/211.webp')}}" class="image"
+                            alt="Branding and Identity Design" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/212.webp')}}" class="image"
+                            alt="Branding and Identity Design" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">02.</span>
+                <h3 class="section-heading">Branding and Identity Design</h3>
+                <ol class="font-16 text-muted mb-3">
+                    <li>
+                        Development of cohesive brand identities, including color palettes,
+                        typography, and visual styles.
+                    </li>
+                    <li>
+                        Design of brand assets such as business cards, letterheads,
+                        envelopes, and brand guidelines.
+                    </li>
+                    <li>
+                        Creation of brand collateral, including brochures, flyers, banners,
+                        and social media graphics.
+                    </li>
+                    <li>
+                        Consistency in design elements to ensure a unified brand presence
+                        across all touchpoints.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/215.webp')}}" class="image"
+                            alt="Website and User Interface (UI) Design" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/216.webp')}}" class="image"
+                            alt="Website and User Interface (UI) Design" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">03.</span>
+                <h3 class="section-heading">Website and User Interface (UI) Design</h3>
+                <ol class="font-16 text-muted mb-3">
+                    <li>
+                        Design of visually appealing and user-friendly website interfaces.
+                    </li>
+                    <li>
+                        Wireframing and prototyping to plan and test user interactions and
+                        user flows.
+                    </li>
+                    <li>Creation of custom icons, buttons, and other UI elements.</li>
+                    <li>
+                        Collaboration with web developers to ensure seamless integration of
+                        design and functionality.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/208.webp')}}" class="image"
+                            alt="Print Design" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/55.webp')}}" class="image"
+                            alt="Print Design" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">04.</span>
+                <h3 class="section-heading">Print Design</h3>
+                <ol class="font-16 text-muted mb-3">
+                    <li>
+                        Design of print materials such as posters, flyers, banners, business
+                        cards, and packaging.
+                    </li>
+                    <li>
+                        Collaboration with print vendors to ensure accurate color
+                        reproduction and print quality.
+                    </li>
+                    <li>
+                        Attention to typography, layout, and visual hierarchy for effective
+                        communication.
+                    </li>
+                    <li>
+                        Preparation of print-ready files in appropriate formats and
+                        specifications.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/207.webp')}}" class="image"
+                            alt=" Advertising and Marketing Design" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/206.webp')}}" class="image"
+                            alt=" Advertising and Marketing Design" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">05.</span>
+                <h3 class="section-heading">Advertising and Marketing Design</h3>
+                <ol class="font-16 text-muted mb-3">
+                    <li>
+                        Creation of visually compelling graphics for online and offline
+                        advertising campaigns.
+                    </li>
+                    <li>
+                        Design of digital ad banners, social media ads, and email marketing
+                        graphics.
+                    </li>
+                    <li>
+                        Layout and design of print advertisements for magazines, newspapers,
+                        and billboards.
+                    </li>
+                    <li>
+                        Incorporation of persuasive visuals and call-to-action elements for
+                        effective marketing communication.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/209.webp')}}" class="image"
+                            alt=" Illustration and Infographic Design" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/213.webp')}}" class="image"
+                            alt=" Illustration and Infographic Design" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">06.</span>
+                <h3 class="section-heading">Illustration and Infographic Design</h3>
+                <ol class="font-16 text-muted mb-3">
+                    <li>
+                        Custom illustration creation to visually represent concepts, ideas,
+                        or stories.
+                    </li>
+                    <li>
+                        Design of infographics to present complex information or data in a
+                        visually appealing and easy-to-understand manner.
+                    </li>
+                    <li>
+                        Use of illustration and infographics in various digital and print
+                        media, such as websites, presentations, and reports.
+                    </li>
+                    <li>
+                        Attention to detail and artistic style to match the desired tone and
+                        message of the project.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/214.webp')}}" class="image"
+                            alt="Motion Graphics and Animation" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/215.webp')}}" class="image"
+                            alt="Motion Graphics and Animation" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">07.</span>
+                <h3 class="section-heading">Motion Graphics and Animation</h3>
+                <ol class="font-16 text-muted mb-3">
+                    <li>
+                        Creation of motion graphics and animations for videos,
+                        presentations, and websites.
+                    </li>
+                    <li>
+                        Incorporation of visual effects, transitions, and animated elements
+                        to enhance storytelling.
+                    </li>
+                    <li>
+                        Collaboration with video producers and animators to bring static
+                        designs to life.
+                    </li>
+                    <li>
+                        Use of industry-standard software and techniques to create
+                        professional-grade motion graphics.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/31.webp')}}" class="image"
+                            alt="Visual Branding Consultation" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/32.webp')}}" class="image"
+                            alt="Visual Branding Consultation" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">08.</span>
+                <h3 class="section-heading">Visual Branding Consultation</h3>
+                <ol class="font-16 text-muted mb-3">
+                    <li>
+                        Consultation services to understand a client's brand identity and
+                        visual goals.
+                    </li>
+                    <li>
+                        Guidance on visual branding strategies, including color psychology,
+                        typography selection, and style direction.
+                    </li>
+                    <li>
+                        Assistance with creating a consistent visual language and design
+                        system for brand recognition.
+                    </li>
+                    <li>
+                        Feedback and recommendations on existing designs or branding
+                        materials for improvement.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- DETAILS -->
 
-    <!-- WHY CHOOSE US -->
-    {% include "components/why-choose-us.html" %}
-    <!-- WHY CHOOSE US -->
+<!-- WHY CHOOSE US -->
+{% include "components/why-choose-us.html" %}
+<!-- WHY CHOOSE US -->
 
-    <!--PROCESS-->
-    {% include "components/process.html" %}
-    <!--PROCESS-->
+<!--PROCESS-->
+{% include "components/process.html" %}
+<!--PROCESS-->
 
-    <!--PROJECTS-->
-    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
-        <div class="text-white mb-5">
-            <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
-                OUR WORK
-            </b>
-            <h3 class="text-white font-40 fw-bold m-0 my-2">
-                Recent Projects Showcase
-            </h3>
-            <p class="text-muted font-18 m-0 col-sm-6">
+<!--PROJECTS-->
+<section class="section">
+    <div class="section-container">
+        <div class="section-header">
+            <b class="section-label">OUR WORK</b>
+            <h3 class="section-heading">Recent Projects Showcase</h3>
+            <p class="section-description">
                 Creating impact with every project, experience the innovation.
             </p>
         </div>
-        {% include "components/projects.html" %}
-        <div class="text-center py-5">
-            <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">
-                Load more
-            </button>
+        <div class="section-body">{% include "components/projects.html" %}</div>
+        <div class="section-footer">
+            <button class="btn-outline">Load more</button>
         </div>
-    </section>
-    <!--PROJECTS-->
+    </div>
+</section>
+<!--PROJECTS-->
 
-    <!-- FEEDBACKS -->
-    {% include "components/feedbacks.html" %}
-    <!-- FEEDBACKS -->
+<!-- FEEDBACKS -->
+{% include "components/feedbacks.html" %}
+<!-- FEEDBACKS -->
 
-    <!-- CLIENTS -->
-    {% include "components/clients.html" %}
-    <!-- CLIENTS -->
-</div>
+<!-- CLIENTS -->
+{% include "components/clients.html" %}
+<!-- CLIENTS -->
 {% endblock %}

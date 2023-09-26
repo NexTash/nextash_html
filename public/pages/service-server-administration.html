@@ -1,6 +1,6 @@
-{% extends "layouts/primary.html" %}
+{% extends "layouts/primary.html" %} 
 
-{% block title %} Server Administration | {% endblock %}
+{% block title %} Server Administration | {% endblock %} 
 
 {% block seo %}
 <meta name="description" content="" />
@@ -16,439 +16,383 @@
 {% endblock %}
 
 {% block content %}
-<div class="bg-1 bg-cover bg-no-repeat bg-fixed">
-    <!-- HEADER -->
-    <section class="shadow py-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl">
-            <div
-                class="row align-items-center justify-content-center my-5 py-2 py-sm-2 py-md-5 py-lg-5 py-xl-5 py-xl-5">
-                <div class="col-sm-12 text-white">
-                    <b class="border border-primary border-2 rounded-pill px-3 py-1 text-primary font-16 d-inline-block mb-2"
-                        data-aos-duration="1000" data-aos="fade-up">Service</b>
-                    <h3 class="display-1 fw-bold m-0 mb-2 col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xll-8"
-                        data-aos-duration="1000" data-aos="fade-up">
-                        Server Administration
-                    </h3>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xll-8 my-5">
-                    <div class="row text-muted font-18">
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                Every decision we make needs to answer the million-dollar
-                                question: how will this benefit our partner’s goal best? We work
-                                to develop solutions
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <p class="m-0" data-aos-duration="1000" data-aos="fade-up">
-                                We like to be different, in the same way that every mission is
-                                different. Every project is an opportunity to create result that
-                                will help you
-                            </p>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>Setup and Configuration</li>
-                                <li>Security and Patch Management</li>
-                                <li>Performance Monitoring and Optimization</li>
-                                <li>Backup and Disaster Recovery Solutions</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <ul data-aos-duration="1000" data-aos="fade-up">
-                                <li>Virtualization and Cloud Integration</li>
-                                <li>Updates and Patching</li>
-                                <li>Monitoring and Alerting</li>
-                                <li>Troubleshooting and Support</li>
-                            </ul>
-                        </div>
+<!-- HEADER -->
+<section class="section">
+    <div class="section-container">
+        <div class="section-body">
+            <div class="section-label page-label"><span>Service</span></div>
+            <h2 class="section-heading page-heading">Server Administration</h2>
+            <div class="section-description page-description">
+                <p>
+                    Every decision we make needs to answer the million-dollar question:
+                    how will this benefit our partner’s goal best? We work to develop
+                    solutions
+                </p>
+                <br />
+                <p>
+                    We like to be different, in the same way that every mission is
+                    different. Every project is an opportunity to create result that will
+                    help you
+                </p>
+                <br />
+                <div class="row">
+                    <div class="col">
+                        <ul class="section-slist">
+                            <li>Setup and Configuration</li>
+                            <li>Security and Patch Management</li>
+                            <li>Performance Monitoring and Optimization</li>
+                            <li>Backup and Disaster Recovery Solutions</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="section-slist">
+                            <li>Virtualization and Cloud Integration</li>
+                            <li>Updates and Patching</li>
+                            <li>Monitoring and Alerting</li>
+                            <li>Troubleshooting and Support</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- HEADER -->
+    </div>
+</section>
+<!-- HEADER -->
 
-    <!-- DETAILS -->
-    <section class="shadow py-2 py-sm-2 py-md-5 py-lg-5">
-        <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/182.webp')}}"
-                                class="object-cover h-100 w-100" alt="Setup and Configuration" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/179.webp')}}"
-                                class="object-cover h-100 w-100" alt="Setup and Configuration" />
-                        </div>
+<!-- DETAILS -->
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/182.webp')}}" class="image"
+                            alt="Setup and Configuration" />
                     </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">01.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Setup and Configuration
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Expert installation and configuration of server hardware and
-                            operating systems.
-                        </li>
-                        <li>
-                            Customizing server settings based on your specific requirements.
-                        </li>
-                        <li>
-                            Ensuring security measures and best practices are implemented from
-                            the start.
-                        </li>
-                        <li>Supporting both physical and virtual server deployments.</li>
-                    </ol>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/179.webp')}}" class="image"
+                            alt="Setup and Configuration" />
+                    </div>
                 </div>
             </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/180.webp')}}"
-                                class="object-cover h-100 w-100" alt="Security and Patch Management" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/169.webp')}}"
-                                class="object-cover h-100 w-100" alt="Security and Patch Management" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">02.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Security and Patch Management
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Implementing robust security measures to safeguard servers against
-                            threats.
-                        </li>
-                        <li>
-                            Regularly applying security patches and updates to protect against
-                            vulnerabilities.
-                        </li>
-                        <li>
-                            Configuring firewalls and intrusion prevention systems (IPS) for
-                            added protection.
-                        </li>
-                        <li>Monitoring server logs for potential security breaches.</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/172.webp')}}"
-                                class="object-cover h-100 w-100" alt="Performance Monitoring and Optimization" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/171.webp')}}"
-                                class="object-cover h-100 w-100" alt="Performance Monitoring and Optimization" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">03.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Performance Monitoring and Optimization
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Proactive monitoring of server performance metrics, such as CPU
-                            and memory usage.
-                        </li>
-                        <li>
-                            Identifying and resolving performance bottlenecks to improve
-                            server responsiveness.
-                        </li>
-                        <li>
-                            Optimizing server configurations for optimal resource utilization.
-                        </li>
-                        <li>Ensuring server resources align with workload demands.</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/178.webp')}}"
-                                class="object-cover h-100 w-100" alt="Backup and Disaster Recovery Solutions" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/173.webp')}}"
-                                class="object-cover h-100 w-100" alt="Backup and Disaster Recovery Solutions" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">04.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Backup and Disaster Recovery Solutions
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Designing and implementing reliable server backup strategies.
-                        </li>
-                        <li>
-                            Regularly scheduled backups to ensure data integrity and prevent
-                            data loss.
-                        </li>
-                        <li>Conducting recovery testing to validate backup reliability.</li>
-                        <li>
-                            Establishing disaster recovery plans to minimize downtime in case
-                            of failures.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/101.webp')}}"
-                                class="object-cover h-100 w-100" alt="Virtualization and Cloud Integration" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/102.webp')}}"
-                                class="object-cover h-100 w-100" alt="Virtualization and Cloud Integration" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">05.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Virtualization and Cloud Integration
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Deploying virtualization technologies for efficient server
-                            resource utilization.
-                        </li>
-                        <li>
-                            Migrating physical servers to virtualized environments for
-                            scalability and flexibility.
-                        </li>
-                        <li>
-                            Integrating servers with cloud platforms for hybrid and
-                            multi-cloud solutions.
-                        </li>
-                        <li>
-                            Ensuring seamless data migration and secure connections to cloud
-                            services.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/103.webp')}}"
-                                class="object-cover h-100 w-100" alt="Server Updates and Patching" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/104.webp')}}"
-                                class="object-cover h-100 w-100" alt="Server Updates and Patching" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">06.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Updates and Patching
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>Regularly applying software updates and security patches.</li>
-                        <li>
-                            Scheduling updates during maintenance windows to minimize
-                            downtime.
-                        </li>
-                        <li>
-                            Verifying updates for compatibility and stability before
-                            implementation.
-                        </li>
-                        <li>
-                            Maintaining documentation of update procedures and changelogs.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/97.webp')}}"
-                                class="object-cover h-100 w-100" alt="Monitoring and Alerting" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/137.webp')}}"
-                                class="object-cover h-100 w-100" alt="Monitoring and Alerting" />
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">07.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                         Monitoring and Alerting
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>
-                            Continuous monitoring of server health and performance indicators.
-                        </li>
-                        <li>
-                            Configuring alerts to promptly notify administrators of critical
-                            events.
-                        </li>
-                        <li>Real-time response to server issues and incidents.</li>
-                        <li>
-                            Analyzing historical data for performance trends and capacity
-                            planning.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-between">
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xll-5 my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                    <div class="position-relative image-box">
-                        <div data-aos-duration="1000" data-aos="zoom-in-up" class="bg-dotted border-shadow square-1">
-                        </div>
-                        <div data-aos-duration="1000" data-aos="zoom-in-up"
-                            class="bg-dotted-primary border-shadow square-2"></div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-lg" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/177.webp')}}"
-                                class="object-cover h-100 w-100" alt="Troubleshooting and Support" />
-                        </div>
-                        <div class="border-shadow border border-primary border-5 p-2 image-sm" data-aos-duration="1000"
-                            data-aos="zoom-in-up">
-                            <img src="{{ url_for('static', filename='images/services/187.webp')}}"
-                                class="object-cover h-100 w-100" alt="Troubleshooting and Support" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xll-6 my-5 order-0">
-                    <span class="display-1 text- text-stroke rounded-circle" data-aos-duration="1000"
-                        data-aos="zoom-in-up">08.</span>
-                    <h3 class="text-white display-3 mb-4 fw-bold" data-aos-duration="1000" data-aos="zoom-in-up">
-                        Troubleshooting and Support
-                    </h3>
-                    <ol class="font-18 text-muted mb-3" data-aos-duration="1000" data-aos="zoom-in-up">
-                        <li>Rapid response to server issues and technical glitches.</li>
-                        <li>
-                            Diagnosing and resolving server-related problems efficiently.
-                        </li>
-                        <li>
-                            Providing prompt technical support for server-related inquiries.
-                        </li>
-                        <li>Offering remote and on-site assistance based on your needs.</li>
-                    </ol>
-                </div>
+            <div class="col">
+                <span class="section-label">01.</span>
+                <h3 class="section-heading">Setup and Configuration</h3>
+                <ol class="section-description">
+                    <li>
+                        Expert installation and configuration of server hardware and
+                        operating systems.
+                    </li>
+                    <li>
+                        Customizing server settings based on your specific requirements.
+                    </li>
+                    <li>
+                        Ensuring security measures and best practices are implemented from
+                        the start.
+                    </li>
+                    <li>Supporting both physical and virtual server deployments.</li>
+                </ol>
             </div>
         </div>
-    </section>
-    <!-- DETAILS -->
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/180.webp')}}" class="image"
+                            alt="Security and Patch Management" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/169.webp')}}" class="image"
+                            alt="Security and Patch Management" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">02.</span>
+                <h3 class="section-heading">Security and Patch Management</h3>
+                <ol class="section-description">
+                    <li>
+                        Implementing robust security measures to safeguard servers against
+                        threats.
+                    </li>
+                    <li>
+                        Regularly applying security patches and updates to protect against
+                        vulnerabilities.
+                    </li>
+                    <li>
+                        Configuring firewalls and intrusion prevention systems (IPS) for
+                        added protection.
+                    </li>
+                    <li>Monitoring server logs for potential security breaches.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/172.webp')}}" class="image"
+                            alt="Performance Monitoring and Optimization" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/171.webp')}}" class="image"
+                            alt="Performance Monitoring and Optimization" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">03.</span>
+                <h3 class="section-heading">Performance Monitoring and Optimization</h3>
+                <ol class="section-description">
+                    <li>
+                        Proactive monitoring of server performance metrics, such as CPU and
+                        memory usage.
+                    </li>
+                    <li>
+                        Identifying and resolving performance bottlenecks to improve server
+                        responsiveness.
+                    </li>
+                    <li>
+                        Optimizing server configurations for optimal resource utilization.
+                    </li>
+                    <li>Ensuring server resources align with workload demands.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/178.webp')}}" class="image"
+                            alt="Backup and Disaster Recovery Solutions" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/173.webp')}}" class="image"
+                            alt="Backup and Disaster Recovery Solutions" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">04.</span>
+                <h3 class="section-heading">Backup and Disaster Recovery Solutions</h3>
+                <ol class="section-description">
+                    <li>Designing and implementing reliable server backup strategies.</li>
+                    <li>
+                        Regularly scheduled backups to ensure data integrity and prevent
+                        data loss.
+                    </li>
+                    <li>Conducting recovery testing to validate backup reliability.</li>
+                    <li>
+                        Establishing disaster recovery plans to minimize downtime in case of
+                        failures.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/101.webp')}}" class="image"
+                            alt="Virtualization and Cloud Integration" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/102.webp')}}" class="image"
+                            alt="Virtualization and Cloud Integration" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">05.</span>
+                <h3 class="section-heading">Virtualization and Cloud Integration</h3>
+                <ol class="section-description">
+                    <li>
+                        Deploying virtualization technologies for efficient server resource
+                        utilization.
+                    </li>
+                    <li>
+                        Migrating physical servers to virtualized environments for
+                        scalability and flexibility.
+                    </li>
+                    <li>
+                        Integrating servers with cloud platforms for hybrid and multi-cloud
+                        solutions.
+                    </li>
+                    <li>
+                        Ensuring seamless data migration and secure connections to cloud
+                        services.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/103.webp')}}" class="image"
+                            alt="Server Updates and Patching" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/104.webp')}}" class="image"
+                            alt="Server Updates and Patching" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">06.</span>
+                <h3 class="section-heading">Updates and Patching</h3>
+                <ol class="section-description">
+                    <li>Regularly applying software updates and security patches.</li>
+                    <li>
+                        Scheduling updates during maintenance windows to minimize downtime.
+                    </li>
+                    <li>
+                        Verifying updates for compatibility and stability before
+                        implementation.
+                    </li>
+                    <li>
+                        Maintaining documentation of update procedures and changelogs.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/97.webp')}}" class="image"
+                            alt="Monitoring and Alerting" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/137.webp')}}" class="image"
+                            alt="Monitoring and Alerting" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">07.</span>
+                <h3 class="section-heading">Monitoring and Alerting</h3>
+                <ol class="section-description">
+                    <li>
+                        Continuous monitoring of server health and performance indicators.
+                    </li>
+                    <li>
+                        Configuring alerts to promptly notify administrators of critical
+                        events.
+                    </li>
+                    <li>Real-time response to server issues and incidents.</li>
+                    <li>
+                        Analyzing historical data for performance trends and capacity
+                        planning.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-container">
+        <div class="row align-items-center g-5">
+            <div class="col">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/services/177.webp')}}" class="image"
+                            alt="Troubleshooting and Support" />
+                    </div>
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/services/187.webp')}}" class="image"
+                            alt="Troubleshooting and Support" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="section-label">08.</span>
+                <h3 class="section-heading">Troubleshooting and Support</h3>
+                <ol class="section-description">
+                    <li>Rapid response to server issues and technical glitches.</li>
+                    <li>Diagnosing and resolving server-related problems efficiently.</li>
+                    <li>
+                        Providing prompt technical support for server-related inquiries.
+                    </li>
+                    <li>Offering remote and on-site assistance based on your needs.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- DETAILS -->
 
-    <!-- WHY CHOOSE US -->
-    {% include "components/why-choose-us.html" %}
-    <!-- WHY CHOOSE US -->
+<!-- WHY CHOOSE US -->
+{% include "components/why-choose-us.html" %}
+<!-- WHY CHOOSE US -->
 
-    <!--PROCESS-->
-    {% include "components/process.html" %}
-    <!--PROCESS-->
+<!--PROCESS-->
+{% include "components/process.html" %}
+<!--PROCESS-->
 
-    <!--PROJECTS-->
-    <section class="container container-sm container-md container-lg container-xl container-xxl py-5">
-        <div class="text-white mb-5">
-            <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-light font-14">
-                OUR WORK
-            </b>
-            <h3 class="text-white font-40 fw-bold m-0 my-2">
-                Recent Projects Showcase
-            </h3>
-            <p class="text-muted font-18 m-0 col-sm-6">
+<!--PROJECTS-->
+<section class="section">
+    <div class="section-container">
+        <div class="section-header">
+            <b class="section-label">OUR WORK</b>
+            <h3 class="section-heading">Recent Projects Showcase</h3>
+            <p class="section-description">
                 Creating impact with every project, experience the innovation.
             </p>
         </div>
-        {% include "components/projects.html" %}
-        <div class="text-center py-5">
-            <button class="btn btn-primary text-white rounded-pill px-4 py-2 font-14">
-                Load more
-            </button>
+        <div class="section-body">{% include "components/projects.html" %}</div>
+        <div class="section-footer">
+            <button class="btn-outline">Load more</button>
         </div>
-    </section>
-    <!--PROJECTS-->
+    </div>
+</section>
+<!--PROJECTS-->
 
-    <!-- FEEDBACKS -->
-    {% include "components/feedbacks.html" %}
-    <!-- FEEDBACKS -->
+<!-- FEEDBACKS -->
+{% include "components/feedbacks.html" %}
+<!-- FEEDBACKS -->
 
-    <!-- CLIENTS -->
-    {% include "components/clients.html" %}
-    <!-- CLIENTS -->
-</div>
+<!-- CLIENTS -->
+{% include "components/clients.html" %}
+<!-- CLIENTS -->
 {% endblock %}
