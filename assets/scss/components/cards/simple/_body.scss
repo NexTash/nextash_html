@@ -1,0 +1,63 @@
+.card {
+  background-size: cover;
+  border: 2px solid get-var(dark);
+  color: white;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+  &.card-hover {
+    position: relative;
+    transition: border;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+
+    &:after,
+    &:before {
+      content: "";
+      width: 3px;
+      height: 60%;
+      position: absolute;
+      transition: top bottom, opacity;
+      transition-duration: 600ms;
+      transition-timing-function: ease;
+      background: linear-gradient(transparent, get-var(primary), transparent);
+      opacity: 0;
+    }
+    &:before {
+      left: -2px;
+      top: 10%;
+    }
+
+    &:hover:before {
+      top: 70%;
+      opacity: 1;
+    }
+
+    &:after {
+      right: -2px;
+      bottom: 10%;
+    }
+
+    &:hover:after {
+      bottom: 70%;
+      opacity: 1;
+    }
+    &:hover {
+      border: 2px solid get-var(primary) !important;
+    }
+  }
+}
+
+.image-zoom {
+  overflow: hidden;
+  img {
+    transition: transform;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}

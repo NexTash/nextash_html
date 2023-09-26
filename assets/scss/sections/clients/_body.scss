@@ -1,0 +1,34 @@
+.clients-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: calc(-0.5 * get-var(gutter-x));
+  margin-left: calc(-0.5 * get-var(gutter-x));
+
+  .client-col {
+    flex-shrink: 0;
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+    padding-right: calc(get-var(gutter-x) * 0.5);
+    padding-left: calc(get-var(gutter-x) * 0.5);
+    .image {
+      width: 100%;
+    }
+
+    @include media-breakpoint(sm) {
+      max-width: 50%;
+    }
+    @include media-breakpoint(md) {
+      width: 33.3333333333%;
+    }
+    @include media-breakpoint(lg) {
+      width: 25%;
+    }
+    @include media-breakpoint(xl) {
+      width: 20%;
+    }
+    @include media-breakpoint(xll) {
+      width: 16.6666666667%;
+    }
+  }
+}

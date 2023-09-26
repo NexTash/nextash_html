@@ -1,16 +1,7 @@
-/*!
-* UOM
-* Author:
-* Author URI:
-* Description:
-*/
-
-/* Note: Please do not change the orders of files */
-
-@import "./config";
 @import "./app/_app";
 @import "./mixins/_mixins";
 @import "./fonts/_fonts";
 @import "./libs/_libs";
 @import "./components/_components";
+@import "./sections/_sections";
 @import "./utils/_utils";

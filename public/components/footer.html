@@ -58,8 +58,8 @@
   </section>
   <section class="section footer-main bg-1">
     <div class="section-container">
-      <div class="row">
-        <div class="footer-col">
+      <div class="row row-cols-1 row-cols-1-sm row-cols-2-md row-cols-3-lg g-4">
+        <div class="col">
           <a href="/" class="logo" role="img" aria-label="NexTash logo">
             <img src="{{ url_for('static', filename='images/logos/logo.png')}}" width="70" height="70" class="image"
               alt="NexTash logo">
@@ -77,7 +77,7 @@
             <a href="#" class="bx bxl-github icon"></a>
           </div>
         </div>
-        <div class="footer-col">
+        <div class="col">
           <h3 class="heading" role="heading" aria-level="3">Information</h3>
           <ul type="none" class="footer-list">
             <li class="list-item"><a href="/about-us" class="list-link">About us</a></li>
@@ -90,7 +90,7 @@
             <li class="list-item"><a href="/faqs" class="list-link">Faqs</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div class="col">
           <h3 class="heading" role="heading" aria-level="3">Subscribe</h3>
           <p class="description">Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
           <form action="/subscribed-successfully" class="subscribe-form">

@@ -1,0 +1,36 @@
+/* Component code */
+.media {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  .icon {
+    background-color: #131111;
+    border: 2px solid get-var(primary);
+    color: get-var(primary);
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    font-size: 25px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .media-body {
+    margin-left: 10px;
+    .media-heading {
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 3px;
+    }
+    .description,
+    a.description {
+      color: #c7bfbf;
+      font-size: 14px;
+      margin: 0;
+      text-decoration: none;
+    }
+    a.description:hover {
+      text-decoration: underline;
+    }
+  }
+}

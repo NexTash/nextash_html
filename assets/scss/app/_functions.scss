@@ -25,4 +25,3 @@
 @function get-var($var) {
   @return var(-- + $prefix-var + $var);
 }
-
