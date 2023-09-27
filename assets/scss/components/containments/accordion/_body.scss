@@ -1,0 +1,16 @@
+.accordion {
+  .accordion-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: get-var(rounded);
+    .accordion-header {
+      padding: 20px;
+      color:get-var(text);
+      font-weight:bold;
+    }
+    .accordion-body {
+      padding: 20px;
+      color:get-var(muted);
+    }
+  }
+}
