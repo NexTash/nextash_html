@@ -7,6 +7,10 @@
   backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
+  .card-body {
+    padding: 40px;
+  }
+
   &.card-hover {
     position: relative;
     transition: border;

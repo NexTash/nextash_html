@@ -34,7 +34,7 @@
 
 {% block content %}
 <!-- HEADER -->
-<section class="section" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true">
+<section class="section" data-aos="zoom-in-up">
   <div class="section-container ">
     <div class="section-body">
       <div class="section-label page-label"><span> WHO WE ARE ?</span></div>
@@ -50,15 +50,15 @@
 <!-- HEADER -->
 
 <!-- INTRO -->
-<section class="section" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true">
+<section class="section" data-aos="zoom-in-up">
   <div class="section-container ">
     <div class="row row-cols-1 row-cols-1-sm row-cols-2-md">
       <div class="col logo-wrapper" data-tilt data-tilt-max="20" data-tilt-speed="400">
-        <div class="  logo-border z-index-1" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true"></div>
+        <div class="  logo-border z-index-1" data-aos="zoom-in-up"></div>
         <img src="{{ url_for('static', filename='images/logos/logo-min.png')}}" class="image-full h-100 w-100 z-index-2"
-          alt="Logo" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true">
+          alt="Logo" data-aos="zoom-in-up">
       </div>
-      <div class="col" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true">
+      <div class="col" data-aos="zoom-in-up">
         <b class="section-label">About</b>
         <h3 class="section-heading"> Who we are</h3>
         <p class="section-description">
@@ -73,7 +73,7 @@
 <!-- INTRO -->
 
 <!-- CEO MESSAGE -->
-<section class="section" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-once="true">
+<section class="section" data-aos="zoom-in-up">
   <div class="section-container">
     <div class="row row-cols-1 row-cols-1-sm row-cols-2-md">
       <div class="col">
@@ -99,25 +99,35 @@
 {% include "components/story.html" %}
 <!-- STORY -->
 
-<!-- MISSION -->
-<section class="shadow py-2 py-sm-2 py-md-5 py-lg-5 bg-2" data-aos-duration="1000" data-aos="fade-up">
-  <div class="card bg-transparent border-0 py-5 rounded-0">
-    <div class="container container-sm container-md container-lg container-xl container-xxl">
-      <div class="text-center p-3 backdrop-6 py-5 border border-primary border-4 border-shadow">
-        <b class="border border-2 border-primary py-1 px-3 text-uppercase rounded-pill text-white font-12 d-inline-block mb-2"
-          data-aos-duration="1000" data-aos="zoom-in-up">About</b>
-        <h3 class="text-white display-4 fw-bold m-0 mb-3" data-aos-duration="1000" data-aos="zoom-in-up">Our Mission
-        </h3>
-        <p class="text-white font-18 m-0 mb-4 mx-auto lh-base" data-aos-duration="1000" data-aos="zoom-in-up">
+
+
+<!-- OUR MISSION -->
+<section class="section bg-2">
+  <div class="section-container">
+    <div class="section-body center card card-hover">
+      <div class="section-pad">
+        <div class="section-label">
+          <span>About</span>
+        </div>
+        <h2 class="section-heading">
+          Our Mission
+        </h2>
+        <p class="section-description">
           At NexTash, our mission is to deliver cutting-edge IT solutions that drive success and transform
           the way businesses operate. We strive to be a trusted partner for our clients, helping them achieve their
           goals through innovative technology, expert guidance, and unparalleled support.
         </p>
+        <div>
+          <br>
+          <a href="/about-us" class="btn-outline">Learn More</a>
+        </div>
       </div>
+     
     </div>
   </div>
 </section>
-<!-- MISSION -->
+<!-- OUR MISSION -->
+
 
 <!-- SERVICES -->
 {% include "components/services.html" %}
