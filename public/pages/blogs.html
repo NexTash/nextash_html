@@ -17,7 +17,7 @@
 
 {% block content %}
 <!-- HEADER -->
-<section class="section"  data-aos="zoom-in-up" data-aos-once="true">
+<section class="section">
   <div class="section-container ">
     <div class="section-body">
       <div class="section-label page-label"><span>BLOGS</span></div>
@@ -32,36 +32,22 @@
 <!-- HEADER -->
 
 <!-- CONTENT -->
-<section class="section"  data-aos="zoom-in-up" data-aos-once="true">
+<section class="section">
   <div class="section-container ">
+
     <div class="section-header">
-      <h3 class="font-18 fw-bold m-0 text-white"  data-aos="zoom-in-up">Posts <span
-          id="totalCount">1 to 9 of 0</span></h3>
-      <div class="row my-5">
-        <div class="col-12 col-sm-12 col-md-4 col-lg-6 mb-3"  data-aos="zoom-in-up">
-          <form class="input-group border rounded-pill px-2 border-3 border-light bg-dark" id="searchForm">
-            <input type="search" value="" name="search" id="search" placeholder="Search..."
-              class="bg-dark border-0 shadow-none form-control font-16 text-dark">
-            <button class="btn border-0 shadow-none bx bx-search font-18 me-2 text-primary"></button>
+      <h3 class="section-description">Posts <span id="totalCount">1 to 9 of 0</span></h3>
+      <div class="row g-5 row-cols-1 row-cols-1-sm row-cols-3-md">
+        <div class="col">
+          <form class="input-group" id="searchForm">
+            <input type="search" value="" name="search" id="search" placeholder="Search..." class="form-field">
+            <button class="btn bx bx-search"></button>
           </form>
         </div>
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3"  data-aos="zoom-in-up">
-          <div class="input-group border rounded-pill px-2 border-3 border-light bg-dark">
-            <label for="category_id" class="input-group-text bg-dark border-0 fw-bold text-white">Category</label>
-            <select name="category_id" id="category_id" data-selected=""
-              class=" border-0 shadow-none font-16 text-white bg-dark form-control form-select">
-              <option value="" selected="">Select</option>
-              <option value="3">Javascript</option>
-              <option value="2">Css</option>
-              <option value="1">Html</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3"  data-aos="zoom-in-up">
-          <div class="input-group border rounded-pill px-2 border-3 border-light bg-dark">
-            <label for="ordering" class="input-group-text bg-dark border-0 fw-bold text-white">Sort</label>
-            <select name="ordering" id="ordering"
-              class=" border-0 shadow-none font-16 text-white bg-dark form-control form-select">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+          <div class="input-group">
+            <select name="ordering" id="ordering" class="form-field form-select">
+              <option value="-id" selected>Sort</option>
               <option value="-id">Recent</option>
               <option value="id">Oldest</option>
             </select>
@@ -69,11 +55,9 @@
         </div>
       </div>
     </div>
-    <div class="section-body">
-      {% include "components/blogs.html" %}
-    </div>
+    <div class="section-body">{% include "components/blogs.html" %}</div>
     <div class="section-footer">
-      <button  class="btn-outline">Load More</button>
+      <button class="btn-outline">Load More</button>
     </div>
   </div>
 </section>

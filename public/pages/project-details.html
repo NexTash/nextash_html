@@ -18,7 +18,7 @@
 
 {% block content %}
 <!-- HEADER -->
-<section class="section"  data-aos="zoom-in-up" data-aos-once="true">
+<section class="section">
     <div class="section-container ">
         <div class="section-body">
             <div class="section-label page-label"><span>WEB & APP PROJECT</span></div>
@@ -34,111 +34,99 @@
 <!-- HEADER -->
 
 <!-- INFO -->
-<section class="section"  data-aos="zoom-in-up" data-aos-once="true">
+<section class="section">
     <div class="section-container ">
-        <ul
-            class="list-group list-group-horizontal justify-content-evenly flex-column flex-sm-column flex-md-row flex-lg-row">
-            <li class="list-group-item border-0 d-flex align-items-start my-2 p-0 bg-transparent">
-                <div class="p-2 border border-2 border-primary bg-dark text-primary me-2 font-26 bx bx-user-circle"
-                     data-aos="zoom-in-up">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 align-items-center justify-content-center g-5">
+            <div class="col">
+                <div class="media">
+                    <i class="bx bx-user-circle icon"></i>
+                    <div class="media-body">
+                        <h4 class="media-heading">Client</h4>
+                        <p class="media-description">John doe</p>
+                    </div>
                 </div>
-                <div class="ms-3"  data-aos="zoom-in-up">
-                    <h3 class="font-20 fw-bold m-0 text-white mb-2">Client</h3>
-                    <p class="text-muted font-16">Mindful LLC. </p>
+            </div>
+            <div class="col">
+                <div class="media">
+                    <i class="bx bx-map icon"></i>
+                    <div class="media-body">
+                        <h4 class="media-heading">Location</h4>
+                        <p class="media-description">Mindful LLC.</p>
+                    </div>
                 </div>
-            </li>
-            <li class="list-group-item border-0 d-flex align-items-start my-2 p-0 bg-transparent">
-                <div class="p-2 border border-2 border-primary bg-dark text-primary me-2 font-26 bx bx-map"
-                     data-aos="zoom-in-up"></div>
-                <div class="ms-3"  data-aos="zoom-in-up">
-                    <h3 class="font-20 fw-bold m-0 text-white mb-2">Location</h3>
-                    <p class="text-muted font-16">Mindful LLC. </p>
+            </div>
+            <div class="col">
+                <div class="media">
+                    <i class="bx bx-time icon"></i>
+                    <div class="media-body">
+                        <h4 class="media-heading">Date</h4>
+                        <p class="media-description">14 March 2023</p>
+                    </div>
                 </div>
-            </li>
-            <li class="list-group-item border-0 d-flex align-items-start my-2 p-0 bg-transparent">
-                <div class="p-2 border border-2 border-primary bg-dark text-primary me-2 font-26 bx bx-calendar"
-                     data-aos="zoom-in-up">
-                </div>
-                <div class="ms-3"  data-aos="zoom-in-up">
-                    <h3 class="font-20 fw-bold m-0 text-white mb-2">Date</h3>
-                    <p class="text-muted font-16">March 2023 </p>
-                </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </section>
 <!-- INFO -->
 
 <!-- OVERVIEW -->
-<section class="section"  data-aos="zoom-in-up" data-aos-once="true">
+<section class="section">
     <div class="section-container ">
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-5 justify-content-between align-items-center">
-            <div class="col" data-tilt data-tilt-max="20" data-tilt-speed="400">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-5">
+            <div class="col">
                 <div class="image-box">
-                    <div  data-aos="zoom-in-up" class=" square-1">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg">
+                        <img src="{{ url_for('static', filename='images/projects/1.webp')}}" class="image"
+                            alt="Overview" />
                     </div>
-                    <div  data-aos="zoom-in-up"
-                        class="square-2"></div>
-                    <div class="image-lg" 
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/projects/1.webp')}}"
-                            class="image" alt="Overview" />
-                    </div>
-                    <div class="image-sm" 
-                        data-aos="zoom-in-up">
-                        <img src="{{ url_for('static', filename='images/projects/2.webp')}}"
-                            class="image" alt="Overview" />
+                    <div class="image-sm">
+                        <img src="{{ url_for('static', filename='images/projects/2.webp')}}" class="image"
+                            alt="Overview" />
                     </div>
                 </div>
             </div>
-            <div class="col my-5 order-0 order-sm-0 order-md-0 order-lg-1 order-xl-1 order-xll-1">
-                <h3 class="section-heading"  data-aos="zoom-in-up">Overview</h3>
-                <p class="section-description"  data-aos="zoom-in-up">
+            <div class="col">
+                <h3 class="section-heading">Overview</h3>
+                <p class="section-description">
                     Our approach combined cutting-edge design with robust functionality. We delivered a
                     high-performing website and a user-friendly mobile application that effectively positioned
                     Fintech Frontier as a trailblazer in their field. By focusing on creating a strong digital
                     journey, we not only helped Fintech Frontier extend their reach but also enhance their
                     customer engagement and satisfaction levels.
                 </p>
-                <div class="d-flex align-items-start mb-2">
-                    <div class="bx bx-star bg-gray-700 border border-2 border-primary font-30 text-white rounded-circle p-3"
-                         data-aos="zoom-in-up">
-                    </div>
-                    <div class="ms-4">
-                        <h4 class="m-0 mb-2 text-white font-20"  data-aos="zoom-in-up">
-                            Unified Design</h4>
-                        <p class="text-muted font-18"  data-aos="zoom-in-up">Maintained
-                            consistent branding and design across the
-                            website and mobile app.</p>
+                <div class="media">
+                    <i class="bx bx-star icon"></i>
+                    <div class="media-body">
+                        <h4 class="media-heading">Unified Design</h4>
+                        <p class="media-description">
+                            Maintained consistent branding and design across the website and mobile app.
+                        </p>
                     </div>
                 </div>
-                <div class="d-flex align-items-start mb-2">
-                    <div class="bx bx-star bg-gray-700 border border-2 border-primary font-30 text-white rounded-circle p-3"
-                         data-aos="zoom-in-up">
-                    </div>
-                    <div class="ms-4">
-                        <h4 class="m-0 mb-2 text-white font-20"  data-aos="zoom-in-up">
-                            Secure Transactions</h4>
-                        <p class="text-muted font-18"  data-aos="zoom-in-up">Integrated
-                            secure payment gateways for safe and convenient
-                            transactions.</p>
+                <br><br>
+                <div class="media">
+                    <i class="bx bx-star icon"></i>
+                    <div class="media-body">
+                        <h4 class="media-heading">Secure Transactions</h4>
+                        <p class="media-description">
+                            Integrated secure payment gateways for safe and convenient transactions.
+                        </p>
                     </div>
                 </div>
-                <div class="d-flex align-items-start mb-2">
-                    <div class="bx bx-star bg-gray-700 border border-2 border-primary font-30 text-white rounded-circle p-3"
-                         data-aos="zoom-in-up">
-                    </div>
-                    <div class="ms-4">
-                        <h4 class="m-0 mb-2 text-white font-20"  data-aos="zoom-in-up">
-                            Robust Backend</h4>
-                        <p class="text-muted font-18"  data-aos="zoom-in-up">Built a
+                <br><br>
+                <div class="media">
+                    <i class="bx bx-star icon"></i>
+                    <div class="media-body">
+                        <h4 class="media-heading">Robust Backend</h4>
+                        <p class="media-description">Built a
                             robust and easy-to-use backend for efficient
                             management and updates.</p>
                     </div>
                 </div>
-                <a href="" class="btn-outline mt-2"  data-aos="zoom-in-up">
-                    VIEW PROJECT
-                </a>
+                <br>
+                <a href="" class="btn-outline">VIEW PROJECT</a>
             </div>
         </div>
     </div>
@@ -151,7 +139,7 @@
 
 
 <!-- Projects -->
-<section class="section"  data-aos="zoom-in-up" data-aos-once="true">
+<section class="section">
     <div class="section-container">
         <div class="section-header">
             <span class="section-label">OUR WORK</span>

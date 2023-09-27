@@ -6,9 +6,50 @@
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
+  .card-badge {
+    background-color: get-var(primary);
+    color: white;
+    display: inline-block;
+    padding: 3px 10px;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 15px 0;
+    text-decoration: none;
+  }
+
+  .card-icon {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  .card-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: get-var(text);
+    margin-bottom: 15px;
+  }
+  .card-description {
+    font-size: 15px;
+    color: get-var(muted);
+    margin-bottom: 20px;
+  }
+
+  .card-header {
+    padding: 10px 30px;
+  }
   .card-body {
-    padding: 40px;
+    padding: 10px 30px;
+  }
+  .card-footer {
+    padding: 10px 30px;
   }
 
   &.card-hover {
