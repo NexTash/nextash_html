@@ -11,12 +11,13 @@
     border-radius: 50px;
     font-size: 12px;
     display: inline-block;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: get-var(shadow);
     margin-bottom: 12px;
     border-left: 3px solid get-var(primary);
     border-right: 3px solid get-var(primary);
     font-weight: 800;
     text-transform: uppercase;
+    text-decoration: none;
     &.page-label {
       border: 3px solid get-var(primary);
     }
@@ -25,7 +26,7 @@
   .section-heading {
     display: block;
     text-decoration: none;
-    color: white;
+    color: get-var(text);
     font-size: 34px;
     font-weight: bold;
     margin-bottom: 12px;
@@ -63,7 +64,7 @@
   }
 
   .section-description {
-    color: #c7bfbf;
+    color: get-var(muted);
     font-size: 16px;
     margin-bottom: 14px;
     &.page-description {
@@ -74,56 +75,20 @@
       margin: 0 auto;
     }
   }
+
+  .section-subheading {
+    color: get-var(text);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+
   .btn-outline {
     margin-top: 10px;
     display: inline-block;
   }
 
-  .section-slist {
-    list-style: none;
-    color: #c7bfbf;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 14px;
-    padding-left: 20px;
-    li {
-      margin-bottom: 10px;
-      &::before {
-        content: "\2022";
-        color: red;
-        font-weight: bold;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-      }
-    }
-  }
 
-  .section-list {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
-    .list-item {
-      padding: 5px 0;
-      .list-link {
-        display: inline-flex;
-        align-items: center;
-        text-decoration: none;
-        color: get-var(text);
-        font-size: 14px;
-        .icon {
-          margin-right: 10px;
-          color: get-var(primary);
-        }
-        &:hover {
-          color: get-var(primary);
-        }
-      }
-    }
-  }
 
   .section-link {
     text-decoration: none;

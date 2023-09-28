@@ -1,0 +1,24 @@
+.who-we-are {
+  .logo-col {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover .logo-border {
+      transform: rotate(-90deg);
+      box-shadow: rgba(238, 40, 14, 0.2) 0px 8px 24px,
+        rgba(211, 38, 7, 0.2) 0px 16px 56px, rgba(235, 6, 25, 0.3) 0px 24px 80px;
+    }
+  }
+}
+.logo-border {
+    width: 320px;
+    height: 320px;
+    transition: transform, 0.5s;
+    transform: rotate(45deg);
+    border: 2px solid get-var(primary);
+    box-shadow: rgba(238, 40, 14, 0.1) 0px 8px 24px,
+      rgba(211, 38, 7, 0.1) 0px 16px 56px,
+      rgba(235, 6, 25, 0.233) 0px 24px 80px;
+      position: absolute;
+  }

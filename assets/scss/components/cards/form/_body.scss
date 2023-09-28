@@ -1,14 +1,10 @@
 .form-card {
   display: flex;
   flex-direction: column;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   height: 100%;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  border: 2px solid get-var(dark);
   background-size: cover;
 
   .form-group {

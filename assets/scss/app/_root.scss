@@ -20,6 +20,7 @@
   --#{$prefix-var}text: #{$text};
   --#{$prefix-var}text-rgb: #{extract-rgb($text)};
   --#{$prefix-var}transparent: #{$transparent};
+  --#{$prefix-var}border: #{$border};
   --#{$prefix-var}border-color: #{$border};
   --#{$prefix-var}border-width: 1px;
   --#{$prefix-var}border-style: solid;
@@ -36,4 +37,5 @@
   --#{$prefix-var}gutter-x: 1.5rem;
   --#{$prefix-var}gutter-y: 0;
   --#{$prefix-var}shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  --#{$prefix-var}blur: blur(10px);
 }

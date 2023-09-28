@@ -1,0 +1,49 @@
+.offcanvas {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: get-var(body);
+  box-shadow: get-var(shadow);
+  width: 350px;
+  border-left: 1px solid get-var(dark);
+display: none;
+  .offcanvas-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: inherit;
+
+    .offcanvas-header {
+      padding: 10px 20px;
+      padding-top: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .offcanvas-body {
+      padding: 10px 20px;
+      height: inherit;
+      .list {
+        margin-top: 20px;
+        .list-item {
+          padding: 5px;
+          font-size: 20px;
+          font-weight: bold;
+          .list-link {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .offcanvas-footer {
+      padding: 10px 20px;
+      h4 {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

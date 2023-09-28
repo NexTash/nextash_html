@@ -17,18 +17,7 @@
 
 {% block style %}
 <style>
-  .logo-border {
-    width: 320px;
-    height: 320px;
-    transition: transform, 0.5s;
-    transform: rotate(45deg);
-    box-shadow: rgba(238, 40, 14, 0.1) 0px 8px 24px, rgba(211, 38, 7, 0.1) 0px 16px 56px, rgba(235, 6, 25, 0.233) 0px 24px 80px;
-  }
 
-  .logo-wrapper:hover .logo-border {
-    transform: rotate(-90deg);
-    box-shadow: rgba(238, 40, 14, 0.2) 0px 8px 24px, rgba(211, 38, 7, 0.2) 0px 16px 56px, rgba(235, 6, 25, 0.3) 0px 24px 80px;
-  }
 </style>
 {% endblock %}
 
@@ -50,15 +39,15 @@
 <!-- HEADER -->
 
 <!-- INTRO -->
-<section class="section" data-aos="zoom-in-up">
-  <div class="section-container ">
-    <div class="row row-cols-1 row-cols-1-sm row-cols-2-md">
-      <div class="col logo-wrapper" data-tilt data-tilt-max="20" data-tilt-speed="400">
-        <div class="  logo-border z-index-1" data-aos="zoom-in-up"></div>
-        <img src="{{ url_for('static', filename='images/logos/logo-min.png')}}" class="image-full h-100 w-100 z-index-2"
-          alt="Logo" data-aos="zoom-in-up">
+<section class="section who-we-are">
+  <div class="section-container">
+    <div class="row g-5 align-items-center">
+      <div class="col logo-col" data-tilt data-tilt-max="20" data-tilt-speed="400">
+        <div class="logo-border" data-aos="zoom-in-up"></div>
+        <img src="{{ url_for('static', filename='images/logos/logo-min.png')}}" class="image-full" alt="Logo"
+          data-aos="zoom-in-up">
       </div>
-      <div class="col" data-aos="zoom-in-up">
+      <div class="col">
         <b class="section-label">About</b>
         <h3 class="section-heading"> Who we are</h3>
         <p class="section-description">
@@ -75,11 +64,15 @@
 <!-- CEO MESSAGE -->
 <section class="section" data-aos="zoom-in-up">
   <div class="section-container">
-    <div class="row row-cols-1 row-cols-1-sm row-cols-2-md">
+    <div class="row row-cols-1 row-cols-1-sm row-cols-2-md row-cols-2-lg align-items-center g-5">
       <div class="col">
-        <a class="" href="">
-          <img src="{{ url_for('static', filename='images/team/1.jpg')}}" class="card-img-top">
-        </a>
+        <div class="image-box">
+          <div class="square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
+            <img src="{{ url_for('static', filename='images/team/1.jpg')}}" class="image" alt="Our process" />
+          </div>
+        </div>
       </div>
       <div class="col">
         <b class="section-label"> CEO MESSAGE</b>
@@ -120,7 +113,7 @@
           <a href="/about-us" class="btn-outline">Learn More</a>
         </div>
       </div>
-     
+
     </div>
   </div>
 </section>

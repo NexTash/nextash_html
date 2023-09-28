@@ -1,154 +1,69 @@
-<!-- <div class="offcanvas bg-1 bg-fixed bg-dark offcanvas-end" tabindex="-1" id="sidebar"
-    aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-        <a href="/">
-            <img src="{{ url_for('static', filename='images/logos/logo.png')}}" class="d-inline-block" width="60">
-        </a>
-        <button type="button" class="close-btn bx bx-x bx-tada-hover" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body px-4">
-        <form action="/" class="input-group bg-gray-700 my-5 font-14 rounded-pill">
-            <input type="text" placeholder="Search..."
-                class="form-control shadow-none py-3 fw-bold bg-transparent text-white border-0 font-14 px-3">
-            <button class="bx bx-search btn font-20 fw-normal text-white p-2 px-4"></button>
-        </form>
-        <div class="accordion border-0" id="menu">
-            <a href="/" class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                <span class="bx bx-circle text-primary me-4 fw-normal"></span> Home
+<div class="offcanvas bg-2" id="sidebar">
+    <div class="offcanvas-content bg-triangles bg-cover">
+        <div class="offcanvas-header">
+            <a href="/" class="logo">
+                <img src="{{ url_for('static', filename='images/logos/logo.png')}}" class="image" width="60" />
             </a>
-            <div class="accordion-item border-dark border border-1 bg-transparent p-0 mb-3">
-                <button
-                    class="accordion-button collapsed bg-transparent p-0 d-block text-white font-20 text-decoration-none fw-bold shadow-none d-flex align-items-center"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#item-1" aria-expanded="false"
-                    aria-controls="faq1">
-                    <span class="bx bx-circle text-primary me-4 fw-normal"></span> Services
-                </button>
-                <div id="item-1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#menu">
-                    <div class="accordion-body text-muted py-2 pt-4">
-                        <a href="/service-branding"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Branding
-                        </a>
-                        <a href="/service-business-analysis"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Business analysis
-                        </a>
-                        <a href="/service-web-development"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Web development
-                        </a>
-                        <a href="/service-mobile-app-development"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Mobile app development
-                        </a>
-                        <a href="/service-erp-development"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Erp solutions
-                        </a>
-                        <a href="/service-networking"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Networking
-                        </a>
-                        <a href="/service-devops"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            DevOps
-                        </a>
-                        <a href="/service-cyber-security"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Cyber security
-                        </a>
-                        <a href="/service-managed-hosting"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Managed hosting
-                        </a>
-                        <a href="/service-cloud-hosting"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Cloud hosting
-                        </a>
-                        <a href="/service-database-administration"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Database administration
-                        </a>
-                        <a href="/service-server-administration"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Server administration
-                        </a>
-                        <a href="/service-graphics-designing"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Graphics designing
-                        </a>
-                        <a href="/service-digital-marketing"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Digital marketing
-                        </a>
-                        <a href="/service-seo"
-                            class="d-block text-white font-16 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Seo
-                        </a>
-                        <a href="/service-technical-support"
-                            class="d-block text-white font-16 text-decoration-none fw-bold d-flex align-items-center">
-                            <span class="bx bx-minus-circle text-primary me-4 fw-normal"></span>
-                            Technical support
-                        </a>
-                    </div>
-                </div>
+            <button type="button" class="close-btn bx bx-x bx-tada-hover" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-4">
+            <form action="/" class="input-group">
+                <input type="text" placeholder="Search..." class="form-field" />
+                <button class="bx bx-search btn"></button>
+            </form>
+            <ul class="list" type="none">
+                <li class="list-item">
+                    <a href="/" class="list-link">
+                        <span class="bx bx-circle icon"></span> Home
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="/services" class="list-link">
+                        <span class="bx bx-circle icon"></span> Services
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="/about-us" class="list-link">
+                        <span class="bx bx-circle icon"></span> About us
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="/contact-us" class="list-link">
+                        <span class="bx bx-circle icon"></span> Contact us
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="/team" class="list-link">
+                        <span class="bx bx-circle icon"></span> Team
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="/blogs" class="list-link">
+                        <span class="bx bx-circle icon"></span> Blogs
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="/projects" class="list-link">
+                        <span class="bx bx-circle icon"></span> Case studies
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="/careers" class="list-link">
+                        <span class="bx bx-circle icon"></span> Careers
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="offcanvas-footer">
+            <h4>Follow us</h4>
+            <div class="social-links">
+                <a href="#" class="bx bxl-facebook-square icon"></a>
+                <a href="#" class="bx bxl-twitter icon"></a>
+                <a href="#" class="bx bxl-google icon"></a>
+                <a href="#" class="bx bxl-instagram icon"></a>
+                <a href="#" class="bx bxl-github icon"></a>
             </div>
-            <a href="/about-us"
-                class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                <span class="bx bx-circle text-primary me-4 fw-normal"></span>
-                About us
-            </a>
-            <a href="/contact-us"
-                class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                <span class="bx bx-circle text-primary me-4 fw-normal"></span>
-                Contact us
-            </a>
-            <a href="/team"
-                class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                <span class="bx bx-circle text-primary me-4 fw-normal"></span>
-                Team
-            </a>
-            <a href="/blogs"
-                class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                <span class="bx bx-circle text-primary me-4 fw-normal"></span>
-                Blogs
-            </a>
-            <a href="/projects"
-                class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                <span class="bx bx-circle text-primary me-4 fw-normal"></span>
-                Case studies
-            </a>
-            <a href="/careers"
-                class="d-block text-white font-20 text-decoration-none fw-bold mb-3 d-flex align-items-center">
-                <span class="bx bx-circle text-primary me-4 fw-normal"></span>
-                Careers
-            </a>
         </div>
     </div>
-    <div class="p-3">
-        <h3 class="text-white font-20 mb-3">Follow us</h3>
-        <div class="d-flex align-items-center mt-3">
-            <a href="#" class="bx bxl-facebook-square font-20 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-twitter font-20 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-google font-20 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-instagram font-20 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
-            <a href="#" class="bx bxl-github font-20 btn btn-dark text-muted p-1 rounded-circle me-1"></a>
-        </div>
-    </div>
-</div> -->
+</div>

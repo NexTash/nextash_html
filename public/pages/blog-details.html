@@ -20,196 +20,90 @@
 {% endblock %}
 
 {% block content %}
-<main class="bg-1 bg-no-repeat">
-  <div class="container container-sm container-md container-lg container-xl container-xxl py-5">
-    <section class="row align-items-center py-5">
-      <div class="col-sm-4">
-        <a href="" class="btn btn-primary  text-white font-14 py-1 px-3 rounded-pill text-decoration-none">
-          Ui / Ux
-        </a>
-        <h1 class="font-40 m-0 fw-bold text-white my-3">Title will goes here.</h1>
-        <div class=" border-0 bg-transparent">
-          <div class="card-body d-flex align-items-center py-4 p-0">
-            <div class="me-2">
-              <a href="javascript:void(0)" class="size-40 d-inline-block">
-                <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
-                  class="rounded-circle border w-100 h-100 object-center object-cover" />
-              </a>
-            </div>
-            <div class="me-2">
-              <h6 class="mb-0 fw-bold font-14 text-white text-truncate">Abdul</h6>
-              <p class="m-0 text-truncate text-muted">@abdul</p>
-            </div>
-          </div>
-          <div  >
-            <p class="mb-2 text-muted font-14 fw-bold">Share</p>
-            <div class="btn-group btn-group-lg">
-              <button type="button" class="btn btn-dark font-20 bx bx-link shareBtn" data-type="link"></button>
-              <button type="button" class="btn btn-dark font-20 bx bxl-facebook-circle shareBtn"
-                data-type="facebook"></button>
-              <button type="button" class="btn btn-dark font-20 bx bxl-twitter shareBtn" data-type="twitter"></button>
-              <button type="button" class="btn btn-dark font-20 bx bxl-linkedin shareBtn" data-type="linkedin"></button>
-            </div>
+<section class="section">
+  <div class="section-container">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-5 align-items-start">
+      <div class="col">
+        <a href="" class="section-label">Ui / Ux</a>
+        <h1 class="section-heading">Title will goes here.</h1>
+        <p class="section-description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nam commodi mollitia sequi minima,
+          voluptatum iusto dolore aperiam hic doloribus quae, recusandae labore corrupti! Libero nesciunt commodi itaque
+          harum impedit?
+        </p>
+        <div class="media">
+          <a href="javascript:void(0)" class="media-image">
+            <img src="{{ url_for('static', filename='images/team/1.jpg')}}" class="image" />
+          </a>
+          <div class="media-body">
+            <h6 class="media-heading">Abdul</h6>
+            <p class="media-description">@abdul</p>
           </div>
         </div>
+        <h4 class="section-subheading">Follow us</h4>
+        <div class="social-links">
+          <a href="#" class="bx bxl-facebook-square icon"></a>
+          <a href="#" class="bx bxl-twitter icon"></a>
+          <a href="#" class="bx bxl-google icon"></a>
+          <a href="#" class="bx bxl-instagram icon"></a>
+          <a href="#" class="bx bxl-github icon"></a>
+        </div>
       </div>
-      <div class="col-sm-1"></div>
-      <div class="col-sm-7"  >
+      <div class="col">
         <div class="image-box">
-          <div   class=" square-1">
-          </div>
-          <div  data-aos="zoom-in-up" class="square-2"></div>
-          <div class="image-lg" 
-            data-aos="zoom-in-up">
+          <div class=" square-1"></div>
+          <div class="square-2"></div>
+          <div class="image-lg">
             <img src="{{ url_for('static', filename='images/services/97.webp')}}" class="image"
               alt="Analytics and Reporting" />
           </div>
         </div>
       </div>
-    </section>
-    <section class="row justify-content-center py-2">
-      <div class="col-sm-8 ">
-        <div class="font-20 text-muted py-5"  data-aos="zoom-in-up">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquid tempore ipsum tenetur est
-            molestiae quae in velit corrupti? Assumenda sint, porro quia nesciunt excepturi voluptatem! Delectus est
-            tenetur laudantium.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, fugiat iste? In architecto totam deleniti
-            molestiae omnis, reprehenderit neque quos sit ducimus fugit mollitia consequuntur exercitationem libero?
-            Beatae, tenetur ut?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquid tempore ipsum tenetur est
-            molestiae quae in velit corrupti? Assumenda sint, porro quia nesciunt excepturi voluptatem! Delectus est
-            tenetur laudantium.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, fugiat iste? In architecto totam deleniti
-            molestiae omnis, reprehenderit neque quos sit ducimus fugit mollitia consequuntur exercitationem libero?
-            Beatae, tenetur ut?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquid tempore ipsum tenetur est
-            molestiae quae in velit corrupti? Assumenda sint, porro quia nesciunt excepturi voluptatem! Delectus est
-            tenetur laudantium.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, fugiat iste? In architecto totam deleniti
-            molestiae omnis, reprehenderit neque quos sit ducimus fugit mollitia consequuntur exercitationem libero?
-            Beatae, tenetur ut?
-          </p>
-        </div>
-        <div>
-          <h4 class="text-white font-20 my-3"  data-aos="zoom-in-up">Related tags:</h4>
-          <p  data-aos="zoom-in-up">
-            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
-              HTML 5
-            </a>
-            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
-              CSS 3
-            </a>
-            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
-              SCSS
-            </a>
-            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
-              JAVASCRIPT
-            </a>
-            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
-              JQuery
-            </a>
-            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
-              Bootstrap 5
-            </a>
-            <a href="" class="badge bg-light px-3 rounded-pill text-dark p-2 font-14 me-2 my-1 text-uppercase">
-              Uikit
-            </a>
-          </p>
-        </div>
-        <div class="my-5">
-          <div class="d-flex align-items-center justify-content-between">
-            <h4 class="m-0 fw-bold font-18 text-white">(0) Comments</h4>
-            <div class="form-group m-0 font-14 text-white bg-dark p-1 rounded-2 px-2">
-              <label for="" class="m-0">Sort</label>
-              <select id="" class="bg-transparent text-muted bg-dark border-0">
-                <option value="-id">Newest</option>
-                <option value="id">Oldest</option>
-              </select>
-            </div>
-          </div>
-          <div class="my-5">
-            <div id="comments">
-              <div class="d-flex my-2">
-                <div class="size-50">
-                  <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
-                    class="rounded-circle h-100 w-100 object-cover">
-                </div>
-                <div class="mb-1">
-                  <div class="px-3 p-2 bg-gray-700 rounded-3 ms-2">
-                    <h5 class="font-18 m-0 fw-bold text-white">
-                      Abdul hannan
-                    </h5>
-                    <div class="m-0 text-white mt-2 text-break" dir="auto">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium suscipit ab
-                      perferendis ducimus dicta pariatur minus iure harum qui, obcaecati quo tenetur a quasi.
-                      Perferendis adipisci ab ratione deleniti.
-                    </div>
-                  </div>
-                  <div class="p-2">
-                    <button type="button" data-id=""
-                      class="btn rounded-pill p-0 font-12 d-flex align-items-center text-light font-14 createReply">
-                      <b class="bx bx-reply me-1 font-20"></b> Reply
-                    </button>
-                  </div>
-                </div>
-                <div class="dropdown ms-auto dropstart">
-                  <button type="button" class="btn p-2 rounded-circle ms-2 bx bx-dots-vertical text-white bg-gray-700"
-                    data-bs-toggle="dropdown"></button>
-                  <ul class="dropdown-menu shadow border-0 bg-dark">
-                    <li><a class="dropdown-item text-white bg-dark" href="javascript:void(0)">Edit</a></li>
-                    <li><a class="dropdown-item text-white bg-dark" href="javascript:void(0)">Delete</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <form class="">
-            <div class="d-flex">
-              <div class="size-50 me-3">
-                <img src="{{ url_for('static', filename='images/team/1.jpg')}}"
-                  class="rounded-circle h-100 w-100 object-cover">
-              </div>
-              <textarea
-                class="bg-dark w-100 font-14 form-control shadow-none p-3 border-primary border-2 placeholder-text text-white rounded-3"
-                placeholder="Write your comment..." rows="4"></textarea>
-            </div>
-            <div class="text-end mt-3">
-              <button class="btn btn-primary text-white p-3 font-18 px-5">
-                Post
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-  </div>
-  <!-- Blogs -->
-  <section class="section"  data-aos="zoom-in-up" data-aos-once="true">
-    <div class="section-container">
-      <div class="section-header">
-        <span class="section-label">Find out our thoughts</span>
-        <h3 class="section-heading">Related Aricles</h3>
-        <p class="section-description">
-          In this series of blog posts, we take a more in-depth look at different aspects of [Topic]. Uncover hidden
-          insights, discover expert tips, and gain a deeper understanding of the subject matter you love
-        </p>
-      </div>
-      <div class="section-body">{% include "components/blogs.html" %}</div>
     </div>
-  </section>
-  <!-- Blogs -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-container">
+    <div class="section-header">
+      <div class="section-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquid tempore ipsum tenetur est
+        molestiae quae in velit corrupti? Assumenda sint, porro quia nesciunt excepturi voluptatem! Delectus est
+        tenetur laudantium.
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="badges-group">
+        <span class="badge">HTML 5</span>
+        <span class="badge">CSS 3</span>
+        <span class="badge">SCSS</span>
+        <span class="badge">JAVASCRIPT</span>
+        <span class="badge">JQuery</span>
+        <span class="badge">Bootstrap 5</span>
+        <span class="badge">Uikit</span>
+      </div>
+    </div>
+    <div class="section-footer">
+
+    </div>
+  </div>
+</section>
+
+<!-- Blogs -->
+<section class="section" data-aos="zoom-in-up" data-aos-once="true">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label">Find out our thoughts</span>
+      <h3 class="section-heading">Related Aricles</h3>
+      <p class="section-description">
+        In this series of blog posts, we take a more in-depth look at different aspects of [Topic]. Uncover hidden
+        insights, discover expert tips, and gain a deeper understanding of the subject matter you love
+      </p>
+    </div>
+    <div class="section-body">{% include "components/blogs.html" %}</div>
+  </div>
+</section>
+<!-- Blogs -->
 
 
-</main>
 {% endblock %}
