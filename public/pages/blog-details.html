@@ -1,10 +1,7 @@
-{% extends "layouts/primary.html" %}
-
-{% block title %} Blog | {% endblock %}
-
-{% block seo %}
-<meta name="description" content="">
-<meta name="keywords" content="">
+{% extends "layouts/primary.html" %} {% block title %} Blog | {% endblock %} {%
+block seo %}
+<meta name="description" content="" />
+<meta name="keywords" content="" />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="" />
 <meta property="og:title" content="Blog details | NexTash" />
@@ -13,13 +10,7 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="NexTash" />
 <meta property="og:url" content="" />
-{% endblock %}
-
-{% block style %}
-
-{% endblock %}
-
-{% block content %}
+{% endblock %} {% block style %} {% endblock %} {% block content %}
 <section class="section">
   <div class="section-container">
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-5 align-items-start">
@@ -27,9 +18,10 @@
         <a href="" class="section-label">Ui / Ux</a>
         <h1 class="section-heading">Title will goes here.</h1>
         <p class="section-description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nam commodi mollitia sequi minima,
-          voluptatum iusto dolore aperiam hic doloribus quae, recusandae labore corrupti! Libero nesciunt commodi itaque
-          harum impedit?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nam
+          commodi mollitia sequi minima, voluptatum iusto dolore aperiam hic
+          doloribus quae, recusandae labore corrupti! Libero nesciunt commodi
+          itaque harum impedit?
         </p>
         <div class="media">
           <a href="javascript:void(0)" class="media-image">
@@ -51,7 +43,7 @@
       </div>
       <div class="col">
         <div class="image-box">
-          <div class=" square-1"></div>
+          <div class="square-1"></div>
           <div class="square-2"></div>
           <div class="image-lg">
             <img src="{{ url_for('static', filename='images/services/97.webp')}}" class="image"
@@ -67,8 +59,9 @@
   <div class="section-container">
     <div class="section-header">
       <div class="section-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquid tempore ipsum tenetur est
-        molestiae quae in velit corrupti? Assumenda sint, porro quia nesciunt excepturi voluptatem! Delectus est
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+        aliquid tempore ipsum tenetur est molestiae quae in velit corrupti?
+        Assumenda sint, porro quia nesciunt excepturi voluptatem! Delectus est
         tenetur laudantium.
       </div>
     </div>
@@ -84,7 +77,31 @@
       </div>
     </div>
     <div class="section-footer">
-
+      <div class="comments-section">
+        <div class="comment-header"></div>
+        <div class="comment-body">
+          <div class="comment-item">
+            <a href="javascript:void(0)" class="comment-avatar">
+              <img src="{{ url_for('static', filename='images/team/1.jpg')}}" class="image" />
+            </a>
+            <div class="comment-body">
+              <h3 class="comment-fullname">Abdul Hannan</h3>
+              <div class="comment-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                velit provident aspernatur hic, voluptates recusandae cupiditate
+                eligendi ea ipsam ex earum obcaecati molestias est laboriosam
+                eveniet repellendus dolor! Iure, vero?
+              </div>
+              <div class="comment-controls">
+                <button class="control-btn">Edit</button>
+                <button class="control-btn">Reply</button>
+                <button class="control-btn">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment-footer"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -96,14 +113,14 @@
       <span class="section-label">Find out our thoughts</span>
       <h3 class="section-heading">Related Aricles</h3>
       <p class="section-description">
-        In this series of blog posts, we take a more in-depth look at different aspects of [Topic]. Uncover hidden
-        insights, discover expert tips, and gain a deeper understanding of the subject matter you love
+        In this series of blog posts, we take a more in-depth look at different
+        aspects of [Topic]. Uncover hidden insights, discover expert tips, and
+        gain a deeper understanding of the subject matter you love
       </p>
     </div>
     <div class="section-body">{% include "components/blogs.html" %}</div>
   </div>
 </section>
 <!-- Blogs -->
-
 
 {% endblock %}
