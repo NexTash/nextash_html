@@ -13,7 +13,7 @@ block seo %}
 {% endblock %} {% block style %} {% endblock %} {% block content %}
 <section class="section">
   <div class="section-container">
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-5 align-items-start">
+    <div class="row row-cols-1 row-cols-1-sm row-cols-2-md g-5 align-items-start">
       <div class="col">
         <a href="" class="section-label">Ui / Ux</a>
         <h1 class="section-heading">Title will goes here.</h1>
@@ -55,17 +55,48 @@ block seo %}
   </div>
 </section>
 
-<section class="section">
+<section class="section p-0">
   <div class="section-container">
-    <div class="section-header">
-      <div class="section-description">
+    <div class="section-description">
+      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
         aliquid tempore ipsum tenetur est molestiae quae in velit corrupti?
         Assumenda sint, porro quia nesciunt excepturi voluptatem! Delectus est
         tenetur laudantium.
-      </div>
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+        aliquid tempore ipsum tenetur est molestiae quae in velit corrupti?
+        Assumenda sint, porro quia nesciunt excepturi voluptatem! Delectus est
+        tenetur laudantium.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+        aliquid tempore ipsum tenetur est molestiae quae in velit corrupti?
+        Assumenda sint, porro quia nesciunt excepturi voluptatem! Delectus est
+        tenetur laudantium.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+        aliquid tempore ipsum tenetur est molestiae quae in velit corrupti?
+        Assumenda sint, porro quia nesciunt excepturi voluptatem! Delectus est
+        tenetur laudantium.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+        aliquid tempore ipsum tenetur est molestiae quae in velit corrupti?
+        Assumenda sint, porro quia nesciunt excepturi voluptatem! Delectus est
+        tenetur laudantium.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+        aliquid tempore ipsum tenetur est molestiae quae in velit corrupti?
+        Assumenda sint, porro quia nesciunt excepturi voluptatem! Delectus est
+        tenetur laudantium.
+      </p>
     </div>
     <div class="section-body">
+      <h4 class="section-subheading">Related tags</h4>
       <div class="badges-group">
         <span class="badge">HTML 5</span>
         <span class="badge">CSS 3</span>
@@ -78,15 +109,24 @@ block seo %}
     </div>
     <div class="section-footer">
       <div class="comments-section">
-        <div class="comment-header"></div>
-        <div class="comment-body">
-          <div class="comment-item">
-            <a href="javascript:void(0)" class="comment-avatar">
+        <div class="comments-header">
+          <h3 class="counts">Comments (<span>0</span>)</h3>
+          <div class="sorting">
+            <label for="">Sort:</label>
+            <select name="" id="">
+              <option value="">Recent</option>
+              <option value="">Oldest</option>
+            </select>
+          </div>
+        </div>
+        <div class="comments-body">
+          <div class="media comment-item">
+            <a href="javascript:void(0)" class="media-image">
               <img src="{{ url_for('static', filename='images/team/1.jpg')}}" class="image" />
             </a>
-            <div class="comment-body">
-              <h3 class="comment-fullname">Abdul Hannan</h3>
-              <div class="comment-description">
+            <div class="media-body">
+              <h3 class="media-heading">Abdul Hannan</h3>
+              <div class="media-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
                 velit provident aspernatur hic, voluptates recusandae cupiditate
                 eligendi ea ipsam ex earum obcaecati molestias est laboriosam
@@ -100,7 +140,15 @@ block seo %}
             </div>
           </div>
         </div>
-        <div class="comment-footer"></div>
+        <form class="media comment-form">
+          <a href="javascript:void(0)" class="media-image">
+            <img src="{{ url_for('static', filename='images/team/1.jpg')}}" class="image" />
+          </a>
+          <div class="media-body">
+            <textarea class="comment-field" placeholder="Write your comment..." rows="5"></textarea>
+            <button class="btn-outline">Post</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

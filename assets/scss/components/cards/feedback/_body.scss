@@ -4,10 +4,6 @@
   position: relative;
   border-radius: 10px;
   border: 2px solid get-var(primary);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  transition: all 0.5s;
   margin-bottom: 40px;
   .feedback-header {
     padding: 15px 20px;
@@ -16,10 +12,11 @@
       width: 100px;
       margin-top: -50px;
       padding: 10px;
-      border: 2px solid get-var(primary);
+      border: 4px dashed get-var(primary);
       margin-left: auto;
       margin-right: auto;
       border-radius: 10px;
+      background-color: get-var(body);
       .image {
         height: 100%;
         width: 100%;
@@ -45,23 +42,22 @@
 
     .fullname {
       display: block;
-      color: white;
-      font-size: 18px;
+      color: get-var(text);
+      font-size: 16px;
       margin-bottom: 5px;
+      font-weight: bold;
     }
     .designation {
-      color: #c7bfbf;
-      font-size: 16px;
+      color: get-var(muted);
+      font-size: 14px;
       margin-bottom: 25px;
     }
 
     .description {
-      color: white;
+      color: get-var(text);
       font-size: 16px;
-      margin: 0;
-      margin-bottom: 5px;
-      text-align: justify;
       text-align-last: center;
+      margin: 10px 0;
     }
   }
 
@@ -69,14 +65,5 @@
     padding: 15px 20px;
     color: #ffc107;
     text-align: center;
-  }
-
-  &:hover {
-    box-shadow: rgba(255, 30, 0, 0.24) 0px 8px 24px,
-      rgba(255, 38, 0, 0.158) 0px 16px 56px,
-      rgba(235, 6, 25, 0.233) 0px 24px 80px;
-    .card-img-top {
-      transform: scale(1.5);
-    }
   }
 }
