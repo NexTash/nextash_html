@@ -5,7 +5,7 @@
   border-radius: 10px;
   border: 2px solid get-var(primary);
   margin-bottom: 40px;
-  .feedback-header {
+  .card-header {
     padding: 15px 20px;
     .avatar {
       height: 100px;
@@ -25,7 +25,7 @@
       }
     }
   }
-  .feedback-body {
+  .card-body {
     text-align: center;
     padding: 15px 20px;
 
@@ -41,28 +41,25 @@
     }
 
     .fullname {
-      display: block;
       color: get-var(text);
       font-size: 16px;
       margin-bottom: 5px;
       font-weight: bold;
     }
-    .designation {
-      color: get-var(muted);
+    .profession {
       font-size: 14px;
       margin-bottom: 25px;
     }
 
-    .description {
-      color: get-var(text);
+    .feedback {
       font-size: 16px;
       text-align-last: center;
       margin: 10px 0;
+      color: get-var(text);
     }
   }
 
-  .feedback-footer {
-    padding: 15px 20px;
+  .card-footer {
     color: #ffc107;
     text-align: center;
   }

@@ -2,14 +2,11 @@
   .accordion-item {
     display: flex;
     flex-direction: column;
-    border-radius: get-var(rounded);
-    background-color: get-var(dark);
     .accordion-header {
       padding: 20px;
       color: get-var(text);
       font-weight: bold;
-      cursor: pointer;
-      font-size: 14px;
+      font-size: 16px;
       border: 1px solid get-var(secondary);
       .counter {
         color: get-var(primary);
@@ -18,8 +15,7 @@
     .accordion-body {
       padding: 10px 20px;
       color: get-var(muted);
-      display: none;
-      font-size: 12px;
+      font-size: 14px;
      
     }
   }

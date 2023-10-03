@@ -45,9 +45,9 @@
 </head>
 {% block style %} {% endblock %}
 
-<body class="font-bevietnam overflow-hidden">
+<body class="font-bevietnam">
     <!-- BG -->
-    <div class="lines position-fixed top-0 end-0 start-0 z-index--1 m-auto">
+    <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
@@ -69,20 +69,7 @@
     <!-- SCRIPTS -->
     <script src="{{ url_for('static', filename='js/aos.js')}}"></script>
     <script src="{{ url_for('static', filename='js/vanilla-tilt.js')}}"></script>
-    <script>
-        AOS.init();
-        VanillaTilt.init();
-
-        window.onscroll = function () { navbar() };
-        function navbar() {
-            let position = 20
-            if (document.body.scrollTop > position || document.documentElement.scrollTop > position) {
-                document.getElementById("navbar").classList.add("navbar-dark");
-            } else {
-                document.getElementById("navbar").classList.remove("navbar-dark");
-            }
-        }
-    </script>
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
     {% block scripts %} {% endblock %}
     <!-- SCRIPTS -->
 </body>

@@ -9,7 +9,10 @@
   box-shadow: get-var(shadow);
   width: 350px;
   border-left: 1px solid get-var(dark);
-  display: none;
+  transition: right top, display;
+  transition-duration: 600ms;
+  transition-timing-function: ease;
+
   .offcanvas-content {
     display: flex;
     flex-direction: column;
@@ -45,5 +48,8 @@
         margin-bottom: 10px;
       }
     }
+  }
+  &.hide {
+    display: none;
   }
 }

@@ -3,9 +3,9 @@
   align-items: center;
   border-radius: 50px;
   padding: 5px 8px;
-  backdrop-filter: get-var(blur);
   box-shadow: get-var(shadow);
-  background-color: get-var(dark);
+  backdrop-filter:get-var(blur);
+  border: 1px solid get-var(border);
   .icon {
     text-decoration: none;
     padding: 10px;

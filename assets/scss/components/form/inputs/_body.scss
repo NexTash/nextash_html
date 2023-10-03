@@ -27,6 +27,7 @@
   width: 100%;
   padding: 20px;
   border-radius: get-var(rounded);
+  font-family: inherit;
   &:focus {
     border: 1px solid get-var(primary);
   }

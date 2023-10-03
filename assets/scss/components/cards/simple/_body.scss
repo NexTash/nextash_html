@@ -9,9 +9,23 @@
   backdrop-filter: get-var(blur);
   box-shadow: get-var(shadow);
   position: relative;
-
+  transition: top bottom, box-shadow;
+  transition-duration: 600ms;
+  transition-timing-function: ease;
   .center {
     text-align: center;
+  }
+  .card-image {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    position: relative;
+    border-radius: get-var(rounded) get-var(rounded) 0 0;
+    .image {
+      height: 250px;
+      object-fit: cover;
+      border-radius: inherit;
+    }
   }
 
   .card-badge {
@@ -101,6 +115,9 @@
         rgba(235, 6, 25, 0.233) 0px 24px 80px;
     }
   }
+  &.active {
+    border: 2px solid get-var(primary);
+  }
 }
 
 .image-zoom {
@@ -113,4 +130,8 @@
       transform: scale(1.5);
     }
   }
+}
+.card-sticky {
+  position: sticky;
+  top: 80px;
 }
