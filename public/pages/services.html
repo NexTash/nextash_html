@@ -1,4 +1,8 @@
-{% extends "layouts/primary.html" %}{% block title %} Services | {% endblock %}{% block seo %}
+{% extends "layouts/primary.html" %}
+
+{% block title %} Services | {% endblock %}
+
+{% block seo %}
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <meta name="robots" content="index, follow" />
@@ -9,9 +13,11 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="NexTash" />
 <meta property="og:url" content="" />
-{% endblock %}{% block content %}
+{% endblock %}
+
+{% block content %}
 <!-- HEADER -->
-<section class="section" data-aos-once="true">
+<section class="section">
     <div class="section-container ">
         <div class="section-body">
             <div class="section-label page-label"><span> WHAT CAN WE DO?</span></div>
@@ -728,6 +734,8 @@
         </div>
         <!------- Row ------->
     </div>
-</section><!------ Process ------>
+</section>
+<!------ Process ------>
 {% include "components/process.html" %}
-<!------ Process ------>{% endblock %}
+<!------ Process ------>
+{% endblock %}

@@ -1,10 +1,10 @@
-{% extends "layouts/primary.html" %}
+{% extends "layouts/primary.html" %} 
 
 {% block title %} About us | {% endblock %}
 
 {% block seo %}
-<meta name="description" content="">
-<meta name="keywords" content="">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="" />
 <meta property="og:title" content="About us | NexTash" />
@@ -15,23 +15,20 @@
 <meta property="og:url" content="" />
 {% endblock %}
 
-{% block style %}
-<style>
-
-</style>
-{% endblock %}
-
 {% block content %}
 <!-- HEADER -->
-<section class="section" data-aos="zoom-in-up">
-  <div class="section-container ">
+<section class="section">
+  <div class="section-container">
     <div class="section-body">
-      <div class="section-label page-label"><span> WHO WE ARE ?</span></div>
-      <h2 class="section-heading page-heading"> We're a digital agency based in Pakistan.</h2>
+      <div class="section-label page-label"><span>WHO WE ARE ?</span></div>
+      <h2 class="section-heading page-heading">
+        We're a digital agency based in Pakistan.
+      </h2>
       <p class="section-description page-description">
-        - At NexTash, we believe in creating a work environment that fosters creativity, innovation, and
-        collaboration. We are a team of passionate individuals who are committed to making a positive impact
-        through our work.
+        - At NexTash, we believe in creating a work environment that fosters
+        creativity, innovation, and collaboration. We are a team of passionate
+        individuals who are committed to making a positive impact through our
+        work.
       </p>
     </div>
   </div>
@@ -43,16 +40,16 @@
   <div class="section-container">
     <div class="row g-5 align-items-center">
       <div class="col logo-col" data-tilt data-tilt-max="20" data-tilt-speed="400">
-        <div class="logo-border" data-aos="zoom-in-up"></div>
-        <img src="{{ url_for('static', filename='images/logos/logo-min.png')}}" class="image-full" alt="Logo"
-          data-aos="zoom-in-up">
+        <div class="logo-border"></div>
+        <img src="{{ url_for('static', filename='images/logos/logo-min.png')}}" class="image-full" alt="Logo" />
       </div>
       <div class="col">
         <b class="section-label">About</b>
-        <h3 class="section-heading"> Who we are</h3>
+        <h3 class="section-heading">Who we are</h3>
         <p class="section-description">
-          Welcome to NexTash, a leading IT solutions provider revolutionizing the digital landscape. With a
-          passion for innovation and a commitment to excellence, we are dedicated to empowering businesses and
+          Welcome to NexTash, a leading IT solutions provider revolutionizing
+          the digital landscape. With a passion for innovation and a commitment
+          to excellence, we are dedicated to empowering businesses and
           individuals to thrive in the rapidly evolving world of technology.
         </p>
       </div>
@@ -62,7 +59,7 @@
 <!-- INTRO -->
 
 <!-- CEO MESSAGE -->
-<section class="section" data-aos="zoom-in-up">
+<section class="section">
   <div class="section-container">
     <div class="row row-cols-1 row-cols-1-sm row-cols-2-md row-cols-2-lg align-items-center g-5">
       <div class="col">
@@ -76,11 +73,12 @@
       </div>
       <div class="col">
         <b class="section-label"> CEO MESSAGE</b>
-        <h3 class="section-heading"> Faisal Zahoor</h3>
+        <h3 class="section-heading">Faisal Zahoor</h3>
         <p class="section-description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, porro corrupti! Rem in maxime provident,
-          quidem eligendi soluta vero temporibus sed saepe dicta ea, mollitia, quibusdam repudiandae quo doloremque
-          distinctio.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+          porro corrupti! Rem in maxime provident, quidem eligendi soluta vero
+          temporibus sed saepe dicta ea, mollitia, quibusdam repudiandae quo
+          doloremque distinctio.
         </p>
       </div>
     </div>
@@ -100,25 +98,23 @@
         <div class="section-label">
           <span>About</span>
         </div>
-        <h2 class="section-heading">
-          Our Mission
-        </h2>
+        <h2 class="section-heading">Our Mission</h2>
         <p class="section-description">
-          At NexTash, our mission is to deliver cutting-edge IT solutions that drive success and transform
-          the way businesses operate. We strive to be a trusted partner for our clients, helping them achieve their
-          goals through innovative technology, expert guidance, and unparalleled support.
+          At NexTash, our mission is to deliver cutting-edge IT solutions that
+          drive success and transform the way businesses operate. We strive to
+          be a trusted partner for our clients, helping them achieve their goals
+          through innovative technology, expert guidance, and unparalleled
+          support.
         </p>
         <div>
-          <br>
+          <br />
           <a href="/about-us" class="btn-outline">Learn More</a>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 <!-- OUR MISSION -->
-
 
 <!-- SERVICES -->
 {% include "components/services.html" %}
@@ -136,5 +132,3 @@
 {% include "components/clients.html" %}
 <!-- CLIENTS -->
 {% endblock %}
-
-{% block scripts %} {% endblock %}

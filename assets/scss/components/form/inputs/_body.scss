@@ -1,3 +1,9 @@
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
 .input-group {
   display: flex;
   align-items: stretch;
@@ -11,6 +17,7 @@
 }
 
 .form-field {
+  resize: none;
   display: block;
   background-color: transparent;
   border: 1px solid get-var(dark);
@@ -21,7 +28,7 @@
   padding: 20px;
   border-radius: get-var(rounded);
   &:focus {
-    border: 1px solid white;
+    border: 1px solid get-var(primary);
   }
 }
 

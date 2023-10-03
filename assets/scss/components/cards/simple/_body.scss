@@ -10,6 +10,10 @@
   box-shadow: get-var(shadow);
   position: relative;
 
+  .center {
+    text-align: center;
+  }
+
   .card-badge {
     background-color: get-var(primary);
     color: white;

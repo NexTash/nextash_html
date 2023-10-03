@@ -24,6 +24,8 @@ body {
   -webkit-tap-highlight-color: get-var(text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  z-index: 1;
 }
 
 /* Fonts folder path */ 
