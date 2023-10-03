@@ -1,13 +1,28 @@
-{% extends "layouts/primary.html" %} {% block title %} Home | {% endblock %}
-{%block seo %}{% endblock %} {% block style %} {% endblock %} {% block content
-%}
+{% extends "layouts/primary.html" %}
+
+{% block title %} Home | {% endblock %}
+
+{%block seo %}
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="" />
+<meta property="og:title" content="Home | NexTash" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="NexTash" />
+<meta property="og:url" content="" />
+{% endblock %}
+
+{% block content%}
 <!-- HEADER -->
 <section class="section welcome-section">
   <div class="welcome-content">
-    <h1 class="nextash-label" data-aos="fade-up">
+    <h1 class="nextash-label" >
       Welcome to <span class="text-primary">NexTash</span>
     </h1>
-    <h2 class="welcome-title" data-aos="fade-up">
+    <h2 class="welcome-title" >
       <div class="title-piece">PARTNER</div>
       <div class="title-piece">FOR</div>
       <div class="title-piece">YOUR</div>
@@ -76,25 +91,6 @@
 </section>
 <!-- HEADER -->
 
-
-<!-- OUR VISION -->
-<!-- <section class="section"   >
-  <div class="section-container">
-    <div class="ov-card text-center backdrop-8 border border-primary border-3 border-shadow">
-      <div class="nextash-label text-primary"><span>Our Vision</span></div>
-      <p class="text-white font-18">
-        At NexTash, our vision is to be a trailblazer in the IT industry,
-        empowering businesses and individuals to thrive in the digital era. We
-        envision a future where technology is harnessed to drive innovation,
-        efficiency, and positive change across all sectors. Through our
-        expertise and passion, we aim to be at the forefront of shaping this
-        future and making a lasting impact on the world.
-      </p>
-      <a href="/about-us" class="btn-outline mt-2">Learn More</a>
-    </div>
-  </div>
-</section> -->
-
 <!-- OUR VISION -->
 <section class="section">
   <div class="section-container">
@@ -119,7 +115,7 @@
           <a href="/about-us" class="btn-outline">Learn More</a>
         </div>
       </div>
-     
+
     </div>
   </div>
 </section>
@@ -147,7 +143,7 @@
 
 
 <!-- BLOGS -->
-<section class="section" >
+<section class="section">
   <div class="section-container">
     <div class="section-header center">
       <span class="section-label">Find out our thoughts</span>
@@ -169,7 +165,7 @@
 </section>
 <!-- BLOGS -->
 <!-- Projects -->
-<section class="section" >
+<section class="section">
   <div class="section-container">
     <div class="section-header">
       <span class="section-label">OUR WORK</span>
