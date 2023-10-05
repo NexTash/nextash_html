@@ -12,6 +12,8 @@
     border-radius: 50px;
     color: get-var(muted);
     font-size: 18px;
+    background-color:get-var(dark);
+    margin: 0 1px;
     &:hover {
       background-color: get-var(primary);
       color: white;

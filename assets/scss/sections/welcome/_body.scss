@@ -51,11 +51,11 @@
 
     .nextash-label {
       text-align: center;
-      font-weight: bold;
       font-size: 16px;
       color: get-var(text);
-
+      
       .name {
+        font-weight: bold;
         color: get-var(primary);
       }
     }
@@ -68,9 +68,9 @@
       text-transform: uppercase;
       overflow: hidden;
       position: relative;
-      font-weight: normal;
-      font-size: 6.5rem;
-      line-height: 6.5rem;
+      font-weight: 600;
+      font-size: 6rem;
+      line-height: 6rem;
       text-align: center;
       color: transparent;
       -webkit-text-stroke: 1px get-var(text);
