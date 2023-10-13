@@ -84,7 +84,6 @@
       ".g-5-xxl, .gy-5-xxl": (
         --gutter-y: 3rem,
       ),
-      scale: min-width,
       prefix: null,
     ),
     xl: (
@@ -112,7 +111,6 @@
         flex: 0 0 auto,
         width: 16.6666666667%,
       ),
-      scale: min-width,
       prefix: null,
     ),
     lg: (
@@ -146,7 +144,6 @@
       ".g-5-lg, .gy-5-lg": (
         --gutter-y: 3rem,
       ),
-      scale: min-width,
       prefix: null,
     ),
     md: (
@@ -180,7 +177,6 @@
       ".g-5-md, .gy-5-md": (
         --gutter-y: 3rem,
       ),
-      scale: min-width,
       prefix: null,
     ),
     sm: (
@@ -214,7 +210,6 @@
       ".g-5-sm, .gy-5-sm": (
         --gutter-y: 3rem,
       ),
-      scale: min-width,
       prefix: null,
     ),
   )
