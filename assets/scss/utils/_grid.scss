@@ -53,35 +53,97 @@
         --gutter-y: 3rem,
       ),
     ),
-    sm: (
-      ".row-cols-1-sm > *": (
+    xxl: (
+      ".row-cols-1-xxl > *": (
         flex: 0 0 auto,
         width: 100%,
       ),
-      ".row-cols-2-sm > *": (
+      ".row-cols-2-xxl > *": (
         flex: 0 0 auto,
         width: 50%,
       ),
-      ".row-cols-3-sm > *": (
+      ".row-cols-3-xxl > *": (
         flex: 0 0 auto,
         width: 33.3333333333%,
       ),
-      ".row-cols-4-sm > *": (
+      ".row-cols-4-xxl > *": (
         flex: 0 0 auto,
         width: 25%,
       ),
-      ".row-cols-5-sm > *": (
+      ".row-cols-5-xxl > *": (
         flex: 0 0 auto,
         width: 20%,
       ),
-      ".row-cols-6-sm > *": (
+      ".row-cols-6-xxl > *": (
         flex: 0 0 auto,
         width: 16.6666666667%,
       ),
-      ".g-5-sm, .gx-5-sm": (
+      ".g-5-xxl, .gx-5-xxl": (
         --gutter-x: 3rem,
       ),
-      ".g-5-sm, .gy-5-sm": (
+      ".g-5-xxl, .gy-5-xxl": (
+        --gutter-y: 3rem,
+      ),
+      scale: min-width,
+      prefix: null,
+    ),
+    xl: (
+      ".row-cols-1-xl > *": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".row-cols-2-xl > *": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".row-cols-3-xl > *": (
+        flex: 0 0 auto,
+        width: 33.3333333333%,
+      ),
+      ".row-cols-4-xl > *": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".row-cols-5-xl > *": (
+        flex: 0 0 auto,
+        width: 20%,
+      ),
+      ".row-cols-6-xl > *": (
+        flex: 0 0 auto,
+        width: 16.6666666667%,
+      ),
+      scale: min-width,
+      prefix: null,
+    ),
+    lg: (
+      ".row-cols-1-lg > *": (
+        flex: 0 0 auto,
+        width: 100%,
+      ),
+      ".row-cols-2-lg > *": (
+        flex: 0 0 auto,
+        width: 50%,
+      ),
+      ".row-cols-3-lg > *": (
+        flex: 0 0 auto,
+        width: 33.3333333333%,
+      ),
+      ".row-cols-4-lg > *": (
+        flex: 0 0 auto,
+        width: 25%,
+      ),
+      ".row-cols-5-lg > *": (
+        flex: 0 0 auto,
+        width: 20%,
+      ),
+      ".row-cols-6-lg > *": (
+        flex: 0 0 auto,
+        width: 16.6666666667%,
+      ),
+      ".g-5-lg, .gx-5-lg": (
+        --gutter-x: 3rem,
+      ),
+      ".g-5-lg, .gy-5-lg": (
         --gutter-y: 3rem,
       ),
       scale: min-width,
@@ -121,97 +183,35 @@
       scale: min-width,
       prefix: null,
     ),
-    lg: (
-      ".row-cols-1-lg > *": (
+    sm: (
+      ".row-cols-1-sm > *": (
         flex: 0 0 auto,
         width: 100%,
       ),
-      ".row-cols-2-lg > *": (
+      ".row-cols-2-sm > *": (
         flex: 0 0 auto,
         width: 50%,
       ),
-      ".row-cols-3-lg > *": (
+      ".row-cols-3-sm > *": (
         flex: 0 0 auto,
         width: 33.3333333333%,
       ),
-      ".row-cols-4-lg > *": (
+      ".row-cols-4-sm > *": (
         flex: 0 0 auto,
         width: 25%,
       ),
-      ".row-cols-5-lg > *": (
+      ".row-cols-5-sm > *": (
         flex: 0 0 auto,
         width: 20%,
       ),
-      ".row-cols-6-lg > *": (
+      ".row-cols-6-sm > *": (
         flex: 0 0 auto,
         width: 16.6666666667%,
       ),
-      ".g-5-lg, .gx-5-lg": (
+      ".g-5-sm, .gx-5-sm": (
         --gutter-x: 3rem,
       ),
-      ".g-5-lg, .gy-5-lg": (
-        --gutter-y: 3rem,
-      ),
-      scale: min-width,
-      prefix: null,
-    ),
-    xl: (
-      ".row-cols-1-xl > *": (
-        flex: 0 0 auto,
-        width: 100%,
-      ),
-      ".row-cols-2-xl > *": (
-        flex: 0 0 auto,
-        width: 50%,
-      ),
-      ".row-cols-3-xl > *": (
-        flex: 0 0 auto,
-        width: 33.3333333333%,
-      ),
-      ".row-cols-4-xl > *": (
-        flex: 0 0 auto,
-        width: 25%,
-      ),
-      ".row-cols-5-xl > *": (
-        flex: 0 0 auto,
-        width: 20%,
-      ),
-      ".row-cols-6-xl > *": (
-        flex: 0 0 auto,
-        width: 16.6666666667%,
-      ),
-      scale: min-width,
-      prefix: null,
-    ),
-    xxl: (
-      ".row-cols-1-xxl > *": (
-        flex: 0 0 auto,
-        width: 100%,
-      ),
-      ".row-cols-2-xxl > *": (
-        flex: 0 0 auto,
-        width: 50%,
-      ),
-      ".row-cols-3-xxl > *": (
-        flex: 0 0 auto,
-        width: 33.3333333333%,
-      ),
-      ".row-cols-4-xxl > *": (
-        flex: 0 0 auto,
-        width: 25%,
-      ),
-      ".row-cols-5-xxl > *": (
-        flex: 0 0 auto,
-        width: 20%,
-      ),
-      ".row-cols-6-xxl > *": (
-        flex: 0 0 auto,
-        width: 16.6666666667%,
-      ),
-      ".g-5-xxl, .gx-5-xxl": (
-        --gutter-x: 3rem,
-      ),
-      ".g-5-xxl, .gy-5-xxl": (
+      ".g-5-sm, .gy-5-sm": (
         --gutter-y: 3rem,
       ),
       scale: min-width,
