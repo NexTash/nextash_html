@@ -4,15 +4,14 @@
   position: relative;
   z-index: 111;
 
-
-  .align-items-center{
+  .align-items-center {
     align-items: center;
   }
-  .align-items-start{
+  .align-items-start {
     align-items: start;
   }
 
-  .justify-content-center{
+  .justify-content-center {
     justify-content: center;
   }
 
@@ -144,11 +143,14 @@
 
     .section-footer {
       text-align: center;
-      padding-top: 50px;
+    }
+
+    @include media-breakpoint(xs, min-width) {
+      max-width: 500px;
     }
 
     @include media-breakpoint(sm, min-width) {
-      max-width: 540px;
+      max-width: 520px;
     }
 
     @include media-breakpoint(md, min-width) {
@@ -156,15 +158,15 @@
     }
 
     @include media-breakpoint(lg, min-width) {
-      max-width: 950px;
+      max-width: 980px;
     }
 
     @include media-breakpoint(xl, min-width) {
-      max-width: 1000px;
+      max-width: 1100px;
     }
 
     @include media-breakpoint(xll, min-width) {
-      max-width: 1100px;
+      max-width: 1200px;
     }
   }
 

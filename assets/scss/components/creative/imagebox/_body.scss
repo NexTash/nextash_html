@@ -33,29 +33,24 @@
     border: 2px solid get-var(primary);
     padding: 10px;
 
-    @media screen and (max-width: 1300px) {
+    @include media-breakpoint(xll) {
       height: 400px;
       margin-bottom: 20px;
     }
-    @media screen and (max-width: 1100px) {
+    @include media-breakpoint(xl) {
       height: 450px;
       margin-bottom: 20px;
     }
-    @media screen and (max-width: 820px) {
-      height: 450px;
-      margin-bottom: 20px;
+    @include media-breakpoint(lg) {
+      height: 600px;
+      margin-bottom: 100px;
     }
-
-    @media screen and (max-width: 420px) {
-      height: 380px;
-      margin-bottom: 60px;
+    @include media-breakpoint(md) {
+      height: 550px;
+      margin-bottom: 100px;
     }
-    @media screen and (max-width: 380px) {
-      height: 350px;
-      margin-bottom: 60px;
-    }
-    @media screen and (max-width: 290px) {
-      height: 250px;
+    @include media-breakpoint(sm) {
+      height: 300px;
       margin-bottom: 60px;
     }
 
