@@ -1,7 +1,4 @@
-{% extends "layouts/primary.html" %} 
-
-{% block title %} About us | {% endblock %}
-
+{% extends "layouts/primary.html" %} {% block title %} About us | {% endblock %}
 {% block seo %}
 <meta name="description" content="" />
 <meta name="keywords" content="" />
@@ -13,9 +10,7 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="NexTash" />
 <meta property="og:url" content="" />
-{% endblock %}
-
-{% block content %}
+{% endblock %} {% block content %}
 <!-- HEADER -->
 <section class="section">
   <div class="section-container">
@@ -39,11 +34,14 @@
 <section class="section who-we-are">
   <div class="section-container">
     <div class="row row-cols-2 align-items-center justify-content-between">
-      <div class="col logo-col" data-tilt data-tilt-max="20" data-tilt-speed="400">
-        <div class="logo-border"></div>
-        <img src="{{ url_for('static', filename='images/logos/logo-min.png')}}" class="image-full" alt="Logo" />
+      <div class="col " data-tilt data-tilt-max="20" data-tilt-speed="400">
+        <div class="logo" data-aos-duration="1000" data-aos="fade-right" data-aos-once="true"
+          data-aos-easing="ease-in-out">
+          <div class="square"></div>
+          <img src="{{ url_for('static', filename='images/logos/logo-min.png')}}" class="image" alt="Logo" />
+        </div>
       </div>
-      <div class="col">
+      <div class="col" data-aos-duration="1000" data-aos="fade-left" data-aos-once="true" data-aos-easing="ease-in-out">
         <b class="section-label">About</b>
         <h3 class="section-heading">Who we are</h3>
         <p class="section-description">
@@ -62,7 +60,8 @@
 <section class="section">
   <div class="section-container">
     <div class="row row-cols-2 align-items-center justify-content-between">
-      <div class="col">
+      <div class="col" data-aos-duration="1000" data-aos="fade-right" data-aos-once="true"
+        data-aos-easing="ease-in-out">
         <div class="image-box">
           <div class="square-1"></div>
           <div class="square-2"></div>
@@ -71,7 +70,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col" data-aos-duration="1000" data-aos="fade-left" data-aos-once="true" data-aos-easing="ease-in-out">
         <b class="section-label"> CEO MESSAGE</b>
         <h3 class="section-heading">Faisal Zahoor</h3>
         <p class="section-description">
@@ -91,7 +90,8 @@
 <!-- STORY -->
 
 <!-- OUR MISSION -->
-<section class="section bg-2">
+<section class="section bg-2" data-aos-duration="1000" data-aos="fade-down" data-aos-once="true"
+  data-aos-easing="ease-in-out">
   <div class="section-container">
     <div class="section-body center card card-hover">
       <div class="section-pad">

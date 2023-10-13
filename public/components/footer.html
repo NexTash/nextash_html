@@ -1,17 +1,19 @@
 <footer class="footer">
   <section class="section footer-first">
     <div class="section-container">
-      <div class="section-label"> Work with us </div>
+      <div class="section-label">Work with us</div>
       <h3 class="section-heading">
         We would love to hear more about your project
       </h3>
-      <a href="/contact-us" class="btn-contact  bg-triangles border-shadow">
-        <div class="btn-text">Let's discuss <i class="bx bx-right-top-arrow-circle icon"></i></div>
+      <a href="/contact-us" class="btn-contact bg-triangles border-shadow">
+        <div class="btn-text">
+          Let's discuss <i class="bx bx-right-top-arrow-circle icon"></i>
+        </div>
       </a>
+    </div>
   </section>
   <section class="section footer-waves">
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
       <defs>
         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
       </defs>
@@ -25,7 +27,7 @@
   </section>
   <section class="section footer-contact bg-triangles">
     <div class="section-container">
-      <div class="row row row-cols-3 align-items-center justify-content-center">
+      <div class="row align-items-center justify-content-center">
         <article class="col">
           <div class="media">
             <i class="bx bx-phone icon"></i>
@@ -60,13 +62,14 @@
     <div class="section-container">
       <div class="row row-cols-3 align-items-center">
         <div class="col">
-          <a href="/" class="logo" role="img" aria-label="NexTash logo">
+          <a href="/" class="logo" role="img" aria-label="NexTash">
             <img src="{{ url_for('static', filename='images/logos/logo.png')}}" width="70" height="70" class="image"
-              alt="NexTash logo">
+              alt="NexTash" />
           </a>
           <p class="description">
-            Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
-            incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do
+            eiusmod tempor incididuntut consec tetur adipisicing elit,Lorem
+            ipsum dolor sit amet.
           </p>
           <h3 class="heading">Follow us</h3>
           <div class="social-links">
@@ -80,21 +83,40 @@
         <div class="col">
           <h3 class="heading" role="heading" aria-level="3">Information</h3>
           <ul type="none" class="footer-list">
-            <li class="list-item"><a href="/about-us" class="list-link">About us</a></li>
-            <li class="list-item"><a href="/contact-us" class="list-link">Contact us</a></li>
-            <li class="list-item"><a href="/services" class="list-link">Services</a></li>
-            <li class="list-item"><a href="/team" class="list-link">Team</a></li>
-            <li class="list-item"><a href="/blogs" class="list-link">Blogs</a></li>
-            <li class="list-item"><a href="/projects" class="list-link">Projects</a></li>
-            <li class="list-item"><a href="/careers" class="list-link">Careers</a></li>
-            <li class="list-item"><a href="/faqs" class="list-link">Faqs</a></li>
+            <li class="list-item">
+              <a href="/about-us" class="list-link">About us</a>
+            </li>
+            <li class="list-item">
+              <a href="/contact-us" class="list-link">Contact us</a>
+            </li>
+            <li class="list-item">
+              <a href="/services" class="list-link">Services</a>
+            </li>
+            <li class="list-item">
+              <a href="/team" class="list-link">Team</a>
+            </li>
+            <li class="list-item">
+              <a href="/blogs" class="list-link">Blogs</a>
+            </li>
+            <li class="list-item">
+              <a href="/projects" class="list-link">Projects</a>
+            </li>
+            <li class="list-item">
+              <a href="/careers" class="list-link">Careers</a>
+            </li>
+            <li class="list-item">
+              <a href="/faqs" class="list-link">Faqs</a>
+            </li>
           </ul>
         </div>
         <div class="col">
           <h3 class="heading" role="heading" aria-level="3">Subscribe</h3>
-          <p class="description">Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+          <p class="description">
+            Don’t miss to subscribe to our new feeds, kindly fill the form
+            below.
+          </p>
           <form action="/subscribed-successfully" class="subscribe-form">
-            <input type="text" placeholder="Email Address..." class="input-field">
+            <input type="text" placeholder="Email Address..." class="input-field" />
             <button class="bx bx-send btn-send"></button>
           </form>
         </div>
@@ -105,7 +127,8 @@
     <div class="section-container">
       <div class="row row-cols-2 align-items-center justify-content-between">
         <div class="col">
-          <p class="description"> &copy; 2023, All Right Reserved
+          <p class="description">
+            &copy; 2023, All Right Reserved
             <a href="/" class="section-link">NexTash</a>
           </p>
         </div>

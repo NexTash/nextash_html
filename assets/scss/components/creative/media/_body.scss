@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   align-content: center;
-  margin: 10px 0;
 
   .icon {
     background-color: #131111;
@@ -48,7 +47,7 @@
       color: get-var(text);
       font-weight: bold;
       font-size: 18px;
-      margin-bottom: 3px;
+      margin-bottom: 5px;
     }
 
     .media-description,

@@ -7,7 +7,7 @@
     border-radius: inherit;
 
     .project-image {
-      height: 450px;
+      height: 480px;
       transition: transform;
       transition-duration: 600ms;
       transition-timing-function: ease;
@@ -42,7 +42,8 @@
 
     .card-title {
       font-size: 22px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      display: inline-block;
       &:hover{
         color: get-var(muted);
       }

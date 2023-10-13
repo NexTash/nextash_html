@@ -3,6 +3,7 @@
   --gutter-y: 3rem;
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
 
   .col {
     box-sizing: border-box;
@@ -28,7 +29,6 @@
 .row-cols-3 {
   .col {
     width: 33.33%;
-
     @include media-breakpoint(lg) {
       width: 50%;
     }
@@ -71,5 +71,13 @@
 @include media-breakpoint(lg) {
   .order-sm-first {
     order: -1;
+  }
+}
+@include media-breakpoint(sm) {
+  .row-cols-sm-1 {
+    --gutter-x: 0.5rem;
+    .col {
+      width: 100%;
+    }
   }
 }
